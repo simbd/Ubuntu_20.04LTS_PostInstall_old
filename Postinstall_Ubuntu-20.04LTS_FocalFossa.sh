@@ -30,7 +30,7 @@ then
     	# Debut
 	f_action_exec "$CA_PARTNER" "sudo sed -i.bak '/^# deb .*partner/ s/^# //' /etc/apt/sources.list"
 	f_action_exec "$CA_UPGRADE" "sudo apt update || read -p 'Attention, la commande de mise à jour (apt update) renvoi une erreur, il est recommandé de stopper le script et de corriger le problème avant de le lancer mais si vous voulez quand même poursuivre, tapez entrée' ; sudo apt full-upgrade -y" "$NS_UPGRADE"
-    f_action_install "$CA_PACKUTILE" "net-tools curl vim neofetch ncdu x264 x265 xterm inxi hdparm cpu-x"
+	f_action_install "$CA_PACKUTILE" "net-tools curl vim neofetch ncdu x264 x265 xterm inxi hdparm cpu-x"
     
     	# Sessions
     	f_action_install "$CA_GNOMEVANILLA" gnome-session
@@ -103,7 +103,7 @@ then
 	f_action_snap_install "$CA_SLACK" "slack --classic"
     	f_action_install "$CA_SUBDOWNLOADER" subdownloader
 	f_action_flatpak_install "$CA_TEAMSPEAK" com.teamspeak.TeamSpeak
-		f_action_get "$CA_TEAMVIEWER" "https://download.teamviewer.com/download/linux/teamviewer_amd64.deb"
+	f_action_get "$CA_TEAMVIEWER" "https://download.teamviewer.com/download/linux/teamviewer_amd64.deb"
 	f_action_install "$CA_TELEGRAM" telegram-desktop
 	f_action_install "$CA_THUNDERBIRD" "thunderbird thunderbird-locale-fr thunderbird-gnome-support fonts-symbola"
 	f_action_install "$CA_TRANSMISSION" transmission-gtk
@@ -130,9 +130,9 @@ then
 	f_action_install "$CA_LOLLYPOP" lollypop
 	f_action_install "$CA_MOLOTOVTV" "libgconf2-4 desktop-file-utils" #pré-requis pour Molotov.tv
 	f_action_get_appimage "$CA_MOLOTOVTV" "http://desktop-auto-upgrade.molotov.tv/linux/4.2.1/molotov.AppImage"
-	    f_action_snap_install "$CA_ODIO" odio
-	    f_action_install "$CA_PACKCODEC" "flac opus-tools vorbis-tools lame mkvtoolnix mkvtoolnix-gui oggvideotools"
-	    f_action_install "$CA_PAROLE" parole
+	f_action_snap_install "$CA_ODIO" odio
+	f_action_install "$CA_PACKCODEC" "flac opus-tools vorbis-tools lame mkvtoolnix mkvtoolnix-gui oggvideotools"
+	f_action_install "$CA_PAROLE" parole
     	f_action_install "$CA_PAVUCONTROL" pavucontrol	
     	f_action_ppa_install "$CA_QARTE" ppa:vincent-vandevyvre/vvv qarte
     	f_action_install "$CA_QMMP" qmmp	
@@ -184,6 +184,7 @@ then
 	f_action_install "$CA_MINUET" minuet
 	f_action_install "$CA_MIXXX" mixxx
 	f_action_install "$CA_MUSESCORE" musescore3	
+	f_action_ppa_install "$CA_MUSICBRAINZ" ppa:musicbrainz-developers/stable "picard" 
 	f_action_install "$CA_MYPAINT" "mypaint mypaint-data-extras"	 
 	f_action_snap_install "$CA_NATRON" natron
 	f_action_install "$CA_OBS" "ffmpeg obs-studio"
@@ -201,7 +202,6 @@ then
 	f_action_install "$CA_SOUNDJUICER" sound-juicer
 	f_action_install "$CA_SWEETHOME" sweethome3d
 	f_action_get_appimage "$CA_UNITY3DEDITOR" "https://public-cdn.cloud.unity3d.com/hub/prod/UnityHub.AppImage"
-	#a revoir, cf => https://public-cdn.cloud.unity3d.com/hub/prod/UnityHub.AppImage
 	f_action_install "$CA_WINFF" "winff winff-qt"
 	
 	# Bureautique/Mail
@@ -299,9 +299,9 @@ then
 	f_action_install "$CA_CHEESE" cheese
 	f_action_install "$CA_DEJADUP" deja-dup
 	f_action_install "$CA_DIODON" diodon
-    f_action_get_appimage "$CA_ELECTRUM" "https://download.electrum.org/3.3.8/electrum-3.3.8-x86_64.AppImage"
-    f_action_exec "$CA_ETCHER" "wget https://github.com/balena-io/etcher/releases/download/v1.5.70/balena-etcher-electron-1.5.70-linux-ia32.zip && unzip balena-etcher* ; rm balena-etcher*.zip ; mkdir ~/AppImage ; mv *etcher*AppImage ~/AppImage/"
-    f_action_get "$CA_ETHEREUMWALLET" "https://github.com/ethereum/mist/releases/download/v0.11.1/Ethereum-Wallet-linux64-0-11-1.deb"
+	f_action_get_appimage "$CA_ELECTRUM" "https://download.electrum.org/3.3.8/electrum-3.3.8-x86_64.AppImage"
+	f_action_exec "$CA_ETCHER" "wget https://github.com/balena-io/etcher/releases/download/v1.5.70/balena-etcher-electron-1.5.70-linux-ia32.zip && unzip balena-etcher* ; rm balena-etcher*.zip ; mkdir ~/AppImage ; mv *etcher*AppImage ~/AppImage/"
+	f_action_get "$CA_ETHEREUMWALLET" "https://github.com/ethereum/mist/releases/download/v0.11.1/Ethereum-Wallet-linux64-0-11-1.deb"
 	f_action_install "$CA_GITCOLA" git-cola
 	f_action_install "$CA_GLABELS" glabels
 	f_action_install "$CA_GNOME_DISK" gnome-disk-utility
@@ -311,8 +311,8 @@ then
 	f_action_install "$CA_GSYSMON" gnome-system-monitor
 	f_action_install "$CA_HOMEBANK" homebank
 	f_action_install "$CA_GPARTED" gparted
-    f_action_install "$CA_MELD" meld
-    f_RepositoryExt_Install "$CA_MULTISYSTEM" "multisystem" "http://liveusb.info/multisystem/depot/multisystem.asc" "http://liveusb.info/multisystem/depot all main" "multisystem"
+	f_action_install "$CA_MELD" meld
+	f_RepositoryExt_Install "$CA_MULTISYSTEM" "multisystem" "http://liveusb.info/multisystem/depot/multisystem.asc" "http://liveusb.info/multisystem/depot all main" "multisystem"
 	f_action_install "$CA_ARCHIVAGE" "unace rar unrar p7zip-rar p7zip-full sharutils uudeview mpack arj cabextract lzip lunzip"
 	f_action_install "$CA_REDSHIFT" redshift-gtk
 	f_action_exec "$CA_SUBLIM_NAUT" "wget https://raw.githubusercontent.com/Diaoul/nautilus-subliminal/master/install.sh -O - | sudo bash"
@@ -406,8 +406,8 @@ then
 	f_action_install "$CA_XQF" xqf
 	
 	# Programmation / Dev  
-    f_action_ppa_install "$CA_ANDROIDSTUDIO" ppa:maarten-fonville/android-studio
-    f_action_exec "$CA_ANDROIDSTUDIO" "sudo sed -i -e 's/focal/eoan/g' /etc/apt/sources.list.d/maarten-fonville*android*list ; sudo apt update ; sudo apt install android-studio -y"
+	f_action_ppa_install "$CA_ANDROIDSTUDIO" ppa:maarten-fonville/android-studio
+	f_action_exec "$CA_ANDROIDSTUDIO" "sudo sed -i -e 's/focal/eoan/g' /etc/apt/sources.list.d/maarten-fonville*android*list ; sudo apt update ; sudo apt install android-studio -y"
 	f_action_install "$CA_ANJUTA" "anjuta anjuta-extras"
 	f_action_install "$CA_ARDUINOIDE" arduino 
 	f_action_snap_install "$CA_ATOM" "atom --classic"
@@ -422,7 +422,7 @@ then
 	f_action_snap_install "$CA_INTELLIJIDEA" "intellij-idea-community --classic"
 	f_action_install "$CA_IPYTHON" ipython
 	f_action_exec "$CA_JAVA" "sudo add-apt-repository -y ppa:linuxuprising/java"
-    f_action_exec "$CA_JAVA" "sudo sed -i -e 's/focal/eoan/g' /etc/apt/sources.list.d/linuxuprising-ubuntu-java*list ; sudo apt update" #(ligne temporaire en attendant que le ppa pr 20.04 soit actif)
+	f_action_exec "$CA_JAVA" "sudo sed -i -e 's/focal/eoan/g' /etc/apt/sources.list.d/linuxuprising-ubuntu-java*list ; sudo apt update" #(ligne temporaire en attendant que le ppa pr 20.04 soit actif)
 	f_action_exec "$CA_JAVA" "echo oracle-java13-installer shared/accepted-oracle-license-v1-2 select true | sudo /usr/bin/debconf-set-selections"
 	f_action_install "$CA_JAVA" oracle-java13-installer
 	f_action_install "$CA_LATEXFULL" "texlive-full fonts-freefont-ttf texlive-extra-utils texlive-fonts-extra texlive-lang-french texlive-latex-extra libreoffice-texmaths"
@@ -451,7 +451,7 @@ then
     	f_action_exec "$CA_APPORTOFF" "sudo sed -i 's/^enabled=1$/enabled=0/' /etc/default/apport"
 	f_action_exec "$CA_EXTINCTIONAUTO" "echo '0 4 * * * root /sbin/shutdown -h now' | sudo tee -a /etc/cron.d/extinction-auto"
 	f_action_install "$CA_GCONF" gconf-editor
-    f_action_flatpak_install "$CA_GWE" com.leinardi.gwe
+	f_action_flatpak_install "$CA_GWE" com.leinardi.gwe
 	f_action_exec "$CA_GS_AUGMENTATIONCAPTURE" "gsettings set org.gnome.settings-daemon.plugins.media-keys max-screencast-length 600"
 	f_action_exec "$CA_GS_MINIMISATIONFENETRE" "gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'"
 	f_action_install "$CA_GRUBCUSTOMIZER" grub-customizer

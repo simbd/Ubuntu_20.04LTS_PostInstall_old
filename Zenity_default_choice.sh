@@ -88,12 +88,12 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "TRUE") "$CA_FILEZILLA" "$CD_FILEZILLA" \
 	$(chkDef "FALSE") "$CA_OPENSSHSERVER" "$CD_OPENSSHSERVER" \
 	$(chkDef "FALSE") "$CA_PUTTY" "$CD_PUTTY" \
-    $(chkDef "TRUE") "$CA_RDESKTOP" "$CD_RDESKTOP" \
+    	$(chkDef "TRUE") "$CA_RDESKTOP" "$CD_RDESKTOP" \
 	$(chkDef "TRUE") "$CA_REMMINA" "$CD_REMMINA" \
-    $(chkDef "FALSE") "$CA_TEAMVIEWER" "$CD_TEAMVIEWER" \
-    $(chkDef "FALSE") "$CA_WORMHOLE" "$CD_WORMHOLE" \
-    $(chkDef "FALSE") "$CA_X2GO" "$CD_X2GO" \
-    $(chkDef "FALSE") "$CA_X11VNC" "$CD_X11VNC" \
+    	$(chkDef "FALSE") "$CA_TEAMVIEWER" "$CD_TEAMVIEWER" \
+    	$(chkDef "FALSE") "$CA_WORMHOLE" "$CD_WORMHOLE" \
+    	$(chkDef "FALSE") "$CA_X2GO" "$CD_X2GO" \
+    	$(chkDef "FALSE") "$CA_X11VNC" "$CD_X11VNC" \
 	FALSE "$SCT_LECTUREMULTIMEDIA" "===========================================================" \
 	$(chkDef "FALSE") "$CA_AUDACIOUS" "$CD_AUDACIOUS" \
 	$(chkDef "FALSE") "$CA_CLEMENTINE" "$CD_CLEMENTINE" \
@@ -117,7 +117,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_SMPLAYER" "$CD_SMPLAYER" \
 	$(chkDef "FALSE") "$CA_SPOTIFY" "$CD_SPOTIFY" \
 	$(chkDef "TRUE") "$CA_VLCSTABLE" "$CD_VLCSTABLE" \
-    FALSE "$SCT_GRAPHISMEMODELISATION" "===========================================================" \
+    	FALSE "$SCT_GRAPHISMEMODELISATION" "===========================================================" \
 	$(chkDef "FALSE") "$CA_BLENDER" "$CD_BLENDER" \
 	$(chkDef "FALSE") "$CA_CURA" "$CD_CURA" \
 	$(chkDef "FALSE") "$CA_DARKTABLE" "$CD_DARKTABLE" \
@@ -153,7 +153,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_OPENSHOT" "$CD_OPENSHOT" \
 	$(chkDef "FALSE") "$CA_PEEK" "$CD_PEEK" \
 	$(chkDef "FALSE") "$CA_PITIVI" "$CD_PITIVI" \
-    $(chkDef "FALSE") "$CA_SHOTCUT" "$CD_SHOTCUT" \
+    	$(chkDef "FALSE") "$CA_SHOTCUT" "$CD_SHOTCUT" \
 	$(chkDef "FALSE") "$CA_SIMPLESCREENRECORDER" "$CD_SIMPLESCREENRECORDER" \
 	$(chkDef "FALSE") "$CA_WINFF" "$CD_WINFF" \
 	FALSE "$SCT_TRAITEMENTAUDIO" "===========================================================" \
@@ -169,6 +169,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_MINUET" "$CD_MINUET" \
 	$(chkDef "FALSE") "$CA_MIXXX" "$CD_MIXXX" \
 	$(chkDef "FALSE") "$CA_MUSESCORE" "$CD_MUSESCORE" \
+	$(chkDef "FALSE") "$CA_MUSICBRAINZ" "$CD_MUSICBRAINZ" \
 	$(chkDef "FALSE") "$CA_ROSEGARDEN" "$CD_ROSEGARDEN" \
 	$(chkDef "FALSE") "$CA_SOUNDJUICER" "$CD_SOUNDJUICER" \
 	FALSE "$SCT_OFFICE" "===========================================================" \
@@ -244,7 +245,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_POL" "$CD_POL" \
 	$(chkDef "FALSE") "$CA_PPSSPP" "$CD_PPSSPP" \
 	$(chkDef "FALSE") "$CA_RETROARCH" "$CD_RETROARCH" \
-	    $(chkDef "FALSE") "$CA_VBOXDEPOT" "$CD_VBOXDEPOT" \
+	$(chkDef "FALSE") "$CA_VBOXDEPOT" "$CD_VBOXDEPOT" \
     	$(chkDef "FALSE") "$CA_VBOXLAST" "$CD_VBOXLAST" \
     	$(chkDef "FALSE") "$CA_VMWARE" "$CD_VMWARE" \
     	$(chkDef "FALSE") "$CA_VMWAREPRO" "$CD_VMWAREPRO" \
@@ -279,8 +280,8 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
     	$(chkDef "FALSE") "$CA_TIMESHIFT" "$CD_TIMESHIFT" \
     	$(chkDef "FALSE") "$CA_VARIETY" "$CD_VARIETY" \
 	FALSE "$SCT_UTILITAIRES_CLI" "===========================================================" \
-    $(chkDef "FALSE") "$CA_ASCIINEMA" "$CD_ASCIINEMA" \
-    $(chkDef "FALSE") "$CA_DDRESCUE" "$CD_DDRESCUE" \
+	$(chkDef "FALSE") "$CA_ASCIINEMA" "$CD_ASCIINEMA" \
+	$(chkDef "FALSE") "$CA_DDRESCUE" "$CD_DDRESCUE" \
 	$(chkDef "FALSE") "$CA_FD" "$CD_FD" \
 	$(chkDef "TRUE") "$CA_GIT" "$CD_GIT" \
 	$(chkDef "TRUE") "$CA_HTOP" "$CD_HTOP" \
@@ -351,9 +352,9 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_XPLANE" "$CD_XPLANE" \
 	$(chkDef "FALSE") "$CA_XQF" "$CD_XQF" \
 	FALSE "$SCT_DEV" "===========================================================" \
-    $(chkDef "FALSE") "$CA_ANDROIDSTUDIO" "$CD_ANDROIDSTUDIO" \
-    $(chkDef "FALSE") "$CA_ANJUTA" "$CD_ANJUTA" \
-    $(chkDef "FALSE") "$CA_ARDUINOIDE" "$CD_ARDUINOIDE" \
+	$(chkDef "FALSE") "$CA_ANDROIDSTUDIO" "$CD_ANDROIDSTUDIO" \
+	$(chkDef "FALSE") "$CA_ANJUTA" "$CD_ANJUTA" \
+	$(chkDef "FALSE") "$CA_ARDUINOIDE" "$CD_ARDUINOIDE" \
 	$(chkDef "FALSE") "$CA_ATOM" "$CD_ATOM" \
 	$(chkDef "FALSE") "$CA_BLUEFISH" "$CD_BLUEFISH" \
 	$(chkDef "FALSE") "$CA_BLUEGRIFFON" "$CD_BLUEGRIFFON" \

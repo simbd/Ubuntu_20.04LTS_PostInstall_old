@@ -453,6 +453,9 @@ CD_MIXXX="Logiciel pour Dj pour le mixage de musique"
 CA_MUSESCORE="MuseScore"
 CD_MUSESCORE="L'éditeur de partitions de musique le plus utilisé au monde"
 
+CA_MUSICBRAINZ="MusicBrainz Picard {PPA}"
+CD_MUSICBRAINZ="Logiciel libre multi-plateforme pour tagger les fichiers audio grâce à la base de données MusicBrainz" 
+
 CA_MYPAINT="MyPaint"
 CD_MYPAINT="Logiciel de peinture numérique développé en Python"
 
