@@ -1,0 +1,1249 @@
+# Description (FR) pour l'installation des logiciels
+# French
+
+PIS_NAME="Ubuntu 20.04LTS"
+
+#Begin values : première boite de dialogue
+BGN_TITLE="Configuration de ${PIS_NAME}"
+BGN_TEXT="Choisissez comment vous voulez que les cases à cocher des logiciels soient cochées"
+BGN_DEF="Par défaut"
+BGN_UNCHECKED="Toutes_décochées"
+BGN_CHECKED="Toutes_cochées_(déconseillé!)"
+
+# General Messages
+MSG_ZEN_TITLE="Script de Post-Installation pour ${PIS_NAME}"
+MSG_ZEN_TEXT="Choisissez les actions à exécuter et les aplications à installer."
+MSG_ZEN_CHECK="Cochez"
+MSG_ZEN_ACTION="Actions / Applications"
+MSG_ZEN_DESCRIPTION="Descriptions"
+
+# Notify-Send
+NS_WATCH_OUT="ATTENTION"
+NS_PWD_ASKED="Votre mot de passe sera demandé, dans le terminal"
+NS_INSTALL="Installation de"
+NS_DEFERED="Installation décalée de"
+NS_ALL_PPA="Tous les PPA"
+NS_END_TITLE="Et voilà !"
+NS_END_TEXT="Toutes les tâches ont été effectuées avec succès!"
+
+# Actions : Columns & Notify
+CA_PARTNER="Dépôt partenaire"
+CD_PARTNER="Activation du dépôt 'partenaire' : nécessaire pour l'installation de certains logiciels"
+
+CA_UPGRADE="Mise à jour Système (fortement recommandé !)"
+CD_UPGRADE="Mise à jour de la liste des paquets et des applications déjà installées."
+NS_UPGRADE="Mise à jour du système en cours"
+
+CA_PACKUTILE="Pack d'outils/codecs utiles (recommandé)"
+CD_PACKUTILE="Installe des outils utiles : net-tools pour ifconfig, xterm, vim, codecs x264/x265, neofetch, curl, ncdu"
+
+SCT_SESSION="______ [[ SESSIONS SUPPLEMENTAIRES ]] ______"
+
+CA_GNOMEVANILLA="Gnome Shell - Vanilla"
+CD_GNOMEVANILLA="L'environnement Gnome-Shell neutre épuré de toute customisation graphique (sauf wallpaper Ubuntu)"
+
+CA_GNOMECLASSIC="Gnome classique"
+CD_GNOMECLASSIC="Interface plus basique dans le style de Gnome 2 mais avec les composants de Gnome-Shell, utilise Mutter)"
+
+CA_GNOMEFLASHBACKM="Gnome Flashback / Metacity"
+CD_GNOMEFLASHBACKM="Interface proche de Gnome 2 et légère, utilise Metacity, pas d'effets spéciaux sur les fenêtres)"
+
+CA_GNOMEFLASHBACKC="Gnome Flashback / Compiz"
+CD_GNOMEFLASHBACKC="Idem que précédemment mais en utilisant Compiz à la place de Metacity, permet des effets 3D sur les fenêtres"
+
+CA_UNITY="Unity"
+CD_UNITY="Ancien environnement d'Ubuntu qui était installé sur les anciennes versions (avant la 17.10)"
+
+SCT_BROWSER="______ [[ NAVIGATEURS WEB ]] ______"
+
+CA_BEAKER="Beaker Browser {PPA}"
+CD_BEAKER="Navigateur opensource qui permet de surfer en P2P"
+
+CA_BRAVE="Brave"
+CD_BRAVE="Navigateur avec protection pour la vie privée avec blocage des pisteurs"
+
+CA_CHROMIUM="Chromium {SNAP}"
+CD_CHROMIUM="La version libre/opensource de Google Chrome sans les fonctions néfastes"
+
+CA_CLIQZ="Cliqz {SNAP}"
+CD_CLIQZ="Fork de Firefox orientés vers la confidentialité des changements avec un moteur de recherche intégré"
+
+CA_DILLO="Dillo"
+CD_DILLO="Navigateur capable de tourner sur des ordinosaures"
+
+CA_EOLIE="Eolie {FLATPAK}"
+CD_EOLIE="Un navigateur s'intégrant bien dans l'environnement Gnome"
+
+CA_FALKON="Falkon (anciennement Qupzilla)"
+CD_FALKON="Une alternative libre et légère utilisant Webkit, suite du projet QupZilla"
+
+CA_FIREFOXBETA="Firefox Beta (n+1) {PPA}"
+CD_FIREFOXBETA="Pour ceux qui veulent remplacer la version stable par la béta pour avoir 1 version d'avance"
+
+CA_FIREFOXDEVELOPER="Firefox Developper Edition {Script LinInstall}"
+CD_FIREFOXDEVELOPER="Version avancée incluant des outils pour les développeurs web/webmaster"
+
+CA_FIREFOXESR="Firefox ESR {PPA}"
+CD_FIREFOXESR="Version de Firefox orientée entreprise/organisation avec un support étendu"
+
+CA_FIREFOXNIGHTLY="Firefox Nightly {PPA}"
+CD_FIREFOXNIGHTLY="Toute dernière build en developpement, maj très régulières et potentiellement instable"
+
+CA_EPIPHANY="Gnome Web (Epiphany)"
+CD_EPIPHANY="Navigateur de la fondation Gnome s'intégrant bien avec cet environnement"
+
+CA_CHROME="Google Chrome"
+CD_CHROME="Le navigateur (propriétaire) de Google basé sur Chromium"
+
+CA_LYNX="Lynx"
+CD_LYNX="Ce navigateur s'utilise uniquement en ligne de commande, utile depuis une console SSH"
+
+CA_MIDORI="Midori"
+CD_MIDORI="Libre & léger mais un peu obsolète maintenant..."
+
+CA_MIN="Min Browser"
+CD_MIN="Navigateur minimaliste et donc très léger"
+
+CA_OPERA="Opera {SNAP}"
+CD_OPERA="Navigateur norvégien, propriétaire, basé sur Chromium"
+
+CA_PALEMOON="Palemoon"
+CD_PALEMOON="Une autre alternative, libre & assez performant"
+
+CA_SRWAREIRON="SRWare Iron"
+CD_SRWAREIRON="Dérivé de Chromium avec des améliorations sur la confidentialité des données"
+
+CA_TORBROWSER="Tor Browser"
+CD_TORBROWSER="Indispensable pour ceux qui ont besoin de surfer dans l'anonymat, utilise le réseau Tor"
+
+CA_VIVALDI="Vivaldi"
+CD_VIVALDI="Navigateur propriétaire avec une interface sobre"
+
+SCT_INTERNET="______ [[ INTERNET / TCHAT / MESSAGERIE ]] ______"
+SCT_DOWNLOAD="______ [[ DOWNLOAD / TORRENT / STOCKAGE EN LIGNE ]] ______"
+SCT_CONTROLEDISTANCE="______ [[ CONTRÔLE À DISTANCE / TRANSFERT INTERNE ]] ______"
+
+CA_ANYDESK="AnyDesk"
+CD_ANYDESK="Logiciel propriétaire de prise en main à distance, alternative à Teamviewer"
+
+CA_CLUSTERSSH="ClusterSSH"
+CD_CLUSTERSSH="Permet d'administrer plusieurs machines d'un coup via SSH"
+
+CA_COZYDRIVE="CozyDrive {APPIMAGE}"
+CD_COZYDRIVE="Permet de gérer votre stockage en ligne CozyCloud (Cozy.io)"
+
+CA_DELUGE="Deluge"
+CD_DELUGE="Client BitTorrent basé sur Python et GTK+"
+
+CA_DISCORD="Discord"
+CD_DISCORD="Logiciel propriétaire multiplateforme pour communiquer à plusieurs, orienté Gaming"
+
+CA_DROPBOX="Dropbox"
+CD_DROPBOX="Partage de fichiers dans le cloud."
+
+CA_DUKTO="Dukto"
+CD_DUKTO="Transfert de fichiers en open source, et multi-plateforme dans le réseau local"
+
+CA_DWSERVICE="DWService (agent pour le poste à contrôler)"
+CD_DWSERVICE="Permet de contrôle votre poste à distance via une interface web, libre et gratuit"
+
+CA_EISKALTDC="EiskaltDC++"
+CD_EISKALTDC="Pour se connecter au réseau DirectConnect"
+
+CA_EVOLUTION="Gnome Evolution"
+CD_EVOLUTION="Logiciel de type groupware et courrielleur, facile à utiliser"
+
+CA_EMPATHY="Empathy"
+CD_EMPATHY="Messagerie instantanée adaptée à Gnome, multi-protocole"
+
+CA_FILEZILLA="FileZilla"
+CD_FILEZILLA="Logiciel FTP libre et opensource."
+
+CA_FROSTWIRE="Frostwire"
+CD_FROSTWIRE="Client multiplate-forme pour le réseau Gnutella"
+
+CA_GYDL="Gydl {SNAP}"
+CD_GYDL="Permet de télécharger des vidéos Youtube ou juste la piste audio"
+
+CA_HEXCHAT="Hexchat"
+CD_HEXCHAT="Client IRC, fork de xchat"
+
+CA_HUBIC="Hubic"
+CD_HUBIC="Partage de fichiers dans le cloud (version 64 bits)."
+
+CA_JITSI="Jitsi"
+CD_JITSI="Anciennement 'SIP Communicator' surtout orienté VoIP"
+
+CA_LINPHONE="Linphone"
+CD_LINPHONE="Visioconférence utilisant le protocole SIP"
+
+CA_MAILSPRING="Mailspring {SNAP}"
+CD_MAILSPRING="client de messagerie moderne et multi-plateforme"
+
+CA_MUMBLE="Mumble"
+CD_MUMBLE="Logiciel libre connue chez les gameurs pour les conversations audios à plusieurs"
+
+CA_NICOTINE="Nicotine+"
+CD_NICOTINE="Client P2P pour le réseau mono-source Soulseek"
+
+CA_OPENSSHSERVER="OpenSSH Server"
+CD_OPENSSHSERVER="Votre PC devient accessible à distance via SSH (client SSH déjà inclus de base)"
+
+CA_PIDGIN="Pidgin"
+CD_PIDGIN="Alternative à Empathy avec l'avantage d'être multiplateforme"
+
+CA_POLARI="Polari"
+CD_POLARI="Client IRC pour Gnome"
+
+CA_PSI="Psi"
+CD_PSI="Multiplateforme, libre et surtout conçu pour le protocole XMPP cad Jabber"
+
+CA_PUTTY="Putty"
+CD_PUTTY="Outil pour se connecter à des PC/Serveurs via SSH, Telnet, Rlogin"
+
+CA_QBITTORRENT="Qbittorrent"
+CD_QBITTORRENT="Client BitTorrent léger développé en C++ avec Qt"
+
+CA_RDESKTOP="Rdesktop"
+CD_RDESKTOP="Connexion aux bureaux à distance (notamment des postes Windows via RDP)"
+
+CA_REMMINA="Remmina"
+CD_REMMINA="Visionneur de bureaux distants (pour prise en main à distance avec VNC ou RDP, entre autres)"
+
+CA_RING="Ring (GNU/Jami)"
+CD_RING="Logiciel très performant pour la téléphonie IP"
+
+CA_RIOT="Riot (Matrix) {FLATPAK}"
+CD_RIOT="Outil libre de messagerie instantannée sécurisée supportant le protocole Matrix"
+
+CA_SIGNAL="Signal"
+CD_SIGNAL="Messagerie instantanée chiffrée recommandée par Edward Snowden"
+
+CA_SKYPE="Skype"
+CD_SKYPE="Logiciel propriétaire de téléphonie/vidéophonie de Microsoft"
+
+CA_SLACK="Slack {SNAP}"
+CD_SLACK="Plate-forme de communication collaborative propriétaire avec gestion de projets"
+
+CA_SUBDOWNLOADER="SubDownloader"
+CD_SUBDOWNLOADER="Téléchargement de sous-titres"
+
+CA_TEAMSPEAK="TeamSpeak {FLATPAK}"
+CD_TEAMSPEAK="Discussion à plusieurs dans des canaux, équivalent à Mumble mais propriétaire"
+
+CA_TEAMVIEWER="TeamViewer"
+CD_TEAMVIEWER="Logiciel propriétaire de télémaintenance avec contrôle de bureau à distance"
+
+CA_TELEGRAM="Telegram"
+CD_TELEGRAM="Appli de messagerie basée sur le cloud avec du chiffrage (privilégier plutôt Signal)"
+
+CA_THUNDERBIRD="Thunderbird"
+CD_THUNDERBIRD="Emaileur libre et opensource de Mozilla (normalement déjà installé de base)"
+
+CA_TRANSMISSION="Transmission (GTK)"
+CD_TRANSMISSION="Client BitTorrent léger, simple mais efficace (normalement déjà installé de base)"
+
+CA_UGET="Uget"
+CD_UGET="Gestionnaire de téléchargement multiplateforme supportant divers hébergeurs de fichiers"
+
+CA_VUZE="Vuze {SNAP}"
+CD_VUZE="Plate-forme commerciale d'Azureus avec BitTorrent"
+
+CA_WEECHAT="Weechat"
+CD_WEECHAT="Client IRC léger, rapide et flexible s'utilisant en CLI"
+
+CA_WHALEBIRD="Whalebird 3.0"
+CD_WHALEBIRD="Client pour le réseau social ouvert et décentralisé Mastodon (permet le multi-compte)"
+
+CA_WHATSAPP="WhatsApp Desktop Client {PPA}"
+CD_WHATSAPP="Client desktop pour la messagerie WhatsApp"
+
+CA_WIRE="Wire"
+CD_WIRE="Un autre client de messagerie instantanée chiffrée créé par Wire Swiss"
+
+CA_WORMHOLE="Wormhole"
+CD_WORMHOLE="Transfert sécurisé à travers n'importe quel réseau en CLI"
+
+CA_X2GO="X2Go (client)"
+CD_X2GO="Permet de se connecter à distance de façon graphique. Plus léger, optimisé et rapide que VNC"
+
+CA_X11VNC="X11VNC"
+CD_X11VNC="Pour la prise de contrôle à distance avec le protocole VNC (en reverse)."
+
+CA_YTDLND="YouTube Download"
+CD_YTDLND="Script (à utiliser dans le terminal) de capture de vidéos en ligne (YouTube et autres)"
+
+SCT_LECTUREMULTIMEDIA="______ [[ LECTURE MULTIMEDIA ]] ______"
+
+CA_AUDACIOUS="Audacious"
+CD_AUDACIOUS="Lecteur complet pour les audiophiles avec beaucoup de plugins"
+
+CA_CLEMENTINE="Clementine"
+CD_CLEMENTINE="Lecteur audio avec gestion des pochettes, genres musicaux..."
+
+CA_FLASH="FlashPlayer"
+CD_FLASH="Lecture sur le web d'animations/vidéos qui utiliseraient encore l'ancienne technologie 'Flash' sans support d'HTML5"
+
+CA_FONDO="Fondo {FLATPAK}"
+CD_FONDO="Petit utilitaire pour trouver des jolies wallpapers facilement"
+
+CA_GNOMEMPV="Gnome MPV (Celluloid)"
+CD_GNOMEMPV="Interface graphique GTK+ au lecteur mpv, léger, capable de lire de nombreux formats"
+
+CA_GNOMEMUSIC="Gnome Music"
+CD_GNOMEMUSIC="Utilitaire 'Musique' de la fondation Gnome pour la gestion audio, assez basique"
+
+CA_GNOMETWITCH="Gnome Twitch"
+CD_GNOMETWITCH="Pour visionner les flux vidéo du site Twitch depuis votre bureau sans utiliser de navigateur"
+
+CA_GRADIO="Gradio {FLATPAK}"
+CD_GRADIO="Application Gnome pour écouter la radio, plus de 1 000 références rien qu'en France"
+
+CA_LOLLYPOP="Lollypop"
+CD_LOLLYPOP="Lecteur de musique adapté à Gnome avec des fonctions très avancées"
+
+CA_MOLOTOVTV="Molotov.TV {APPIMAGE}"
+CD_MOLOTOVTV="Service français de distribution de chaînes de TV"
+
+CA_ODIO="Odio {SNAP}"
+CD_ODIO="Permet d'écouter de nombreuses stations de radio à travers le monde (20 000)"
+
+CA_PACKCODEC="Pack d'encodeur/décodeur Audio/Vidéo"
+CD_PACKCODEC="Installera : Flac, Opus-tools, Vorbis-tools, Lame, MkvToolNix, Oggvideotools"
+
+CA_PAROLE="Parole"
+CD_PAROLE="Lecteur multimédia simple d'utilisation qui permet la lecture de CD/DVD et la lecture de fichier audio/vidéo"
+
+CA_PAVUCONTROL="PavuControl"
+CD_PAVUCONTROL="Outil graphique de contrôle des volumes audio entrée/sortie pour Pulseaudio"
+
+CA_QARTE="Qarte {PPA}"
+CD_QARTE="Permet de télécharger des vidéos des sites Arte : replay des émissions + Arte Live Web"
+
+CA_QMMP="Qmmp"
+CD_QMMP="Lecteur audio dans le même style de Winamp"
+
+CA_QUODLIBET="QuodLibet"
+CD_QUODLIBET="Lecteur audio très puissant avec liste de lecture basée sur les expressions rationnelles"
+
+CA_RHYTHMBOX="Rhythmbox"
+CD_RHYTHMBOX="Lecture audio / Gestion de bibliothèque musicale"
+
+CA_SHOTWELL="Shotwell"
+CD_SHOTWELL="Gestionnaire de photos pour Gnome en langage Vala, normalement installé par défaut sauf mode minimal"
+
+CA_SMPLAYER="SmPlayer"
+CD_SMPLAYER="Lecteur basé sur mplayer avec une interface utilisant Qt"
+
+CA_SPOTIFY="Spotify"
+CD_SPOTIFY="Application officielle pour votre compte Spotify (Stream de musique)"
+
+CA_VLCSTABLE="VLC"
+CD_VLCSTABLE="Lecteur vidéo libre très complet, le couteau suisse dans ce domaine"
+
+SCT_GRAPHISMEMODELISATION="______ [[ GRAPHISME / 3D / MONTAGE ET CAPTURE PHOTO ]] ______"
+SCT_MONTAGEVIDEO="______ [[ MONTAGE VIDEO / ENCODAGE ET CAPTURE VIDEO ]] ______"
+SCT_TRAITEMENTAUDIO="______ [[ MAO / ENCODAGE ET CAPTURE AUDIO ]] ______"
+
+CA_ARDOUR="Ardour {Nécessite intervention !}"
+CD_ARDOUR="Station de travail audio numérique avec enregistrement multipiste et mixage"
+
+CA_AUDACITY="Audacity"
+CD_AUDACITY="Enregistrement et édition de son numérique"
+
+CA_AVIDEMUX="AvideMux {FLATPAK}"
+CD_AVIDEMUX="Découpage/Réencodage de vidéo, application des filtres..."
+
+CA_BLENDER="Blender"
+CD_BLENDER="Suite libre de modélisation 3D, matériaux et textures, d'éclairage, d'animation..."
+
+CA_CINELERRA="Cinelerra (Cin)"
+CD_CINELERRA="Montage non-linéaire sophistiqué, équivalent à Adobe première, Final Cut et Sony Vegas"
+
+CA_CURA="Cura"
+CD_CURA="Logiciel d'impression 3D qui assure l'agencement, le renforcement, le slicing et la conversion en Gcode"
+
+CA_DARKTABLE="Darktable"
+CD_DARKTABLE="Gestionnaire de photos libre sous forme de table lumineuse et chambre noir"
+
+CA_EASYTAG="EasyTag"
+CD_EASYTAG="Logiciel d'édition des tags ou metadata des fichiers audios, aussi appelés tags ID3"
+
+CA_FFMPEG="FFMPEG"
+CD_FFMPEG="Outil en cli très puissant pour convertir les fichiers vidéo d'un format à un autre"
+
+CA_FLACON="Flacon {SNAP}"
+CD_FLACON="Extraire les pistes d'un gros fichier audio"
+
+CA_FLAMESHOT="Flameshot"
+CD_FLAMESHOT="Outil de capture d'écran très complet avec de nombreuses possibilités"
+
+CA_FLOWBLADE="Flowblade {FLATPAK}"
+CD_FLOWBLADE="Logiciel de montage vidéo multi-piste performant"
+
+CA_FREECAD="Freecad"
+CD_FREECAD="Modélisation 3D libre pour la CAO/IAO/PLM, orientée génie mécanique"
+
+CA_GEARY="Geary"
+CD_GEARY="Logiciel de messagerie, alternative à Thunderbird et bien intégré à Gnome"
+
+CA_GIADA="Giada"
+CD_GIADA="Utilitaire de MAO permettant de créer/enregistrer des boucles, gérant jusqu'à 32 échantillons simultanés"
+
+CA_GIMP="Gimp"
+CD_GIMP="Éditeur d'images bitmap libre et opensource équivalent à Photoshop"
+
+CA_GNOMESOUNDRECORDER="Gnome Sound Recorder"
+CD_GNOMESOUNDRECORDER="Logiciel basique d'enregistrement de son pour Gnome"
+
+CA_GTHUMB="gThumb"
+CD_GTHUMB="Gestionnaire de photo pour Gnome pour mieux les organiser et les importer depuis un APN"
+
+CA_HANDBRAKE="Handbrake"
+CD_HANDBRAKE="Transcodage de n'importe quel fichier vidéo"
+
+CA_HYDROGEN="Hydrogen"
+CD_HYDROGEN="Synthétiseur de boite à rythme basé sur les patterns avec connexion possible d'un séquenceur externe"
+
+CA_IMCOMPRESSOR="ImCompressor {FLATPAK}"
+CD_IMCOMPRESSOR="Compresseur d'images supportant les formats PNG/JPEG. Supporte avec ou sans perte, avec ou non les métadonnées"
+
+CA_INKSCAPE="Inkscape"
+CD_INKSCAPE="Éditeur d'images vectorielles libre et opensource."
+
+# CA_K3D="K-3D"
+# CD_K3D="Animation et modélisation polygonale et modélisation par courbes"
+
+CA_KAZAM="Kazam"
+CD_KAZAM="Logiciel de capture vidéo de votre bureau"
+
+CA_KDENLIVE="KdenLive"
+CD_KDENLIVE="Editeur vidéo non-linéaire pour monter sons et images avec des effets spéciaux"
+
+CA_KOLOURPAINT="KolourPaint"
+CD_KOLOURPAINT="Logiciel basique de dessin équivalent à Paint"
+
+CA_KRITA="Krita"
+CD_KRITA="Outil d'édition et retouche d'images, orienté plutôt vers le dessin bitmap"
+
+CA_LIGHTWORKS="LightWorks 2020 (béta)" 
+CD_LIGHTWORKS="Logiciel de montage vidéo professionnel non-linéaire"
+
+CA_LIBRECAD="LibreCad"
+CD_LIBRECAD="Anciennement CADubuntu, DAO 2D pour modéliser des dessins techniques"
+
+CA_LIVES="Lives"
+CD_LIVES="Dispose des fonctionnalités d'éditions vidéo/son classique, des filtres et multipiste"
+
+CA_LUMINANCE="Luminance HDR"
+CD_LUMINANCE="Logiciel libre de réalisation d'image HDR supportant les formats HDR : OpenEXR, RGBE, Tiff, Raw"
+
+CA_LMMS="LMMS (Lets Make Music Software)"
+CD_LMMS="Station audio opensource crée par des musiciens pour les musiciens"
+
+CA_MHWAVEEDIT="MhWaveEdit"
+CD_MHWAVEEDIT="Application libre d'enregistrement et d'édition audio complète distribuée sous GPL"
+
+CA_MINUET="Minuet"
+CD_MINUET="Logiciel libre pour l'éducation musicale (apprentissage solfège etc...)"
+
+CA_MIXXX="Mixxx"
+CD_MIXXX="Logiciel pour Dj pour le mixage de musique"
+
+CA_MUSESCORE="MuseScore"
+CD_MUSESCORE="L'éditeur de partitions de musique le plus utilisé au monde"
+
+CA_MYPAINT="MyPaint"
+CD_MYPAINT="Logiciel de peinture numérique développé en Python"
+
+CA_NATRON="Natron {SNAP}"
+CD_NATRON="Programme de post-prod destiné au compositing et aux effets spéciaux"
+
+CA_OBS="OBS (OpenBroadcaster Software)"
+CD_OBS="Logiciel très utilisé par les gameurs pour faire du streaming de jeux (live)"
+
+CA_OPENSCAD="OpenSCAD"
+CD_OPENSCAD="Modélisation paramétrique gérant les formats AutoCAD DXF, Object file format et les fichiers de stéréolithographie"
+
+CA_OPENSHOT="OpenShot Video Editor"
+CD_OPENSHOT="Editeur vidéo, libre et écrit en Python (NB: Blender+Inkscape seront installés en dépendances)"
+
+CA_OPENTOONZ="OpenToonz {SNAP}"
+CD_OPENTOONZ="Logiciel d'animation vectorielle/bitmap 2D qui permet de fabriquer des dessins animés"
+
+CA_PEEK="Peek"
+CD_PEEK="Outil de création de Gif animé à partir d'une capture vidéo"
+
+CA_PINTA="Pinta"
+CD_PINTA="Graphisme simple équivalent à Paint.NET"
+
+CA_PITIVI="Pitivi"
+CD_PITIVI="Logiciel de montage vidéo basique avec une interface simple"
+
+CA_PIXELUVO="Pixeluvo"
+CD_PIXELUVO="Une autre alternative à Photoshop mais il reste propriétaire"
+
+CA_ROSEGARDEN="Rosegarden"
+CD_ROSEGARDEN="Création musicale avec édition des partitions et peut s'interfacer avec des instruments"
+
+CA_SHOTCUT="Shotcut {SNAP}"
+CD_SHOTCUT="Editeur de vidéos libre, open source, gratuit et multiplateforme"
+
+CA_SIMPLESCREENRECORDER="Simple Screen Recorder"
+CD_SIMPLESCREENRECORDER="Autre alternative pour la capture vidéo"
+
+CA_SOUNDJUICER="Sound-Juicer"
+CD_SOUNDJUICER="Pour extraire les pistes audios d'un cd"
+
+CA_SWEETHOME="Sweethome 3D"
+CD_SWEETHOME="Aménagement d'intérieur pour dessiner les plans d'une maison, placement des meubles..."
+
+CA_UNITY3DEDITOR="Unity3D Editor (via l'AppImage 'UnityHub')"
+CD_UNITY3DEDITOR="Editeur pour le moteur de jeu  3D 'Unity' développé par Unity Technologies"
+
+CA_WINFF="WinFF"
+CD_WINFF="Encodage vidéo rapide dans différents formats"
+
+SCT_OFFICE="______ [[ BUREAUTIQUE ]] ______"
+
+CA_CALLIGRA="Calligra Suite"
+CD_CALLIGRA="suite bureautique de KDE, il s'intègre donc bien avec l'environnement kde/plasma"
+
+CA_FRDIC="Dictionnaire FR"
+CD_FRDIC="Dictionnaires Français : entre autre pour utilisation avec LibreOffice et Firefox."
+
+CA_FBREADER="FBReader"
+CD_FBREADER="Lecteur de livres électroniques e-books supportant les formats (epub, fb2, chm...)"
+
+CA_FEEDREADER="FeedReader"
+CD_FEEDREADER="Agrégateur RSS moderne pour consulter vos fils d'informations RSS"
+
+CA_FREEMIND="FreeMind {SNAP}"
+CD_FREEMIND="Logiciel libre pour créer des cartes heuristiques, des diagrammes de connexions sémantiques"
+
+CA_FREEOFFICE="FreeOffice"
+CD_FREEOFFICE="Suite bureautique propriétaire, gratuite en utilisation privée, nécessite de l'activer"
+
+CA_FREEPLANE="Freeplane"
+CD_FREEPLANE="Création de cartes heuristiques (Mind Map) avec des diagrammes représentant les connexions sémantiques"
+
+CA_GNOMEOFFICE="Gnome Office Pack"
+CD_GNOMEOFFICE="Pack de logiciel bureautique de Gnome : Abiword, Gnumeric, Dia, Planner, Glabels, Glom, Gnucash"
+
+CA_GRAMPS="Gramps"
+CD_GRAMPS="Logiciel libre et multiplateforme de gestion/recherche généalogique"
+
+CA_JOPLIN="Joplin {APPIMAGE}"
+CD_JOPLIN="Saisie de notes et listes de choses à faire"
+
+CA_LIBREOFFICEDEPOT="LibreOffice (version des dépots)"
+CD_LIBREOFFICEDEPOT="La meilleur suite bureautique, et en plus elle est libre, multi-plateforme et gratuite."
+
+CA_LIBREOFFICEFRESH="LibreOffice backporté {PPA}"
+CD_LIBREOFFICEFRESH="Permet d'avoir systématiquement la dernière version stable possible de LibreOffice"
+
+CA_OFFICEWEBAPPS="MS Office Web Apps {SNAP}"
+CD_OFFICEWEBAPPS="Application non-officiel pour se connecter aux applications bureautique online de Microsoft (Office 365)"
+
+CA_LIBREOFFICESUP="Supplément pour LibreOffice"
+CD_LIBREOFFICESUP="Supplément : icones, modèles de documents et clipart, extension Grammalecte activé"
+
+CA_MASTERPDFEDITOR="Master PDF Editor"
+CD_MASTERPDFEDITOR="éditeur PDF propriétaire capable de gérer les formulaires CERFA/XFA"
+
+CA_NOTESUP="Notes Up {FLATPAK}"
+CD_NOTESUP="éditeur et manager de notes avec markdown, simple mais efficace"
+
+CA_ONLYOFFICE="OnlyOffice {SNAP}"
+CD_ONLYOFFICE="suite bureautique multifonctionnelle intégrée au CRM, avec jeu d'outils de collaboration"
+
+CA_OPENOFFICE="OpenOffice {Script LinInstall}"
+CD_OPENOFFICE="suite bureautique opensource alternative, moins répendu et moins dynamique que LibreOffice"
+
+CA_PANDOC="Pandoc"
+CD_PANDOC="Le couteau suisse de la création des documents en CLI permettant de convertir des documents dans différents formats"
+
+CA_PDFMOD="PdfMod"
+CD_PDFMOD="logiciel permettant diverses modifications sur vos PDF"
+
+CA_PDFSAM="PdfSam Basic"
+CD_PDFSAM="Outil pratique pour scinder, fusionner, faire pivoter/mélanger/extraire des pages de fichier PDF"
+
+CA_PDFSHUFFLER="PdfShuffler"
+CD_PDFSHUFFLER="Petit logiciel pour faire des modifs de PDF : supprimer des pages, rogner, tourner, ré-arranger l'ordre etc..."
+
+CA_POLICEMST="Police d'écriture Microsoft"
+CD_POLICEMST="Ajoute les polices d'écriture de Microsoft pour ne pas avoir de déformation de document venant de MO"
+
+CA_PROJECTLIBRE="ProjectLibre"
+CD_PROJECTLIBRE="Alternative à Microsoft Project pour gérer/planifier des projets"
+
+CA_SCENARI="Scenari Suite {Script LinInstall}"
+CD_SCENARI="Edition avancée de chaîne éditoriale (contient scenarichaine v4.2 et Opale v3.7)"
+
+CA_SCRIBUS="Scribus"
+CD_SCRIBUS="Logiciel de PAO, convient plutôt pour la réalisation de plaquettes, livres et magazines"
+
+CA_WPSOFFICE="WPS Office 2019"
+CD_WPSOFFICE="Suite bureautique propriétaire avec une interface proche de Microsoft Office"
+
+CA_XMIND="XMind Zen 2020"
+CD_XMIND="Logiciel de création de schéma de carte heuristique pour refléter des pensées de façon visuelle"
+
+CA_XOURNAL="Xournal"
+CD_XOURNAL="Logiciel de prise de notes manuscrites très utile et complet, équivalent à 'Microsoft OneNote'"
+
+CA_XPAD="Xpad"
+CD_XPAD="Gestion de Post-it."
+
+CA_ZIM="Zim"
+CD_ZIM="Wiki en local avec une collection de pages et de marqueurs"
+
+SCT_EDUSCIENCE="______ [[ SCIENCE / EDUCATION ]] ______"
+
+CA_ALGOBOX="Algobox"
+CD_ALGOBOX="Logiciel libre d'aide à l'élaboration/exécution d'algorithmes en mathématique"
+
+CA_AMC="AMC (Auto-Multiple-Choice QCM)"
+CD_AMC="Idéal pour les profs : permet de créer des QCM et les corrigent automatiquement"
+
+CA_ASTROEDU="Astro-education pack"
+CD_ASTROEDU="Meta-paquet d'Astronomie pour l'éducation : Kstar, Gpredict, OpenUniverse..."
+
+CA_AVOGADRO="Avogadro"
+CD_AVOGADRO="Editeur/visualiseur avancé de molécules pour le calcul scientifique en chimie"
+
+CA_CELESTIA="Celestia {APPIMAGE}"
+CD_CELESTIA="Simulation spatiale en temps réel qui permet d’explorer l'univers en 3D (toute dernière version)"
+
+CA_CONVERTALL="ConvertAll"
+CD_CONVERTALL="L'utilitaire ultime pour convertir des unités de mesure avec un très grand choix"
+
+CA_GANTTPROJECT="GanttProject"
+CD_GANTTPROJECT="Planification d'un projet à travers la réalisation d'un diagramme de Gantt"
+
+CA_GCOMPRIS="GCompris"
+CD_GCOMPRIS="Suite de logiciels ludo-éducatifs adapté pour les enfants de 2 à 10 ans"
+
+CA_GELEMENTAL="Gelemental"
+CD_GELEMENTAL="Tableau périodique regroupant de nombreuses informations sur les éléments chimiques"
+
+CA_GEOGEBRA="GeoGebra"
+CD_GEOGEBRA="Géométrie dynamique pour manipuler des objets avec un ensemble de fonctions algébriques)"
+
+CA_GNOMEMAPS="Cartes (Gnome Maps)"
+CD_GNOMEMAPS="Visionneur de cartes utilisant OpenStreetMap riche en données géographiques"
+
+CA_GOOGLEEARTH="Google Earth Pro"
+CD_GOOGLEEARTH="Globe terrestre de Google pour explorer la planète"
+
+CA_MARBLE="Marble"
+CD_MARBLE="Globe virtuel opensource développé par KDE dans le cadre du projet KdeEdu"
+
+CA_MBLOCK="MBlock {Ne pas utiliser pr l'instant}"
+CD_MBLOCK="Environnement de programmation basé sur Scratch 2 pour Arduino"
+
+CA_OCTAVE="Octave"
+CD_OCTAVE="Logiciel de calcul numérique (comme Matlab ou Scilab) léger et relativement simple d'emploi"
+
+CA_OPENBOARD="OpenBoard {FLATPAK}"
+CD_OPENBOARD="Tableau numérique interactif, fork d'OpenSankoré"
+
+CA_OPTGEO="OptGeo"
+CD_OPTGEO="Logiciel d’optique géométrique libre et opensource"
+
+CA_PLANNER="Planner"
+CD_PLANNER="Gestionnaire de planning/projets avec diagrammes de Gantt. Alternative à Microsoft Project"
+
+CA_QGIS="Qgis Desktop {FLATPAK}"
+CD_QGIS="Créez, éditez, visualisez, analysez et publiez des informations géographiques"
+
+CA_SAGEMATH="SageMath"
+CD_SAGEMATH="Alternative opensource aux systèmes de calcul formel Magma, Maple, et Mathematica"
+
+CA_SCILAB="SciLab"
+CD_SCILAB="Logiciel libre de calcul (matriciel) similaire à Matlab ou Octave"
+
+CA_SCRATCH="Scratch 3 Hors-ligne [HTML5 / Depuis un navigateur]"
+CD_SCRATCH="Language de programmation visuel libre, créé par le MIT, à vocation éducative et ludique"
+
+CA_STELLARIUM="Stellarium"
+CD_STELLARIUM="Planétarium avec l'affichage du ciel réaliste en 3D avec simulation d'un téléscope"
+
+CA_TOUTENCLIC="ToutEnClic"
+CD_TOUTENCLIC="Cahier virtuel pour les enfants étant physiquement dans l’impossibilité d’écrire"
+
+CA_XCAS="XCas"
+CD_XCAS="Le couteau suisse des maths : calcul formel, graphe de fonction, géométrie, tableur/stats etc..."
+
+SCT_VIRTUALISATION_EMULATION="______ [[ VIRTUALISATION, EMULATION, CONTENEURISATION ]] ______"
+
+CA_ANBOX="Anbox"
+CD_ANBOX="Emulateur de système mobile Android permettant donc de lancer des applications Android"
+
+CA_CITRA="Citra {SNAP}"
+CD_CITRA="Emulateur pour Nintendo 3DS. ~70% des jeux testés fonctionnent"
+
+CA_DESMUME="Desmume"
+CD_DESMUME="Emulateur Nintendo DS"
+
+CA_DOCKER="Docker"
+CD_DOCKER="Programme libre et connu pour faire de la conteneurisation de logiciels"
+
+CA_DOLPHIN="Dolphin Emulator"
+CD_DOLPHIN="Projet opensource d'émulateur pour Gamecube et Wii. Emulateur activement développé !"
+
+CA_DOSBOX="Dosbox"
+CD_DOSBOX="Emulateur DOS permettant de jouer aux vieux jeux MSDOS"
+
+CA_GNOMEBOXES="Gnome Boxes"
+CD_GNOMEBOXES="Outil de virtualisation simple de l'environnement Gnome"
+
+CA_GNS="GNS3 (Graphical Network Simulator) {PPA}"
+CD_GNS="Logiciel libre permettant l'émulation et la simulation de réseaux informatiques"
+
+CA_QEMUKVM="Qemu/Kvm X86/ARM (avec Virtual-Manager)"
+CD_QEMUKVM="logiciel libre de machine virtuelle, pouvant émuler un processeur et différentes architectures"
+
+CA_LXC="Lxc (LinuX Containers)"
+CD_LXC="Virtualisation d'environnements Linux isolés les uns des autres dans des conteneurs"
+
+CA_MGBA="mGBA"
+CD_MGBA="Emulateur libre permettant de jouer aux jeux pour Game Boy Advance"
+
+CA_POL="PlayOnLinux"
+CD_POL="Permet de faire tourner des applications/jeux Windows sous Linux via Wine"
+
+CA_PPSSPP="PpSsPp {FLATPAK}"
+CD_PPSSPP="Emulateur libre de PSP (PlayStation Portable)"
+
+CA_RETROARCH="RetroArch"
+CD_RETROARCH="Implémentation de libretro qui sert de frontal pour les émulateurs et les moteurs de jeu"
+
+CA_VBOXDEPOT="Virtualbox (dépot Ubuntu20.04 : vb6.1)"
+CD_VBOXDEPOT="Célèbre logiciel de virtualisation pour les systèmes Windows/Mac/Linux/Bsd..."
+
+CA_VBOXLAST="Virtualbox (dernière version du dépot d'Oracle)"
+CD_VBOXLAST="Dernière version stable possible installé depuis le dépot d'Oracle"
+
+CA_VMWARE="VMWare Workstation Player"
+CD_VMWARE="Version gratuite de VmWare Workstation sans les fonctions avancées (pas de snapshot possible etc...)"
+
+CA_VMWAREPRO="VMWare Workstation Pro"
+CD_VMWAREPRO="Version complète de VmWare WS (payante). NB : Vs ne pouvez pas cumuler le Player + le Pro en même temps"
+
+CA_WINE="Wine (dernière version)"
+CD_WINE="Une sorte d'émulateur pour faire tourner des applis/jeux conçu pour Windows"
+
+SCT_UTILITAIRES_GRAPHIQUE="______ [[ UTILITAIRES GRAPHIQUES DIVERS ]] ______"
+
+CA_APPOUTLET="App-Outlet {SNAP}"
+CD_APPOUTLET="Un store d'application universel pour gérer les paquets Snaps, Flatpaks et AppImages"
+
+CA_BRASERO="Brasero"
+CD_BRASERO="Graveur de CD/DVD libre et opensource."
+
+CA_CHEESE="Cheese"
+CD_CHEESE="Outil pour prendre des photos/vidéos à partir d'une webcam"
+
+CA_DEJADUP="DejaDup (Sauvegarde)"
+CD_DEJADUP="Utilitaire de sauvegarde très simple. Interface graphique pour l'outil duplicity"
+
+CA_DIODON="Diodon"
+CD_DIODON="Gestionnaire de presse-papiers GTK+"
+
+CA_ELECTRUM="Electrum {APPIMAGE}"
+CD_ELECTRUM="Porte-monnaie numérique de Crypto-Monnaie pour BTC (BitCoin)"
+
+CA_ETCHER="Etcher {APPIMAGE}"
+CD_ETCHER="Pour la création de clé usb bootable à partir d'image iso ou le flashage de carte SD à partir de fichier img"
+
+CA_ETHEREUMWALLET="Ethereum Wallet"
+CD_ETHEREUMWALLET="Porte-monnaie numérique de Crypto-Monnaie pour ETH (Ethereum)"
+
+CA_GITCOLA="GitCola"
+CD_GITCOLA="Client Git graphique puissant et configurable"
+
+CA_GLABELS="Glabels"
+CD_GLABELS="Utilitaire de création d'étiquettes, pochettes, cartes de visite..."
+
+CA_GNOME_DISK="Gnome Disk Utility"
+CD_GNOME_DISK="Administration de disques."
+
+CA_GNOMERECIPES="Gnome Recipes"
+CD_GNOMERECIPES="Application Gnome spécialisée dans les recettes de cuisine"
+
+CA_GSYSLOG="Gnome System Log Viewer"
+CD_GSYSLOG="Lecteur de Log système."
+
+CA_GSYSMON="Gnome System Monitor"
+CD_GSYSMON="Moniteur de processus."
+
+CA_GPARTED="GParted"
+CD_GPARTED="Gestionnaire de partition très utilisé"
+
+CA_GSHUTDOWN="GShutdown"
+CD_GSHUTDOWN="Petit utilitaire pour programmer l'extinction du poste de manière graphique"
+
+CA_HOMEBANK="HomeBank"
+CD_HOMEBANK="Logiciel de comptabilité personnelle pour gérer les opérations des comptes bancaires, épargne etc..."
+
+CA_MELD="Meld"
+CD_MELD="Interface graphique pour comparer les différences entre plusieurs fichiers"
+
+CA_MULTISYSTEM="MultiSystem"
+CD_MULTISYSTEM="Utilitaire permettant de créer une clé usb bootable avec plusieurs OS"
+
+CA_ARCHIVAGE="Pack Archivage"
+CD_ARCHIVAGE="Ajoute le support des archives de différentes extensions (7zip, Rar etc...)"
+
+CA_REDSHIFT="RedShift"
+CD_REDSHIFT="Ajuste la température de couleur de l'écran, fonction déjà incluse dans Gnome avec le mode nuit"
+
+CA_SUBLIM_NAUT="Subliminal pour Nautilus"
+CD_SUBLIM_NAUT="Récupération de sous-titre de manière automatique pour Nautilus"
+
+CA_SUB_EDIT="Subtitle Editor"
+CD_SUB_EDIT="Éditeur de fichiers de sous-titre (modification, synchronisation ...)"
+
+CA_SYNAPTIC="Synaptic"
+CD_SYNAPTIC="Gestionnaire graphique pour les paquets deb (incompatible avec Wayland)"
+
+CA_TERMINATOR="Terminator"
+CD_TERMINATOR="Non il ne sagit pas du film mais d'un terminal virtuel avec partage de fenêtre"
+
+CA_TILIX="Tilix"
+CD_TILIX="Emulateur de terminal avancé, moderne et facile d'utilisation"
+
+CA_TIMESHIFT="TimeShift"
+CD_TIMESHIFT="Outil de sauvegarde pour créer/restaurer facilement des instantanés"
+
+CA_VARIETY="Variety"
+CD_VARIETY="Gestionnaire de wallpaper très complet, peux prendre en charge des sources comme la NASA, Flickr etc...)"
+
+SCT_UTILITAIRES_CLI="______ [[ UTILITAIRES EN CLI ]] ______"
+
+CA_ASCIINEMA="Asciinema"
+CD_ASCIINEMA="Permet d'enregistrer & partager le contenu de votre terminal par ex pour une démo en ligne de commande"
+
+CA_DDRESCUE="DDRescue"
+CD_DDRESCUE="Permet de dupliquer le mieux possible les parties intactes des disques usagés"
+
+CA_FD="Fdfind"
+CD_FD="Un meilleur find : en couleur et avec regexp, par défaut"
+
+CA_GIT="Git"
+CD_GIT="Le plus célèbre des gestionnaire de sources distribués (DVCS)."
+
+CA_HTOP="Htop"
+CD_HTOP="Commande top amélioré."
+
+CA_GLANCES="Glances"
+CD_GLANCES="Comme Htop mais encore plus complet (utilisation disque, réseau, température...)"
+
+CA_HG="Mercurial (hg)"
+CD_HG="Gestionnaire de sources distribués (DVCS), avec pour commande: hg"
+
+CA_NIX="Nix package manager"
+CD_NIX="Permet de pouvoir installer des paquets NiX (gestionnaire de paquet alternatif)"
+
+CA_POWERSHELL="PowerShell {SNAP}"
+CD_POWERSHELL="Pour utiliser l'utilitaire PowerShell dans Linux (se lance via la commande : pwsh)"
+
+CA_RIPGREP="Ripgrep /rg"
+CD_RIPGREP="Un meilleur grep (récursif par défaut)"
+
+CA_RTORRENT="Rtorrent"
+CD_RTORRENT="Client BitTorrent en ligne de commande donc très léger"
+
+CA_SCREEN="Screen"
+CD_SCREEN="Multiplexeur de terminaux pour en ouvrir plusieurs dans une même console et pouvoir s'en détacher."
+
+CA_SMARTMONTOOLS="SmartmonTools (smartctl)"
+CD_SMARTMONTOOLS="Fournit l'état physiques des disques durs et des SSD voir de certaines clés USB."
+
+CA_TESTDISK="TestDisk"
+CD_TESTDISK="Permet de ressusciter les partitions supprimées accidentellement ou les contenus des fichiers"
+
+CA_TLDR="TLDR"
+CD_TLDR="Un MAN simplifié pour aller à l'essentiel au niveau des commandes"
+
+CA_WORDGRINDER="Wordgrinder"
+CD_WORDGRINDER="Traitement de texte léger en CLI, Formats OpenDocument, HTML import and export"
+
+SCT_RESEAUSECURITE="______ [[ RESEAUX ET SECURITE ]] ______"
+
+CA_AIRCRACK="Aircrack"
+CD_AIRCRACK="Outil pour tester la sécurité de votre réseau wifi"
+
+CA_ANSIBLE="Ansible"
+CD_ANSIBLE="Outil d'automatisation (pour le déploiement et gestion de machines distantes)."
+
+CA_BITWARDEN="BitWarden {SNAP}"
+CD_BITWARDEN="Gestionnaire de mots de passe open source qui permet de générer/conserver des mots de passe de manière sécurisée"
+
+CA_CISCOVPN="Cisco VPN (via module OpenConnect de NetworkManager)"
+CD_CISCOVPN="Permet la connexion au VPN Cisco dans NetworkManager (pour Gnome) sans passer par AnyConnect Secure Mobility"
+
+CA_CRYPTER="Crypter {APPIMAGE}"
+CD_CRYPTER="Permet de chiffrer/déchiffrer des fichiers simplement"
+
+CA_CRYPTOMATOR="Cryptomator {APPIMAGE}"
+CD_CRYPTOMATOR="Programme dédié au stockage chiffré de fichiers sur le cloud"
+
+CA_ENPASS="Enpass Password Manager"
+CD_ENPASS="Coffre-fort pour mdp, cpt bancaire, identité..., chiffrement AES-256 bits"
+
+CA_FUSIONINVENTORY="FusionInventory Agent"
+CD_FUSIONINVENTORY="Installe l'agent pour Fusion Inventory (pour être référencé dans l'inventaire du parc informatique dans GLPI par ex)"
+
+CA_GUFW="Gufw"
+CD_GUFW="Interface graphique pour le pare-feu Ufw"
+
+CA_GWAKEONLAN="gWakeOnLan"
+CD_GWAKEONLAN="Permet de réveiller votre PC depuis le réseau local ou à distance"
+
+CA_KEEPASS="Keepass"
+CD_KEEPASS="Utilise mono, centralise la gestion de vos mots de passe personnels, protégé par un master password"
+
+CA_KEEPASSXC="KeepassXC"
+CD_KEEPASSXC="Alternative recommandée à Keepass remplaçant mono par Qt et forké de KeepassX"
+
+CA_MYSQLWB="MySQL Workbench"
+CD_MYSQLWB="Outil de gestion de server MySQL : génération de modèles (MCD/MPD)."
+
+CA_OCSINVENTORY="OcsInventory Agent"
+CD_OCSINVENTORY="Installe l'agent pour OCS Inventory (pour être référencé dans l'inventaire du parc informatique avec OCS)"
+
+CA_OPHCRACK="OphCrack"
+CD_OPHCRACK="Logiciel libre permettant de casser les mots de passe des utilisateurs d'OS Windows (ou depuis multiboot)"
+
+CA_PGADMIN="PgAdmin3"
+CD_PGADMIN="Interface graphique pour administrer des bases de données PostgreSQL"
+
+CA_PUPPET="Puppet Agent"
+CD_PUPPET="Si vos postes Ubuntu en milieu professionnel sont gérés via Puppet pour le déploiement d'applications."
+
+CA_SERVERLAMP="Serveur LAMP (Linux Apache Mysql Php)"
+CD_SERVERLAMP="Ajoute 'Apache' comme serveur web, 'MySQL' pour les bases de données et 'PHP' pour le language web (+ des modules utiles)"
+
+CA_SIRIKALI="Sirikali"
+CD_SIRIKALI="Interface Qt pour gérer les lecteurs chiffrés ecryptfs, cryfs, encfs, gocryptfs, securefs"
+
+CA_UPM="UPM (Universal Password Manager) {PPA} [[HS!!]]"
+CD_UPM="Gestionnaire de mots de passe multi-plateforme (écrit en Java)."
+
+CA_VERACRYPT="VeraCrypt {PPA}"
+CD_VERACRYPT="Utilitaire libre utilisé pour le chiffrement, forké sur l'ancien projet TrueCrypt abandonné"
+
+CA_WIRESHARK="WireShark {Nécessite intervention !}"
+CD_WIRESHARK="Analyseur de paquets utilisé dans le dépannage et l'analyse de réseaux"
+
+SCT_GAMING="______ [[ GAMING ]] ______"
+
+CA_0AD="0ad : Empires Ascendant"
+CD_0AD="Jeu de stratégie en temps réel (RTS)"
+
+CA_ALBION="Albion Online {FLATPAK}"
+CD_ALBION="MMORPG avec un système de quête et donjons"
+
+CA_ALIENARENA="Alien Arena"
+CD_ALIENARENA="Jeu de tir à la première personne, gratuit, dérivé du moteur de Quake"
+
+CA_ASSAULTCUBE="Assault Cube"
+CD_ASSAULTCUBE="Clone de Counter Strike"
+
+CA_WESNOTH="Battle for Wesnoth"
+CD_WESNOTH="Jeu de Stratégie, le joueur doit se battre pour retrouver sa place dans le royaume"
+
+CA_DOFUS="Dofus (via Ankama Launcher) {APPIMAGE}"
+CD_DOFUS="Ce jeu devra être installé depuis le lanceur d'Ankama, celui-ci est au format AppImage"
+
+CA_EXTREMETUXRACER="Extreme Tux Racer"
+CD_EXTREMETUXRACER="Faites glisser Tux sur le ventre le plus vite possible, ramasser au vol des poissons sur le parcours semé d'embûches"
+
+CA_FLIGHTGEAR="FlightGear Flight Simulator (FGFS)"
+CD_FLIGHTGEAR="Simulateur de vol libre, gratuit et multi-plateforme"
+
+CA_FROZENBUBBLE="Frozen Bubble"
+CD_FROZENBUBBLE="Jeu français dont le but est d'aligner des bulles de même couleur pour les faire tomber"
+
+CA_GNOMEGAMES="Gnome Games"
+CD_GNOMEGAMES="Pack d'une dizaine de mini-jeux pour Gnome (Sudoku, Chess etc...)"
+
+CA_KAPMAN="Kapman"
+CD_KAPMAN="Kapman est un clone du jeu bien connu Pac-Man"
+
+CA_LOL="League Of Legend (LoL) {SNAP}"
+CD_LOL="Le célèbre MOBA jouable sous Linux via ce Snap packagé avec Wine"
+
+CA_LUTRIS="Lutris"
+CD_LUTRIS="Plate-forme de jeux équivalente à Steam mais libre"
+
+CA_MEGAGLEST="Megaglest"
+CD_MEGAGLEST="RTS 3d dans un monde fantastique avec 2 factions qui s'affrontent : la magie et la technologie"
+
+CA_MINECRAFT="Minecraft"
+CD_MINECRAFT="Un des plus célèbres jeux sandbox, jeu propriétaire et payant"
+
+CA_MINETEST="Minetest"
+CD_MINETEST="Un clone de Minecraft mais libre/opensource et totalement gratuit"
+
+CA_OPENARENA="OpenArena"
+CD_OPENARENA="Clone libre du célèbre jeu Quake"
+
+CA_OPENBVE="OpenBVE"
+CD_OPENBVE="Jeu 3D libre de simulation de train"
+
+CA_PINGUS="Pingus"
+CD_PINGUS="Clone de Lemmings, vous devrez aider des manchots à traverser des obstacles"
+
+CA_POKERTH="PokerTH"
+CD_POKERTH="Jeu de poker opensource Texas Holdem No Limit jusqu'à 10 participants, humains ou IA"
+
+CA_QUAKE="Quake {SNAP}"
+CD_QUAKE="Pour les nostaligues : le célèbre jeu FPS sortie dans les années 90"
+
+CA_REDECLIPSE="Red Eclipse"
+CD_REDECLIPSE="Jeu de tir subjectif en mode solo et multijoueur basé sur le moteur de jeu Cube Engine 2"
+
+CA_RUNESCAPE="RuneScape"
+CD_RUNESCAPE="Un des MMORPG gratuit les plus populaires au monde avec plus de 15 millions de comptes F2P"
+
+CA_STEAM="Steam"
+CD_STEAM="Plateforme de distribution de jeux. Permet d'installer un très gros paquet de jeux"
+
+CA_SUPERTUX="SuperTux"
+CD_SUPERTUX="Clone de Super Mario mais avec un pingouin"
+
+CA_SUPERTUXKART="SuperTuxKart"
+CD_SUPERTUXKART="Clone de Super Mario Kart"
+
+CA_TEEWORLDS="Teeworlds"
+CD_TEEWORLDS="Jeu de tir TPS multijoueur 2D, vous incarnez une petite créature, le tee"
+
+CA_TMNF="Trackmania Nation Forever {SNAP}"
+CD_TMNF="Célèbre jeu de course de voiture déjanté (émulé via Wine)"
+
+CA_UT4="Unreal Tournament 4 Pre-Alpha (récupère juste l'installeur)"
+CD_UT4="Jeu vidéo de tir à la première personne très dynamique"
+
+CA_XBOARD="XBoard + GNUChess"
+CD_XBOARD="Interface graphique de jeu d’échecs avec le moteur de jeu libre GNUChess"
+
+CA_XPLANE="XPlane 11 (récupère juste l'installeur)"
+CD_XPLANE="Simulateur de vol (avion divers, hélicoptère etc...) très complet équivalent à MS Flight Simulator (payant!)"
+
+CA_XQF="Xqf"
+CD_XQF="Explorateur de serveurs de jeu pour visualiser tous les serveurs de vos jeux de façon unifié"
+
+SCT_DEV="______ [[ DEVELOPPEMENT / PROGRAMMATION ]] ______"
+
+CA_ANDROIDSTUDIO="Android Studio {PPA}"
+CD_ANDROIDSTUDIO="IDE de Google spécialisé pour le développement d'application Android"
+
+CA_ANJUTA="Anjuta"
+CD_ANJUTA="IDE simple pour C/C++, Java, JavaScript, Python et Vala"
+
+CA_ARDUINOIDE="Arduino IDE"
+CD_ARDUINOIDE="Permet d'écrire et de télécharger des programmes pour des cartes electroniques compatibles Arduino"
+
+CA_ATOM="Atom {SNAP}"
+CD_ATOM="Editeur sous licence libre qui supporte les plug-ins Node.js et implémente GitControl"
+
+CA_BLUEFISH="BlueFish"
+CD_BLUEFISH="Editeur orienté développement web : HTML/PHP/CSS etc..."
+
+CA_BLUEGRIFFON="BlueGriffon"
+CD_BLUEGRIFFON="Editeur HTML/CSS avec aperçu du rendu en temps réel"
+
+CA_BRACKETS="Brackets {SNAP}"
+CD_BRACKETS="Editeur opensource d'Adobe pour le web design et dev web HTML, CSS, JavaScript..."
+
+CA_CODEBLOCKS="CodeBlocks"
+CD_CODEBLOCKS="IDE spécialisé pour les langages C/C++"
+
+CA_ECLIPSE="Eclipse {SNAP}"
+CD_ECLIPSE="Environnement de production de logiciels libre extensible s'appuyant principalement sur Java"
+
+CA_EMACS="Emacs"
+CD_EMACS="Le couteau suisse des éditeurs de texte, il fait tout mais il est complexe"
+
+CA_GDEVELOP="GDevelop {Script LinInstall}"
+CD_GDEVELOP="Appli opensource et multiplateforme de création de jeux"
+
+CA_GEANY="Geany"
+CD_GEANY="Éditeur de texte amélioré - Cadriciel."
+
+CA_INTELLIJIDEA="IntelliJ Idea {SNAP}"
+CD_INTELLIJIDEA="IDE Java commercial de JetBrains, plutôt conçu pour Java"
+
+CA_IPYTHON="iPython"
+CD_IPYTHON="Terminal interactif pour Python proposant des fonctionnalités telles l'introspection, syntaxe additionnelle, la complétion..."
+
+CA_JAVA="Java 13 JRE {PPA}"
+CD_JAVA="Dernière version stable de Java (JRE) soit actuellement la version 13"
+
+CA_LATEXFULL="LaTeX : pack complet (texlive-full ~3Go)"
+CD_LATEXFULL="Distribution TeX libre fournissant un environnement TeX/LaTeX complet et prêt à utiliser (+texmaths pour LO)"
+
+CA_NEOVIM="NeoVim"
+CD_NEOVIM="Editeur alternative à Vim. Il vise à améliorer l'extensibilité/maintenabilité de Vim"
+
+CA_NOTEPADQQ="NotePadqq"
+CD_NOTEPADQQ="Un clone de l'éditeur NotePad++ pour linux"
+
+CA_PIP3="Pip3 + Spyder {via Pip}"
+CD_PIP3="Permet l'installation de librairie Python via 'pip3 install' + ajout de l'IDE Python Spyder via pip" 
+
+CA_PYCHARM="PyCharm (version communautaire) {SNAP}"
+CD_PYCHARM="IDE pour le langage Python"
+
+CA_RSTUDIO="R + Rstudio"
+CD_RSTUDIO="Ajoute les paquets R de base (pour les calculs statistiques) + l'appli graphique RStudio (IDE pratique pour R)"
+
+CA_SCITE="SciTE (Scintilla Text Editor)"
+CD_SCITE="Editeur web avec une bonne coloration syntaxique"
+
+CA_SUBLIMETEXT="Sublime Text {SNAP}"
+CD_SUBLIMETEXT="Logiciel développé en C++ et Python prenant en charge 44 langages de programmation"
+
+CA_TEXMAKER="TexMaker"
+CD_TEXMAKER="Editeur LaTeX libre et gratuit avec support de l'unicode, correction orthographique, auto-complétion..."
+
+CA_TEXSTUDIO="TexStudio"
+CD_TEXSTUDIO="Environnement de dev intégré très puissant pour écrire des documents avec LaTeX"
+
+CA_TEXWORKS="TexWorks (LaTex)"
+CD_TEXWORKS="Langage de description de document avec un éditeur spécialisé LaTex"
+
+CA_VIM="Vim avec supplément"
+CD_VIM="Editeur de texte très puissant avec du contenu supplémentaire pour cet éditeur"
+
+CA_VSCODE="Visual Studio Code"
+CD_VSCODE="Développé par Microsoft, sous licence libre MIT"
+
+CA_VSCODIUM="VSCodium"
+CD_VSCODIUM="Fork de VisualStudio mais sans les merdouilles propriétaires de MS dedans pour faire du tracking / télémétrie"
+
+SCT_OPTIMISATION="______ [[ OPTIMISATION / TWEAK / DRIVER / CUSTOMISATION ]] ______"
+
+CA_IMPRIMANTE="Ajout du support des imprimantes HP (HPLIP)"
+CD_IMPRIMANTE="Pour les utilisateurs qui ont une imprimante HP"
+
+CA_SECURITECPTE="Augmenter la sécurité de votre compte"
+CD_SECURITECPTE="Si vous êtes plusieurs sur le PC, ceci empèche l'accès à votre home aux autres utilisateurs (défaut=lecture seule)"
+
+CA_BLEACHBIT="BleachBit"
+CD_BLEACHBIT="Outil de nettoyage d'espace disque, de protection de la vie privée et d'optimisation"
+
+CA_COLORFOLDER="ColorFolder"
+CD_COLORFOLDER="Permet de pouvoir choisir différentes couleurs pour vos dossiers, fonctionne sur Nautilus, Nemo, Caja et dérivés de Nautilus"
+
+CA_CONKY="Conky + 1 modèle de config"
+CD_CONKY="Permet d'avoir un panneau d'information sur le bureau, il faudra activer vous-même Conky au démarrage"
+
+CA_APPORTOFF="Désactivation message d'erreur"
+CD_APPORTOFF="Permet de désactiver l'affichage de la fenêtre avec un message d'erreur sous Ubuntu"
+
+CA_EXTINCTIONAUTO="Extinction automatique à 4H du matin"
+CD_EXTINCTIONAUTO="Avec cette option, si vous avez oublié d'éteindre votre PC le soir, il sera éteint de force à 4H du matin"
+
+CA_GCONF="Gnome Gconf Editor"
+CD_GCONF="Application pour configurer les paramètres de Gnome de façon relativement simplifié"
+
+CA_GWE="GWE - GreenWithEnvy {FLATPAK}"
+CD_GWE="Utilitaire pour contrôler l'overclocking/ventilateur des cartes graphiques Nvidia"
+
+CA_GS_AUGMENTATIONCAPTURE="Gnome Shell : capture vidéo fixé à 10min"
+CD_GS_AUGMENTATIONCAPTURE="Augmente la durée de capture vidéo (par défaut 30sec) à 600sec (soit 10 min)"
+
+CA_GS_MINIMISATIONFENETRE="Gnome Shell (DtD) : minimisation de fenêtre"
+CD_GS_MINIMISATIONFENETRE="Permet de minimiser une fenêtre depuis les icones de DashToDock"
+
+CA_GRUBCUSTOMIZER="Grub Customizer"
+CD_GRUBCUSTOMIZER="Application graphique permettant de configurer facilement le gestionnaire d'amorçage Grub"
+
+CA_GRUBDEFAULT="Grub : dernier OS lancé = choix par défaut"
+CD_GRUBDEFAULT="En cas de multiboot, sauvegarde le dernier OS lancé pour que ça soit le choix par défaut"
+
+CA_GRUBATTENTE="Grub : réduction de l'attente à 2s"
+CD_GRUBATTENTE="Permet de réduire le temps d'attente par défaut (10s) à 3s (+ supprime les tests de ram)"
+
+CA_GTWEAKTOOL="Gnome Tweak Tool (Ajustements) pour Gnome-Shell"
+CD_GTWEAKTOOL="Utilitaire très utile (voir indispensable) qui permet la gestion de paramètres supplémentaires (extension, animation...)"
+
+CA_DVDREAD="Lecture DVD commerciaux/Blu-Ray {Nécessite intervention !}"
+CD_DVDREAD="Permet de lire les DVD commerciaux chiffrés avec CSS et les Blu-Ray"
+
+CA_PACKEXTENSION="Pack d'extension Gnome Shell"
+CD_PACKEXTENSION="Ajoute des extensions pour Gnome : DashToDock, DashToPanel, Impatience; Météo, MonitorSystem, Caffeine"
+
+CA_PACKICON="Pack d'icones"
+CD_PACKICON="Ajoute des icones pour la customisation : Papirus, Numix, Breeze, GnomeBrave, Elementary, Oxygen"
+
+CA_PACKTHEME="Pack de thèmes"
+CD_PACKTHEME="Ajoute des thèmes pour la customisation : Arc, Numix, Materia, Yuyo, Human"
+
+CA_INTEL="Pilote Intel (propriétaire)"
+CD_INTEL="Installe le pilote propriétaire d'Intel (intel-microcode)"
+
+CA_NVIDIA_BP="Pilote propriétaire Nvidia backporté en version 440 (+ Vulkan) {PPA}"
+CD_NVIDIA_BP="Ajoute une version récente du pilote propriétaire de Nvidia depuis le ppa (recommandé pour les cartes graphiques Nvidia récentes)"
+
+CA_OPTIMIS_SWAP="Optimisation Swap"
+CD_OPTIMIS_SWAP="Permet de régler le swappiness à 95% (swap utilisé en dernier recours) et cache pressure à 50%"
+
+CA_SNAPREMPLACEMENT="Remplacement des Snaps par défaut"
+CD_SNAPREMPLACEMENT="Va désinstaller les Snaps pré-installés par défaut (Calculatrice...) et les réinstaller via APT à la place"
+
+CA_NAUTILUS_EXTRA="Suppléments pour Nautilus"
+CD_NAUTILUS_EXTRA="Ajoute des extensions/commandes supplémentaires pour le gestionnaire de fichier de Gnome 'Nautilus' (Compare, SendTo, Share...)"
+
+CA_SYSFIC="Systèmes de fichier supplémentaire"
+CD_SYSFIC="Ajoute le support des systèmes de fichier suivant : Btrfs, Exfat, Hfs, Hfs+, Xfs, Zfs"
+
+CA_TLP="TLP"
+CD_TLP="Gestionnaire de batterie pour les PC portables"
+
+CA_TLP_THINKPAD="TLP spécifique pour modèle Thinkpad {PPA}"
+CD_TLP_THINKPAD="Gestionnaire de batterie avec des paquets spéciaux pour les pc portables Thinkpad"
+
+CA_ZRAM="zRAM"
+CD_ZRAM="Compression de la RAM (pour améliorer les performances)."
+
+SCT_END="______ [[ FIN ]] ______"
+
+CA_RESTRICT_EXTRA="Restricted Extras"
+CD_RESTRICT_EXTRA="Ajoute des codecs supplémentaires (audio/vidéo)"
+
+CA_AUTOREMOVE="Nettoyage de fin"
+CD_AUTOREMOVE="Mise à jour + suppression automatique des paquets inutilisés (autoremove/purge)"
+
+CA_RES_DEP="Résolution des dépendances"
+CD_RES_DEP="Réparation des dépendances des logiciels téléchargés (et pas paquetés)."
+
+# End of Run Messages
+MSG_END_CANCEL_TITLE="Pas d'installation"
+MSG_END_CANCEL_TEXT="Vous avez choisi de ne rien installer!
+
+Relancez la commande et appuyez sur <b>VALIDER</b>, pour installer des applications supplémentaires.
+
+Voulez-vous voir les instructions supplémentaires après installation ?"
+
+MSG_END_TITLE="Opérations Manuelles"
+MSG_END_TEXT="L'installation est maintenant terminée ! !
+
+Voici des informations supplémentaires pour compléter votre installation :
+  * Merci de redémarrer votre PC pour prendre en compte tous les changements (notamment les logiciels installés via Flatpak peuvent nécessiter un reboot pour les raccourcis)
+
+   * Quelques extensions de Gnome Shell utiles à installer sur <a href='https://extensions.gnome.org'>le site des extensions de Gnome</a> :
+   - <a href='https://extensions.gnome.org/extension/15/alternatetab/'>AlternateTab</a> : un plus joli Alt+Tab
+   - <a href='https://extensions.gnome.org/extension/6/applications-menu/'>Application Menu</a> : un menu pour les applications
+   - <a href='https://extensions.gnome.org/extension/8/places-status-indicator/'>Places Status Indicator</a> : un menu avec les emplacements définis dans Nautilus.
+   - <a href='https://extensions.gnome.org/extension/21/workspace-indicator/'>Workspace Indicator</a> : un indicateur dans la barre supérieure qui indique le numéro de l'espace de travail (workspace) et qui propose un menu pour en changer.
+   - <a href='https://extensions.gnome.org/extension/841/freon/'>Freon</a> : pour afficher les températures et vitesses de ventilateur. Il faut installer les utilitaires pour lire les températures <tt>sudo apt-get install lm-sensors hddtemp &amp;&amp; sudo sensors-detect</tt>.
+   - un Clipboad Manager : <a href='https://extensions.gnome.org/extension/779/clipboard-indicator/'>Clipboard Indicator</a>.
+   - <a href='https://extensions.gnome.org/extension/104/netspeed/'>NetSpeed</a> : un excellent complément à <i>Systemmonitor</i>.
+   - <a href='https://extensions.gnome.org/extension/885/dynamic-top-bar/'>Dynamic Top Bar</a> pour avoir une <i>top bar</i> à la elementaryOs.
+   - <a href='https://extensions.gnome.org/extension/120/system-monitor/'>SystemMonitor</a> : le plus ancien et le plus intéressant (pour moi) (il fallait <a href='https://github.com/paradoxxxzero/gnome-shell-system-monitor-applet'>l'installer manuellement</a>, mais plus maintenant)."
