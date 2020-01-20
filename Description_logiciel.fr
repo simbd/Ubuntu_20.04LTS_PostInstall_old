@@ -228,6 +228,9 @@ CD_SLACK="Plate-forme de communication collaborative propriétaire avec gestion 
 CA_SUBDOWNLOADER="SubDownloader"
 CD_SUBDOWNLOADER="Téléchargement de sous-titres"
 
+CA_TEAMS="Teams for Linux (non-officiel) {SNAP}"
+CD_TEAMS="Client Electron non-officiel pour se connecter à MS Teams"
+
 CA_TEAMSPEAK="TeamSpeak {FLATPAK}"
 CD_TEAMSPEAK="Discussion à plusieurs dans des canaux, équivalent à Mumble mais propriétaire"
 
@@ -486,6 +489,9 @@ CD_PITIVI="Logiciel de montage vidéo basique avec une interface simple"
 CA_PIXELUVO="Pixeluvo"
 CD_PIXELUVO="Une autre alternative à Photoshop mais il reste propriétaire"
 
+CA_RAWTHERAPEE="Rawtherapee"
+CD_RAWTHERAPEE="Traitement d'images photographiques numériques pour le traitement d'images au format brut"
+
 CA_ROSEGARDEN="Rosegarden"
 CD_ROSEGARDEN="Création musicale avec édition des partitions et peut s'interfacer avec des instruments"
 
@@ -506,6 +512,9 @@ CD_UNITY3DEDITOR="Editeur pour le moteur de jeu  3D 'Unity' développé par Unit
 
 CA_WINFF="WinFF"
 CD_WINFF="Encodage vidéo rapide dans différents formats"
+
+CA_XNVIEW="XnView MP"
+CD_XNVIEW="Logiciel de visualisation, de retouche et de conversion d’images multi-plateforme"
 
 SCT_OFFICE="______ [[ BUREAUTIQUE ]] ______"
 
@@ -554,6 +563,9 @@ CD_LIBREOFFICESUP="Supplément : icones, modèles de documents et clipart, exten
 CA_MASTERPDFEDITOR="Master PDF Editor"
 CD_MASTERPDFEDITOR="éditeur PDF propriétaire capable de gérer les formulaires CERFA/XFA"
 
+CA_MCOMIX="MComix"
+CD_MCOMIX="Visionneuse d'image avancée et gratuite sous licence GPL conçu pour la lecture de bandes dessinées"
+
 CA_NOTESUP="Notes Up {FLATPAK}"
 CD_NOTESUP="éditeur et manager de notes avec markdown, simple mais efficace"
 
@@ -586,6 +598,9 @@ CD_SCENARI="Edition avancée de chaîne éditoriale (contient scenarichaine v4.2
 
 CA_SCRIBUS="Scribus"
 CD_SCRIBUS="Logiciel de PAO, convient plutôt pour la réalisation de plaquettes, livres et magazines"
+
+CA_SPICEUP="Spice Up {FLATPAK}"
+CD_SPICEUP="Outil libre pour designer/rédiger vos futures présentations (équivalent à PowerPoint ou LibreOffice Impress)"
 
 CA_WPSOFFICE="WPS Office 2019"
 CD_WPSOFFICE="Suite bureautique propriétaire avec une interface proche de Microsoft Office"
@@ -639,6 +654,9 @@ CD_GNOMEMAPS="Visionneur de cartes utilisant OpenStreetMap riche en données gé
 
 CA_GOOGLEEARTH="Google Earth Pro"
 CD_GOOGLEEARTH="Globe terrestre de Google pour explorer la planète"
+
+CA_LABPLOT="LabPlot"
+CD_LABPLOT="Application pour tracer et analyser de façon interactive des données scientifiques"
 
 CA_MARBLE="Marble"
 CD_MARBLE="Globe virtuel opensource développé par KDE dans le cadre du projet KdeEdu"
@@ -847,6 +865,9 @@ CD_GLANCES="Comme Htop mais encore plus complet (utilisation disque, réseau, te
 CA_HG="Mercurial (hg)"
 CD_HG="Gestionnaire de sources distribués (DVCS), avec pour commande: hg"
 
+CA_IMAGEMAGICK="ImageMagick"
+CD_IMAGEMAGICK="Programme en cli très puissant de manipulation d'images dans pratiquement tous les formats existants"
+
 CA_NIX="Nix package manager"
 CD_NIX="Permet de pouvoir installer des paquets NiX (gestionnaire de paquet alternatif)"
 
@@ -904,7 +925,7 @@ CA_GWAKEONLAN="gWakeOnLan"
 CD_GWAKEONLAN="Permet de réveiller votre PC depuis le réseau local ou à distance"
 
 CA_HACKINGPACK="Hacking Pack"
-CD_HACKINGPACK="Pack contenant différents outils de hacking : Aircrack, OphCrack, John The Ripper, Crunch..."
+CD_HACKINGPACK="Pack contenant différents outils de hacking : Aircrack, OphCrack, John The Ripper, Crunch, Hashcat"
 
 CA_KEEPASS="Keepass"
 CD_KEEPASS="Utilise mono, centralise la gestion de vos mots de passe personnels, protégé par un master password"
@@ -1087,6 +1108,9 @@ CD_JAVA="Dernière version stable de Java (JRE) soit actuellement la version 13"
 CA_LATEXFULL="LaTeX : pack complet (texlive-full ~3Go)"
 CD_LATEXFULL="Distribution TeX libre fournissant un environnement TeX/LaTeX complet et prêt à utiliser (+texmaths pour LO)"
 
+CA_LATEXILA="Latexila"
+CD_LATEXILA="Editeur LaTeX conçu pour les environnements GNOME"
+
 CA_NEOVIM="NeoVim"
 CD_NEOVIM="Editeur alternative à Vim. Il vise à améliorer l'extensibilité/maintenabilité de Vim"
 
@@ -1190,6 +1214,9 @@ CD_INTEL="Installe le pilote propriétaire d'Intel (intel-microcode)"
 
 CA_NVIDIA_BP="Pilote propriétaire Nvidia backporté en version 440 (+ Vulkan) {PPA}"
 CD_NVIDIA_BP="Ajoute une version récente du pilote propriétaire de Nvidia depuis le ppa (recommandé pour les cartes graphiques Nvidia récentes)"
+
+CA_PHORONIXTESTSUITE="Phoronix Test Suite"
+CD_PHORONIXTESTSUITE="La suite libre la plus complète pour faire des tests de performance dans tous les domaines (benchmarks)"
 
 CA_OPTIMIS_SWAP="Optimisation Swap"
 CD_OPTIMIS_SWAP="Permet de régler le swappiness à 95% (swap utilisé en dernier recours) et cache pressure à 50%"
