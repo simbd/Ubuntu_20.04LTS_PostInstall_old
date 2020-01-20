@@ -102,6 +102,7 @@ then
     	f_action_get "$CA_SKYPE" "https://go.skype.com/skypeforlinux-64.deb" #Maj auto via dépot ajouté
 	f_action_snap_install "$CA_SLACK" "slack --classic"
     	f_action_install "$CA_SUBDOWNLOADER" subdownloader
+	f_action_snap_install "$CA_TEAMS" teams-for-linux
 	f_action_flatpak_install "$CA_TEAMSPEAK" com.teamspeak.TeamSpeak
 	f_action_get "$CA_TEAMVIEWER" "https://download.teamviewer.com/download/linux/teamviewer_amd64.deb"
 	f_action_install "$CA_TELEGRAM" telegram-desktop
@@ -196,6 +197,7 @@ then
 	f_action_install "$CA_PINTA" pinta	
 	f_action_install "$CA_PITIVI" pitivi	
 	f_action_get "$CA_PIXELUVO" "http://www.pixeluvo.com/downloads/pixeluvo_1.6.0-2_amd64.deb"
+	f_action_install "$CA_RAWTHERAPEE" rawtherapee
 	f_action_install "$CA_ROSEGARDEN" rosegarden
 	f_action_snap_install "$CA_SHOTCUT" "shotcut --classic"
 	f_action_install "$CA_SIMPLESCREENRECORDER" simplescreenrecorder 
@@ -203,6 +205,7 @@ then
 	f_action_install "$CA_SWEETHOME" sweethome3d
 	f_action_get_appimage "$CA_UNITY3DEDITOR" "https://public-cdn.cloud.unity3d.com/hub/prod/UnityHub.AppImage"
 	f_action_install "$CA_WINFF" "winff winff-qt"
+	f_action_get "$CA_XNVIEW" "https://download.xnview.com/XnViewMP-linux-x64.deb"
 	
 	# Bureautique/Mail
 	f_action_install "$CA_CALLIGRA" calligra
@@ -220,6 +223,7 @@ then
 	f_action_install "$CA_LIBREOFFICESUP" "libreoffice-style-elementary libreoffice-style-oxygen libreoffice-style-human libreoffice-style-sifr libreoffice-style-tango libreoffice-templates openclipart-libreoffice"
 	f_action_exec "$CA_LIBREOFFICESUP" "wget https://grammalecte.net/grammalecte/oxt/Grammalecte-fr-v1.6.0.oxt --no-check-certificate ; chmod +x Grammalecte*.oxt ; sudo unopkg add --shared Grammalecte*.oxt ; rm Grammalecte*.oxt"
 	f_action_get "$CA_MASTERPDFEDITOR" "https://code-industry.net/public/master-pdf-editor-5.4.38-qt5.amd64.deb"
+	f_action_install "$CA_MCOMIX" mcomix
 	f_action_snap_install "$CA_OFFICEWEBAPPS" "unofficial-webapp-office"
 	f_action_flatpak_install "$CA_NOTESUP" com.github.philip_scott.notes-up  
 	f_action_snap_install "$CA_ONLYOFFICE" onlyoffice-desktopeditors
@@ -232,6 +236,7 @@ then
 	f_action_snap_install "$CA_PROJECTLIBRE" "projectlibre" 
     	f_action_LinInstall "$CA_SCENARI" Scenari
     	f_action_install "$CA_SCRIBUS" "scribus scribus-template"	
+	f_action_flatpak_install "$CA_SPICEUP" "com.github.philip_scott.spice-up"
 	f_action_get "$CA_WPSOFFICE" "http://fr.archive.ubuntu.com/ubuntu/pool/main/libp/libpng/libpng12-0_1.2.54-1ubuntu1_amd64.deb" 
 	f_action_get "$CA_WPSOFFICE" "http://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/8865/wps-office_11.1.0.8865_amd64.deb"
 	f_action_get "$CA_XMIND" "https://www.xmind.net/xmind/downloads/XMind-ZEN-for-Linux-amd-64bit-10.0.0-201911260056.deb"
@@ -253,6 +258,7 @@ then
 	f_action_install "$CA_GNOMEMAPS" gnome-maps
 	f_action_get "$CA_GOOGLEEARTH" "https://dl.google.com/dl/earth/client/current/google-earth-pro-stable_current_amd64.deb"
 	f_action_exec "$CA_GOOGLEEARTH" "sudo rm -f /etc/apt/sources.list.d/google-earth-pro*" #dépot supprimé car pose soucis systématiquement
+	f_action_install "$CA_LABPLOT" labplot
 	f_action_install "$CA_MARBLE" "--no-install-recommends marble"
 	f_action_install "$CA_MBLOCK" libgconf-2-4 #dépendance pour Mblock
 	f_action_get "$CA_MBLOCK" "http://mblock.makeblock.com/mBlock4.0/mBlock_4.0.4_amd64.deb"
@@ -331,6 +337,7 @@ then
 	f_action_install "$CA_HTOP" htop
 	f_action_install "$CA_GLANCES" glances
 	f_action_install "$CA_HG" mercurial
+	f_action_install "$CA_IMAGEMAGICK" imagemagick
 	f_action_install "$CA_NIX" curl
 	f_action_exec "$CA_NIX" "curl https://nixos.org/nix/install | sh"
 	f_action_snap_install "$CA_POWERSHELL" "powershell --classic"	
@@ -352,7 +359,7 @@ then
 	f_action_install "$CA_FUSIONINVENTORY" fusioninventory-agent
 	f_action_install "$CA_GUFW" gufw
 	f_action_install "$CA_GWAKEONLAN" gwakeonlan
-	f_action_install "$CA_HACKINGPACK" "aircrack-ng ophcrack ophcrack-cli crunch john"
+	f_action_install "$CA_HACKINGPACK" "aircrack-ng ophcrack ophcrack-cli crunch john hashcat"
 	f_action_install "$CA_KEEPASS" keepass2
     	f_action_install "$CA_KEEPASSXC" keepassxc
 	f_action_install "$CA_MYSQLWB" mysql-workbench
@@ -425,6 +432,7 @@ then
 	f_action_exec "$CA_JAVA" "echo oracle-java13-installer shared/accepted-oracle-license-v1-2 select true | sudo /usr/bin/debconf-set-selections"
 	f_action_install "$CA_JAVA" oracle-java13-installer
 	f_action_install "$CA_LATEXFULL" "texlive-full fonts-freefont-ttf texlive-extra-utils texlive-fonts-extra texlive-lang-french texlive-latex-extra libreoffice-texmaths"
+	f_action_install "$CA_LATEXILA" latexila
 	f_action_install "$CA_NEOVIM" neovim
 	f_action_install "$CA_NOTEPADQQ" notepadqq
 	f_action_exec "$CA_PIP3" "sudo apt install python3-pip -y && sudo pip3 install spyder"
@@ -463,6 +471,7 @@ then
 	f_action_install "$CA_PACKTHEME" "arc-theme numix-blue-gtk-theme numix-gtk-theme materia-gtk-theme yuyo-gtk-theme human-theme"
 	f_action_install "$CA_INTEL" intel-microcode
 	f_action_ppa_install "$CA_NVIDIA_BP" ppa:graphics-drivers/ppa "nvidia-graphics-drivers-440 nvidia-settings vulkan-loader vulkan-tools"
+	f_action_get "$CA_PHORONIXTESTSUITE" "http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_9.2.1_all.deb"
 	f_action_exec "$CA_OPTIMIS_SWAP" "echo vm.swappiness=5 | sudo tee /etc/sysctl.d/99-swappiness.conf ; echo vm.vfs_cache_pressure=50 | sudo tee -a /etc/sysctl.d/99-sysctl.conf ; sudo sysctl -p /etc/sysctl.d/99-sysctl.conf"
 	f_action_exec "$CA_SNAPREMPLACEMENT" "sudo snap remove gnome-calculator gnome-characters gnome-logs gnome-system-monitor ; sudo apt install gnome-calculator gnome-characters gnome-logs gnome-system-monitor -y"
 	f_action_install "$CA_NAUTILUS_EXTRA" "nautilus-compare nautilus-admin nautilus-extension-gnome-terminal nautilus-filename-repairer nautilus-gtkhash nautilus-script-audio-convert nautilus-sendto nautilus-share nautilus-wipe"
