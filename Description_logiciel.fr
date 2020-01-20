@@ -876,9 +876,6 @@ CD_WORDGRINDER="Traitement de texte léger en CLI, Formats OpenDocument, HTML im
 
 SCT_RESEAUSECURITE="______ [[ RESEAUX ET SECURITE ]] ______"
 
-CA_AIRCRACK="Aircrack"
-CD_AIRCRACK="Outil pour tester la sécurité de votre réseau wifi"
-
 CA_ANSIBLE="Ansible"
 CD_ANSIBLE="Outil d'automatisation (pour le déploiement et gestion de machines distantes)."
 
@@ -906,6 +903,9 @@ CD_GUFW="Interface graphique pour le pare-feu Ufw"
 CA_GWAKEONLAN="gWakeOnLan"
 CD_GWAKEONLAN="Permet de réveiller votre PC depuis le réseau local ou à distance"
 
+CA_HACKINGPACK="Hacking Pack"
+CD_HACKINGPACK="Pack contenant différents outils de hacking : Aircrack, OphCrack, John The Ripper, Crunch..."
+
 CA_KEEPASS="Keepass"
 CD_KEEPASS="Utilise mono, centralise la gestion de vos mots de passe personnels, protégé par un master password"
 
@@ -917,9 +917,6 @@ CD_MYSQLWB="Outil de gestion de server MySQL : génération de modèles (MCD/MPD
 
 CA_OCSINVENTORY="OcsInventory Agent"
 CD_OCSINVENTORY="Installe l'agent pour OCS Inventory (pour être référencé dans l'inventaire du parc informatique avec OCS)"
-
-CA_OPHCRACK="OphCrack"
-CD_OPHCRACK="Logiciel libre permettant de casser les mots de passe des utilisateurs d'OS Windows (ou depuis multiboot)"
 
 CA_PGADMIN="PgAdmin3"
 CD_PGADMIN="Interface graphique pour administrer des bases de données PostgreSQL"

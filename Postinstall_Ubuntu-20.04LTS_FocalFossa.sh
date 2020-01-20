@@ -1,5 +1,5 @@
 #!/bin/bash
-#v1.0.5
+#v1.0.6
 
 # Script de post-installation pour "Ubuntu 20.04LTS Focal Fossa"
 
@@ -343,7 +343,6 @@ then
 	f_action_install "$CA_WORDGRINDER" "wordgrinder wordgrinder-x11"
 
 	# Réseaux et sécurité
-	f_action_install "$CA_AIRCRACK" aircrack-ng
 	f_action_install "$CA_ANSIBLE" ansible
 	f_action_snap_install "$CA_BITWARDEN" bitwarden
 	f_action_install "$CA_CISCOVPN" network-manager-openconnect-gnome
@@ -353,11 +352,11 @@ then
 	f_action_install "$CA_FUSIONINVENTORY" fusioninventory-agent
 	f_action_install "$CA_GUFW" gufw
 	f_action_install "$CA_GWAKEONLAN" gwakeonlan
+	f_action_install "$CA_HACKINGPACK" "aircrack-ng ophcrack ophcrack-cli crunch john"
 	f_action_install "$CA_KEEPASS" keepass2
     	f_action_install "$CA_KEEPASSXC" keepassxc
 	f_action_install "$CA_MYSQLWB" mysql-workbench
 	f_action_install "$CA_OCSINVENTORY" ocsinventory-agent
-	f_action_install "$CA_OPHCRACK" "ophcrack ophcrack-cli"
 	f_action_install "$CA_PGADMIN" pgadmin3
 	f_action_install "$CA_PUPPET" puppet
 	f_action_install "$CA_SERVERLAMP" "apache2 php libapache2-mod-php mysql-server php-mysql php-curl php-gd php-intl php-json php-mbstring php-xml php-zip phpmyadmin"

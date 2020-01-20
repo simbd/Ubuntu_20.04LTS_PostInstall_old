@@ -297,7 +297,6 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_TLDR" "$CD_TLDR" \
 	$(chkDef "FALSE") "$CA_WORDGRINDER" "$CD_WORDGRINDER" \
 	FALSE "$SCT_RESEAUSECURITE" "===========================================================" \
-	$(chkDef "FALSE") "$CA_AIRCRACK" "$CD_AIRCRACK" \
 	$(chkDef "FALSE") "$CA_ANSIBLE" "$CD_ANSIBLE" \
 	$(chkDef "FALSE") "$CA_BITWARDEN" "$CD_BITWARDEN" \
 	$(chkDef "FALSE") "$CA_CISCOVPN" "$CD_CISCOVPN" \
@@ -307,11 +306,11 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_FUSIONINVENTORY" "$CD_FUSIONINVENTORY" \
 	$(chkDef "FALSE") "$CA_GUFW" "$CD_GUFW" \
 	$(chkDef "FALSE") "$CA_GWAKEONLAN" "$CD_GWAKEONLAN" \
+	$(chkDef "FALSE") "$CA_HACKINGPACK" "$CD_HACKINGPACK" \
 	$(chkDef "FALSE") "$CA_KEEPASS" "$CD_KEEPASS" \
 	$(chkDef "TRUE") "$CA_KEEPASSXC" "$CD_KEEPASSXC" \
 	$(chkDef "FALSE") "$CA_MYSQLWB" "$CD_MYSQLWB" \
 	$(chkDef "FALSE") "$CA_OCSINVENTORY" "$CD_OCSINVENTORY" \
-	$(chkDef "FALSE") "$CA_OPHCRACK" "$CD_OPHCRACK" \
 	$(chkDef "FALSE") "$CA_PGADMIN" "$CD_PGADMIN" \
 	$(chkDef "FALSE") "$CA_PUPPET" "$CD_PUPPET" \
 	$(chkDef "FALSE") "$CA_SERVERLAMP" "$CD_SERVERLAMP" \
