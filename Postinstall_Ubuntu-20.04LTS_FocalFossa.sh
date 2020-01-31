@@ -124,7 +124,7 @@ then
 	f_action_install "$CA_CLEMENTINE" clementine
 	f_action_install "$CA_FLASH" "adobe-flashplugin pepperflashplugin-nonfree"
 	f_action_flatpak_install "$CA_FONDO" com.github.calo001.fondo
-    	f_action_install "$CA_GNOMEMPV" gnome-mpv
+    	f_action_install "$CA_GNOMEMPV" celluloid
     	f_action_install "$CA_GNOMEMUSIC" gnome-music
     	f_action_install "$CA_GNOMETWITCH" gnome-twitch
 	f_action_flatpak_install "$CA_GRADIO" de.haeckerfelix.gradio
