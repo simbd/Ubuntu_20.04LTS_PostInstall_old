@@ -454,7 +454,7 @@ then
 	f_action_exec "$CA_SECURITECPTE" "sudo chmod -R o=- /home/$USER"
 	f_action_install "$CA_BLEACHBIT" bleachbit
 	f_action_install "$CA_COLORFOLDER" folder-color
-	f_action_exec "$CA_CONKY" "wget https://gitlab.com/simbd/Fichier_de_config/raw/master/.conkyrc && mv .conkyrc ~/ ; sudo apt install conky -y"
+	f_action_exec "$CA_CONKY" "wget https://raw.githubusercontent.com/simbd/ConfigFiles/master/.conkyrc && mv .conkyrc ~/ ; sudo apt install conky -y"
     	f_action_exec "$CA_APPORTOFF" "sudo sed -i 's/^enabled=1$/enabled=0/' /etc/default/apport"
 	f_action_exec "$CA_EXTINCTIONAUTO" "echo '0 4 * * * root /sbin/shutdown -h now' | sudo tee -a /etc/cron.d/extinction-auto"
 	f_action_install "$CA_GCONF" gconf-editor
@@ -467,7 +467,7 @@ then
 	f_action_exec "$CA_GTWEAKTOOL" "if [ '$(which gnome-shell)' != '/dev/null' ] ; then sudo apt install gnome-tweak-tool -y ; fi"
 	f_action_exec "$CA_DVDREAD" "sudo apt install libdvdcss2 libdvd-pkg libbluray2 -y ; sudo dpkg-reconfigure libdvd-pkg"
 	f_action_install "$CA_PACKEXTENSION" "chrome-gnome-shell gnome-shell-extension-caffeine gnome-shell-extension-dashtodock gnome-shell-extension-dash-to-panel gnome-shell-extension-impatience gnome-shell-extension-weather gnome-shell-extension-system-monitor gnome-shell-extension-arc-menu gnome-shell-extension-gamemode gnome-shell-extension-gsconnect"
-	f_action_install "$CA_PACKICON" "papirus-icon-theme numix-icon-theme breeze-icon-theme gnome-brave-icon-theme elementary-icon-theme oxygen-icon-theme"
+	f_action_install "$CA_PACKICON" "papirus-icon-theme numix-icon-theme numix-icon-theme-circle breeze-icon-theme gnome-brave-icon-theme elementary-icon-theme oxygen-icon-theme"
 	f_action_install "$CA_PACKTHEME" "arc-theme numix-blue-gtk-theme numix-gtk-theme materia-gtk-theme yuyo-gtk-theme human-theme"
 	f_action_install "$CA_INTEL" intel-microcode
 	f_action_ppa_install "$CA_NVIDIA_BP" ppa:graphics-drivers/ppa "nvidia-graphics-drivers-440 nvidia-settings vulkan-loader vulkan-tools"
