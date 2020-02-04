@@ -75,6 +75,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_FROSTWIRE" "$CD_FROSTWIRE" \
 	$(chkDef "FALSE") "$CA_GYDL" "$CD_GYDL" \
 	$(chkDef "FALSE") "$CA_HUBIC" "$CD_HUBIC" \
+	$(chkDef "FALSE") "$CA_NEXTCLOUD" "$CD_NEXTCLOUD" \
 	$(chkDef "FALSE") "$CA_NICOTINE" "$CD_NICOTINE" \
 	$(chkDef "FALSE") "$CA_QBITTORRENT" "$CD_QBITTORRENT" \
 	$(chkDef "FALSE") "$CA_SUBDOWNLOADER" "$CD_SUBDOWNLOADER" \
