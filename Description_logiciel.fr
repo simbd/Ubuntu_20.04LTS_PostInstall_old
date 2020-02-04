@@ -183,6 +183,9 @@ CD_MAILSPRING="client de messagerie moderne et multi-plateforme"
 CA_MUMBLE="Mumble"
 CD_MUMBLE="Logiciel libre connue chez les gameurs pour les conversations audios à plusieurs"
 
+CA_NEXTCLOUD="NextCloud"
+CA_NEXTCLOUD="Client de bureau pour vous connecter à un drive NextCloud"
+
 CA_NICOTINE="Nicotine+"
 CD_NICOTINE="Client P2P pour le réseau mono-source Soulseek"
 
