@@ -87,6 +87,7 @@ then
 	f_action_install "$CA_LINPHONE" linphone 
 	f_action_snap_install "$CA_MAILSPRING" mailspring
 	f_action_install "$CA_MUMBLE" mumble 
+	f_action_install "$CA_NEXTCLOUD" "nextcloud-desktop nextcloud-desktop-cmd nextcloud-desktop-l10n"
 	f_action_install "$CA_NICOTINE" nicotine
 	f_action_install "$CA_OPENSSHSERVER" openssh-server
 	f_action_install "$CA_PIDGIN" "pidgin pidgin-plugin-pack"
@@ -166,7 +167,7 @@ then
 	f_action_install "$CA_GIADA" giada
 	f_action_install "$CA_GIMP" "gimp gimp-help-fr gimp-data-extras"
 	f_action_install "$CA_GNOMESOUNDRECORDER" gnome-sound-recorder
-	f_action_install "$CA_GTHUMB" gthumb
+	f_action_install  	Update Description_logiciel.fr "$CA_GTHUMB" gthumb
 	f_action_install "$CA_HANDBRAKE" handbrake
 	f_action_install "$CA_HYDROGEN" hydrogen
 	f_action_flatpak_install "$CA_IMCOMPRESSOR" com.github.huluti.ImCompressor
