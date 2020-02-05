@@ -100,12 +100,14 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_AUDACIOUS" "$CD_AUDACIOUS" \
 	$(chkDef "FALSE") "$CA_CANTATA" "$CD_CANTATA" \
 	$(chkDef "FALSE") "$CA_CLEMENTINE" "$CD_CLEMENTINE" \
+	$(chkDef "FALSE") "$CA_DIGIKAM" "$CD_DIGIKAM" \
 	$(chkDef "FALSE") "$CA_FLASH" "$CD_FLASH" \
 	$(chkDef "FALSE") "$CA_FONDO" "$CD_FONDO" \
 	$(chkDef "TRUE") "$CA_GNOMEMPV" "$CD_GNOMEMPV" \
 	$(chkDef "FALSE") "$CA_GNOMEMUSIC" "$CD_GNOMEMUSIC" \
 	$(chkDef "FALSE") "$CA_GNOMETWITCH" "$CD_GNOMETWITCH" \
 	$(chkDef "FALSE") "$CA_GRADIO" "$CD_GRADIO" \
+	$(chkDef "TRUE") "$CA_GTHUMB" "$CD_GTHUMB" \
 	$(chkDef "FALSE") "$CA_LOLLYPOP" "$CD_LOLLYPOP" \
 	$(chkDef "FALSE") "$CA_MEDIAELCH" "$CD_MEDIAELCH" \
 	$(chkDef "FALSE") "$CA_MOLOTOVTV" "$CD_MOLOTOVTV" \
@@ -128,7 +130,6 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_FLAMESHOT" "$CD_FLAMESHOT" \
 	$(chkDef "FALSE") "$CA_FREECAD" "$CD_FREECAD" \
 	$(chkDef "TRUE") "$CA_GIMP" "$CD_GIMP" \
-	$(chkDef "TRUE") "$CA_GTHUMB" "$CD_GTHUMB" \
 	$(chkDef "FALSE") "$CA_IMCOMPRESSOR" "$CD_IMCOMPRESSOR" \
 	$(chkDef "TRUE") "$CA_INKSCAPE" "$CD_INKSCAPE" \
 	$(chkDef "FALSE") "$CA_KOLOURPAINT" "$CD_KOLOURPAINT" \
@@ -141,7 +142,9 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_PINTA" "$CD_PINTA" \
 	$(chkDef "FALSE") "$CA_PIXELUVO" "$CD_PIXELUVO" \
 	$(chkDef "FALSE") "$CA_RAWTHERAPEE" "$CD_RAWTHERAPEE" \
+	$(chkDef "FALSE") "$CA_SOLVESPACE" "$CD_SOLVESPACE" \
 	$(chkDef "FALSE") "$CA_SWEETHOME" "$CD_SWEETHOME" \
+	$(chkDef "FALSE") "$CA_SYNFIG" "$CD_SYNFIG" \
 	$(chkDef "FALSE") "$CA_UNITY3DEDITOR" "$CD_UNITY3DEDITOR" \
 	$(chkDef "FALSE") "$CA_XNVIEW" "$CD_XNVIEW" \
 	FALSE "$SCT_MONTAGEVIDEO" "===========================================================" \
@@ -161,6 +164,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_PITIVI" "$CD_PITIVI" \
     	$(chkDef "FALSE") "$CA_SHOTCUT" "$CD_SHOTCUT" \
 	$(chkDef "FALSE") "$CA_SIMPLESCREENRECORDER" "$CD_SIMPLESCREENRECORDER" \
+	$(chkDef "FALSE") "$CA_VOKOSCREEN" "$CD_VOKOSCREEN" \
 	$(chkDef "FALSE") "$CA_WINFF" "$CD_WINFF" \
 	FALSE "$SCT_TRAITEMENTAUDIO" "===========================================================" \
 	$(chkDef "FALSE") "$CA_ARDOUR" "$CD_ARDOUR" \
@@ -180,6 +184,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_SOUNDJUICER" "$CD_SOUNDJUICER" \
 	FALSE "$SCT_OFFICE" "===========================================================" \
 	$(chkDef "FALSE") "$CA_CALLIGRA" "$CD_CALLIGRA" \
+	$(chkDef "FALSE") "$CA_DRAWIO" "$CD_DRAWIO" \
 	$(chkDef "FALSE") "$CA_FRDIC" "$CD_FRDIC" \
 	$(chkDef "FALSE") "$CA_FBREADER" "$CD_FBREADER" \
 	$(chkDef "FALSE") "$CA_FEEDREADER" "$CD_FEEDREADER" \
@@ -219,6 +224,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_AVOGADRO" "$CD_AVOGADRO" \
 	$(chkDef "FALSE") "$CA_CELESTIA" "$CD_CELESTIA" \
 	$(chkDef "FALSE") "$CA_CONVERTALL" "$CD_CONVERTALL" \
+	$(chkDef "FALSE") "$CA_FRITZING" "$CD_FRITZING" \
 	$(chkDef "FALSE") "$CA_GANTTPROJECT" "$CD_GANTTPROJECT" \
 	$(chkDef "FALSE") "$CA_GCOMPRIS" "$CD_GCOMPRIS" \
 	$(chkDef "FALSE") "$CA_GELEMENTAL" "$CD_GELEMENTAL" \
