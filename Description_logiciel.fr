@@ -177,6 +177,9 @@ CD_JITSI="Anciennement 'SIP Communicator' surtout orienté VoIP"
 CA_LINPHONE="Linphone"
 CD_LINPHONE="Visioconférence utilisant le protocole SIP"
 
+CA_MEGASYNC="MegaSync (version Desktop + Intégration Nautilus)"
+CD_MEGASYNC="Permet de se connecter et de synchroniser avec un compte Mega"
+
 CA_MAILSPRING="Mailspring {SNAP}"
 CD_MAILSPRING="client de messagerie moderne et multi-plateforme"
 
