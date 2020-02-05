@@ -284,6 +284,9 @@ SCT_LECTUREMULTIMEDIA="______ [[ LECTURE MULTIMEDIA ]] ______"
 CA_AUDACIOUS="Audacious"
 CD_AUDACIOUS="Lecteur complet pour les audiophiles avec beaucoup de plugins"
 
+CA_CANTATA="Cantata (+MPD)"
+CD_CANTATA="Outil de lecture audio très complet avec gestion de votre audiothèque et des pochettes (fonctionne avec Mpd)"
+
 CA_CLEMENTINE="Clementine"
 CD_CLEMENTINE="Lecteur audio avec gestion des pochettes, genres musicaux..."
 
@@ -307,6 +310,9 @@ CD_GRADIO="Application Gnome pour écouter la radio, plus de 1 000 références 
 
 CA_LOLLYPOP="Lollypop"
 CD_LOLLYPOP="Lecteur de musique adapté à Gnome avec des fonctions très avancées"
+
+CA_MEDIAELCH="MediaElch"
+CD_MEDIAELCH="Recense vos films/séries/musiques, les identifies et rappatrie les informations les concernant"
 
 CA_MOLOTOVTV="Molotov.TV {APPIMAGE}"
 CD_MOLOTOVTV="Service français de distribution de chaînes de TV"
