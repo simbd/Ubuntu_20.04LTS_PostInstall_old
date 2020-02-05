@@ -98,6 +98,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
     	$(chkDef "FALSE") "$CA_X11VNC" "$CD_X11VNC" \
 	FALSE "$SCT_LECTUREMULTIMEDIA" "===========================================================" \
 	$(chkDef "FALSE") "$CA_AUDACIOUS" "$CD_AUDACIOUS" \
+	$(chkDef "FALSE") "$CA_CANTATA" "$CD_CANTATA" \
 	$(chkDef "FALSE") "$CA_CLEMENTINE" "$CD_CLEMENTINE" \
 	$(chkDef "FALSE") "$CA_FLASH" "$CD_FLASH" \
 	$(chkDef "FALSE") "$CA_FONDO" "$CD_FONDO" \
@@ -106,6 +107,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_GNOMETWITCH" "$CD_GNOMETWITCH" \
 	$(chkDef "FALSE") "$CA_GRADIO" "$CD_GRADIO" \
 	$(chkDef "FALSE") "$CA_LOLLYPOP" "$CD_LOLLYPOP" \
+	$(chkDef "FALSE") "$CA_MEDIAELCH" "$CD_MEDIAELCH" \
 	$(chkDef "FALSE") "$CA_MOLOTOVTV" "$CD_MOLOTOVTV" \
 	$(chkDef "FALSE") "$CA_ODIO" "$CD_ODIO" \
 	$(chkDef "FALSE") "$CA_PACKCODEC" "$CD_PACKCODEC" \
