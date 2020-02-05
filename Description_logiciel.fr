@@ -353,6 +353,9 @@ CD_SMPLAYER="Lecteur basé sur mplayer avec une interface utilisant Qt"
 CA_SPOTIFY="Spotify"
 CD_SPOTIFY="Application officielle pour votre compte Spotify (Stream de musique)"
 
+CA_TAUON="Tauon Music Box {FLATPAK}"
+CD_TAUON="Gestion de votre audiothèque avec une interface épurée"
+
 CA_VLCSTABLE="VLC"
 CD_VLCSTABLE="Lecteur vidéo libre très complet, le couteau suisse dans ce domaine"
 
@@ -480,6 +483,9 @@ CD_NATRON="Programme de post-prod destiné au compositing et aux effets spéciau
 CA_OBS="OBS (OpenBroadcaster Software)"
 CD_OBS="Logiciel très utilisé par les gameurs pour faire du streaming de jeux (live)"
 
+CA_OLIVE="Olive Video Editor"
+CD_OLIVE="Editeur vidéo non linéaire gratuit et à code source ouvert et multiplateforme"
+
 CA_OPENSCAD="OpenSCAD"
 CD_OPENSCAD="Modélisation paramétrique gérant les formats AutoCAD DXF, Object file format et les fichiers de stéréolithographie"
 
@@ -527,6 +533,9 @@ CD_SYNFIG="Logiciel libre d'animation vectorielle 2D pour produire des films d'a
 
 CA_UNITY3DEDITOR="Unity3D Editor (via l'AppImage 'UnityHub')"
 CD_UNITY3DEDITOR="Editeur pour le moteur de jeu  3D 'Unity' développé par Unity Technologies"
+
+CA_VIDCUTTER="VidCutter {APPIMAGE}"
+CD_VIDCUTTER="Outil rapide de découpe et d'extraction de vidéos"
 
 CA_VOKOSCREEN="VokoScreen"
 CD_VOKOSCREEN="Application de capture vidéo d'écran (screencast). Elle permet d'enregistrer l'image et le son."
