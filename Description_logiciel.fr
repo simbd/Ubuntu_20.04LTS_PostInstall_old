@@ -162,6 +162,9 @@ CD_FILEZILLA="Logiciel FTP libre et opensource."
 CA_FROSTWIRE="Frostwire"
 CD_FROSTWIRE="Client multiplate-forme pour le réseau Gnutella"
 
+CA_GFTP="Gftp"
+CD_GFTP="Client FTP simple et rapide, opensource et utilisant GTK"
+
 CA_GYDL="Gydl {SNAP}"
 CD_GYDL="Permet de télécharger des vidéos Youtube ou juste la piste audio"
 
@@ -174,6 +177,9 @@ CD_HUBIC="Partage de fichiers dans le cloud (version 64 bits)."
 CA_JITSI="Jitsi"
 CD_JITSI="Anciennement 'SIP Communicator' surtout orienté VoIP"
 
+CA_KVIRC="KVirc"
+CD_KVIRC="Client IRC graphique multiplate-forme"
+
 CA_LINPHONE="Linphone"
 CD_LINPHONE="Visioconférence utilisant le protocole SIP"
 
@@ -182,6 +188,9 @@ CD_MEGASYNC="Permet de se connecter et de synchroniser avec un compte Mega"
 
 CA_MAILSPRING="Mailspring {SNAP}"
 CD_MAILSPRING="client de messagerie moderne et multi-plateforme"
+
+CA_MATTERMOST="MatterMost {SNAP}"
+CD_MATTERMOST="Service de discussion instantanée open source conçu comme un chat interne pour les organisations"
 
 CA_MUMBLE="Mumble"
 CD_MUMBLE="Logiciel libre connue chez les gameurs pour les conversations audios à plusieurs"
@@ -234,6 +243,9 @@ CD_SLACK="Plate-forme de communication collaborative propriétaire avec gestion 
 CA_SUBDOWNLOADER="SubDownloader"
 CD_SUBDOWNLOADER="Téléchargement de sous-titres"
 
+CA_SYNCTHING="SyncThing"
+CD_SYNCTHING="Application de synchronisation de fichiers pair à pair open source"
+
 CA_TEAMS="Teams for Linux (non-officiel) {SNAP}"
 CD_TEAMS="Client Electron non-officiel pour se connecter à MS Teams"
 
@@ -254,6 +266,9 @@ CD_TRANSMISSION="Client BitTorrent léger, simple mais efficace (normalement dé
 
 CA_UGET="Uget"
 CD_UGET="Gestionnaire de téléchargement multiplateforme supportant divers hébergeurs de fichiers"
+
+CA_VINAGRE="Vinagre (VNC)"
+CD_VINAGRE="Client VNC pour GNOME permettant de visionner et interagir avec des bureaux distants"
 
 CA_VUZE="Vuze {SNAP}"
 CD_VUZE="Plate-forme commerciale d'Azureus avec BitTorrent"
@@ -278,6 +293,9 @@ CD_X2GO="Permet de se connecter à distance de façon graphique. Plus léger, op
 
 CA_X11VNC="X11VNC"
 CD_X11VNC="Pour la prise de contrôle à distance avec le protocole VNC (en reverse)."
+
+CA_XCHAT="Xchat"
+CD_XCHAT="Client IRC graphique libre utilisant GTK"
 
 CA_YTDLND="YouTube Download"
 CD_YTDLND="Script (à utiliser dans le terminal) de capture de vidéos en ligne (YouTube et autres)"
