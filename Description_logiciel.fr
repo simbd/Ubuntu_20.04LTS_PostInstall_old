@@ -290,6 +290,9 @@ CD_CANTATA="Outil de lecture audio très complet avec gestion de votre audiothè
 CA_CLEMENTINE="Clementine"
 CD_CLEMENTINE="Lecteur audio avec gestion des pochettes, genres musicaux..."
 
+CA_DIGIKAM="DigiKam {APPIMAGE}"
+CD_DIGIKAM="Gestion de vos photos. Il peut importer des images depuis des médias et organiser les photos par dossiers"
+
 CA_FLASH="FlashPlayer"
 CD_FLASH="Lecture sur le web d'animations/vidéos qui utiliseraient encore l'ancienne technologie 'Flash' sans support d'HTML5"
 
@@ -311,7 +314,7 @@ CD_GRADIO="Application Gnome pour écouter la radio, plus de 1 000 références 
 CA_LOLLYPOP="Lollypop"
 CD_LOLLYPOP="Lecteur de musique adapté à Gnome avec des fonctions très avancées"
 
-CA_MEDIAELCH="MediaElch"
+CA_MEDIAELCH="MediaElch {APPIMAGE}"
 CD_MEDIAELCH="Recense vos films/séries/musiques, les identifies et rappatrie les informations les concernant"
 
 CA_MOLOTOVTV="Molotov.TV {APPIMAGE}"
@@ -510,14 +513,23 @@ CD_SHOTCUT="Editeur de vidéos libre, open source, gratuit et multiplateforme"
 CA_SIMPLESCREENRECORDER="Simple Screen Recorder"
 CD_SIMPLESCREENRECORDER="Autre alternative pour la capture vidéo"
 
+CA_SOLVESPACE="SolveSpace"
+CD_SOLVESPACE="Programme de CAO 2D et 3D gratuit et open-source"
+
 CA_SOUNDJUICER="Sound-Juicer"
 CD_SOUNDJUICER="Pour extraire les pistes audios d'un cd"
 
 CA_SWEETHOME="Sweethome 3D"
 CD_SWEETHOME="Aménagement d'intérieur pour dessiner les plans d'une maison, placement des meubles..."
 
+CA_SYNFIG="Synfig Studio"
+CD_SYNFIG="Logiciel libre d'animation vectorielle 2D pour produire des films d'animation de qualité"
+
 CA_UNITY3DEDITOR="Unity3D Editor (via l'AppImage 'UnityHub')"
 CD_UNITY3DEDITOR="Editeur pour le moteur de jeu  3D 'Unity' développé par Unity Technologies"
+
+CA_VOKOSCREEN="VokoScreen"
+CD_VOKOSCREEN="Application de capture vidéo d'écran (screencast). Elle permet d'enregistrer l'image et le son."
 
 CA_WINFF="WinFF"
 CD_WINFF="Encodage vidéo rapide dans différents formats"
@@ -529,6 +541,9 @@ SCT_OFFICE="______ [[ BUREAUTIQUE ]] ______"
 
 CA_CALLIGRA="Calligra Suite"
 CD_CALLIGRA="suite bureautique de KDE, il s'intègre donc bien avec l'environnement kde/plasma"
+
+CA_DRAWIO="Draw.Io {SNAP}"
+CD_DRAWIO="Application de création de diagrammes en version Desktop (existe aussi en version web)"
 
 CA_FRDIC="Dictionnaire FR"
 CD_FRDIC="Dictionnaires Français : entre autre pour utilisation avec LibreOffice et Firefox."
@@ -645,6 +660,9 @@ CD_CELESTIA="Simulation spatiale en temps réel qui permet d’explorer l'univer
 
 CA_CONVERTALL="ConvertAll"
 CD_CONVERTALL="L'utilitaire ultime pour convertir des unités de mesure avec un très grand choix"
+
+CA_FRITZING="Fritzing"
+CD_FRITZING="Logiciel libre de conception de circuit imprimé"
 
 CA_GANTTPROJECT="GanttProject"
 CD_GANTTPROJECT="Planification d'un projet à travers la réalisation d'un diagramme de Gantt"
@@ -837,7 +855,7 @@ CA_SUB_EDIT="Subtitle Editor"
 CD_SUB_EDIT="Éditeur de fichiers de sous-titre (modification, synchronisation ...)"
 
 CA_SYNAPTIC="Synaptic"
-CD_SYNAPTIC="Gestionnaire graphique pour les paquets deb (incompatible avec Wayland)"
+CD_SYNAPTIC="Gestionnaire graphique pour les paquets debian (ne gère pas les Snaps/Flatpaks)"
 
 CA_TERMINATOR="Terminator"
 CD_TERMINATOR="Non il ne sagit pas du film mais d'un terminal virtuel avec partage de fenêtre"
