@@ -122,6 +122,7 @@ then
 	
 	# Lecture Multimedia
 	f_action_install "$CA_AUDACIOUS" audacious
+	f_action_install "$CA_CANTATA" "cantata mpd"
 	f_action_install "$CA_CLEMENTINE" clementine
 	f_action_install "$CA_FLASH" "adobe-flashplugin pepperflashplugin-nonfree"
 	f_action_flatpak_install "$CA_FONDO" com.github.calo001.fondo
@@ -130,6 +131,7 @@ then
     	f_action_install "$CA_GNOMETWITCH" gnome-twitch
 	f_action_flatpak_install "$CA_GRADIO" de.haeckerfelix.gradio
 	f_action_install "$CA_LOLLYPOP" lollypop
+	f_action_get_appimage "$CA_MEDIAELCH" "https://github.com/Komet/MediaElch/releases/download/v2.6.2/MediaElch_2.6.2_linux.AppImage"
 	f_action_install "$CA_MOLOTOVTV" "libgconf2-4 desktop-file-utils" #pré-requis pour Molotov.tv
 	f_action_get_appimage "$CA_MOLOTOVTV" "http://desktop-auto-upgrade.molotov.tv/linux/4.2.1/molotov.AppImage"
 	f_action_snap_install "$CA_ODIO" odio
