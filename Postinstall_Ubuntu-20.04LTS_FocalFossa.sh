@@ -160,6 +160,7 @@ then
 	f_action_get "$CA_CINELERRA" "https://cinelerra-gg.org/download/pkgs/ub18/cin_5.1.ub18.04-20191130_amd64.deb"
 	f_action_install "$CA_CURA" cura
 	f_action_install "$CA_DARKTABLE" darktable
+	f_action_get_appimage "$CA_DIGIKAM" "https://download.kde.org/stable/digikam/6.4.0/digikam-6.4.0-x86-64.appimage"
 	f_action_install "$CA_EASYTAG" easytag
 	f_action_install "$CA_FFMPEG" ffmpeg
 	f_action_snap_install "$CA_FLACON" flacon-tabetai
@@ -169,7 +170,7 @@ then
 	f_action_install "$CA_GIADA" giada
 	f_action_install "$CA_GIMP" "gimp gimp-help-fr gimp-data-extras"
 	f_action_install "$CA_GNOMESOUNDRECORDER" gnome-sound-recorder
-	f_action_install  	Update Description_logiciel.fr "$CA_GTHUMB" gthumb
+	f_action_install "$CA_GTHUMB" gthumb
 	f_action_install "$CA_HANDBRAKE" handbrake
 	f_action_install "$CA_HYDROGEN" hydrogen
 	f_action_flatpak_install "$CA_IMCOMPRESSOR" com.github.huluti.ImCompressor
@@ -204,14 +205,18 @@ then
 	f_action_install "$CA_ROSEGARDEN" rosegarden
 	f_action_snap_install "$CA_SHOTCUT" "shotcut --classic"
 	f_action_install "$CA_SIMPLESCREENRECORDER" simplescreenrecorder 
+	f_action_install "$CA_SOLVESPACE" solvespace
 	f_action_install "$CA_SOUNDJUICER" sound-juicer
 	f_action_install "$CA_SWEETHOME" sweethome3d
+	f_action_install "$CA_SYNFIG" "synfig synfigstudio"
 	f_action_get_appimage "$CA_UNITY3DEDITOR" "https://public-cdn.cloud.unity3d.com/hub/prod/UnityHub.AppImage"
+	f_action_install "$CA_VOKOSCREEN" vokoscreen
 	f_action_install "$CA_WINFF" "winff winff-qt"
 	f_action_get "$CA_XNVIEW" "https://download.xnview.com/XnViewMP-linux-x64.deb"
 	
 	# Bureautique/Mail
 	f_action_install "$CA_CALLIGRA" calligra
+	f_action_snap_install "$CA_DRAWIO" drawio
 	f_action_install "$CA_FRDIC" "myspell-fr-gut wfrench aspell-fr hyphen-fr mythes-fr"
 	f_action_install "$CA_FBREADER" fbreader
 	f_action_install "$CA_FEEDREADER" feedreader
@@ -254,6 +259,7 @@ then
 	f_action_install "$CA_AVOGADRO" avogadro
 	f_action_get_appimage "$CA_CELESTIA" "https://github.com/munix9/Celestia/releases/download/continuous/celestia-qt-continuous-x86_64.AppImage"
 	f_action_install "$CA_CONVERTALL" convertall
+	f_action_install "$CA_FRITZING" fritzing
 	f_action_get "$CA_GANTTPROJECT" "https://dl.ganttproject.biz/ganttproject-2.8.10/ganttproject_2.8.10-r2364-1_all.deb"
 	f_action_install "$CA_GCOMPRIS" "gcompris gcompris-qt gcompris-qt-data gnucap"
 	f_action_install "$CA_GELEMENTAL" gelemental
