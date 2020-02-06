@@ -1,5 +1,5 @@
 #!/bin/bash
-#v1.0.6
+#v1.0.7
 
 # Script de post-installation pour "Ubuntu 20.04LTS Focal Fossa"
 
@@ -79,13 +79,18 @@ then
 	f_action_install "$CA_EVOLUTION" evolution
 	f_action_install "$CA_FILEZILLA" filezilla    
 	f_action_get "$CA_FROSTWIRE" "https://prime.frostwire.com/frostwire/6.8.3/frostwire-6.8.3.amd64.deb"
-   	f_action_install "$CA_GEARY" geary	
+   	f_action_install "$CA_GEARY" geary
+	f_action_install "$CA_GFTP" gftp
    	f_action_snap_install "$CA_GYDL" gydl
 	f_action_install "$CA_HEXCHAT" hexchat  
 	f_action_get "$CA_HUBIC" "http://mir7.ovh.net/ovh-applications/hubic/hubiC-Linux/2.1.0/hubiC-Linux-2.1.0.53-linux.deb"
 	f_RepositoryExt_Install "$CA_JITSI" "jitsi-stable" "https://download.jitsi.org/jitsi-key.gpg.key" "https://download.jitsi.org stable/" "jitsi"
+	f_action_install "$CA_KVIRC" kvirc
 	f_action_install "$CA_LINPHONE" linphone 
 	f_action_snap_install "$CA_MAILSPRING" mailspring
+	f_action_snap_install "$CA_MATTERMOST" mattermost
+	f_action_get "$CA_MEGASYNC" "https://mega.nz/linux/MEGAsync/xUbuntu_19.10/amd64/megasync-xUbuntu_19.10_amd64.deb"
+	f_action_get "$CA_MEGASYNC" "https://mega.nz/linux/MEGAsync/xUbuntu_19.10/amd64/nautilus-megasync-xUbuntu_19.10_amd64.deb"
 	f_action_install "$CA_MUMBLE" mumble 
 	f_action_install "$CA_NEXTCLOUD" "nextcloud-desktop nextcloud-desktop-cmd nextcloud-desktop-l10n"
 	f_action_install "$CA_NICOTINE" nicotine
@@ -103,6 +108,7 @@ then
     	f_action_get "$CA_SKYPE" "https://go.skype.com/skypeforlinux-64.deb" #Maj auto via dépot ajouté
 	f_action_snap_install "$CA_SLACK" "slack --classic"
     	f_action_install "$CA_SUBDOWNLOADER" subdownloader
+	f_action_install "$CA_SYNCTHING" syncthing
 	f_action_snap_install "$CA_TEAMS" teams-for-linux
 	f_action_flatpak_install "$CA_TEAMSPEAK" com.teamspeak.TeamSpeak
 	f_action_get "$CA_TEAMVIEWER" "https://download.teamviewer.com/download/linux/teamviewer_amd64.deb"
@@ -118,6 +124,7 @@ then
 	f_action_install "$CA_WORMHOLE" magic-wormhole
 	f_action_install "$CA_X2GO" x2goclient
 	f_action_install "$CA_X11VNC" x11vnc
+	f_action_install "$CA_XCHAT" xchat
 	f_action_install "$CA_YTDLND" youtube-dl
 	
 	# Lecture Multimedia
@@ -145,6 +152,7 @@ then
     	f_action_install "$CA_SHOTWELL" shotwell	
     	f_action_install "$CA_SMPLAYER" "smplayer smplayer-l10n smplayer-themes"	    
     	f_RepositoryExt_Install "$CA_SPOTIFY" "spotify" "https://download.spotify.com/debian/pubkey.gpg" "http://repository.spotify.com stable non-free" "spotify-client spotify-client-gnome-support"
+	f_action_flatpak_install "$CA_TAUON" com.github.taiko2k.tauonmb
 	f_action_install "$CA_VLCSTABLE" "vlc vlc-l10n"
     	f_action_install "$CA_RESTRICT_EXTRA" ubuntu-restricted-extras
 		
@@ -194,6 +202,7 @@ then
 	f_action_snap_install "$CA_NATRON" natron
 	f_action_install "$CA_OBS" "ffmpeg obs-studio"
 	f_action_exec "$CA_OBS" "sudo sed -i -e 's/focal/eoan/g' /etc/apt/sources.list.d/obsproject*list && apt update && sudo apt install ffmpeg obs-studio -y" #(ligne temporaire en attendant que le ppa pr 20.04 soit actif)
+	f_action_install "$CA_OLIVE" olive-editor
 	f_action_install "$CA_OPENSCAD" openscad
 	f_action_install "$CA_OPENSHOT" openshot-qt
 	f_action_snap_install "$CA_OPENTOONZ" opentoonz
@@ -210,6 +219,7 @@ then
 	f_action_install "$CA_SWEETHOME" sweethome3d
 	f_action_install "$CA_SYNFIG" "synfig synfigstudio"
 	f_action_get_appimage "$CA_UNITY3DEDITOR" "https://public-cdn.cloud.unity3d.com/hub/prod/UnityHub.AppImage"
+	f_action_get_appimage "$CA_VIDCUTTER" "https://github.com/ozmartian/vidcutter/releases/download/6.0.0/VidCutter-6.0.0-x64.AppImage"
 	f_action_install "$CA_VOKOSCREEN" vokoscreen
 	f_action_install "$CA_WINFF" "winff winff-qt"
 	f_action_get "$CA_XNVIEW" "https://download.xnview.com/XnViewMP-linux-x64.deb"
