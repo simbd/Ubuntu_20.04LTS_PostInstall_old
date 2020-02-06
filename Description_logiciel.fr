@@ -982,7 +982,7 @@ CA_GWAKEONLAN="gWakeOnLan"
 CD_GWAKEONLAN="Permet de réveiller votre PC depuis le réseau local ou à distance"
 
 CA_HACKINGPACK="Hacking Pack"
-CD_HACKINGPACK="Pack contenant différents outils de hacking : Nmap, Aircrack, OphCrack, John The Ripper, Crunch, Hashcat"
+CD_HACKINGPACK="Pack contenant différents outils de hacking : TcpDump, Nmap, Aircrack, OphCrack, John The Ripper, Crunch, Hashcat"
 
 CA_KEEPASS="Keepass"
 CD_KEEPASS="Utilise mono, centralise la gestion de vos mots de passe personnels, protégé par un master password"
