@@ -300,9 +300,7 @@ then
 	f_action_install "$CA_DOLPHIN" dolphin-emu
 	f_action_install "$CA_DOSBOX" dosbox
 	f_action_install "$CA_GNOMEBOXES" gnome-boxes	
-	f_action_ppa_install "$CA_GNS" "ppa:gns3/ppa"
-	f_action_exec "$CA_GNS" "sudo sed -i -e 's/focal/eoan/g' /etc/apt/sources.list.d/gns3*list ; sudo apt update" #(ligne temporaire en attendant que le ppa pr 20.04 soit actif)
-	f_action_install "$CA_GNS" gns3-gui
+	f_action_ppa_install "$CA_GNS" "ppa:gns3/ppa" gns3-gui
 	f_action_install "$CA_QEMUKVM" "qemu qemu-kvm qemu-system-gui qemu-system-arm qemu-utils virt-manager virt-viewer"
 	f_action_install "$CA_LXC" "lxc"
 	f_action_install "$CA_MGBA" "mgba-qt"
