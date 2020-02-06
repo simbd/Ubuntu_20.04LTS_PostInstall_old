@@ -48,8 +48,10 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_GEARY" "$CD_GEARY" \
 	$(chkDef "FALSE") "$CA_HEXCHAT" "$CD_HEXCHAT" \
 	$(chkDef "FALSE") "$CA_JITSI" "$CD_JITSI" \
+	$(chkDef "FALSE") "$CA_KVIRC" "$CD_KVIRC" \
 	$(chkDef "FALSE") "$CA_LINPHONE" "$CD_LINPHONE" \
 	$(chkDef "FALSE") "$CA_MAILSPRING" "$CD_MAILSPRING" \
+	$(chkDef "FALSE") "$CA_MATTERMOST" "$CD_MATTERMOST" \
 	$(chkDef "FALSE") "$CA_MUMBLE" "$CD_MUMBLE" \
 	$(chkDef "TRUE") "$CA_PIDGIN" "$CD_PIDGIN" \
 	$(chkDef "FALSE") "$CA_POLARI" "$CD_POLARI" \
@@ -66,6 +68,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_WEECHAT" "$CD_WEECHAT" \
 	$(chkDef "FALSE") "$CA_WHALEBIRD" "$CD_WHALEBIRD" \
 	$(chkDef "FALSE") "$CA_WIRE" "$CD_WIRE" \
+	$(chkDef "FALSE") "$CA_XCHAT" "$CD_XCHAT" \
 	FALSE "$SCT_DOWNLOAD" "===========================================================" \
 	$(chkDef "FALSE") "$CA_COZYDRIVE" "$CD_COZYDRIVE" \
 	$(chkDef "TRUE") "$CA_DELUGE" "$CD_DELUGE" \
@@ -75,10 +78,12 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_FROSTWIRE" "$CD_FROSTWIRE" \
 	$(chkDef "FALSE") "$CA_GYDL" "$CD_GYDL" \
 	$(chkDef "FALSE") "$CA_HUBIC" "$CD_HUBIC" \
+	$(chkDef "FALSE") "$CA_MEGASYNC" "$CD_MEGASYNC" \
 	$(chkDef "FALSE") "$CA_NEXTCLOUD" "$CD_NEXTCLOUD" \
 	$(chkDef "FALSE") "$CA_NICOTINE" "$CD_NICOTINE" \
 	$(chkDef "FALSE") "$CA_QBITTORRENT" "$CD_QBITTORRENT" \
 	$(chkDef "FALSE") "$CA_SUBDOWNLOADER" "$CD_SUBDOWNLOADER" \
+	$(chkDef "FALSE") "$CA_SYNCTHING" "$CD_SYNCTHING" \
 	$(chkDef "TRUE") "$CA_TRANSMISSION" "$CD_TRANSMISSION" \
 	$(chkDef "FALSE") "$CA_UGET" "$CD_UGET" \
 	$(chkDef "FALSE") "$CA_VUZE" "$CD_VUZE" \
@@ -88,6 +93,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_CLUSTERSSH" "$CD_CLUSTERSSH" \
 	$(chkDef "FALSE") "$CA_DWSERVICE" "$CD_DWSERVICE" \
 	$(chkDef "TRUE") "$CA_FILEZILLA" "$CD_FILEZILLA" \
+	$(chkDef "FALSE") "$CA_GFTP" "$CD_GFTP" \
 	$(chkDef "FALSE") "$CA_OPENSSHSERVER" "$CD_OPENSSHSERVER" \
 	$(chkDef "FALSE") "$CA_PUTTY" "$CD_PUTTY" \
     	$(chkDef "TRUE") "$CA_RDESKTOP" "$CD_RDESKTOP" \
@@ -122,6 +128,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "TRUE") "$CA_SHOTWELL" "$CD_SHOTWELL" \
 	$(chkDef "FALSE") "$CA_SMPLAYER" "$CD_SMPLAYER" \
 	$(chkDef "FALSE") "$CA_SPOTIFY" "$CD_SPOTIFY" \
+	$(chkDef "FALSE") "$CA_TAUON" "$CD_TAUON" \
 	$(chkDef "TRUE") "$CA_VLCSTABLE" "$CD_VLCSTABLE" \
     	FALSE "$SCT_GRAPHISMEMODELISATION" "===========================================================" \
 	$(chkDef "FALSE") "$CA_BLENDER" "$CD_BLENDER" \
@@ -159,11 +166,13 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_LIVES" "$CD_LIVES" \
 	$(chkDef "FALSE") "$CA_NATRON" "$CD_NATRON" \
 	$(chkDef "FALSE") "$CA_OBS" "$CD_OBS" \
+	$(chkDef "FALSE") "$CA_OLIVE" "$CD_OLIVE" \
 	$(chkDef "FALSE") "$CA_OPENSHOT" "$CD_OPENSHOT" \
 	$(chkDef "FALSE") "$CA_PEEK" "$CD_PEEK" \
 	$(chkDef "FALSE") "$CA_PITIVI" "$CD_PITIVI" \
     	$(chkDef "FALSE") "$CA_SHOTCUT" "$CD_SHOTCUT" \
 	$(chkDef "FALSE") "$CA_SIMPLESCREENRECORDER" "$CD_SIMPLESCREENRECORDER" \
+	$(chkDef "FALSE") "$CA_VIDCUTTER" "$CD_VIDCUTTER" \
 	$(chkDef "FALSE") "$CA_VOKOSCREEN" "$CD_VOKOSCREEN" \
 	$(chkDef "FALSE") "$CA_WINFF" "$CD_WINFF" \
 	FALSE "$SCT_TRAITEMENTAUDIO" "===========================================================" \
