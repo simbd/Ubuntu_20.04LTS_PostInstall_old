@@ -121,7 +121,7 @@ CD_VIVALDI="Navigateur propriétaire avec une interface sobre"
 
 SCT_INTERNET="______ [[ INTERNET / TCHAT / MESSAGERIE ]] ______"
 SCT_DOWNLOAD="______ [[ DOWNLOAD / TORRENT / STOCKAGE EN LIGNE ]] ______"
-SCT_CONTROLEDISTANCE="______ [[ CONTRÔLE À DISTANCE / TRANSFERT INTERNE ]] ______"
+SCT_CONTROLEDISTANCE="______ [[ CONTRÔLE À DISTANCE / ACCES FTP ]] ______"
 
 CA_ANYDESK="AnyDesk"
 CD_ANYDESK="Logiciel propriétaire de prise en main à distance, alternative à Teamviewer"
