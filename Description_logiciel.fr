@@ -1165,8 +1165,8 @@ CD_JAVA="Dernière version stable de Java (JRE) soit actuellement la version 13"
 CA_LATEXFULL="LaTeX : pack complet (texlive-full ~3Go)"
 CD_LATEXFULL="Distribution TeX libre fournissant un environnement TeX/LaTeX complet et prêt à utiliser (+texmaths pour LO)"
 
-CA_LATEXILA="Latexila"
-CD_LATEXILA="Editeur LaTeX conçu pour les environnements GNOME"
+CA_LATEXILA="Latexila (Gnome Latex)"
+CD_LATEXILA="Editeur LaTeX conçu pour GNOME (nommé aussi GnomeLatex)"
 
 CA_NEOVIM="NeoVim"
 CD_NEOVIM="Editeur alternative à Vim. Il vise à améliorer l'extensibilité/maintenabilité de Vim"
