@@ -374,7 +374,7 @@ then
 	f_action_install "$CA_FUSIONINVENTORY" fusioninventory-agent
 	f_action_install "$CA_GUFW" gufw
 	f_action_install "$CA_GWAKEONLAN" gwakeonlan
-	f_action_install "$CA_HACKINGPACK" "nmap aircrack-ng ophcrack ophcrack-cli crunch john hashcat"
+	f_action_install "$CA_HACKINGPACK" "tcpdump nmap aircrack-ng ophcrack ophcrack-cli crunch john hashcat"
 	f_action_install "$CA_KEEPASS" keepass2
     	f_action_install "$CA_KEEPASSXC" keepassxc
 	f_action_install "$CA_MYSQLWB" mysql-workbench
