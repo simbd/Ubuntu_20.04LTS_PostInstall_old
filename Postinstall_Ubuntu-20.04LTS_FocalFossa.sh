@@ -50,8 +50,6 @@ then
    	f_action_ppa_install "$CA_FIREFOXBETA" ppa:mozillateam/firefox-next "firefox firefox-locale-fr"
    	f_action_LinInstall "$CA_FIREFOXDEVELOPER" FirefoxDeveloperEdition
    	f_action_ppa_install "$CA_FIREFOXESR" ppa:mozillateam/ppa "firefox-esr firefox-esr-locale-fr"
-   	f_action_exec "$CA_FIREFOXESR" "sudo sed -i -e 's/focal/eoan/g' /etc/apt/sources.list.d/mozillateam-ubuntu-ppa*list ; sudo apt update" #(ligne temporaire en attendant que le ppa pr 20.04 soit actif)
-   	f_action_install "$CA_FIREFOXESR" "firefox-esr firefox-esr-locale-fr"
    	f_action_ppa_install "$CA_FIREFOXNIGHTLY" ppa:ubuntu-mozilla-daily/ppa firefox-trunk 	
     	f_action_install "$CA_EPIPHANY" epiphany-browser	
     	f_RepositoryExt_Install "$CA_CHROME" "google-chrome" "https://dl-ssl.google.com/linux/linux_signing_key.pub" "[arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main" "google-chrome-stable"
@@ -239,7 +237,7 @@ then
     	f_action_install "$CA_LIBREOFFICEDEPOT" "libreoffice libreoffice-l10n-fr libreoffice-style-breeze"
 	f_action_ppa_install "$CA_LIBREOFFICEFRESH" ppa:libreoffice/ppa "libreoffice libreoffice-l10n-fr libreoffice-style-breeze"
 	f_action_install "$CA_LIBREOFFICESUP" "libreoffice-style-elementary libreoffice-style-oxygen libreoffice-style-human libreoffice-style-sifr libreoffice-style-tango libreoffice-templates openclipart-libreoffice"
-	f_action_exec "$CA_LIBREOFFICESUP" "wget https://grammalecte.net/grammalecte/oxt/Grammalecte-fr-v1.6.0.oxt --no-check-certificate ; chmod +x Grammalecte*.oxt ; sudo unopkg add --shared Grammalecte*.oxt ; rm Grammalecte*.oxt"
+	f_action_exec "$CA_LIBREOFFICESUP" "wget https://extensions.libreoffice.org/extensions/grammalecte/1-7.0/@@download/file/Grammalecte-fr-v1.7.0.oxt --no-check-certificate ; chmod +x Grammalecte*.oxt ; sudo unopkg add --shared Grammalecte*.oxt ; rm Grammalecte*.oxt"
 	f_action_get "$CA_MASTERPDFEDITOR" "https://code-industry.net/public/master-pdf-editor-5.4.38-qt5.amd64.deb"
 	f_action_install "$CA_MCOMIX" mcomix
 	f_action_snap_install "$CA_OFFICEWEBAPPS" "unofficial-webapp-office"
@@ -390,7 +388,6 @@ then
 	f_action_ppa_install "$CA_UPM" "ppa:adriansmith/upm"
 	f_action_exec "$CA_UPM" "sudo sed -i -e 's/focal/bionic/g' /etc/apt/sources.list.d/adriansm*list ; sudo apt update ; sudo apt install upm -y" #(ligne temporaire en attendant que le ppa pr 20.04 soit actif)
 	f_action_ppa_install "$CA_VERACRYPT" ppa:unit193/encryption veracrypt
-	f_action_exec "$CA_VERACRYPT" "sudo sed -i -e 's/focal/eoan/g' /etc/apt/sources.list.d/unit193-ubuntu-encryption*list ; sudo apt update" #(ligne temporaire en attendant que le ppa pr 20.04 soit actif)
 	f_action_install "$CA_VERACRYPT" veracrypt
 	f_action_install "$CA_WIRESHARK" wireshark
 	
@@ -447,7 +444,6 @@ then
 	f_action_snap_install "$CA_INTELLIJIDEA" "intellij-idea-community --classic"
 	f_action_install "$CA_IPYTHON" ipython
 	f_action_exec "$CA_JAVA" "sudo add-apt-repository -y ppa:linuxuprising/java"
-	f_action_exec "$CA_JAVA" "sudo sed -i -e 's/focal/eoan/g' /etc/apt/sources.list.d/linuxuprising-ubuntu-java*list ; sudo apt update" #(ligne temporaire en attendant que le ppa pr 20.04 soit actif)
 	f_action_exec "$CA_JAVA" "echo oracle-java13-installer shared/accepted-oracle-license-v1-2 select true | sudo /usr/bin/debconf-set-selections"
 	f_action_install "$CA_JAVA" oracle-java13-installer
 	f_action_install "$CA_LATEXFULL" "texlive-full fonts-freefont-ttf texlive-extra-utils texlive-fonts-extra texlive-lang-french texlive-latex-extra libreoffice-texmaths"
