@@ -31,6 +31,7 @@ then
 	f_action_exec "$CA_PARTNER" "sudo sed -i.bak '/^# deb .*partner/ s/^# //' /etc/apt/sources.list"
 	f_action_exec "$CA_UPGRADE" "sudo apt update || read -p 'Attention, la commande de mise à jour (apt update) renvoi une erreur, il est recommandé de stopper le script et de corriger le problème avant de le lancer mais si vous voulez quand même poursuivre, tapez entrée' ; sudo apt full-upgrade -y" "$NS_UPGRADE"
 	f_action_install "$CA_PACKUTILE" "net-tools curl vim neofetch ncdu x264 x265 xterm inxi hdparm cpu-x"
+	f_action_install "$CA_GNOMESUPPLEMENT" "gnome-firmware gnome-tweak-tool gconf-editor"
     
     	# Sessions
     	f_action_install "$CA_GNOMEVANILLA" gnome-session
@@ -470,14 +471,12 @@ then
 	f_action_exec "$CA_CONKY" "wget https://raw.githubusercontent.com/simbd/ConfigFiles/master/.conkyrc && mv .conkyrc ~/ ; sudo apt install conky -y"
     	f_action_exec "$CA_APPORTOFF" "sudo sed -i 's/^enabled=1$/enabled=0/' /etc/default/apport"
 	f_action_exec "$CA_EXTINCTIONAUTO" "echo '0 4 * * * root /sbin/shutdown -h now' | sudo tee -a /etc/cron.d/extinction-auto"
-	f_action_install "$CA_GCONF" gconf-editor
 	f_action_flatpak_install "$CA_GWE" com.leinardi.gwe
 	f_action_exec "$CA_GS_AUGMENTATIONCAPTURE" "gsettings set org.gnome.settings-daemon.plugins.media-keys max-screencast-length 600"
 	f_action_exec "$CA_GS_MINIMISATIONFENETRE" "gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'"
 	f_action_install "$CA_GRUBCUSTOMIZER" grub-customizer
 	f_action_exec "$CA_GRUBDEFAULT" "sudo sed -ri 's/GRUB_DEFAULT=0/GRUB_DEFAULT="saved"/g' /etc/default/grub ; echo 'GRUB_SAVEDEFAULT="true"' | sudo tee -a /etc/default/grub ; sudo update-grub"
 	f_action_exec "$CA_GRUBATTENTE" "sudo sed -ri 's/GRUB_TIMEOUT=10/GRUB_TIMEOUT=2/g' /etc/default/grub ; sudo mkdir /boot/old ; sudo mv /boot/memtest86* /boot/old/ ; sudo update-grub"
-	f_action_exec "$CA_GTWEAKTOOL" "if [ '$(which gnome-shell)' != '/dev/null' ] ; then sudo apt install gnome-tweak-tool -y ; fi"
 	f_action_exec "$CA_DVDREAD" "sudo apt install libdvdcss2 libdvd-pkg libbluray2 -y ; sudo dpkg-reconfigure libdvd-pkg"
 	f_action_install "$CA_PACKEXTENSION" "chrome-gnome-shell gnome-shell-extension-{caffeine,dashtodock,dash-to-panel,impatience,weather,system-monitor,arc-menu,gamemode,gsconnect,xrdesktop}"
 	f_action_install "$CA_PACKICON" "papirus-icon-theme numix-icon-theme numix-icon-theme-circle breeze-icon-theme gnome-brave-icon-theme elementary-icon-theme oxygen-icon-theme"
@@ -486,7 +485,8 @@ then
 	f_action_ppa_install "$CA_NVIDIA_BP" ppa:graphics-drivers/ppa "nvidia-graphics-drivers-440 nvidia-settings vulkan-loader vulkan-tools"
 	f_action_get "$CA_PHORONIXTESTSUITE" "http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_9.2.1_all.deb"
 	f_action_exec "$CA_OPTIMIS_SWAP" "echo vm.swappiness=5 | sudo tee /etc/sysctl.d/99-swappiness.conf ; echo vm.vfs_cache_pressure=50 | sudo tee -a /etc/sysctl.d/99-sysctl.conf ; sudo sysctl -p /etc/sysctl.d/99-sysctl.conf"
-	f_action_exec "$CA_SNAPREMPLACEMENT" "sudo snap remove gnome-calculator gnome-characters gnome-logs gnome-system-monitor ; sudo apt install gnome-calculator gnome-characters gnome-logs gnome-system-monitor -y"
+	f_action_exec "$CA_SNAPREMPLACEMENT" "sudo snap remove gnome-{calculator,characters,logs,system-monitor}"
+	f_action_install "$CA_SNAPREMPLACEMENT" "gnome-{calculator,characters,logs,system-monitor}"
 	f_action_install "$CA_NAUTILUS_EXTRA" "nautilus-{compare,admin,extension-gnome-terminal,filename-repairer,gtkhash,script-audio-convert,sendto,share,wipe}"
 	f_action_install "$CA_SYSFIC" "btrfs-progs exfat-utils exfat-fuse hfsprogs hfsutils hfsplus xfsprogs xfsdump zfsutils-linux"
 	f_action_install "$CA_TLP" "tlp tlp-rdw"
