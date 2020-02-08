@@ -224,7 +224,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_SPICEUP" "$CD_SPICEUP" \
 	$(chkDef "FALSE") "$CA_WPSOFFICE" "$CD_WPSOFFICE" \
 	$(chkDef "FALSE") "$CA_XMIND" "$CD_XMIND" \
-	$(chkDef "TRUE") "$CA_XOURNAL" "$CD_XOURNAL" \
+	$(chkDef "FALSE") "$CA_XOURNAL" "$CD_XOURNAL" \
 	$(chkDef "FALSE") "$CA_XPAD" "$CD_XPAD" \
 	$(chkDef "TRUE") "$CA_ZIM" "$CD_ZIM" \
 	FALSE "$SCT_EDUSCIENCE" "===========================================================" \
@@ -414,7 +414,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "TRUE") "$CA_COLORFOLDER" "$CD_COLORFOLDER" \
 	$(chkDef "FALSE") "$CA_CONKY" "$CD_CONKY" \
 	$(chkDef "TRUE") "$CA_APPORTOFF" "$CA_APPORTOFF" \
-	$(chkDef "TRUE") "$CA_EXTINCTIONAUTO" "$CA_EXTINCTIONAUTO" \
+	$(chkDef "FALSE") "$CA_EXTINCTIONAUTO" "$CA_EXTINCTIONAUTO" \
 	$(chkDef "FALSE") "$CA_GWE" "$CD_GWE" \
 	$(chkDef "FALSE") "$CA_GS_AUGMENTATIONCAPTURE" "$CD_GS_AUGMENTATIONCAPTURE" \
 	$(chkDef "FALSE") "$CA_GS_MINIMISATIONFENETRE" "$CD_GS_MINIMISATIONFENETRE" \
@@ -428,7 +428,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_INTEL" "$CD_INTEL" \
 	$(chkDef "FALSE") "$CA_NVIDIA_BP" "$CD_NVIDIA_BP" \
 	$(chkDef "TRUE") "$CA_OPTIMIS_SWAP" "$CD_OPTIMIS_SWAP" \
-	$(chkDef "TRUE") "$CA_PHORONIXTESTSUITE" "$CD_PHORONIXTESTSUITE" \
+	$(chkDef "FALSE") "$CA_PHORONIXTESTSUITE" "$CD_PHORONIXTESTSUITE" \
 	$(chkDef "TRUE") "$CA_SNAPREMPLACEMENT" "$CD_SNAPREMPLACEMENT" \
 	$(chkDef "FALSE") "$CA_NAUTILUS_EXTRA" "$CD_NAUTILUS_EXTRA" \
 	$(chkDef "FALSE") "$CA_SYSFIC" "$CD_SYSFIC" \
