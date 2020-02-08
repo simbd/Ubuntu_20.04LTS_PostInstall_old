@@ -37,6 +37,9 @@ NS_UPGRADE="Mise à jour du système en cours"
 CA_PACKUTILE="Pack d'outils/codecs utiles (recommandé)"
 CD_PACKUTILE="Installe des outils utiles : net-tools pour ifconfig, xterm, vim, codecs x264/x265, neofetch, curl, ncdu"
 
+CA_GNOMESUPPLEMENT="Gnome Supplément (recommandé)"
+CD_GNOMESUPPLEMENT="Ajoute des paquets recommandés pour Gnome : Gnome Tweaks, Gconf-Editor, Gnome-Firmware"
+
 SCT_SESSION="______ [[ SESSIONS SUPPLEMENTAIRES ]] ______"
 
 CA_GNOMEVANILLA="Gnome Shell - Vanilla"
