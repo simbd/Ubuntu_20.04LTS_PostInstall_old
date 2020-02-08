@@ -12,6 +12,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	--column="$MSG_ZEN_CHECK" --column="$MSG_ZEN_ACTION" --column="$MSG_ZEN_DESCRIPTION" \
 	$(chkDef "TRUE") "$CA_PARTNER" "$CD_PARTNER" \
 	$(chkDef "TRUE") "$CA_UPGRADE" "$CD_UPGRADE" \
+	$(chkDef "TRUE") "$CA_GNOMESUPPLEMENT" "$CD_GNOMESUPPLEMENT" \
 	$(chkDef "TRUE") "$CA_PACKUTILE" "$CD_PACKUTILE" \
 	FALSE "$SCT_SESSION" "===========================================================" \
     	$(chkDef "FALSE") "$CA_GNOMEVANILLA" "$CD_GNOMEVANILLA" \
@@ -414,14 +415,12 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_CONKY" "$CD_CONKY" \
 	$(chkDef "TRUE") "$CA_APPORTOFF" "$CA_APPORTOFF" \
 	$(chkDef "TRUE") "$CA_EXTINCTIONAUTO" "$CA_EXTINCTIONAUTO" \
-	$(chkDef "FALSE") "$CA_GCONF" "$CD_GCONF" \
 	$(chkDef "FALSE") "$CA_GWE" "$CD_GWE" \
 	$(chkDef "FALSE") "$CA_GS_AUGMENTATIONCAPTURE" "$CD_GS_AUGMENTATIONCAPTURE" \
 	$(chkDef "FALSE") "$CA_GS_MINIMISATIONFENETRE" "$CD_GS_MINIMISATIONFENETRE" \
 	$(chkDef "FALSE") "$CA_GRUBCUSTOMIZER" "$CD_GRUBCUSTOMIZER" \
 	$(chkDef "FALSE") "$CA_GRUBDEFAULT" "$CD_GRUBDEFAULT" \
 	$(chkDef "FALSE") "$CA_GRUBATTENTE" "$CD_GRUBATTENTE" \
-	$(chkDef "TRUE") "$CA_GTWEAKTOOL" "$CD_GTWEAKTOOL" \
 	$(chkDef "FALSE") "$CA_DVDREAD" "$CD_DVDREAD" \
 	$(chkDef "FALSE") "$CA_PACKEXTENSION" "$CD_PACKEXTENSION" \
 	$(chkDef "TRUE") "$CA_PACKICON" "$CD_PACKICON" \
