@@ -72,7 +72,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_XCHAT" "$CD_XCHAT" \
 	FALSE "$SCT_DOWNLOAD" "===========================================================" \
 	$(chkDef "FALSE") "$CA_COZYDRIVE" "$CD_COZYDRIVE" \
-	$(chkDef "TRUE") "$CA_DELUGE" "$CD_DELUGE" \
+	$(chkDef "FALSE") "$CA_DELUGE" "$CD_DELUGE" \
 	$(chkDef "FALSE") "$CA_DROPBOX" "$CD_DROPBOX" \
 	$(chkDef "FALSE") "$CA_DUKTO" "$CD_DUKTO" \
 	$(chkDef "FALSE") "$CA_EISKALTDC" "$CD_EISKALTDC" \
@@ -206,7 +206,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_JOPLIN" "$CD_JOPLIN" \
 	$(chkDef "TRUE") "$CA_LIBREOFFICEDEPOT" "$CD_LIBREOFFICEDEPOT" \
 	$(chkDef "FALSE") "$CA_LIBREOFFICEFRESH" "$CD_LIBREOFFICEFRESH" \
-	$(chkDef "TRUE") "$CA_LIBREOFFICESUP" "$CD_LIBREOFFICESUP" \
+	$(chkDef "FALSE") "$CA_LIBREOFFICESUP" "$CD_LIBREOFFICESUP" \
 	$(chkDef "FALSE") "$CA_OFFICEWEBAPPS" "$CD_OFFICEWEBAPPS" \
 	$(chkDef "FALSE") "$CA_MASTERPDFEDITOR" "$CD_MASTERPDFEDITOR" \
 	$(chkDef "FALSE") "$CA_MCOMIX" "$CD_MCOMIX" \
@@ -280,7 +280,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
     	$(chkDef "FALSE") "$CA_BRASERO" "$CD_BRASERO" \
     	$(chkDef "FALSE") "$CA_CHEESE" "$CD_CHEESE" \
     	$(chkDef "FALSE") "$CA_DEJADUP" "$CD_DEJADUP" \
-    	$(chkDef "TRUE") "$CA_DIODON" "$CD_DIODON" \
+    	$(chkDef "FALSE") "$CA_DIODON" "$CD_DIODON" \
     	$(chkDef "FALSE") "$CA_ELECTRUM" "$CD_ELECTRUM" \
     	$(chkDef "FALSE") "$CA_ETCHER" "$CD_ETCHER" \
     	$(chkDef "FALSE") "$CA_ETHEREUMWALLET" "$CD_ETHEREUMWALLET" \
@@ -404,7 +404,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_TEXMAKER" "$CD_TEXMAKER" \
 	$(chkDef "FALSE") "$CA_TEXSTUDIO" "$CD_TEXSTUDIO" \
 	$(chkDef "FALSE") "$CA_TEXWORKS" "$CD_TEXWORKS" \
-	$(chkDef "TRUE") "$CA_VIM" "$CD_VIM" \
+	$(chkDef "FALSE") "$CA_VIM" "$CD_VIM" \
 	$(chkDef "FALSE") "$CA_VSCODE" "$CD_VSCODE" \
 	$(chkDef "FALSE") "$CA_VSCODIUM" "$CD_VSCODIUM" \
 	FALSE "$SCT_OPTIMISATION" "===========================================================" \
@@ -413,8 +413,8 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_BLEACHBIT" "$CD_BLEACHBIT" \
 	$(chkDef "TRUE") "$CA_COLORFOLDER" "$CD_COLORFOLDER" \
 	$(chkDef "FALSE") "$CA_CONKY" "$CD_CONKY" \
-	$(chkDef "TRUE") "$CA_APPORTOFF" "$CA_APPORTOFF" \
-	$(chkDef "FALSE") "$CA_EXTINCTIONAUTO" "$CA_EXTINCTIONAUTO" \
+	$(chkDef "TRUE") "$CA_APPORTOFF" "$CD_APPORTOFF" \
+	$(chkDef "FALSE") "$CA_EXTINCTIONAUTO" "$CD_EXTINCTIONAUTO" \
 	$(chkDef "FALSE") "$CA_GWE" "$CD_GWE" \
 	$(chkDef "FALSE") "$CA_GS_AUGMENTATIONCAPTURE" "$CD_GS_AUGMENTATIONCAPTURE" \
 	$(chkDef "FALSE") "$CA_GS_MINIMISATIONFENETRE" "$CD_GS_MINIMISATIONFENETRE" \
