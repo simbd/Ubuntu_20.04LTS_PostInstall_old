@@ -147,7 +147,7 @@ CD_DROPBOX="Partage de fichiers dans le cloud."
 CA_DUKTO="Dukto"
 CD_DUKTO="Transfert de fichiers en open source, et multi-plateforme dans le réseau local"
 
-CA_DWSERVICE="DWService (agent pour le poste à contrôler)"
+CA_DWSERVICE="DWService Agent {Necessite intervention !}"
 CD_DWSERVICE="Permet de contrôle votre poste à distance via une interface web, libre et gratuit"
 
 CA_EISKALTDC="EiskaltDC++"
