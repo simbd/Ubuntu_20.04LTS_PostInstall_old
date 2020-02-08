@@ -199,7 +199,7 @@ CA_MUMBLE="Mumble"
 CD_MUMBLE="Logiciel libre connue chez les gameurs pour les conversations audios à plusieurs"
 
 CA_NEXTCLOUD="NextCloud Desktop Client"
-CA_NEXTCLOUD="Client de bureau pour vous connecter à un drive NextCloud"
+CD_NEXTCLOUD="Client de bureau pour vous connecter à un drive NextCloud (framadrive, drive renater etc...)"
 
 CA_NICOTINE="Nicotine+"
 CD_NICOTINE="Client P2P pour le réseau mono-source Soulseek"
@@ -1231,7 +1231,7 @@ CA_APPORTOFF="Désactivation message d'erreur"
 CD_APPORTOFF="Permet de désactiver l'affichage de la fenêtre avec un message d'erreur sous Ubuntu"
 
 CA_EXTINCTIONAUTO="Extinction automatique à 4H du matin"
-CD_EXTINCTIONAUTO="Avec cette option, si vous avez oublié d'éteindre votre PC le soir, il sera éteint de force à 4H du matin"
+CD_EXTINCTIONAUTO="Si vous avez oublié d'éteindre votre PC le soir, il sera arrété automatiquement à 4H du matin"
 
 CA_GWE="GWE - GreenWithEnvy {FLATPAK}"
 CD_GWE="Utilitaire pour contrôler l'overclocking/ventilateur des cartes graphiques Nvidia"
