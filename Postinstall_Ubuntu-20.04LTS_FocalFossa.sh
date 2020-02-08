@@ -126,6 +126,44 @@ then
 	f_action_install "$CA_XCHAT" xchat
 	f_action_install "$CA_YTDLND" youtube-dl
 	
+	# Bureautique/Mail
+	f_action_install "$CA_CALLIGRA" calligra
+	f_action_snap_install "$CA_DRAWIO" drawio
+	f_action_install "$CA_FRDIC" "myspell-fr-gut wfrench aspell-fr hyphen-fr mythes-fr"
+	f_action_install "$CA_FBREADER" fbreader
+	f_action_install "$CA_FEEDREADER" feedreader
+	f_action_snap_install "$CA_FREEMIND" freemind
+	f_action_get "$CA_FREEOFFICE" "https://www.softmaker.net/down/softmaker-freeoffice-2018_973-01_amd64.deb"
+	f_action_install "$CA_FREEPLANE" freeplane
+	f_action_install "$CA_GNOMEOFFICE" "abiword gnumeric dia planner glabels glom gnucash"	
+	f_action_install "$CA_GRAMPS" gramps
+	f_action_get_appimage "$CA_JOPLIN" "https://github.com/laurent22/joplin/releases/download/v1.0.175/Joplin-1.0.175-x86_64.AppImage"
+    	f_action_install "$CA_LIBREOFFICEDEPOT" "libreoffice libreoffice-l10n-fr libreoffice-style-breeze"
+	f_action_ppa_install "$CA_LIBREOFFICEFRESH" ppa:libreoffice/ppa "libreoffice libreoffice-l10n-fr libreoffice-style-breeze"
+	f_action_install "$CA_LIBREOFFICESUP" "libreoffice-style-elementary libreoffice-style-oxygen libreoffice-style-human libreoffice-style-sifr libreoffice-style-tango libreoffice-templates openclipart-libreoffice"
+	f_action_exec "$CA_LIBREOFFICESUP" "wget https://extensions.libreoffice.org/extensions/grammalecte/1-7.0/@@download/file/Grammalecte-fr-v1.7.0.oxt --no-check-certificate ; chmod +x Grammalecte*.oxt ; sudo unopkg add --shared Grammalecte*.oxt ; rm Grammalecte*.oxt"
+	f_action_get "$CA_MASTERPDFEDITOR" "https://code-industry.net/public/master-pdf-editor-5.4.38-qt5.amd64.deb"
+	f_action_install "$CA_MCOMIX" mcomix
+	f_action_snap_install "$CA_OFFICEWEBAPPS" "unofficial-webapp-office"
+	f_action_flatpak_install "$CA_NOTESUP" com.github.philip_scott.notes-up  
+	f_action_snap_install "$CA_ONLYOFFICE" onlyoffice-desktopeditors
+    	f_action_LinInstall "$CA_OPENOFFICE" OpenOffice
+    	f_action_install "$CA_PANDOC" pandoc
+    	f_action_install "$CA_PDFMOD" pdfmod
+	f_action_get "$CA_PDFSAM" "https://github.com/torakiki/pdfsam/releases/download/v4.0.5/pdfsam_4.0.5-1_amd64.deb"
+    	f_action_install "$CA_PDFSHUFFLER" pdfshuffler
+    	f_action_exec "$CA_POLICEMST" "echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo /usr/bin/debconf-set-selections ; sudo apt install ttf-mscorefonts-installer -y"
+	f_action_snap_install "$CA_PROJECTLIBRE" "projectlibre" 
+    	f_action_LinInstall "$CA_SCENARI" Scenari
+    	f_action_install "$CA_SCRIBUS" "scribus scribus-template"	
+	f_action_flatpak_install "$CA_SPICEUP" "com.github.philip_scott.spice-up"
+	f_action_get "$CA_WPSOFFICE" "http://fr.archive.ubuntu.com/ubuntu/pool/main/libp/libpng/libpng12-0_1.2.54-1ubuntu1_amd64.deb" 
+	f_action_get "$CA_WPSOFFICE" "http://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/8865/wps-office_11.1.0.8865_amd64.deb"
+	f_action_get "$CA_XMIND" "https://www.xmind.net/xmind/downloads/XMind-ZEN-for-Linux-amd-64bit-10.0.0-201911260056.deb"
+	f_action_install "$CA_XOURNAL" xournal
+	f_action_install "$CA_XPAD" xpad
+	f_action_install "$CA_ZIM" zim	
+	
 	# Lecture Multimedia
 	f_action_install "$CA_AUDACIOUS" audacious
 	f_action_install "$CA_CANTATA" "cantata mpd"
@@ -222,44 +260,6 @@ then
 	f_action_install "$CA_VOKOSCREEN" vokoscreen
 	f_action_install "$CA_WINFF" "winff winff-qt"
 	f_action_get "$CA_XNVIEW" "https://download.xnview.com/XnViewMP-linux-x64.deb"
-	
-	# Bureautique/Mail
-	f_action_install "$CA_CALLIGRA" calligra
-	f_action_snap_install "$CA_DRAWIO" drawio
-	f_action_install "$CA_FRDIC" "myspell-fr-gut wfrench aspell-fr hyphen-fr mythes-fr"
-	f_action_install "$CA_FBREADER" fbreader
-	f_action_install "$CA_FEEDREADER" feedreader
-	f_action_snap_install "$CA_FREEMIND" freemind
-	f_action_get "$CA_FREEOFFICE" "https://www.softmaker.net/down/softmaker-freeoffice-2018_973-01_amd64.deb"
-	f_action_install "$CA_FREEPLANE" freeplane
-	f_action_install "$CA_GNOMEOFFICE" "abiword gnumeric dia planner glabels glom gnucash"	
-	f_action_install "$CA_GRAMPS" gramps
-	f_action_get_appimage "$CA_JOPLIN" "https://github.com/laurent22/joplin/releases/download/v1.0.175/Joplin-1.0.175-x86_64.AppImage"
-    	f_action_install "$CA_LIBREOFFICEDEPOT" "libreoffice libreoffice-l10n-fr libreoffice-style-breeze"
-	f_action_ppa_install "$CA_LIBREOFFICEFRESH" ppa:libreoffice/ppa "libreoffice libreoffice-l10n-fr libreoffice-style-breeze"
-	f_action_install "$CA_LIBREOFFICESUP" "libreoffice-style-elementary libreoffice-style-oxygen libreoffice-style-human libreoffice-style-sifr libreoffice-style-tango libreoffice-templates openclipart-libreoffice"
-	f_action_exec "$CA_LIBREOFFICESUP" "wget https://extensions.libreoffice.org/extensions/grammalecte/1-7.0/@@download/file/Grammalecte-fr-v1.7.0.oxt --no-check-certificate ; chmod +x Grammalecte*.oxt ; sudo unopkg add --shared Grammalecte*.oxt ; rm Grammalecte*.oxt"
-	f_action_get "$CA_MASTERPDFEDITOR" "https://code-industry.net/public/master-pdf-editor-5.4.38-qt5.amd64.deb"
-	f_action_install "$CA_MCOMIX" mcomix
-	f_action_snap_install "$CA_OFFICEWEBAPPS" "unofficial-webapp-office"
-	f_action_flatpak_install "$CA_NOTESUP" com.github.philip_scott.notes-up  
-	f_action_snap_install "$CA_ONLYOFFICE" onlyoffice-desktopeditors
-    	f_action_LinInstall "$CA_OPENOFFICE" OpenOffice
-    	f_action_install "$CA_PANDOC" pandoc
-    	f_action_install "$CA_PDFMOD" pdfmod
-	f_action_get "$CA_PDFSAM" "https://github.com/torakiki/pdfsam/releases/download/v4.0.5/pdfsam_4.0.5-1_amd64.deb"
-    	f_action_install "$CA_PDFSHUFFLER" pdfshuffler
-    	f_action_exec "$CA_POLICEMST" "echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo /usr/bin/debconf-set-selections ; sudo apt install ttf-mscorefonts-installer -y"
-	f_action_snap_install "$CA_PROJECTLIBRE" "projectlibre" 
-    	f_action_LinInstall "$CA_SCENARI" Scenari
-    	f_action_install "$CA_SCRIBUS" "scribus scribus-template"	
-	f_action_flatpak_install "$CA_SPICEUP" "com.github.philip_scott.spice-up"
-	f_action_get "$CA_WPSOFFICE" "http://fr.archive.ubuntu.com/ubuntu/pool/main/libp/libpng/libpng12-0_1.2.54-1ubuntu1_amd64.deb" 
-	f_action_get "$CA_WPSOFFICE" "http://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/8865/wps-office_11.1.0.8865_amd64.deb"
-	f_action_get "$CA_XMIND" "https://www.xmind.net/xmind/downloads/XMind-ZEN-for-Linux-amd-64bit-10.0.0-201911260056.deb"
-	f_action_install "$CA_XOURNAL" xournal
-	f_action_install "$CA_XPAD" xpad
-	f_action_install "$CA_ZIM" zim
 	
 	# Science/Education
 	f_action_install "$CA_ALGOBOX" algobox
