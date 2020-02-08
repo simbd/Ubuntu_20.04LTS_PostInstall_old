@@ -457,7 +457,7 @@ then
 	f_action_install "$CA_TEXMAKER" texmaker
 	f_action_install "$CA_TEXSTUDIO" texstudio
 	f_action_install "$CA_TEXWORKS" "texlive texlive-lang-french texworks"
-	f_action_install "$CA_VIM" "vim vim-addon-manager vim-airline vim-asciidoc vim-athena vim-autopep8 vim-bitbake vim-conque vim-ctrlp vim-doc vim-editorconfig vim-fugitive vim-gocomplete vim-gtk3 vim-julia vim-khuno vim-lastplace vim-latexsuite vim-ledger vim-migemo vim-nox vim-pathogen vim-puppet vim-python-jedi vim-rails vim-scripts vim-snipmate vim-snippets vim-syntastic vim-tabular vim-textobj-user vim-tiny vim-tlib vim-vimerl vim-voom"
+	f_action_install "$CA_VIM" "vim vim-{addon-manager,airline,asciidoc,athena,autopep8,bitbake,conque,ctrlp,editorconfig,fugitive,gocomplete,gtk3,julia,khuno,lastplace,latexsuite,ledger,migemo,nox,pathogen,puppet,python-jedi,rails,scripts,snipmate,snippets,syntastic,tabular,textobj-user,tiny,tlib,vimerl,voom}"
 	f_RepositoryExt_Install "$CA_VSCODE" "vscode" "https://packages.microsoft.com/keys/microsoft.asc" "[arch=amd64] https://packages.microsoft.com/repos/vscode stable main" "code" ##PB : ne s'installe pas
 	f_action_install "$CA_VSCODE" apt-transport-https #dépendance
 	f_action_get "$CA_VSCODIUM" "https://github.com/VSCodium/vscodium/releases/download/1.41.1/codium_1.41.1-1576787344_amd64.deb"
@@ -487,7 +487,7 @@ then
 	f_action_get "$CA_PHORONIXTESTSUITE" "http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_9.2.1_all.deb"
 	f_action_exec "$CA_OPTIMIS_SWAP" "echo vm.swappiness=5 | sudo tee /etc/sysctl.d/99-swappiness.conf ; echo vm.vfs_cache_pressure=50 | sudo tee -a /etc/sysctl.d/99-sysctl.conf ; sudo sysctl -p /etc/sysctl.d/99-sysctl.conf"
 	f_action_exec "$CA_SNAPREMPLACEMENT" "sudo snap remove gnome-calculator gnome-characters gnome-logs gnome-system-monitor ; sudo apt install gnome-calculator gnome-characters gnome-logs gnome-system-monitor -y"
-	f_action_install "$CA_NAUTILUS_EXTRA" "nautilus-compare nautilus-admin nautilus-extension-gnome-terminal nautilus-filename-repairer nautilus-gtkhash nautilus-script-audio-convert nautilus-sendto nautilus-share nautilus-wipe"
+	f_action_install "$CA_NAUTILUS_EXTRA" "nautilus-{compare,admin,extension-gnome-terminal,filename-repairer,gtkhash,script-audio-convert,sendto,share,wipe}"
 	f_action_install "$CA_SYSFIC" "btrfs-progs exfat-utils exfat-fuse hfsprogs hfsutils hfsplus xfsprogs xfsdump zfsutils-linux"
 	f_action_install "$CA_TLP" "tlp tlp-rdw"
 	f_action_ppa_install "$CA_TLP_THINKPAD" "ppa:linrunner/tlp" "tlp tlp-rdw tp-smapi-dkms acpi-call-tools"	
