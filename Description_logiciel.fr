@@ -303,6 +303,110 @@ CD_XCHAT="Client IRC graphique libre utilisant GTK"
 CA_YTDLND="YouTube Download"
 CD_YTDLND="Script (à utiliser dans le terminal) de capture de vidéos en ligne (YouTube et autres)"
 
+SCT_OFFICE="______ [[ BUREAUTIQUE ]] ______"
+
+CA_CALLIGRA="Calligra Suite"
+CD_CALLIGRA="suite bureautique de KDE, il s'intègre donc bien avec l'environnement kde/plasma"
+
+CA_DRAWIO="Draw.Io {SNAP}"
+CD_DRAWIO="Application de création de diagrammes en version Desktop (existe aussi en version web)"
+
+CA_FRDIC="Dictionnaire FR"
+CD_FRDIC="Dictionnaires Français : entre autre pour utilisation avec LibreOffice et Firefox."
+
+CA_FBREADER="FBReader"
+CD_FBREADER="Lecteur de livres électroniques e-books supportant les formats (epub, fb2, chm...)"
+
+CA_FEEDREADER="FeedReader"
+CD_FEEDREADER="Agrégateur RSS moderne pour consulter vos fils d'informations RSS"
+
+CA_FREEMIND="FreeMind {SNAP}"
+CD_FREEMIND="Logiciel libre pour créer des cartes heuristiques, des diagrammes de connexions sémantiques"
+
+CA_FREEOFFICE="FreeOffice"
+CD_FREEOFFICE="Suite bureautique propriétaire, gratuite en utilisation privée, nécessite de l'activer"
+
+CA_FREEPLANE="Freeplane"
+CD_FREEPLANE="Création de cartes heuristiques (Mind Map) avec des diagrammes représentant les connexions sémantiques"
+
+CA_GNOMEOFFICE="Gnome Office Pack"
+CD_GNOMEOFFICE="Pack de logiciel bureautique de Gnome : Abiword, Gnumeric, Dia, Planner, Glabels, Glom, Gnucash"
+
+CA_GRAMPS="Gramps"
+CD_GRAMPS="Logiciel libre et multiplateforme de gestion/recherche généalogique"
+
+CA_JOPLIN="Joplin {APPIMAGE}"
+CD_JOPLIN="Saisie de notes et listes de choses à faire"
+
+CA_LIBREOFFICEDEPOT="LibreOffice (version des dépots)"
+CD_LIBREOFFICEDEPOT="La meilleur suite bureautique, et en plus elle est libre, multi-plateforme et gratuite."
+
+CA_LIBREOFFICEFRESH="LibreOffice backporté {PPA}"
+CD_LIBREOFFICEFRESH="Permet d'avoir systématiquement la dernière version stable possible de LibreOffice"
+
+CA_OFFICEWEBAPPS="MS Office Web Apps {SNAP}"
+CD_OFFICEWEBAPPS="Application non-officiel pour se connecter aux applications bureautique online de Microsoft (Office 365)"
+
+CA_LIBREOFFICESUP="Supplément pour LibreOffice"
+CD_LIBREOFFICESUP="Supplément : icones, modèles de documents et clipart, extension Grammalecte activé"
+
+CA_MASTERPDFEDITOR="Master PDF Editor"
+CD_MASTERPDFEDITOR="éditeur PDF propriétaire capable de gérer les formulaires CERFA/XFA"
+
+CA_MCOMIX="MComix"
+CD_MCOMIX="Visionneuse d'image avancée et gratuite sous licence GPL conçu pour la lecture de bandes dessinées"
+
+CA_NOTESUP="Notes Up {FLATPAK}"
+CD_NOTESUP="éditeur et manager de notes avec markdown, simple mais efficace"
+
+CA_ONLYOFFICE="OnlyOffice {SNAP}"
+CD_ONLYOFFICE="suite bureautique multifonctionnelle intégrée au CRM, avec jeu d'outils de collaboration"
+
+CA_OPENOFFICE="OpenOffice {Script LinInstall}"
+CD_OPENOFFICE="suite bureautique opensource alternative, moins répendu et moins dynamique que LibreOffice"
+
+CA_PANDOC="Pandoc"
+CD_PANDOC="Le couteau suisse de la création des documents en CLI permettant de convertir des documents dans différents formats"
+
+CA_PDFMOD="PdfMod"
+CD_PDFMOD="logiciel permettant diverses modifications sur vos PDF"
+
+CA_PDFSAM="PdfSam Basic"
+CD_PDFSAM="Outil pratique pour scinder, fusionner, faire pivoter/mélanger/extraire des pages de fichier PDF"
+
+CA_PDFSHUFFLER="PdfShuffler"
+CD_PDFSHUFFLER="Petit logiciel pour faire des modifs de PDF : supprimer des pages, rogner, tourner, ré-arranger l'ordre etc..."
+
+CA_POLICEMST="Police d'écriture Microsoft"
+CD_POLICEMST="Ajoute les polices d'écriture de Microsoft pour ne pas avoir de déformation de document venant de MO"
+
+CA_PROJECTLIBRE="ProjectLibre"
+CD_PROJECTLIBRE="Alternative à Microsoft Project pour gérer/planifier des projets"
+
+CA_SCENARI="Scenari Suite {Script LinInstall}"
+CD_SCENARI="Edition avancée de chaîne éditoriale (contient scenarichaine v4.2 et Opale v3.7)"
+
+CA_SCRIBUS="Scribus"
+CD_SCRIBUS="Logiciel de PAO, convient plutôt pour la réalisation de plaquettes, livres et magazines"
+
+CA_SPICEUP="Spice Up {FLATPAK}"
+CD_SPICEUP="Outil libre pour designer/rédiger vos futures présentations (équivalent à PowerPoint ou LibreOffice Impress)"
+
+CA_WPSOFFICE="WPS Office 2019"
+CD_WPSOFFICE="Suite bureautique propriétaire avec une interface proche de Microsoft Office"
+
+CA_XMIND="XMind Zen 2020"
+CD_XMIND="Logiciel de création de schéma de carte heuristique pour refléter des pensées de façon visuelle"
+
+CA_XOURNAL="Xournal"
+CD_XOURNAL="Logiciel de prise de notes manuscrites très utile et complet, équivalent à 'Microsoft OneNote'"
+
+CA_XPAD="Xpad"
+CD_XPAD="Gestion de Post-it."
+
+CA_ZIM="Zim"
+CD_ZIM="Wiki en local avec une collection de pages et de marqueurs"
+
 SCT_LECTUREMULTIMEDIA="______ [[ LECTURE MULTIMEDIA ]] ______"
 
 CA_AUDACIOUS="Audacious"
@@ -569,110 +673,6 @@ CD_WINFF="Encodage vidéo rapide dans différents formats"
 
 CA_XNVIEW="XnView MP"
 CD_XNVIEW="Logiciel de visualisation, de retouche et de conversion d’images multi-plateforme"
-
-SCT_OFFICE="______ [[ BUREAUTIQUE ]] ______"
-
-CA_CALLIGRA="Calligra Suite"
-CD_CALLIGRA="suite bureautique de KDE, il s'intègre donc bien avec l'environnement kde/plasma"
-
-CA_DRAWIO="Draw.Io {SNAP}"
-CD_DRAWIO="Application de création de diagrammes en version Desktop (existe aussi en version web)"
-
-CA_FRDIC="Dictionnaire FR"
-CD_FRDIC="Dictionnaires Français : entre autre pour utilisation avec LibreOffice et Firefox."
-
-CA_FBREADER="FBReader"
-CD_FBREADER="Lecteur de livres électroniques e-books supportant les formats (epub, fb2, chm...)"
-
-CA_FEEDREADER="FeedReader"
-CD_FEEDREADER="Agrégateur RSS moderne pour consulter vos fils d'informations RSS"
-
-CA_FREEMIND="FreeMind {SNAP}"
-CD_FREEMIND="Logiciel libre pour créer des cartes heuristiques, des diagrammes de connexions sémantiques"
-
-CA_FREEOFFICE="FreeOffice"
-CD_FREEOFFICE="Suite bureautique propriétaire, gratuite en utilisation privée, nécessite de l'activer"
-
-CA_FREEPLANE="Freeplane"
-CD_FREEPLANE="Création de cartes heuristiques (Mind Map) avec des diagrammes représentant les connexions sémantiques"
-
-CA_GNOMEOFFICE="Gnome Office Pack"
-CD_GNOMEOFFICE="Pack de logiciel bureautique de Gnome : Abiword, Gnumeric, Dia, Planner, Glabels, Glom, Gnucash"
-
-CA_GRAMPS="Gramps"
-CD_GRAMPS="Logiciel libre et multiplateforme de gestion/recherche généalogique"
-
-CA_JOPLIN="Joplin {APPIMAGE}"
-CD_JOPLIN="Saisie de notes et listes de choses à faire"
-
-CA_LIBREOFFICEDEPOT="LibreOffice (version des dépots)"
-CD_LIBREOFFICEDEPOT="La meilleur suite bureautique, et en plus elle est libre, multi-plateforme et gratuite."
-
-CA_LIBREOFFICEFRESH="LibreOffice backporté {PPA}"
-CD_LIBREOFFICEFRESH="Permet d'avoir systématiquement la dernière version stable possible de LibreOffice"
-
-CA_OFFICEWEBAPPS="MS Office Web Apps {SNAP}"
-CD_OFFICEWEBAPPS="Application non-officiel pour se connecter aux applications bureautique online de Microsoft (Office 365)"
-
-CA_LIBREOFFICESUP="Supplément pour LibreOffice"
-CD_LIBREOFFICESUP="Supplément : icones, modèles de documents et clipart, extension Grammalecte activé"
-
-CA_MASTERPDFEDITOR="Master PDF Editor"
-CD_MASTERPDFEDITOR="éditeur PDF propriétaire capable de gérer les formulaires CERFA/XFA"
-
-CA_MCOMIX="MComix"
-CD_MCOMIX="Visionneuse d'image avancée et gratuite sous licence GPL conçu pour la lecture de bandes dessinées"
-
-CA_NOTESUP="Notes Up {FLATPAK}"
-CD_NOTESUP="éditeur et manager de notes avec markdown, simple mais efficace"
-
-CA_ONLYOFFICE="OnlyOffice {SNAP}"
-CD_ONLYOFFICE="suite bureautique multifonctionnelle intégrée au CRM, avec jeu d'outils de collaboration"
-
-CA_OPENOFFICE="OpenOffice {Script LinInstall}"
-CD_OPENOFFICE="suite bureautique opensource alternative, moins répendu et moins dynamique que LibreOffice"
-
-CA_PANDOC="Pandoc"
-CD_PANDOC="Le couteau suisse de la création des documents en CLI permettant de convertir des documents dans différents formats"
-
-CA_PDFMOD="PdfMod"
-CD_PDFMOD="logiciel permettant diverses modifications sur vos PDF"
-
-CA_PDFSAM="PdfSam Basic"
-CD_PDFSAM="Outil pratique pour scinder, fusionner, faire pivoter/mélanger/extraire des pages de fichier PDF"
-
-CA_PDFSHUFFLER="PdfShuffler"
-CD_PDFSHUFFLER="Petit logiciel pour faire des modifs de PDF : supprimer des pages, rogner, tourner, ré-arranger l'ordre etc..."
-
-CA_POLICEMST="Police d'écriture Microsoft"
-CD_POLICEMST="Ajoute les polices d'écriture de Microsoft pour ne pas avoir de déformation de document venant de MO"
-
-CA_PROJECTLIBRE="ProjectLibre"
-CD_PROJECTLIBRE="Alternative à Microsoft Project pour gérer/planifier des projets"
-
-CA_SCENARI="Scenari Suite {Script LinInstall}"
-CD_SCENARI="Edition avancée de chaîne éditoriale (contient scenarichaine v4.2 et Opale v3.7)"
-
-CA_SCRIBUS="Scribus"
-CD_SCRIBUS="Logiciel de PAO, convient plutôt pour la réalisation de plaquettes, livres et magazines"
-
-CA_SPICEUP="Spice Up {FLATPAK}"
-CD_SPICEUP="Outil libre pour designer/rédiger vos futures présentations (équivalent à PowerPoint ou LibreOffice Impress)"
-
-CA_WPSOFFICE="WPS Office 2019"
-CD_WPSOFFICE="Suite bureautique propriétaire avec une interface proche de Microsoft Office"
-
-CA_XMIND="XMind Zen 2020"
-CD_XMIND="Logiciel de création de schéma de carte heuristique pour refléter des pensées de façon visuelle"
-
-CA_XOURNAL="Xournal"
-CD_XOURNAL="Logiciel de prise de notes manuscrites très utile et complet, équivalent à 'Microsoft OneNote'"
-
-CA_XPAD="Xpad"
-CD_XPAD="Gestion de Post-it."
-
-CA_ZIM="Zim"
-CD_ZIM="Wiki en local avec une collection de pages et de marqueurs"
 
 SCT_EDUSCIENCE="______ [[ SCIENCE / EDUCATION ]] ______"
 
