@@ -1233,9 +1233,6 @@ CD_APPORTOFF="Permet de désactiver l'affichage de la fenêtre avec un message d
 CA_EXTINCTIONAUTO="Extinction automatique à 4H du matin"
 CD_EXTINCTIONAUTO="Avec cette option, si vous avez oublié d'éteindre votre PC le soir, il sera éteint de force à 4H du matin"
 
-CA_GCONF="Gnome Gconf Editor"
-CD_GCONF="Application pour configurer les paramètres de Gnome de façon relativement simplifié"
-
 CA_GWE="GWE - GreenWithEnvy {FLATPAK}"
 CD_GWE="Utilitaire pour contrôler l'overclocking/ventilateur des cartes graphiques Nvidia"
 
@@ -1254,14 +1251,11 @@ CD_GRUBDEFAULT="En cas de multiboot, sauvegarde le dernier OS lancé pour que ç
 CA_GRUBATTENTE="Grub : réduction de l'attente à 2s"
 CD_GRUBATTENTE="Permet de réduire le temps d'attente par défaut (10s) à 3s (+ supprime les tests de ram)"
 
-CA_GTWEAKTOOL="Gnome Tweak Tool (Ajustements) pour Gnome-Shell"
-CD_GTWEAKTOOL="Utilitaire très utile (voir indispensable) qui permet la gestion de paramètres supplémentaires (extension, animation...)"
-
 CA_DVDREAD="Lecture DVD commerciaux/Blu-Ray {Nécessite intervention !}"
 CD_DVDREAD="Permet de lire les DVD commerciaux chiffrés avec CSS et les Blu-Ray"
 
-CA_PACKEXTENSION="Pack d'extension Gnome Shell"
-CD_PACKEXTENSION="Ajoute des extensions pour Gnome : DashToDock, DashToPanel, Impatience; Météo, MonitorSystem, Caffeine"
+CA_PACKEXTENSION="Pack d'extension Gnome supplémentaire"
+CD_PACKEXTENSION="Ajoute des extensions pour Gnome : DashToDock, DashToPanel, Impatience; Météo, MonitorSystem, Caffeine..."
 
 CA_PACKICON="Pack d'icones"
 CD_PACKICON="Ajoute des icones pour la customisation : Papirus, Numix, Breeze, GnomeBrave, Elementary, Oxygen"
