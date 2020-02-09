@@ -1058,7 +1058,7 @@ CD_KAPMAN="Kapman est un clone du jeu bien connu Pac-Man"
 CA_LOL="League Of Legend (LoL) {SNAP}"
 CD_LOL="Le célèbre MOBA jouable sous Linux via ce Snap packagé avec Wine"
 
-CA_LUTRIS="Lutris"
+CA_LUTRIS="Lutris {PPA}"
 CD_LUTRIS="Plate-forme de jeux équivalente à Steam mais libre"
 
 CA_MEGAGLEST="Megaglest"
