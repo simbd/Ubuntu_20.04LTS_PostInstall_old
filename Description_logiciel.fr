@@ -1174,8 +1174,8 @@ CD_NEOVIM="Editeur alternative à Vim. Il vise à améliorer l'extensibilité/ma
 CA_NOTEPADQQ="NotePadqq"
 CD_NOTEPADQQ="Un clone de l'éditeur NotePad++ pour linux"
 
-CA_PIP3="Pip3 + Spyder {via Pip}"
-CD_PIP3="Permet l'installation de librairie Python via 'pip3 install' + ajout de l'IDE Python Spyder via pip" 
+CA_SPYDER="Spyder3"
+CD_SPYDER="Un IDE pour le language Python (version pour Python3)" 
 
 CA_PYCHARM="PyCharm (version communautaire) {SNAP}"
 CD_PYCHARM="IDE pour le langage Python"
