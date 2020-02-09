@@ -38,9 +38,8 @@ then
     	f_action_install "$CA_GNOMECLASSIC" gnome-shell-extensions
     	f_action_install "$CA_GNOMEFLASHBACKM" gnome-session-flashback
     	f_action_install "$CA_GNOMEFLASHBACKC" "gnome-session-flashback compiz compizconfig-settings-manager compiz-plugins compiz-plugins-extra"
-    	f_action_install "$CA_UNITY" "unity-session unity-tweak-tool compiz"
-    
-   	# Navigateurs
+   	
+	# Navigateurs
     	f_action_snap_install "$CA_BEAKER" beaker-browser
     	f_RepositoryExt_Install "$CA_BRAVE" "brave-browser" "https://s3-us-west-2.amazonaws.com/brave-apt/keys.asc" "[arch=amd64] https://s3-us-west-2.amazonaws.com/brave-apt bionic main" "brave"
     	f_action_install "$CA_CHROMIUM" "chromium-browser chromium-browser-l10n"
