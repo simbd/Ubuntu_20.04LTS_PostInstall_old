@@ -361,7 +361,6 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_MINECRAFT" "$CD_MINECRAFT" \
 	$(chkDef "FALSE") "$CA_MINETEST" "$CD_MINETEST" \
 	$(chkDef "FALSE") "$CA_OPENARENA" "$CD_OPENARENA" \
-	$(chkDef "FALSE") "$CA_OPENBVE" "$CD_OPENBVE" \
 	$(chkDef "FALSE") "$CA_PINGUS" "$CD_PINGUS" \
 	$(chkDef "FALSE") "$CA_POKERTH" "$CD_POKERTH" \
 	$(chkDef "FALSE") "$CA_QUAKE" "$CD_QUAKE" \
