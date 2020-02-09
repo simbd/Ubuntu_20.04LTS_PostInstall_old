@@ -365,8 +365,8 @@ CD_ONLYOFFICE="suite bureautique multifonctionnelle intégrée au CRM, avec jeu 
 CA_OPENOFFICE="OpenOffice {Script LinInstall}"
 CD_OPENOFFICE="suite bureautique opensource alternative, moins répendu et moins dynamique que LibreOffice"
 
-CA_PANDOC="Pandoc"
-CD_PANDOC="Le couteau suisse de la création des documents en CLI permettant de convertir des documents dans différents formats"
+CA_PANDOC="Pandoc (cli)"
+CD_PANDOC="Outil permettant de convertir des documents dans différents formats (s'utilise en ligne de commande)"
 
 CA_PDFMOD="PdfMod"
 CD_PDFMOD="logiciel permettant diverses modifications sur vos PDF"
