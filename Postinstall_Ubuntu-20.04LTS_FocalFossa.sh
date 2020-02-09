@@ -188,7 +188,7 @@ then
     	f_action_install "$CA_RHYTHMBOX" rhythmbox		
     	f_action_install "$CA_SHOTWELL" shotwell	
     	f_action_install "$CA_SMPLAYER" "smplayer smplayer-l10n smplayer-themes"	    
-    	f_RepositoryExt_Install "$CA_SPOTIFY" "spotify" "https://download.spotify.com/debian/pubkey.gpg" "http://repository.spotify.com stable non-free" "spotify-client spotify-client-gnome-support"
+    	f_RepositoryExt_Install "$CA_SPOTIFY" "spotify" "https://download.spotify.com/debian/pubkey.gpg" "http://repository.spotify.com stable non-free" "spotify-client-gnome-support"
 	f_action_flatpak_install "$CA_TAUON" com.github.taiko2k.tauonmb
 	f_action_install "$CA_VLCSTABLE" "vlc vlc-l10n"
     	f_action_install "$CA_RESTRICT_EXTRA" ubuntu-restricted-extras
@@ -487,7 +487,7 @@ then
 	f_action_exec "$CA_OPTIMIS_SWAP" "echo vm.swappiness=5 | sudo tee /etc/sysctl.d/99-swappiness.conf ; echo vm.vfs_cache_pressure=50 | sudo tee -a /etc/sysctl.d/99-sysctl.conf ; sudo sysctl -p /etc/sysctl.d/99-sysctl.conf"
 	f_action_exec "$CA_SNAPREMPLACEMENT" "sudo snap remove gnome-calculator  gnome-characters  gnome-logs  gnome-system-monitor"
 	f_action_install "$CA_SNAPREMPLACEMENT" "gnome-calculator gnome-characters gnome-logs gnome-system-monitor"
-	f_action_install "$CA_NAUTILUS_EXTRA" "nautilus-admin nautilus-extension-gnome-terminal nautilus-filename-repairer nautilus-gtkhash nautilus-script-audio-convert nautilus-sendto nautilus-share nautilus-wipe"
+	f_action_install "$CA_NAUTILUS_EXTRA" "nautilus-nextcloud nautilus-admin nautilus-extension-gnome-terminal nautilus-filename-repairer nautilus-gtkhash nautilus-script-audio-convert nautilus-sendto nautilus-share nautilus-wipe"
 	f_action_install "$CA_SYSFIC" "btrfs-progs exfat-utils exfat-fuse hfsprogs hfsutils hfsplus xfsprogs xfsdump zfsutils-linux"
 	f_action_install "$CA_TLP" "tlp tlp-rdw"
 	f_action_ppa_install "$CA_TLP_THINKPAD" "ppa:linrunner/tlp" "tlp tlp-rdw tp-smapi-dkms acpi-call-tools"	
