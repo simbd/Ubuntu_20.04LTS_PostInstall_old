@@ -1,7 +1,7 @@
 #!/bin/bash
 ## IMPORTANT > Ne pas lancer ce script directement, la post-installation se lance avec le script nommé "PostInstall_Ubuntu-20.04LTS_FocalFossa.sh"
 
-CHK_REP=$(zenity --entry --title="$BGN_TITLE" --text "$BGN_TEXT" --entry-text="$BGN_DEF" $BGN_UNCHECKED $BGN_CHECKED)
+CHK_REP=$(zenity --entry --title="$BGN_TITLE" --text "$BGN_TEXT" --entry-text="$BGN_DEF" $BGN_UNCHECKED)
 if [ $? -ne 0 ] ; then
 	exit
 fi
