@@ -456,7 +456,8 @@ then
 	f_action_install "$CA_TEXMAKER" texmaker
 	f_action_install "$CA_TEXSTUDIO" texstudio
 	f_action_install "$CA_TEXWORKS" "texlive texlive-lang-french texworks"
-	f_action_install "$CA_VIM" "vim vim-{addon-manager,airline,asciidoc,athena,autopep8,bitbake,conque,ctrlp,editorconfig,fugitive,gocomplete,gtk3,julia,khuno,lastplace,latexsuite,ledger,migemo,nox,pathogen,puppet,python-jedi,rails,scripts,snipmate,snippets,syntastic,tabular,textobj-user,tiny,tlib,vimerl,voom}"
+	f_action_install "$CA_VIM" "vim vim-addon-manager vim-airline vim-asciidoc vim-athena vim-autopep8 vim-bitbake vim-conque vim-ctrlp vim-editorconfig vim-fugitive vim-gocomplete vim-gtk3 vim-julia vim-khuno vim-lastplace" 
+	f_action_install "$CA_VIM" "vim-latexsuite vim-ledger vim-migemo vim-nox vim-pathogen vim-puppet vim-python-jedi vim-rails vim-scripts vim-snipmate vim-snippets vim-syntastic vim-tabular vim-textobj-user vim-tiny vim-tlib vim-vimerl vim-voom"
 	f_RepositoryExt_Install "$CA_VSCODE" "vscode" "https://packages.microsoft.com/keys/microsoft.asc" "[arch=amd64] https://packages.microsoft.com/repos/vscode stable main" "code" ##PB : ne s'installe pas
 	f_action_install "$CA_VSCODE" apt-transport-https #dépendance
 	f_action_get "$CA_VSCODIUM" "https://github.com/VSCodium/vscodium/releases/download/1.41.1/codium_1.41.1-1576787344_amd64.deb"
@@ -476,16 +477,17 @@ then
 	f_action_exec "$CA_GRUBDEFAULT" "sudo sed -ri 's/GRUB_DEFAULT=0/GRUB_DEFAULT="saved"/g' /etc/default/grub ; echo 'GRUB_SAVEDEFAULT="true"' | sudo tee -a /etc/default/grub ; sudo update-grub"
 	f_action_exec "$CA_GRUBATTENTE" "sudo sed -ri 's/GRUB_TIMEOUT=10/GRUB_TIMEOUT=2/g' /etc/default/grub ; sudo mkdir /boot/old ; sudo mv /boot/memtest86* /boot/old/ ; sudo update-grub"
 	f_action_exec "$CA_DVDREAD" "sudo apt install libdvdcss2 libdvd-pkg libbluray2 -y ; sudo dpkg-reconfigure libdvd-pkg"
-	f_action_install "$CA_PACKEXTENSION" "chrome-gnome-shell gnome-shell-extension-{caffeine,dashtodock,dash-to-panel,impatience,weather,system-monitor,arc-menu,gamemode,gsconnect,xrdesktop}"
+	f_action_install "$CA_PACKEXTENSION" "chrome-gnome-shell gnome-shell-extension-caffeine gnome-shell-extension-dashtodock gnome-shell-extension-dash-to-panel gnome-shell-extension-impatience gnome-shell-extension-weather" 
+	f_action_install "$CA_PACKEXTENSION" "gnome-shell-extension-system-monitor gnome-shell-extension-arc-menu gnome-shell-extension-gamemode gnome-shell-extension-gsconnect gnome-shell-extension-xrdesktop"
 	f_action_install "$CA_PACKICON" "papirus-icon-theme numix-icon-theme numix-icon-theme-circle breeze-icon-theme gnome-brave-icon-theme elementary-icon-theme oxygen-icon-theme"
 	f_action_install "$CA_PACKTHEME" "arc-theme numix-blue-gtk-theme numix-gtk-theme materia-gtk-theme yuyo-gtk-theme human-theme"
 	f_action_install "$CA_INTEL" intel-microcode
 	f_action_ppa_install "$CA_NVIDIA_BP" ppa:graphics-drivers/ppa "nvidia-graphics-drivers-440 nvidia-settings vulkan-loader vulkan-tools"
 	f_action_get "$CA_PHORONIXTESTSUITE" "http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_9.2.1_all.deb"
 	f_action_exec "$CA_OPTIMIS_SWAP" "echo vm.swappiness=5 | sudo tee /etc/sysctl.d/99-swappiness.conf ; echo vm.vfs_cache_pressure=50 | sudo tee -a /etc/sysctl.d/99-sysctl.conf ; sudo sysctl -p /etc/sysctl.d/99-sysctl.conf"
-	f_action_exec "$CA_SNAPREMPLACEMENT" "sudo snap remove gnome-{calculator,characters,logs,system-monitor}"
-	f_action_install "$CA_SNAPREMPLACEMENT" "gnome-{calculator,characters,logs,system-monitor}"
-	f_action_install "$CA_NAUTILUS_EXTRA" "'nautilus-{admin,extension-gnome-terminal,filename-repairer,gtkhash,script-audio-convert,sendto,share,wipe}'"
+	f_action_exec "$CA_SNAPREMPLACEMENT" "sudo snap remove gnome-calculator  gnome-characters  gnome-logs  gnome-system-monitor"
+	f_action_install "$CA_SNAPREMPLACEMENT" "gnome-calculator gnome-characters gnome-logs gnome-system-monitor"
+	f_action_install "$CA_NAUTILUS_EXTRA" "nautilus-admin nautilus-extension-gnome-terminal nautilus-filename-repairer nautilus-gtkhash nautilus-script-audio-convert nautilus-sendto nautilus-share nautilus-wipe"
 	f_action_install "$CA_SYSFIC" "btrfs-progs exfat-utils exfat-fuse hfsprogs hfsutils hfsplus xfsprogs xfsdump zfsutils-linux"
 	f_action_install "$CA_TLP" "tlp tlp-rdw"
 	f_action_ppa_install "$CA_TLP_THINKPAD" "ppa:linrunner/tlp" "tlp tlp-rdw tp-smapi-dkms acpi-call-tools"	
