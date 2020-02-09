@@ -6,8 +6,8 @@ PIS_NAME="Ubuntu 20.04LTS"
 #Begin values : première boite de dialogue
 BGN_TITLE="Configuration de ${PIS_NAME}"
 BGN_TEXT="Choisissez comment vous voulez que les cases à cocher des logiciels soient cochées"
-BGN_DEF="Par défaut (quelques choix recommandés cochés)"
-BGN_UNCHECKED="Toutes décochées"
+BGN_DEF="Par défaut (quelques choix recommandés)"
+BGN_UNCHECKED="Toutes décochées (rien n'est coché)"
 BGN_CHECKED="Toutes_cochées_(déconseillé!)"
 
 # General Messages
