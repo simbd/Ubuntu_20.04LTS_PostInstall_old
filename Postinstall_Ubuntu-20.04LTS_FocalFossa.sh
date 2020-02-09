@@ -38,7 +38,7 @@ then
     	f_action_install "$CA_GNOMECLASSIC" gnome-shell-extensions
     	f_action_install "$CA_GNOMEFLASHBACKM" gnome-session-flashback
     	f_action_install "$CA_GNOMEFLASHBACKC" "gnome-session-flashback compiz compizconfig-settings-manager compiz-plugins compiz-plugins-extra"
-    	f_action_install "$CA_UNITY" "unity-session unity-tweak-tool compiz --no-install-recommends" #Pour ne pas avoir des paquets inutiles de Cinnamon en +
+    	f_action_install "$CA_UNITY" "unity-session unity-tweak-tool compiz"
     
    	# Navigateurs
     	f_action_snap_install "$CA_BEAKER" beaker-browser
@@ -87,7 +87,7 @@ then
 	f_action_install "$CA_KVIRC" kvirc
 	f_action_install "$CA_LINPHONE" linphone 
 	f_action_snap_install "$CA_MAILSPRING" mailspring
-	f_action_snap_install "$CA_MATTERMOST" mattermost
+	f_action_snap_install "$CA_MATTERMOST" mattermost-desktop
 	f_action_get "$CA_MEGASYNC" "https://mega.nz/linux/MEGAsync/xUbuntu_19.10/amd64/megasync-xUbuntu_19.10_amd64.deb"
 	f_action_get "$CA_MEGASYNC" "https://mega.nz/linux/MEGAsync/xUbuntu_19.10/amd64/nautilus-megasync-xUbuntu_19.10_amd64.deb"
 	f_action_install "$CA_MUMBLE" mumble 
@@ -202,7 +202,9 @@ then
 	f_action_install "$CA_AUDACITY" audacity
 	f_action_flatpak_install "$CA_AVIDEMUX" org.avidemux.Avidemux
 	f_action_install "$CA_BLENDER" blender	
-	f_action_get "$CA_CINELERRA" "https://cinelerra-gg.org/download/pkgs/ub18/cin_5.1.ub18.04-20191130_amd64.deb"
+	f_action_get "$CA_CINELERRA" "https://cinelerra-gg.org/download/pkgs/ub18/cin_5.1.ub18.04-20200131_amd64.deb"
+	f_action_exec "$CA_UPM" "sudo sed -i -e 's/focal/bionic/g' /etc/apt/sources.list.d/adriansm*list ; sudo apt update ; sudo apt install upm -y" #(ligne temporaire en attendant que le ppa pr 20.04 soit actif)
+	
 	f_action_install "$CA_CURA" cura
 	f_action_install "$CA_DARKTABLE" darktable
 	f_action_get_appimage "$CA_DIGIKAM" "https://download.kde.org/stable/digikam/6.4.0/digikam-6.4.0-x86-64.appimage"
@@ -238,7 +240,6 @@ then
 	f_action_install "$CA_MYPAINT" "mypaint mypaint-data-extras"	 
 	f_action_snap_install "$CA_NATRON" natron
 	f_action_install "$CA_OBS" "ffmpeg obs-studio"
-	f_action_exec "$CA_OBS" "sudo sed -i -e 's/focal/eoan/g' /etc/apt/sources.list.d/obsproject*list && apt update && sudo apt install ffmpeg obs-studio -y" #(ligne temporaire en attendant que le ppa pr 20.04 soit actif)
 	f_action_install "$CA_OLIVE" olive-editor
 	f_action_install "$CA_OPENSCAD" openscad
 	f_action_install "$CA_OPENSHOT" openshot-qt
@@ -311,8 +312,8 @@ then
 	f_action_install "$CA_VBOXDEPOT" "virtualbox virtualbox-qt virtualbox-ext-pack"
 	f_RepositoryExt_Install "$CA_VBOXLAST" "virtualbox" "http://download.virtualbox.org/virtualbox/debian/oracle_vbox_2016.asc" "[arch=amd64] http://download.virtualbox.org/virtualbox/debian eoan contrib" "virtualbox-6.1"
     	f_action_exec "$CA_VBOXLAST" "sudo usermod -G vboxusers -a $USER"
-	f_action_exec "$CA_VMWARE" "wget http://download3.vmware.com/software/player/file/VMware-Player-15.5.1-15018445.x86_64.bundle && sudo chmod +x VMware-Player*.bundle ; sudo ./VMware-Player-15.5.1-15018445.x86_64.bundle --eulas-agreed --console --required ; sudo rm VMware-Player*"
-	f_action_exec "$CA_VMWAREPRO" "wget https://download3.vmware.com/software/wkst/file/VMware-Workstation-Full-15.5.1-15018445.x86_64.bundle && sudo chmod +x VMware-Workstation*.bundle ; sudo ./VMware-Workstation-Full-15.5.1-15018445.x86_64.bundle --eulas-agreed --console --required ; sudo rm VMware-Workstation*"
+	f_action_exec "$CA_VMWARE" "wget http://download3.vmware.com/software/player/file/VMware-Player-15.5.1-15018445.x86_64.bundle && sudo chmod +x VMware-Player*.bundle ; LC_ALL=C ; sudo ./VMware-Player-15.5.1-15018445.x86_64.bundle --eulas-agreed --console --required ; sudo rm VMware-Player*"
+	f_action_exec "$CA_VMWAREPRO" "wget https://download3.vmware.com/software/wkst/file/VMware-Workstation-Full-15.5.1-15018445.x86_64.bundle && sudo chmod +x VMware-Workstation*.bundle ; LC_ALL=C ; sudo ./VMware-Workstation-Full-15.5.1-15018445.x86_64.bundle --eulas-agreed --console --required ; sudo rm VMware-Workstation*"
 	f_action_install "$CA_WINE" "wine-development wine64-development wine64-development-tools winetricks"
 	
 	# Utilitaires graphiques
@@ -374,7 +375,6 @@ then
 	f_RepositoryExt_Install "$CA_ENPASS" "enpass" "https://dl.sinew.in/keys/enpass-linux.key" "http://repo.sinew.in/ stable main" "enpass"
 	f_action_install "$CA_FUSIONINVENTORY" fusioninventory-agent
 	f_action_install "$CA_GUFW" gufw
-	f_action_install "$CA_GWAKEONLAN" gwakeonlan
 	f_action_install "$CA_HACKINGPACK" "tcpdump nmap aircrack-ng ophcrack ophcrack-cli crunch john hashcat"
 	f_action_install "$CA_KEEPASS" keepass2
     	f_action_install "$CA_KEEPASSXC" keepassxc
@@ -388,6 +388,7 @@ then
 	f_action_exec "$CA_UPM" "sudo sed -i -e 's/focal/bionic/g' /etc/apt/sources.list.d/adriansm*list ; sudo apt update ; sudo apt install upm -y" #(ligne temporaire en attendant que le ppa pr 20.04 soit actif)
 	f_action_ppa_install "$CA_VERACRYPT" ppa:unit193/encryption veracrypt
 	f_action_install "$CA_VERACRYPT" veracrypt
+	f_action_install "$CA_WAKEONLAN" wakeonlan
 	f_action_install "$CA_WIRESHARK" wireshark
 	
 	# Gaming
@@ -404,13 +405,10 @@ then
 	f_action_install "$CA_KAPMAN" kapman
 	f_action_snap_install "$CA_LOL" "leagueoflegends --edge --devmode"
 	f_action_ppa_install "$CA_LUTRIS" ppa:lutris-team/lutris lutris
-	f_action_exec "$CA_LUTRIS" "sudo sed -i -e 's/focal/eoan/g' /etc/apt/sources.list.d/lutris*list ; sudo apt update" #(ligne temporaire en attendant que le ppa pr 20.04 soit actif)
-	f_action_install "$CA_LUTRIS" lutris
 	f_action_install "$CA_MEGAGLEST" megaglest
 	f_action_get "$CA_MINECRAFT" "https://launcher.mojang.com/download/Minecraft.deb"
 	f_action_install "$CA_MINETEST" "minetest minetest-mod-nether"
 	f_action_install "$CA_OPENARENA" openarena
-	f_action_get "$CA_OPENBVE" "https://vps.bvecornwall.co.uk/OpenBVE/Stable/OpenBVE-1.7.1.0.deb"
 	f_action_install "$CA_PINGUS" pingus
 	f_action_install "$CA_POKERTH" pokerth
 	f_action_snap_install "$CA_QUAKE" quake-shareware
@@ -449,11 +447,11 @@ then
 	f_action_install "$CA_LATEXILA" latexila
 	f_action_install "$CA_NEOVIM" neovim
 	f_action_install "$CA_NOTEPADQQ" notepadqq
-	f_action_exec "$CA_PIP3" "sudo apt install python3-pip -y && sudo pip3 install spyder"
 	f_action_snap_install "$CA_PYCHARM" "pycharm-community --classic"
 	f_action_install "$CA_RSTUDIO" "r-base r-base-dev" #paquet R de base
 	f_action_get "$CA_RSTUDIO" "https://download1.rstudio.org/desktop/bionic/amd64/rstudio-1.2.5033-amd64.deb" #Pour l'appli graphique Rstudio
 	f_action_install "$CA_SCITE" scite
+	f_action_install "$CA_SPYDER" spyder3	
 	f_action_snap_install "$CA_SUBLIMETEXT" "sublime-text --classic"
 	f_action_install "$CA_TEXMAKER" texmaker
 	f_action_install "$CA_TEXSTUDIO" texstudio
@@ -487,7 +485,7 @@ then
 	f_action_exec "$CA_OPTIMIS_SWAP" "echo vm.swappiness=5 | sudo tee /etc/sysctl.d/99-swappiness.conf ; echo vm.vfs_cache_pressure=50 | sudo tee -a /etc/sysctl.d/99-sysctl.conf ; sudo sysctl -p /etc/sysctl.d/99-sysctl.conf"
 	f_action_exec "$CA_SNAPREMPLACEMENT" "sudo snap remove gnome-{calculator,characters,logs,system-monitor}"
 	f_action_install "$CA_SNAPREMPLACEMENT" "gnome-{calculator,characters,logs,system-monitor}"
-	f_action_install "$CA_NAUTILUS_EXTRA" "nautilus-{compare,admin,extension-gnome-terminal,filename-repairer,gtkhash,script-audio-convert,sendto,share,wipe}"
+	f_action_install "$CA_NAUTILUS_EXTRA" "nautilus-{admin,extension-gnome-terminal,filename-repairer,gtkhash,script-audio-convert,sendto,share,wipe}"
 	f_action_install "$CA_SYSFIC" "btrfs-progs exfat-utils exfat-fuse hfsprogs hfsutils hfsplus xfsprogs xfsdump zfsutils-linux"
 	f_action_install "$CA_TLP" "tlp tlp-rdw"
 	f_action_ppa_install "$CA_TLP_THINKPAD" "ppa:linrunner/tlp" "tlp tlp-rdw tp-smapi-dkms acpi-call-tools"	
