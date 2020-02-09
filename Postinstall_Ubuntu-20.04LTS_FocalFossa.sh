@@ -485,7 +485,7 @@ then
 	f_action_exec "$CA_OPTIMIS_SWAP" "echo vm.swappiness=5 | sudo tee /etc/sysctl.d/99-swappiness.conf ; echo vm.vfs_cache_pressure=50 | sudo tee -a /etc/sysctl.d/99-sysctl.conf ; sudo sysctl -p /etc/sysctl.d/99-sysctl.conf"
 	f_action_exec "$CA_SNAPREMPLACEMENT" "sudo snap remove gnome-{calculator,characters,logs,system-monitor}"
 	f_action_install "$CA_SNAPREMPLACEMENT" "gnome-{calculator,characters,logs,system-monitor}"
-	f_action_install "$CA_NAUTILUS_EXTRA" nautilus-'{admin,extension-gnome-terminal,filename-repairer,gtkhash,script-audio-convert,sendto,share,wipe}'
+	f_action_install "$CA_NAUTILUS_EXTRA" "'nautilus-{admin,extension-gnome-terminal,filename-repairer,gtkhash,script-audio-convert,sendto,share,wipe}'"
 	f_action_install "$CA_SYSFIC" "btrfs-progs exfat-utils exfat-fuse hfsprogs hfsutils hfsplus xfsprogs xfsdump zfsutils-linux"
 	f_action_install "$CA_TLP" "tlp tlp-rdw"
 	f_action_ppa_install "$CA_TLP_THINKPAD" "ppa:linrunner/tlp" "tlp tlp-rdw tp-smapi-dkms acpi-call-tools"	
