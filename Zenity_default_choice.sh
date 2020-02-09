@@ -395,10 +395,10 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_LATEXILA" "$CD_LATEXILA" \
 	$(chkDef "FALSE") "$CA_NEOVIM" "$CD_NEOVIM" \
 	$(chkDef "FALSE") "$CA_NOTEPADQQ" "$CD_NOTEPADQQ" \
-	$(chkDef "FALSE") "$CA_PIP3" "$CD_PIP3" \
 	$(chkDef "FALSE") "$CA_PYCHARM" "$CD_PYCHARM" \
 	$(chkDef "FALSE") "$CA_RSTUDIO" "$CD_RSTUDIO" \
 	$(chkDef "FALSE") "$CA_SCITE" "$CD_SCITE" \
+	$(chkDef "FALSE") "$CA_SPYDER" "$CD_SPYDER" \
 	$(chkDef "FALSE") "$CA_SUBLIMETEXT" "$CD_SUBLIMETEXT" \
 	$(chkDef "FALSE") "$CA_TEXMAKER" "$CD_TEXMAKER" \
 	$(chkDef "FALSE") "$CA_TEXSTUDIO" "$CD_TEXSTUDIO" \
