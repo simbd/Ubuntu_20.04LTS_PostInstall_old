@@ -331,7 +331,6 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_ENPASS" "$CD_ENPASS" \
 	$(chkDef "FALSE") "$CA_FUSIONINVENTORY" "$CD_FUSIONINVENTORY" \
 	$(chkDef "FALSE") "$CA_GUFW" "$CD_GUFW" \
-	$(chkDef "FALSE") "$CA_GWAKEONLAN" "$CD_GWAKEONLAN" \
 	$(chkDef "FALSE") "$CA_HACKINGPACK" "$CD_HACKINGPACK" \
 	$(chkDef "FALSE") "$CA_KEEPASS" "$CD_KEEPASS" \
 	$(chkDef "TRUE") "$CA_KEEPASSXC" "$CD_KEEPASSXC" \
@@ -343,6 +342,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_SIRIKALI" "$CD_SIRIKALI" \
 	$(chkDef "FALSE") "$CA_UPM" "$CD_UPM" \
 	$(chkDef "FALSE") "$CA_VERACRYPT" "$CD_VERACRYPT" \
+	$(chkDef "FALSE") "$CA_WAKEONLAN" "$CD_WAKEONLAN" \
 	$(chkDef "FALSE") "$CA_WIRESHARK" "$CD_WIRESHARK" \
 	FALSE "$SCT_GAMING" "===========================================================" \
 	$(chkDef "FALSE") "$CA_0AD" "$CD_0AD" \
