@@ -105,7 +105,7 @@ f_action_get_appimage() {
 	        mkdir $HOME/AppImage  
 	    fi
 		wget "$2" --no-check-certificate
-		chmod +x *AppImage && mv *AppImage $HOME/AppImage/
+		chmod +x *.?pp?mage && mv *.?pp?mage $HOME/AppImage/
 	fi
 }
 
