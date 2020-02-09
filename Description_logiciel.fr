@@ -7,7 +7,7 @@ PIS_NAME="Ubuntu 20.04LTS"
 BGN_TITLE="Configuration de ${PIS_NAME}"
 BGN_TEXT="Choisissez comment vous voulez que les cases à cocher des logiciels soient cochées"
 BGN_DEF="Par défaut (quelques logiciels utiles cochés)"
-BGN_UNCHECKED="Tous les choix décochées"
+BGN_UNCHECKED="Tous les choix décochés"
 BGN_CHECKED="Tous les choix cochés (FORTEMENT DECONSEILLE !!)"
 
 # General Messages
