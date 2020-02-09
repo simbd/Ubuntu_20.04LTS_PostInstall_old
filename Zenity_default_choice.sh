@@ -137,7 +137,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_XMIND" "$CD_XMIND" \
 	$(chkDef "FALSE") "$CA_XOURNAL" "$CD_XOURNAL" \
 	$(chkDef "FALSE") "$CA_XPAD" "$CD_XPAD" \
-	$(chkDef "TRUE") "$CA_ZIM" "$CD_ZIM" \	
+	$(chkDef "TRUE") "$CA_ZIM" "$CD_ZIM" \
 	FALSE "$SCT_LECTUREMULTIMEDIA" "===========================================================" \
 	$(chkDef "FALSE") "$CA_AUDACIOUS" "$CD_AUDACIOUS" \
 	$(chkDef "FALSE") "$CA_CANTATA" "$CD_CANTATA" \
