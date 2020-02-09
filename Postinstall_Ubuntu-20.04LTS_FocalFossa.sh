@@ -456,7 +456,7 @@ then
 	f_action_install "$CA_TEXMAKER" texmaker
 	f_action_install "$CA_TEXSTUDIO" texstudio
 	f_action_install "$CA_TEXWORKS" "texlive texlive-lang-french texworks"
-	f_action_install "$CA_VIM" "vim vim-addon-manager vim-airline vim-asciidoc vim-athena vim-autopep8 vim-bitbake vim-conque vim-ctrlp vim-editorconfig vim-fugitive vim-gocomplete vim-gtk3 vim-julia vim-khuno vim-lastplace" 
+	f_action_install "$CA_VIM" "vim vim-addon-manager vim-airline vim-asciidoc vim-athena vim-autopep8 vim-bitbake vim-ctrlp vim-editorconfig vim-fugitive vim-gocomplete vim-gtk3 vim-julia vim-khuno vim-lastplace" 
 	f_action_install "$CA_VIM" "vim-latexsuite vim-ledger vim-migemo vim-nox vim-pathogen vim-puppet vim-python-jedi vim-rails vim-scripts vim-snipmate vim-snippets vim-syntastic vim-tabular vim-textobj-user vim-tiny vim-tlib vim-vimerl vim-voom"
 	f_RepositoryExt_Install "$CA_VSCODE" "vscode" "https://packages.microsoft.com/keys/microsoft.asc" "[arch=amd64] https://packages.microsoft.com/repos/vscode stable main" "code" ##PB : ne s'installe pas
 	f_action_install "$CA_VSCODE" apt-transport-https #dépendance
