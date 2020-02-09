@@ -40,7 +40,7 @@ CD_PACKUTILE="Installe des outils utiles : net-tools pour ifconfig, xterm, vim, 
 CA_GNOMESUPPLEMENT="Gnome Supplément (recommandé si vs utilisez Gnome)"
 CD_GNOMESUPPLEMENT="Ajoute des paquets recommandés pour Gnome : Gnome Tweaks, Gconf-Editor, Gnome-Firmware"
 
-SCT_SESSION="______ [[ SESSIONS SUPPLEMENTAIRES ]] ______"
+SCT_SESSION="______ [[ SESSIONS GNOME SUPPLEMENTAIRES ]] ______"
 
 CA_GNOMEVANILLA="Gnome Shell - Vanilla"
 CD_GNOMEVANILLA="L'environnement Gnome-Shell neutre épuré de toute customisation graphique (sauf wallpaper Ubuntu)"
@@ -53,9 +53,6 @@ CD_GNOMEFLASHBACKM="Interface proche de Gnome 2 et légère, utilise Metacity, p
 
 CA_GNOMEFLASHBACKC="Gnome Flashback / Compiz"
 CD_GNOMEFLASHBACKC="Idem que précédemment mais en utilisant Compiz à la place de Metacity, permet des effets 3D sur les fenêtres"
-
-CA_UNITY="Unity"
-CD_UNITY="Ancien environnement d'Ubuntu qui était installé sur les anciennes versions (avant la 17.10)"
 
 SCT_BROWSER="______ [[ NAVIGATEURS WEB ]] ______"
 
