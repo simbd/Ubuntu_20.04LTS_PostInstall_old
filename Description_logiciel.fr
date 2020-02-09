@@ -1073,9 +1073,6 @@ CD_MINETEST="Un clone de Minecraft mais libre/opensource et totalement gratuit"
 CA_OPENARENA="OpenArena"
 CD_OPENARENA="Clone libre du célèbre jeu Quake"
 
-CA_OPENBVE="OpenBVE"
-CD_OPENBVE="Jeu 3D libre de simulation de train"
-
 CA_PINGUS="Pingus"
 CD_PINGUS="Clone de Lemmings, vous devrez aider des manchots à traverser des obstacles"
 
