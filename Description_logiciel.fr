@@ -981,9 +981,6 @@ CD_FUSIONINVENTORY="Installe l'agent pour Fusion Inventory (pour être référen
 CA_GUFW="Gufw"
 CD_GUFW="Interface graphique pour le pare-feu Ufw"
 
-CA_GWAKEONLAN="gWakeOnLan"
-CD_GWAKEONLAN="Permet de réveiller votre PC depuis le réseau local ou à distance"
-
 CA_HACKINGPACK="Hacking Pack"
 CD_HACKINGPACK="Pack contenant différents outils de hacking : TcpDump, Nmap, Aircrack, OphCrack, John The Ripper, Crunch, Hashcat"
 
@@ -1016,6 +1013,9 @@ CD_UPM="Gestionnaire de mots de passe multi-plateforme (écrit en Java)."
 
 CA_VERACRYPT="VeraCrypt {PPA}"
 CD_VERACRYPT="Utilitaire libre utilisé pour le chiffrement, forké sur l'ancien projet TrueCrypt abandonné"
+
+CA_WAKEONLAN="WakeOnLan"
+CD_WAKEONLAN="Permet de réveiller votre PC depuis le réseau local ou à distance"
 
 CA_WIRESHARK="WireShark {Nécessite intervention !}"
 CD_WIRESHARK="Analyseur de paquets utilisé dans le dépannage et l'analyse de réseaux"
