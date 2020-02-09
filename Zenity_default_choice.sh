@@ -19,7 +19,6 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
     	$(chkDef "FALSE") "$CA_GNOMECLASSIC" "$CD_GNOMECLASSIC" \
     	$(chkDef "FALSE") "$CA_GNOMEFLASHBACKM" "$CD_GNOMEFLASHBACKM" \
     	$(chkDef "FALSE") "$CA_GNOMEFLASHBACKC" "$CD_GNOMEFLASHBACKC" \
-    	$(chkDef "FALSE") "$CA_UNITY" "$CD_UNITY" \
 	FALSE "$SCT_BROWSER" "===========================================================" \
     	$(chkDef "FALSE") "$CA_BEAKER" "$CD_BEAKER" \
     	$(chkDef "FALSE") "$CA_BRAVE" "$CD_BRAVE" \
