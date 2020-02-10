@@ -1269,6 +1269,9 @@ CD_PHORONIXTESTSUITE="La suite libre la plus complète pour faire des tests de p
 CA_OPTIMIS_SWAP="Optimisation Swap"
 CD_OPTIMIS_SWAP="Permet de régler le swappiness à 95% (swap utilisé en dernier recours) et cache pressure à 50%"
 
+CA_SCANNER="Gestion Scanner (Sane + xSane)"
+CD_SCANNER="Paquets utiles si vous êtes équipé d'un scanner"
+
 CA_SNAPREMPLACEMENT="Remplacement des Snaps par défaut"
 CD_SNAPREMPLACEMENT="Va désinstaller les Snaps pré-installés par défaut (Calculatrice...) et les réinstaller via APT à la place"
 
