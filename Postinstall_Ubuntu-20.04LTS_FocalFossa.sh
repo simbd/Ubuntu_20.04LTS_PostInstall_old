@@ -292,6 +292,7 @@ then
 	f_action_install "$CA_TOUTENCLIC" python3-pyqt5
 	f_action_exec "$CA_TOUTENCLIC" "wget http://www.bipede.fr/downloads/logiciels/ToutEnClic.zip ; unzip ToutEnClic.zip ; rm ToutEnClic.zip ; sudo mv ToutEnClic /opt/ ; wget https://gitlab.com/simbd/Fichier_de_config/raw/master/toutenclic.desktop --no-check-certificate ; sudo mv toutenclic.desktop /usr/share/applications/ ; wget http://nux87.free.fr/script-postinstall-ubuntu/theme/toutenclic.png --no-check-certificate ; sudo mv toutenclic.png /usr/share/icons/"
 	f_action_install "$CA_XCAS" xcas
+	f_action_get "$CA_XEPHEM" "http://e2rd.piekielko.pl/debian/binary-amd64/xephem_3.7.7-4_amd64.deb"
 
 	# Virtualisation, Conteneurisation, Emulation & Déploiement
 	f_action_install "$CA_ANBOX" anbox
@@ -303,8 +304,10 @@ then
 	f_action_install "$CA_GNOMEBOXES" gnome-boxes	
 	f_action_ppa_install "$CA_GNS" "ppa:gns3/ppa" gns3-gui
 	f_action_install "$CA_QEMUKVM" "qemu qemu-kvm qemu-system-gui qemu-system-arm qemu-utils virt-manager virt-viewer"
-	f_action_install "$CA_LXC" "lxc"
-	f_action_install "$CA_MGBA" "mgba-qt"
+	f_action_install "$CA_LXC" lxc
+	f_action_install "$CA_MEDNAFEN" mednafen
+	f_action_install "$CA_MGBA" mgba-qt
+	f_action_install "$CA_MUPEN64" mupen64plus-qt
 	f_action_install "$CA_POL" playonlinux
 	f_action_flatpak_install "$CA_PPSSPP" "org.ppsspp.PPSSPP"
 	f_action_install "$CA_RETROARCH" retroarch
@@ -379,6 +382,7 @@ then
     	f_action_install "$CA_KEEPASSXC" keepassxc
 	f_action_install "$CA_MYSQLWB" mysql-workbench
 	f_action_install "$CA_OCSINVENTORY" ocsinventory-agent
+	f_action_install "$CA_OPENVAS" "openvas openvas-cli openvas-manager openvas-scanner"
 	f_action_install "$CA_PGADMIN" pgadmin3
 	f_action_install "$CA_PUPPET" puppet
 	f_action_install "$CA_SERVERLAMP" "apache2 php libapache2-mod-php mysql-server php-mysql php-curl php-gd php-intl php-json php-mbstring php-xml php-zip phpmyadmin"
@@ -388,6 +392,7 @@ then
 	f_action_ppa_install "$CA_VERACRYPT" ppa:unit193/encryption veracrypt
 	f_action_install "$CA_VERACRYPT" veracrypt
 	f_action_install "$CA_WAKEONLAN" wakeonlan
+	f_action_install "$CA_WIFITE" "wifite"
 	f_action_install "$CA_WIRESHARK" wireshark
 	
 	# Gaming
