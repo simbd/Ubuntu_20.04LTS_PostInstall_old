@@ -30,7 +30,7 @@ then
     	# Debut
 	f_action_exec "$CA_PARTNER" "sudo sed -i.bak '/^# deb .*partner/ s/^# //' /etc/apt/sources.list"
 	f_action_exec "$CA_UPGRADE" "sudo apt update || read -p 'Attention, la commande de mise à jour (apt update) renvoi une erreur, il est recommandé de stopper le script et de corriger le problème avant de le lancer mais si vous voulez quand même poursuivre, tapez entrée' ; sudo apt full-upgrade -y" "$NS_UPGRADE"
-	f_action_install "$CA_PACKUTILE" "net-tools curl vim neofetch ncdu x264 x265 xterm inxi hdparm cpu-x"
+	f_action_install "$CA_PACKUTILE" "net-tools curl vim neofetch ncdu x264 x265 xterm inxi hdparm cpu-x rsync"
 	f_action_install "$CA_GNOMESUPPLEMENT" "gnome-firmware gnome-tweak-tool gconf-editor"
     
     	# Sessions
