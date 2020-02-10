@@ -413,6 +413,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_CONKY" "$CD_CONKY" \
 	$(chkDef "TRUE") "$CA_APPORTOFF" "$CD_APPORTOFF" \
 	$(chkDef "FALSE") "$CA_EXTINCTIONAUTO" "$CD_EXTINCTIONAUTO" \
+	$(chkDef "FALSE") "$CA_SCANNER" "$CD_SCANNER" \
 	$(chkDef "FALSE") "$CA_GWE" "$CD_GWE" \
 	$(chkDef "FALSE") "$CA_GS_AUGMENTATIONCAPTURE" "$CD_GS_AUGMENTATIONCAPTURE" \
 	$(chkDef "FALSE") "$CA_GS_MINIMISATIONFENETRE" "$CD_GS_MINIMISATIONFENETRE" \
