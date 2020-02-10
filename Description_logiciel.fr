@@ -1089,7 +1089,7 @@ CD_VERACRYPT="Utilitaire libre utilisé pour le chiffrement, forké sur l'ancien
 CA_WAKEONLAN="WakeOnLan"
 CD_WAKEONLAN="Permet de réveiller votre PC depuis le réseau local ou à distance"
 
-CA_WIFITE="Wifite"
+CA_WIFITE="Wifite {Nécessite intervention!}"
 CD_WIFITE="Version simplifié de Aircrack-ng pour tester la sécurité de réseau wifi WEP, WPA et WPS"
 
 CA_WIRESHARK="WireShark {Nécessite intervention !}"
