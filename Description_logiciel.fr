@@ -712,6 +712,9 @@ CD_GNOMEMAPS="Visionneur de cartes utilisant OpenStreetMap riche en données gé
 CA_GOOGLEEARTH="Google Earth Pro"
 CD_GOOGLEEARTH="Globe terrestre de Google pour explorer la planète"
 
+CA_KICAD="KiCad EDA"
+CD_KICAD="Suite logicielle pour le dessin de schémas électroniques et la conception de circuits imprimés"
+
 CA_LABPLOT="LabPlot"
 CD_LABPLOT="Application pour tracer et analyser de façon interactive des données scientifiques"
 
