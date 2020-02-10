@@ -751,6 +751,9 @@ CD_STELLARIUM="Planétarium avec l'affichage du ciel réaliste en 3D avec simula
 CA_TOUTENCLIC="ToutEnClic"
 CD_TOUTENCLIC="Cahier virtuel pour les enfants étant physiquement dans l’impossibilité d’écrire"
 
+CA_TUXMATH="TuxMath"
+CD_TUXMATH="Logiciel de calcul mental très ludique (sous forme de jeux)"
+
 CA_XCAS="XCas"
 CD_XCAS="Le couteau suisse des maths : calcul formel, graphe de fonction, géométrie, tableur/stats etc..."
 
@@ -1158,6 +1161,9 @@ CD_IPYTHON="Terminal interactif pour Python proposant des fonctionnalités telle
 
 CA_JAVA="Java 13 JRE {PPA}"
 CD_JAVA="Dernière version stable de Java (JRE) soit actuellement la version 13"
+
+CA_JUPYTER="Jupyter Notebook"
+CD_JUPYTER="Environnement répondant aux exigences et au flux de travail dans la science des données et de la simulation"
 
 CA_LATEXFULL="LaTeX : pack complet (texlive-full ~3Go)"
 CD_LATEXFULL="Distribution TeX libre fournissant un environnement TeX/LaTeX complet et prêt à utiliser (+texmaths pour LO)"
