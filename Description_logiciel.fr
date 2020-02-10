@@ -836,6 +836,9 @@ CD_WINE="Une sorte d'émulateur pour faire tourner des applis/jeux conçu pour W
 
 SCT_UTILITAIRES_GRAPHIQUE="______ [[ UTILITAIRES GRAPHIQUES DIVERS ]] ______"
 
+CA_ACTIONA="Actiona"
+CD_ACTIONA="Logiciel d'automatisation de tâches. Il vous permet de créer et d'exécuter des listes d'actions."
+
 CA_APPOUTLET="App-Outlet {SNAP}"
 CD_APPOUTLET="Un store d'application universel pour gérer les paquets Snaps, Flatpaks et AppImages"
 
@@ -895,6 +898,9 @@ CD_MULTISYSTEM="Utilitaire permettant de créer une clé usb bootable avec plusi
 
 CA_ARCHIVAGE="Pack Archivage"
 CD_ARCHIVAGE="Ajoute le support des archives de différentes extensions (7zip, Rar etc...)"
+
+CA_RECHERCHE="Pack de 3 outils de recherche avancés"
+CD_RECHERCHE="Ajoute Recoll, CatFish et SearchMonkey qui permettent la recherche avancé dans les contenus des fichiers"
 
 CA_REDSHIFT="RedShift"
 CD_REDSHIFT="Ajuste la température de couleur de l'écran, fonction déjà incluse dans Gnome avec le mode nuit"
@@ -1009,7 +1015,7 @@ CA_GUFW="Gufw"
 CD_GUFW="Interface graphique pour le pare-feu Ufw"
 
 CA_HACKINGPACK="Hacking Pack"
-CD_HACKINGPACK="Pack contenant différents outils de hacking : TcpDump, Nmap, Aircrack, OphCrack, John The Ripper, Crunch, Hashcat"
+CD_HACKINGPACK="Installe différents outils : TcpDump, Nmap, NetDiscover, Aircrack, OphCrack, John The Ripper, Crunch, Hashcat"
 
 CA_KEEPASS="Keepass"
 CD_KEEPASS="Utilise mono, centralise la gestion de vos mots de passe personnels, protégé par un master password"
