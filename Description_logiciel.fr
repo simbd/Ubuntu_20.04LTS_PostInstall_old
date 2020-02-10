@@ -35,7 +35,7 @@ CD_UPGRADE="Mise à jour de la liste des paquets et des applications déjà inst
 NS_UPGRADE="Mise à jour du système en cours"
 
 CA_PACKUTILE="Pack d'outils/codecs utiles (recommandé)"
-CD_PACKUTILE="Installe des outils utiles : net-tools pour ifconfig, xterm, vim, codecs x264/x265, neofetch, curl, ncdu"
+CD_PACKUTILE="Installe des outils utiles : net-tools, xterm, vim, codecs x264/x265, rsync, neofetch, curl, ncdu"
 
 CA_GNOMESUPPLEMENT="Gnome Supplément (recommandé si vs utilisez Gnome)"
 CD_GNOMESUPPLEMENT="Ajoute des paquets recommandés pour Gnome : Gnome Tweaks, Gconf-Editor, Gnome-Firmware"
@@ -415,6 +415,9 @@ CD_CANTATA="Outil de lecture audio très complet avec gestion de votre audiothè
 CA_CLEMENTINE="Clementine"
 CD_CLEMENTINE="Lecteur audio avec gestion des pochettes, genres musicaux..."
 
+CA_DEEZLOADER="DeezLoader Remix {APPIMAGE}"
+CD_DEEZLOADER="Vous permet de récupérer/télécharger la musique de votre compte Deezer"
+
 CA_DIGIKAM="DigiKam {APPIMAGE}"
 CD_DIGIKAM="Gestion de vos photos. Il peut importer des images depuis des médias et organiser les photos par dossiers"
 
@@ -766,6 +769,9 @@ CD_TUXMATH="Logiciel de calcul mental très ludique (sous forme de jeux)"
 CA_XCAS="XCas"
 CD_XCAS="Le couteau suisse des maths : calcul formel, graphe de fonction, géométrie, tableur/stats etc..."
 
+CA_XEPHEM="XEphem"
+CD_XEPHEM="Programme d'éphémérides et de planétariums basé sur Motif pour les systèmes de type Unix"
+
 SCT_VIRTUALISATION_EMULATION="______ [[ VIRTUALISATION, EMULATION, CONTENEURISATION ]] ______"
 
 CA_ANBOX="Anbox"
@@ -797,6 +803,9 @@ CD_QEMUKVM="logiciel libre de machine virtuelle, pouvant émuler un processeur e
 
 CA_LXC="Lxc (LinuX Containers)"
 CD_LXC="Virtualisation d'environnements Linux isolés les uns des autres dans des conteneurs"
+
+CA_MEDNAFEN="MedNafen"
+CD_MEDNAFEN="Emulateur pour diverses consoles de jeu vidéo, distribué sous licence libre. Il utilise OpenGL et SDL"
 
 CA_MGBA="mGBA"
 CD_MGBA="Emulateur libre permettant de jouer aux jeux pour Game Boy Advance"
@@ -890,6 +899,9 @@ CD_ARCHIVAGE="Ajoute le support des archives de différentes extensions (7zip, R
 CA_REDSHIFT="RedShift"
 CD_REDSHIFT="Ajuste la température de couleur de l'écran, fonction déjà incluse dans Gnome avec le mode nuit"
 
+CA_SPEEDCRUNCH="SpeedCrunch"
+CD_SPEEDCRUNCH="Calculatrice scientifique plus évolué en restant simple, efficace et fonctionnelle"
+
 CA_SUBLIM_NAUT="Subliminal pour Nautilus"
 CD_SUBLIM_NAUT="Récupération de sous-titre de manière automatique pour Nautilus"
 
@@ -966,8 +978,14 @@ CD_WORDGRINDER="Traitement de texte léger en CLI, Formats OpenDocument, HTML im
 
 SCT_RESEAUSECURITE="______ [[ RESEAUX ET SECURITE ]] ______"
 
+CA_ADPFASTBOOT="Adp + FastBoot (flashage SP Android)"
+CD_ADPFASTBOOT="Ajoute les outils Adp et FastBoot pour flasher des smartphones Android"
+
 CA_ANSIBLE="Ansible"
 CD_ANSIBLE="Outil d'automatisation (pour le déploiement et gestion de machines distantes)."
+
+CA_APPARMOR="AppArmor (Application Armor)"
+CD_APPARMOR="Logiciel libre de sécurité pour Linux. Permet d'associer à chaque programme un profil de sécurité"
 
 CA_BITWARDEN="BitWarden {SNAP}"
 CD_BITWARDEN="Gestionnaire de mots de passe open source qui permet de générer/conserver des mots de passe de manière sécurisée"
@@ -999,11 +1017,17 @@ CD_KEEPASS="Utilise mono, centralise la gestion de vos mots de passe personnels,
 CA_KEEPASSXC="KeepassXC"
 CD_KEEPASSXC="Alternative recommandée à Keepass remplaçant mono par Qt et forké de KeepassX"
 
+CA_KEEWEB="KeeWeb"
+CD_KEEWEB="Un gestionnaire élégant et efficace pour gérer vos mots de passe"
+
 CA_MYSQLWB="MySQL Workbench"
 CD_MYSQLWB="Outil de gestion de server MySQL : génération de modèles (MCD/MPD)."
 
 CA_OCSINVENTORY="OcsInventory Agent"
 CD_OCSINVENTORY="Installe l'agent pour OCS Inventory (pour être référencé dans l'inventaire du parc informatique avec OCS)"
+
+CA_OPENVAS="OpenVAS"
+CD_OPENVAS="fork sous licence GNU GPL du scanner de vulnérabilité Nessus dont le but est de permettre un développement libre"
 
 CA_PGADMIN="PgAdmin3"
 CD_PGADMIN="Interface graphique pour administrer des bases de données PostgreSQL"
@@ -1025,6 +1049,9 @@ CD_VERACRYPT="Utilitaire libre utilisé pour le chiffrement, forké sur l'ancien
 
 CA_WAKEONLAN="WakeOnLan"
 CD_WAKEONLAN="Permet de réveiller votre PC depuis le réseau local ou à distance"
+
+CA_WIFITE="Wifite"
+CD_WIFITE="Version simplifié de Aircrack-ng pour tester la sécurité de réseau wifi WEP, WPA et WPS"
 
 CA_WIRESHARK="WireShark {Nécessite intervention !}"
 CD_WIRESHARK="Analyseur de paquets utilisé dans le dépannage et l'analyse de réseaux"
@@ -1087,6 +1114,9 @@ CD_MINETEST="Un clone de Minecraft mais libre/opensource et totalement gratuit"
 
 CA_OPENARENA="OpenArena"
 CD_OPENARENA="Clone libre du célèbre jeu Quake"
+
+CA_OPENTTD="OpenTTD"
+CD_OPENTTD="Jeu de gestion et planification urbanistique (Réécriture libre du jeu Transport Tycoon Deluxe)"
 
 CA_PINGUS="Pingus"
 CD_PINGUS="Clone de Lemmings, vous devrez aider des manchots à traverser des obstacles"
@@ -1162,11 +1192,17 @@ CD_ECLIPSE="Environnement de production de logiciels libre extensible s'appuyant
 CA_EMACS="Emacs"
 CD_EMACS="Le couteau suisse des éditeurs de texte, il fait tout mais il est complexe"
 
+CA_ERIC="Eric Python"
+CD_ERIC="Environnement de développement intégré utilisé pour la programmation, en particulier le language Python"
+
 CA_GDEVELOP="GDevelop {Script LinInstall}"
 CD_GDEVELOP="Appli opensource et multiplateforme de création de jeux"
 
 CA_GEANY="Geany"
 CD_GEANY="Éditeur de texte amélioré - Cadriciel."
+
+CA_IDLE="Idle"
+CD_IDLE="IDLE est un éditeur de programmes python multiplate-forme"
 
 CA_INTELLIJIDEA="IntelliJ Idea {SNAP}"
 CD_INTELLIJIDEA="IDE Java commercial de JetBrains, plutôt conçu pour Java"
@@ -1247,6 +1283,9 @@ CD_APPORTOFF="Permet de désactiver l'affichage de la fenêtre avec un message d
 
 CA_EXTINCTIONAUTO="Extinction automatique à 4H du matin"
 CD_EXTINCTIONAUTO="Si vous avez oublié d'éteindre votre PC le soir, il sera arrété automatiquement à 4H du matin"
+
+CA_FPRINTD="Support empreinte digitale (FprintD)"
+CD_FPRINTD="Si vs êtes sur un Pc portable avec la gestion d'empreinte digitale pour l'identification"
 
 CA_GWE="GWE - GreenWithEnvy {FLATPAK}"
 CD_GWE="Utilitaire pour contrôler l'overclocking/ventilateur des cartes graphiques Nvidia"
