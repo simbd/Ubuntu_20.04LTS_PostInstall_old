@@ -389,6 +389,9 @@ CD_SCRIBUS="Logiciel de PAO, convient plutôt pour la réalisation de plaquettes
 CA_SPICEUP="Spice Up {FLATPAK}"
 CD_SPICEUP="Outil libre pour designer/rédiger vos futures présentations (équivalent à PowerPoint ou LibreOffice Impress)"
 
+CA_UMBRELLO="Umbrello"
+CD_UMBRELLO="Logiciel permettant de saisir différents schémas UML (diagramme de cas, de séquences, de classes)"
+
 CA_WPSOFFICE="WPS Office 2019"
 CD_WPSOFFICE="Suite bureautique propriétaire avec une interface proche de Microsoft Office"
 
@@ -400,6 +403,12 @@ CD_XOURNAL="Logiciel de prise de notes manuscrites très utile et complet, équi
 
 CA_XPAD="Xpad"
 CD_XPAD="Gestion de Post-it."
+
+CA_ZEAL="Zeal"
+CD_ZEAL="Consultation hors-ligne de documentation sur plus de 190 langages de programmation"
+
+CA_ZETTLR="Zettlr"
+CD_ZETTLR="Logiciel de prise de notes et pouvant servir de système d’organisation de la pensée"
 
 CA_ZIM="Zim"
 CD_ZIM="Wiki en local avec une collection de pages et de marqueurs"
@@ -581,6 +590,9 @@ CD_LIGHTWORKS="Logiciel de montage vidéo professionnel non-linéaire"
 CA_LIBRECAD="LibreCad"
 CD_LIBRECAD="Anciennement CADubuntu, DAO 2D pour modéliser des dessins techniques"
 
+CA_LILYPOND="LilyPond"
+CD_LILYPOND="Logiciel de notation musicale avec un langage de description de la musique, qu'il compile en partition"
+
 CA_LIVES="Lives"
 CD_LIVES="Dispose des fonctionnalités d'éditions vidéo/son classique, des filtres et multipiste"
 
@@ -592,6 +604,9 @@ CD_LMMS="Station audio opensource crée par des musiciens pour les musiciens"
 
 CA_MHWAVEEDIT="MhWaveEdit"
 CD_MHWAVEEDIT="Application libre d'enregistrement et d'édition audio complète distribuée sous GPL"
+
+CA_MILKYTRACKER="MilkyTracker"
+CD_MILKYTRACKER="Permet de composer de la musique dans les formats des modules MOD et XM"
 
 CA_MINUET="Minuet"
 CD_MINUET="Logiciel libre pour l'éducation musicale (apprentissage solfège etc...)"
@@ -677,6 +692,9 @@ CD_WINFF="Encodage vidéo rapide dans différents formats"
 CA_XNVIEW="XnView MP"
 CD_XNVIEW="Logiciel de visualisation, de retouche et de conversion d’images multi-plateforme"
 
+CA_ZYNADDSUBFX="ZynaddSubFx"
+CD_ZYNADDSUBFX="Synthétiseur logiciel doté d'une interface capable de fabriquer un nombre important d'instruments"
+
 SCT_EDUSCIENCE="______ [[ SCIENCE / EDUCATION ]] ______"
 
 CA_ALGOBOX="Algobox"
@@ -717,6 +735,9 @@ CD_GNOMEMAPS="Visionneur de cartes utilisant OpenStreetMap riche en données gé
 
 CA_GOOGLEEARTH="Google Earth Pro"
 CD_GOOGLEEARTH="Globe terrestre de Google pour explorer la planète"
+
+CA_JASP="Jasp {FLATPAK}"
+CD_JASP="Programme graphique d'analyse statistique opensource, soutenu par l'Université d'Amsterdam"
 
 CA_KICAD="KiCad EDA"
 CD_KICAD="Suite logicielle pour le dessin de schémas électroniques et la conception de circuits imprimés"
@@ -792,6 +813,9 @@ CD_DOLPHIN="Projet opensource d'émulateur pour Gamecube et Wii. Emulateur activ
 CA_DOSBOX="Dosbox"
 CD_DOSBOX="Emulateur DOS permettant de jouer aux vieux jeux MSDOS"
 
+CA_GENS="Gens/GS"
+CD_GENS="Version modifiée et amélioré de l'émulateur Gens, un classique reconnu pour sa qualité d'émulation"
+
 CA_GNOMEBOXES="Gnome Boxes"
 CD_GNOMEBOXES="Outil de virtualisation simple de l'environnement Gnome"
 
@@ -809,6 +833,9 @@ CD_MEDNAFEN="Emulateur pour diverses consoles de jeu vidéo, distribué sous lic
 
 CA_MGBA="mGBA"
 CD_MGBA="Emulateur libre permettant de jouer aux jeux pour Game Boy Advance"
+
+CA_MUPEN64="Mupen64 Plus"
+CD_MUPEN64="Mupen64Plus (anciennement Mupen64) est un émulateur de Nintendo 64 libre de grande qualité"
 
 CA_POL="PlayOnLinux"
 CD_POL="Permet de faire tourner des applications/jeux Windows sous Linux via Wine"
@@ -895,6 +922,9 @@ CD_MELD="Interface graphique pour comparer les différences entre plusieurs fich
 
 CA_MULTISYSTEM="MultiSystem"
 CD_MULTISYSTEM="Utilitaire permettant de créer une clé usb bootable avec plusieurs OS"
+
+CA_MYTOURBOOK="MyTourBook"
+CD_MYTOURBOOK="Suivi de parcours pour les randonnées avec différentes stats"
 
 CA_ARCHIVAGE="Pack Archivage"
 CD_ARCHIVAGE="Ajoute le support des archives de différentes extensions (7zip, Rar etc...)"
@@ -995,6 +1025,9 @@ CD_APPARMOR="Logiciel libre de sécurité pour Linux. Permet d'associer à chaqu
 
 CA_BITWARDEN="BitWarden {SNAP}"
 CD_BITWARDEN="Gestionnaire de mots de passe open source qui permet de générer/conserver des mots de passe de manière sécurisée"
+
+CA_BUTTERCUP="ButterCup"
+CD_BUTTERCUP="Solution gratuite pour gérer et synchroniser ses mots de passe et identifiants entre plusieurs plateformes"
 
 CA_CISCOVPN="Cisco VPN (via module OpenConnect de NetworkManager)"
 CD_CISCOVPN="Permet la connexion au VPN Cisco dans NetworkManager (pour Gnome) sans passer par AnyConnect Secure Mobility"
