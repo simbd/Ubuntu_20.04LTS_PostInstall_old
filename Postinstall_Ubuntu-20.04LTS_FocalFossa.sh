@@ -484,6 +484,7 @@ then
 	f_action_ppa_install "$CA_NVIDIA_BP" ppa:graphics-drivers/ppa "nvidia-graphics-drivers-440 nvidia-settings vulkan-loader vulkan-tools"
 	f_action_get "$CA_PHORONIXTESTSUITE" "http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_9.2.1_all.deb"
 	f_action_exec "$CA_OPTIMIS_SWAP" "echo vm.swappiness=5 | sudo tee /etc/sysctl.d/99-swappiness.conf ; echo vm.vfs_cache_pressure=50 | sudo tee -a /etc/sysctl.d/99-sysctl.conf ; sudo sysctl -p /etc/sysctl.d/99-sysctl.conf"
+	f_action_install "$CA_SCANNER" "sane sane-utils xsane"
 	f_action_exec "$CA_SNAPREMPLACEMENT" "sudo snap remove gnome-calculator  gnome-characters  gnome-logs  gnome-system-monitor"
 	f_action_install "$CA_SNAPREMPLACEMENT" "gnome-calculator gnome-characters gnome-logs gnome-system-monitor"
 	f_action_install "$CA_NAUTILUS_EXTRA" "nautilus-nextcloud nautilus-admin nautilus-extension-gnome-terminal nautilus-filename-repairer nautilus-gtkhash nautilus-script-audio-convert nautilus-sendto nautilus-share nautilus-wipe"
