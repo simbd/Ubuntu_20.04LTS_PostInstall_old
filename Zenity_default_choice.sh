@@ -132,16 +132,19 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_SCENARI" "$CD_SCENARI" \
 	$(chkDef "FALSE") "$CA_SCRIBUS" "$CD_SCRIBUS" \
 	$(chkDef "FALSE") "$CA_SPICEUP" "$CD_SPICEUP" \
+	$(chkDef "FALSE") "$CA_UMBRELLO" "$CD_UMBRELLO" \
 	$(chkDef "FALSE") "$CA_WPSOFFICE" "$CD_WPSOFFICE" \
 	$(chkDef "FALSE") "$CA_XMIND" "$CD_XMIND" \
 	$(chkDef "FALSE") "$CA_XOURNAL" "$CD_XOURNAL" \
 	$(chkDef "FALSE") "$CA_XPAD" "$CD_XPAD" \
 	$(chkDef "FALSE") "$CA_ZEAL" "$CD_ZEAL" \
+	$(chkDef "FALSE") "$CA_ZETTLR" "$CD_ZETTLR" \
 	$(chkDef "TRUE") "$CA_ZIM" "$CD_ZIM" \
 	FALSE "$SCT_LECTUREMULTIMEDIA" "===========================================================" \
 	$(chkDef "FALSE") "$CA_AUDACIOUS" "$CD_AUDACIOUS" \
 	$(chkDef "FALSE") "$CA_CANTATA" "$CD_CANTATA" \
 	$(chkDef "FALSE") "$CA_CLEMENTINE" "$CD_CLEMENTINE" \
+	$(chkDef "FALSE") "$CA_DEEZLOADER" "$CD_DEEZLOADER" \
 	$(chkDef "FALSE") "$CA_DIGIKAM" "$CD_DIGIKAM" \
 	$(chkDef "FALSE") "$CA_FLASH" "$CD_FLASH" \
 	$(chkDef "FALSE") "$CA_FONDO" "$CD_FONDO" \
@@ -177,7 +180,9 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "TRUE") "$CA_INKSCAPE" "$CD_INKSCAPE" \
 	$(chkDef "FALSE") "$CA_KOLOURPAINT" "$CD_KOLOURPAINT" \
 	$(chkDef "FALSE") "$CA_KRITA" "$CD_KRITA" \
+	$(chkDef "FALSE") "$CA_LEOCAD" "$CD_LEOCAD" \
 	$(chkDef "FALSE") "$CA_LIBRECAD" "$CD_LIBRECAD" \
+	$(chkDef "FALSE") "$CA_LILYPOND" "$CD_LILYPOND" \
 	$(chkDef "FALSE") "$CA_LUMINANCE" "$CD_LUMINANCE" \
 	$(chkDef "FALSE") "$CA_MYPAINT" "$CD_MYPAINT" \
 	$(chkDef "FALSE") "$CA_OPENSCAD" "$CD_OPENSCAD" \
@@ -190,6 +195,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_SYNFIG" "$CD_SYNFIG" \
 	$(chkDef "FALSE") "$CA_UNITY3DEDITOR" "$CD_UNITY3DEDITOR" \
 	$(chkDef "FALSE") "$CA_XNVIEW" "$CD_XNVIEW" \
+	$(chkDef "FALSE") "$CA_ZYNADDSUBFX" "$CD_ZYNADDSUBFX" \
 	FALSE "$SCT_MONTAGEVIDEO" "===========================================================" \
 	$(chkDef "FALSE") "$CA_AVIDEMUX" "$CD_AVIDEMUX" \
 	$(chkDef "FALSE") "$CA_CINELERRA" "$CD_CINELERRA" \
@@ -221,6 +227,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_HYDROGEN" "$CD_HYDROGEN" \
 	$(chkDef "FALSE") "$CA_LMMS" "$CD_LMMS" \
 	$(chkDef "FALSE") "$CA_MHWAVEEDIT" "$CD_MHWAVEEDIT" \
+	$(chkDef "FALSE") "$CA_MILKYTRACKER" "$CD_MILKYTRACKER" \
 	$(chkDef "FALSE") "$CA_MINUET" "$CD_MINUET" \
 	$(chkDef "FALSE") "$CA_MIXXX" "$CD_MIXXX" \
 	$(chkDef "FALSE") "$CA_MUSESCORE" "$CD_MUSESCORE" \
@@ -242,6 +249,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_GNOMEMAPS" "$CD_GNOMEMAPS" \
 	$(chkDef "FALSE") "$CA_GOOGLEEARTH" "$CD_GOOGLEEARTH" \
 	$(chkDef "FALSE") "$CA_JASP" "$CD_JASP" \
+	$(chkDef "FALSE") "$CA_KICAD" "$CD_KICAD" \
 	$(chkDef "FALSE") "$CA_LABPLOT" "$CD_LABPLOT" \
 	$(chkDef "FALSE") "$CA_MARBLE" "$CD_MARBLE" \
 	$(chkDef "FALSE") "$CA_MBLOCK" "$CD_MBLOCK" \
@@ -253,8 +261,10 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_SAGEMATH" "$CD_SAGEMATH" \
 	$(chkDef "FALSE") "$CA_SCILAB" "$CD_SCILAB" \
 	$(chkDef "FALSE") "$CA_SCRATCH" "$CD_SCRATCH" \
+	$(chkDef "FALSE") "$CA_SKYCHART" "$CD_SKYCHART" \
 	$(chkDef "FALSE") "$CA_STELLARIUM" "$CD_STELLARIUM" \
 	$(chkDef "FALSE") "$CA_TOUTENCLIC" "$CD_TOUTENCLIC" \
+	$(chkDef "FALSE") "$CA_TUXMATH" "$CD_TUXMATH" \
 	$(chkDef "FALSE") "$CA_XCAS" "$CD_XCAS" \
 	$(chkDef "FALSE") "$CA_XEPHEM" "$CD_XEPHEM" \
 	FALSE "$SCT_VIRTUALISATION_EMULATION" "===========================================================" \
@@ -281,6 +291,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
     	$(chkDef "FALSE") "$CA_VMWAREPRO" "$CD_VMWAREPRO" \
     	$(chkDef "FALSE") "$CA_WINE" "$CD_WINE" \
 	FALSE "$SCT_UTILITAIRES_GRAPHIQUE" "===========================================================" \
+	$(chkDef "FALSE") "$CA_ACTIONA" "$CD_ACTIONA" \
     	$(chkDef "FALSE") "$CA_APPOUTLET" "$CD_APPOUTLET" \
     	$(chkDef "FALSE") "$CA_BRASERO" "$CD_BRASERO" \
     	$(chkDef "FALSE") "$CA_CHEESE" "$CD_CHEESE" \
@@ -300,8 +311,11 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
     	$(chkDef "FALSE") "$CA_HOMEBANK" "$CD_HOMEBANK" \
     	$(chkDef "FALSE") "$CA_MELD" "$CD_MELD" \
     	$(chkDef "FALSE") "$CA_MULTISYSTEM" "$CD_MULTISYSTEM" \
+	$(chkDef "FALSE") "$CA_MYTOURBOOK" "$CD_MYTOURBOOK" \
     	$(chkDef "TRUE") "$CA_ARCHIVAGE" "$CD_ARCHIVAGE" \
+	$(chkDef "FALSE") "$CA_RECHERCHE" "$CD_RECHERCHE" \
    	$(chkDef "FALSE") "$CA_REDSHIFT" "$CD_REDSHIFT" \
+	$(chkDef "FALSE") "$CA_SPEEDCRUNCH" "$CD_SPEEDCRUNCH" \
     	$(chkDef "FALSE") "$CA_SUBLIM_NAUT" "$CD_SUBLIM_NAUT" \
     	$(chkDef "FALSE") "$CA_SUB_EDIT" "$CD_SUB_EDIT" \
     	$(chkDef "TRUE") "$CA_SYNAPTIC" "$CD_SYNAPTIC" \
@@ -328,6 +342,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_TLDR" "$CD_TLDR" \
 	$(chkDef "FALSE") "$CA_WORDGRINDER" "$CD_WORDGRINDER" \
 	FALSE "$SCT_RESEAUSECURITE" "===========================================================" \
+	$(chkDef "FALSE") "$CA_ADPFASTBOOT" "$CD_ADPFASTBOOT" \
 	$(chkDef "FALSE") "$CA_ANSIBLE" "$CD_ANSIBLE" \
 	$(chkDef "FALSE") "$CA_APPARMOR" "$CD_APPARMOR" \
 	$(chkDef "FALSE") "$CA_BITWARDEN" "$CD_BITWARDEN" \
@@ -360,6 +375,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_ALIENARENA" "$CD_ALIENARENA" \
 	$(chkDef "FALSE") "$CA_ASSAULTCUBE" "$CD_ASSAULTCUBE" \
 	$(chkDef "FALSE") "$CA_WESNOTH" "$CD_WESNOTH" \
+	$(chkDef "FALSE") "$CA_BZTAROT" "$CD_BZTAROT" \
 	$(chkDef "FALSE") "$CA_DOFUS" "$CD_DOFUS" \
 	$(chkDef "FALSE") "$CA_EXTREMETUXRACER" "$CD_EXTREMETUXRACER" \
 	$(chkDef "FALSE") "$CA_FLIGHTGEAR" "$CD_FLIGHTGEAR" \
@@ -368,9 +384,11 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_KAPMAN" "$CD_KAPMAN" \
 	$(chkDef "FALSE") "$CA_LUTRIS" "$CD_LUTRIS" \
 	$(chkDef "FALSE") "$CA_MEGAGLEST" "$CD_MEGAGLEST" \
+	$(chkDef "FALSE") "$CA_MINDUSTRY" "$CD_MINDUSTRY" \
 	$(chkDef "FALSE") "$CA_MINECRAFT" "$CD_MINECRAFT" \
 	$(chkDef "FALSE") "$CA_MINETEST" "$CD_MINETEST" \
 	$(chkDef "FALSE") "$CA_OPENARENA" "$CD_OPENARENA" \
+	$(chkDef "FALSE") "$CA_OPENTTD" "$CD_OPENTTD" \
 	$(chkDef "FALSE") "$CA_PINGUS" "$CD_PINGUS" \
 	$(chkDef "FALSE") "$CA_POKERTH" "$CD_POKERTH" \
 	$(chkDef "FALSE") "$CA_QUAKE" "$CD_QUAKE" \
@@ -403,6 +421,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_INTELLIJIDEA" "$CD_INTELLIJIDEA" \
 	$(chkDef "FALSE") "$CA_IPYTHON" "$CD_IPYTHON" \
 	$(chkDef "FALSE") "$CA_JAVA" "$CD_JAVA" \
+	$(chkDef "FALSE") "$CA_JUPYTER" "$CD_JUPYTER" \
 	$(chkDef "FALSE") "$CA_LATEXFULL" "$CD_LATEXFULL" \
 	$(chkDef "FALSE") "$CA_LATEXILA" "$CD_LATEXILA" \
 	$(chkDef "FALSE") "$CA_NEOVIM" "$CD_NEOVIM" \
@@ -426,6 +445,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_CONKY" "$CD_CONKY" \
 	$(chkDef "TRUE") "$CA_APPORTOFF" "$CD_APPORTOFF" \
 	$(chkDef "FALSE") "$CA_EXTINCTIONAUTO" "$CD_EXTINCTIONAUTO" \
+	$(chkDef "FALSE") "$CA_FPRINTD" "$CD_FPRINTD" \
 	$(chkDef "FALSE") "$CA_SCANNER" "$CD_SCANNER" \
 	$(chkDef "FALSE") "$CA_GWE" "$CD_GWE" \
 	$(chkDef "FALSE") "$CA_GS_AUGMENTATIONCAPTURE" "$CD_GS_AUGMENTATIONCAPTURE" \
