@@ -569,6 +569,9 @@ CD_KOLOURPAINT="Logiciel basique de dessin équivalent à Paint"
 CA_KRITA="Krita"
 CD_KRITA="Outil d'édition et retouche d'images, orienté plutôt vers le dessin bitmap"
 
+CA_LEOCAD="LeoCad" 
+CD_LEOCAD="Logiciel de CAO qui vous permet de conceptualiser en 3D des constructions en LEGO"
+
 CA_LIGHTWORKS="LightWorks 2020 (béta)" 
 CD_LIGHTWORKS="Logiciel de montage vidéo professionnel non-linéaire"
 
@@ -747,6 +750,9 @@ CD_SCILAB="Logiciel libre de calcul (matriciel) similaire à Matlab ou Octave"
 
 CA_SCRATCH="Scratch 3 Hors-ligne [HTML5 / Depuis un navigateur]"
 CD_SCRATCH="Language de programmation visuel libre, créé par le MIT, à vocation éducative et ludique"
+
+CA_SKYCHART="SkyChart"
+CD_SKYCHART="Logiciel libre de cartographie céleste"
 
 CA_STELLARIUM="Stellarium"
 CD_STELLARIUM="Planétarium avec l'affichage du ciel réaliste en 3D avec simulation d'un téléscope"
@@ -1040,11 +1046,14 @@ CD_ASSAULTCUBE="Clone de Counter Strike"
 CA_WESNOTH="Battle for Wesnoth"
 CD_WESNOTH="Jeu de Stratégie, le joueur doit se battre pour retrouver sa place dans le royaume"
 
+CA_BZTAROT="BzTarot"
+CD_BZTAROT="Jeu de tarot sous licence GPL. Permet de jouer à 4 (dont 3 joueurs simulés par ordinateur)"
+
 CA_DOFUS="Dofus (via Ankama Launcher) {APPIMAGE}"
 CD_DOFUS="Ce jeu devra être installé depuis le lanceur d'Ankama, celui-ci est au format AppImage"
 
 CA_EXTREMETUXRACER="Extreme Tux Racer"
-CD_EXTREMETUXRACER="Faites glisser Tux sur le ventre le plus vite possible, ramasser au vol des poissons sur le parcours semé d'embûches"
+CD_EXTREMETUXRACER="Faites glisser Tux le plus vite possible et ramasser au vol des poissons sur le parcours semé d'embûches"
 
 CA_FLIGHTGEAR="FlightGear Flight Simulator (FGFS)"
 CD_FLIGHTGEAR="Simulateur de vol libre, gratuit et multi-plateforme"
@@ -1066,6 +1075,9 @@ CD_LUTRIS="Plate-forme de jeux équivalente à Steam mais libre"
 
 CA_MEGAGLEST="Megaglest"
 CD_MEGAGLEST="RTS 3d dans un monde fantastique avec 2 factions qui s'affrontent : la magie et la technologie"
+
+CA_MINDUSTRY="Mindustry {SNAP}"
+CD_MINDUSTRY="Jeu vidéo de type tower defense et bac à sable développé par Anuke"
 
 CA_MINECRAFT="Minecraft"
 CD_MINECRAFT="Un des plus célèbres jeux sandbox, jeu propriétaire et payant"
