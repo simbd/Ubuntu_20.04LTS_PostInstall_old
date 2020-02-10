@@ -136,6 +136,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_XMIND" "$CD_XMIND" \
 	$(chkDef "FALSE") "$CA_XOURNAL" "$CD_XOURNAL" \
 	$(chkDef "FALSE") "$CA_XPAD" "$CD_XPAD" \
+	$(chkDef "FALSE") "$CA_ZEAL" "$CD_ZEAL" \
 	$(chkDef "TRUE") "$CA_ZIM" "$CD_ZIM" \
 	FALSE "$SCT_LECTUREMULTIMEDIA" "===========================================================" \
 	$(chkDef "FALSE") "$CA_AUDACIOUS" "$CD_AUDACIOUS" \
@@ -240,6 +241,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_GEOGEBRA" "$CD_GEOGEBRA" \
 	$(chkDef "FALSE") "$CA_GNOMEMAPS" "$CD_GNOMEMAPS" \
 	$(chkDef "FALSE") "$CA_GOOGLEEARTH" "$CD_GOOGLEEARTH" \
+	$(chkDef "FALSE") "$CA_JASP" "$CD_JASP" \
 	$(chkDef "FALSE") "$CA_LABPLOT" "$CD_LABPLOT" \
 	$(chkDef "FALSE") "$CA_MARBLE" "$CD_MARBLE" \
 	$(chkDef "FALSE") "$CA_MBLOCK" "$CD_MBLOCK" \
@@ -254,6 +256,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_STELLARIUM" "$CD_STELLARIUM" \
 	$(chkDef "FALSE") "$CA_TOUTENCLIC" "$CD_TOUTENCLIC" \
 	$(chkDef "FALSE") "$CA_XCAS" "$CD_XCAS" \
+	$(chkDef "FALSE") "$CA_XEPHEM" "$CD_XEPHEM" \
 	FALSE "$SCT_VIRTUALISATION_EMULATION" "===========================================================" \
 	$(chkDef "FALSE") "$CA_ANBOX" "$CD_ANBOX" \
 	$(chkDef "FALSE") "$CA_CITRA" "$CD_CITRA" \
@@ -261,11 +264,14 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_DOCKER" "$CD_DOCKER" \
 	$(chkDef "FALSE") "$CA_DOLPHIN" "$CD_DOLPHIN" \
 	$(chkDef "FALSE") "$CA_DOSBOX" "$CD_DOSBOX" \
+	$(chkDef "FALSE") "$CA_GENS" "$CD_GENS" \
 	$(chkDef "FALSE") "$CA_GNOMEBOXES" "$CD_GNOMEBOXES" \
 	$(chkDef "FALSE") "$CA_GNS" "$CD_GNS" \
 	$(chkDef "FALSE") "$CA_QEMUKVM" "$CD_QEMUKVM" \
 	$(chkDef "FALSE") "$CA_LXC" "$CD_LXC" \
+	$(chkDef "FALSE") "$CA_MEDNAFEN" "$CD_MEDNAFEN" \
 	$(chkDef "FALSE") "$CA_MGBA" "$CD_MGBA" \
+	$(chkDef "FALSE") "$CA_MUPEN64" "$CD_MUPEN64" \
 	$(chkDef "FALSE") "$CA_POL" "$CD_POL" \
 	$(chkDef "FALSE") "$CA_PPSSPP" "$CD_PPSSPP" \
 	$(chkDef "FALSE") "$CA_RETROARCH" "$CD_RETROARCH" \
@@ -323,7 +329,9 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_WORDGRINDER" "$CD_WORDGRINDER" \
 	FALSE "$SCT_RESEAUSECURITE" "===========================================================" \
 	$(chkDef "FALSE") "$CA_ANSIBLE" "$CD_ANSIBLE" \
+	$(chkDef "FALSE") "$CA_APPARMOR" "$CD_APPARMOR" \
 	$(chkDef "FALSE") "$CA_BITWARDEN" "$CD_BITWARDEN" \
+	$(chkDef "FALSE") "$CA_BUTTERCUP" "$CD_BUTTERCUP" \
 	$(chkDef "FALSE") "$CA_CISCOVPN" "$CD_CISCOVPN" \
 	$(chkDef "FALSE") "$CA_CRYPTER" "$CD_CRYPTER" \
 	$(chkDef "FALSE") "$CA_CRYPTOMATOR" "$CD_CRYPTOMATOR" \
@@ -333,8 +341,10 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_HACKINGPACK" "$CD_HACKINGPACK" \
 	$(chkDef "FALSE") "$CA_KEEPASS" "$CD_KEEPASS" \
 	$(chkDef "TRUE") "$CA_KEEPASSXC" "$CD_KEEPASSXC" \
+	$(chkDef "FALSE") "$CA_KEEWEB" "$CD_KEEWEB" \
 	$(chkDef "FALSE") "$CA_MYSQLWB" "$CD_MYSQLWB" \
 	$(chkDef "FALSE") "$CA_OCSINVENTORY" "$CD_OCSINVENTORY" \
+	$(chkDef "FALSE") "$CA_OPENVAS" "$CD_OPENVAS" \
 	$(chkDef "FALSE") "$CA_PGADMIN" "$CD_PGADMIN" \
 	$(chkDef "FALSE") "$CA_PUPPET" "$CD_PUPPET" \
 	$(chkDef "FALSE") "$CA_SERVERLAMP" "$CD_SERVERLAMP" \
@@ -342,6 +352,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_UPM" "$CD_UPM" \
 	$(chkDef "FALSE") "$CA_VERACRYPT" "$CD_VERACRYPT" \
 	$(chkDef "FALSE") "$CA_WAKEONLAN" "$CD_WAKEONLAN" \
+	$(chkDef "FALSE") "$CA_WIFITE" "$CD_WIFITE" \
 	$(chkDef "FALSE") "$CA_WIRESHARK" "$CD_WIRESHARK" \
 	FALSE "$SCT_GAMING" "===========================================================" \
 	$(chkDef "FALSE") "$CA_0AD" "$CD_0AD" \
@@ -385,8 +396,10 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_CODEBLOCKS" "$CD_CODEBLOCKS" \
 	$(chkDef "FALSE") "$CA_ECLIPSE" "$CD_ECLIPSE" \
 	$(chkDef "TRUE") "$CA_EMACS" "$CD_EMACS" \
+	$(chkDef "FALSE") "$CA_ERIC" "$CD_ERIC" \
 	$(chkDef "FALSE") "$CA_GDEVELOP" "$CD_GDEVELOP" \
 	$(chkDef "TRUE") "$CA_GEANY" "$CD_GEANY" \
+	$(chkDef "FALSE") "$CA_IDLE" "$CD_IDLE" \
 	$(chkDef "FALSE") "$CA_INTELLIJIDEA" "$CD_INTELLIJIDEA" \
 	$(chkDef "FALSE") "$CA_IPYTHON" "$CD_IPYTHON" \
 	$(chkDef "FALSE") "$CA_JAVA" "$CD_JAVA" \
