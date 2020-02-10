@@ -374,7 +374,7 @@ then
 	f_RepositoryExt_Install "$CA_ENPASS" "enpass" "https://dl.sinew.in/keys/enpass-linux.key" "http://repo.sinew.in/ stable main" "enpass"
 	f_action_install "$CA_FUSIONINVENTORY" fusioninventory-agent
 	f_action_install "$CA_GUFW" gufw
-	f_action_install "$CA_HACKINGPACK" "tcpdump nmap aircrack-ng ophcrack ophcrack-cli crunch john hashcat"
+	f_action_install "$CA_HACKINGPACK" "tcpdump nmap netdiscover aircrack-ng ophcrack ophcrack-cli crunch john hashcat"
 	f_action_install "$CA_KEEPASS" keepass2
     	f_action_install "$CA_KEEPASSXC" keepassxc
 	f_action_install "$CA_MYSQLWB" mysql-workbench
