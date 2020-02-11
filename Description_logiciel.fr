@@ -1014,8 +1014,8 @@ CD_WORDGRINDER="Traitement de texte léger en CLI, Formats OpenDocument, HTML im
 
 SCT_RESEAUSECURITE="______ [[ RESEAUX ET SECURITE ]] ______"
 
-CA_ADPFASTBOOT="Adp + FastBoot (flashage SP Android)"
-CD_ADPFASTBOOT="Ajoute les outils Adp et FastBoot pour flasher des smartphones Android"
+CA_ADBFASTBOOT="Adb + FastBoot (flashage SP Android)"
+CD_ADBFASTBOOT="Ajoute les outils Adb et FastBoot pour flasher des smartphones Android"
 
 CA_ANSIBLE="Ansible"
 CD_ANSIBLE="Outil d'automatisation (pour le déploiement et gestion de machines distantes)."
