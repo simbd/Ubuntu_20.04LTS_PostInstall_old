@@ -163,12 +163,14 @@ then
 	f_action_install "$CA_XOURNAL" xournal
 	f_action_install "$CA_XPAD" xpad
 	f_action_install "$CA_ZEAL" zeal
+	f_action_get "$CA_ZETTLR" "https://github.com/Zettlr/Zettlr/releases/download/v1.5.0/Zettlr-1.5.0-amd64.deb"
 	f_action_install "$CA_ZIM" zim	
 	
 	# Lecture Multimedia
 	f_action_install "$CA_AUDACIOUS" audacious
 	f_action_install "$CA_CANTATA" "cantata mpd"
 	f_action_install "$CA_CLEMENTINE" clementine
+	f_action_get_appimage "$CA_DEEZLOADER" "https://srv-file5.gofile.io/download/r4sZke/Deezloader_Remix_4.3.0-x86_64.AppImage"
 	f_action_install "$CA_FLASH" "adobe-flashplugin pepperflashplugin-nonfree"
 	f_action_flatpak_install "$CA_FONDO" com.github.calo001.fondo
     	f_action_install "$CA_GNOMEMPV" celluloid
@@ -296,6 +298,7 @@ then
 	f_action_install "$CA_SAGEMATH" sagemath
 	f_action_install "$CA_SCILAB" scilab
 	f_action_exec "$CA_SCRATCH" "wget http://nux87.free.fr/script-postinstall-ubuntu/theme/scratch.png ; wget https://gitlab.com/simbd/Fichier_de_config/raw/master/scratch.desktop ; wget http://www.ac-grenoble.fr/maths/scratch/scratch.zip ; sudo unzip scratch.zip -d /opt/scratch3 ; rm scratch.zip ; sudo mv scratch.png /usr/share/icons/ ; sudo mv scratch.desktop /usr/share/applications/"
+	f_action_get "$CA_SKYCHART" "https://netcologne.dl.sourceforge.net/project/skychart/1-software/version_4.2.1/skychart_4.2.1-4073_amd64.deb"
 	f_action_install "$CA_STELLARIUM" stellarium
 	f_action_install "$CA_TOUTENCLIC" python3-pyqt5
 	f_action_exec "$CA_TOUTENCLIC" "wget http://www.bipede.fr/downloads/logiciels/ToutEnClic.zip ; unzip ToutEnClic.zip ; rm ToutEnClic.zip ; sudo mv ToutEnClic /opt/ ; wget https://gitlab.com/simbd/Fichier_de_config/raw/master/toutenclic.desktop --no-check-certificate ; sudo mv toutenclic.desktop /usr/share/applications/ ; wget http://nux87.free.fr/script-postinstall-ubuntu/theme/toutenclic.png --no-check-certificate ; sudo mv toutenclic.png /usr/share/icons/"
@@ -310,6 +313,7 @@ then
 	f_action_install "$CA_DOCKER" "docker.io"
 	f_action_install "$CA_DOLPHIN" dolphin-emu
 	f_action_install "$CA_DOSBOX" dosbox
+	f_action_get "$CA_GENS" "https://retrocdn.net/images/e/e9/Gens_2.16.8-r7orig_amd64.deb"
 	f_action_install "$CA_GNOMEBOXES" gnome-boxes	
 	f_action_ppa_install "$CA_GNS" "ppa:gns3/ppa" gns3-gui
 	f_action_install "$CA_QEMUKVM" "qemu qemu-kvm qemu-system-gui qemu-system-arm qemu-utils virt-manager virt-viewer"
@@ -348,6 +352,7 @@ then
 	f_action_install "$CA_GPARTED" gparted
 	f_action_install "$CA_MELD" meld
 	f_RepositoryExt_Install "$CA_MULTISYSTEM" "multisystem" "http://liveusb.info/multisystem/depot/multisystem.asc" "http://liveusb.info/multisystem/depot all main" "multisystem"
+	f_action_LinInstall "$CA_MYTOURBOOK" Mytourbook
 	f_action_install "$CA_ARCHIVAGE" "unace rar unrar p7zip-rar p7zip-full sharutils uudeview mpack arj cabextract lzip lunzip"
 	f_action_install "$CA_RECHERCHE" "recoll catfish searchmonkey"
 	f_action_install "$CA_REDSHIFT" redshift-gtk
@@ -385,6 +390,7 @@ then
 	f_action_install "$CA_ANSIBLE" ansible
 	f_action_install "$CA_APPARMOR" "apparmor apparmor-profiles apparmor-utils"
 	f_action_snap_install "$CA_BITWARDEN" bitwarden
+	f_action_get "$CA_BUTTERCUP" "https://github.com/buttercup/buttercup-desktop/releases/download/v1.18.2/buttercup-desktop_1.18.2_amd64.deb"
 	f_action_install "$CA_CISCOVPN" network-manager-openconnect-gnome
 	f_action_get_appimage "$CA_CRYPTER" "https://github.com/HR/Crypter/releases/download/v4.0.0/Crypter-4.0.0.AppImage"
 	f_action_get_appimage "$CA_CRYPTOMATOR" "https://dl.bintray.com/cryptomator/cryptomator/1.4.15/cryptomator-1.4.15-x86_64.AppImage"
@@ -394,6 +400,7 @@ then
 	f_action_install "$CA_HACKINGPACK" "tcpdump nmap netdiscover aircrack-ng ophcrack ophcrack-cli crunch john hashcat"
 	f_action_install "$CA_KEEPASS" keepass2
     	f_action_install "$CA_KEEPASSXC" keepassxc
+	f_action_get "$CA_KEEWEB" "https://github.com/keeweb/keeweb/releases/download/v1.12.3/KeeWeb-1.12.3.linux.x64.deb"
 	f_action_install "$CA_MYSQLWB" mysql-workbench
 	f_action_install "$CA_OCSINVENTORY" ocsinventory-agent
 	f_action_install "$CA_OPENVAS" "openvas openvas-cli openvas-manager openvas-scanner"
@@ -415,6 +422,7 @@ then
 	f_action_install "$CA_ALIENARENA" alien-arena
 	f_action_install "$CA_ASSAULTCUBE" assaultcube
 	f_action_install "$CA_WESNOTH" wesnoth
+	f_action_get "$CA_BZTAROT" "http://vbeuselinck.free.fr/linux/bztarot_1.02-12_i386.deb"
 	f_action_get_appimage "$CA_DOFUS" "https://ankama.akamaized.net/zaap/installers/production/Ankama%20Launcher-Setup-x86_64.AppImage"
 	f_action_install "$CA_EXTREMETUXRACER" extremetuxracer
 	f_action_install "$CA_FLIGHTGEAR" flightgear
@@ -439,7 +447,7 @@ then
 	f_action_install "$CA_SUPERTUXKART" supertuxkart	
 	f_action_install "$CA_TEEWORLDS" teeworlds		
 	f_action_snap_install "$CA_TMNF" tmnationsforever
-	f_action_exec "$CA_UT4" "wget https://gitlab.com/simbd/LinInstall_Software/raw/master/LinInstall_UnrealTournament4 ; chmod +x LinInstall_Unreal*"
+	f_action_exec "$CA_UT4" "wget https://gitlab.com/simbd/LinInstall_Software/raw/master/LinInstall_UnrealTournament4 && chmod +x LinI*Unreal*"
 	f_action_install "$CA_XBOARD" "xboard gnuchess"
 	f_action_exec "$CA_XPLANE" "wget https://www.x-plane.com/update/installers11/X-Plane11InstallerLinux.zip && unzip X-Plane11* ; rm X-Plane11*.zip"
 	f_action_install "$CA_XQF" xqf
