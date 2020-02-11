@@ -126,6 +126,7 @@ then
 	f_action_install "$CA_YTDLND" youtube-dl
 	
 	# Bureautique/Mail
+	f_action_get "$CA_BOOSTNOTE" "https://github.com/BoostIO/boost-releases/releases/download/v0.14.0/boostnote_0.14.0_amd64.deb"
 	f_action_install "$CA_CALLIGRA" calligra
 	f_action_snap_install "$CA_DRAWIO" drawio
 	f_action_install "$CA_FRDIC" "myspell-fr-gut wfrench aspell-fr hyphen-fr mythes-fr"
@@ -376,12 +377,12 @@ then
 	f_action_install "$CA_IMAGEMAGICK" imagemagick
 	f_action_install "$CA_NIX" curl
 	f_action_exec "$CA_NIX" "curl https://nixos.org/nix/install | sh"
+	f_action_install "$CA_PACKRECUP" "testdisk scalpel foremost"
 	f_action_snap_install "$CA_POWERSHELL" "powershell --classic"	
 	f_action_install "$CA_RIPGREP" ripgrep
 	f_action_install "$CA_RTORRENT" rtorrent
 	f_action_install "$CA_SCREEN" screen
 	f_action_install "$CA_SMARTMONTOOLS" "--no-install-recommends smartmontools"
-	f_action_install "$CA_TESTDISK" testdisk
 	f_action_install "$CA_TLDR" tldr
 	f_action_install "$CA_WORDGRINDER" "wordgrinder wordgrinder-x11"
 
@@ -401,6 +402,7 @@ then
 	f_action_install "$CA_KEEPASS" keepass2
     	f_action_install "$CA_KEEPASSXC" keepassxc
 	f_action_get "$CA_KEEWEB" "https://github.com/keeweb/keeweb/releases/download/v1.12.3/KeeWeb-1.12.3.linux.x64.deb"
+	f_action_get "$CA_MALTEGO" "https://maltego-downloads.s3.us-east-2.amazonaws.com/linux/Maltego.v4.2.9.12898.deb"
 	f_action_install "$CA_MYSQLWB" mysql-workbench
 	f_action_install "$CA_OCSINVENTORY" ocsinventory-agent
 	f_action_install "$CA_OPENVAS" "openvas openvas-cli openvas-manager openvas-scanner"
