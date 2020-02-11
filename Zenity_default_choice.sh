@@ -103,6 +103,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
     	$(chkDef "FALSE") "$CA_X2GO" "$CD_X2GO" \
     	$(chkDef "FALSE") "$CA_X11VNC" "$CD_X11VNC" \
 	FALSE "$SCT_OFFICE" "===========================================================" \
+	$(chkDef "FALSE") "$CA_BOOSTNOTE" "$CD_BOOSTNOTE" \
 	$(chkDef "FALSE") "$CA_CALLIGRA" "$CD_CALLIGRA" \
 	$(chkDef "FALSE") "$CA_DRAWIO" "$CD_DRAWIO" \
 	$(chkDef "FALSE") "$CA_FRDIC" "$CD_FRDIC" \
@@ -333,12 +334,12 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_HG" "$CD_HG" \
 	$(chkDef "FALSE") "$CA_IMAGEMAGICK" "$CD_IMAGEMAGICK" \
 	$(chkDef "FALSE") "$CA_NIX" "$CD_NIX" \
+	$(chkDef "FALSE") "$CA_PACKRECUP" "$CD_PACKRECUP" \
 	$(chkDef "FALSE") "$CA_POWERSHELL" "$CD_POWERSHELL" \
 	$(chkDef "FALSE") "$CA_RIPGREP" "$CD_RIPGREP" \
 	$(chkDef "FALSE") "$CA_RTORRENT" "$CD_RTORRENT" \
 	$(chkDef "TRUE") "$CA_SCREEN" "$CD_SCREEN" \
 	$(chkDef "FALSE") "$CA_SMARTMONTOOLS" "$CD_SMARTMONTOOLS" \
-	$(chkDef "FALSE") "$CA_TESTDISK" "$CD_TESTDISK" \
 	$(chkDef "FALSE") "$CA_TLDR" "$CD_TLDR" \
 	$(chkDef "FALSE") "$CA_WORDGRINDER" "$CD_WORDGRINDER" \
 	FALSE "$SCT_RESEAUSECURITE" "===========================================================" \
@@ -357,6 +358,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_KEEPASS" "$CD_KEEPASS" \
 	$(chkDef "TRUE") "$CA_KEEPASSXC" "$CD_KEEPASSXC" \
 	$(chkDef "FALSE") "$CA_KEEWEB" "$CD_KEEWEB" \
+	$(chkDef "FALSE") "$CA_MALTEGO "$CD_MALTEGO" \
 	$(chkDef "FALSE") "$CA_MYSQLWB" "$CD_MYSQLWB" \
 	$(chkDef "FALSE") "$CA_OCSINVENTORY" "$CD_OCSINVENTORY" \
 	$(chkDef "FALSE") "$CA_OPENVAS" "$CD_OPENVAS" \
