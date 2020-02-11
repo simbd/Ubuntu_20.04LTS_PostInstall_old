@@ -156,11 +156,13 @@ then
     	f_action_LinInstall "$CA_SCENARI" Scenari
     	f_action_install "$CA_SCRIBUS" "scribus scribus-template"	
 	f_action_flatpak_install "$CA_SPICEUP" "com.github.philip_scott.spice-up"
+	f_action_install "$CA_UMBRELLO" "umbrello --no-install-recommends"
 	f_action_get "$CA_WPSOFFICE" "http://fr.archive.ubuntu.com/ubuntu/pool/main/libp/libpng/libpng12-0_1.2.54-1ubuntu1_amd64.deb" 
 	f_action_get "$CA_WPSOFFICE" "http://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/8865/wps-office_11.1.0.8865_amd64.deb"
 	f_action_get "$CA_XMIND" "https://www.xmind.net/xmind/downloads/XMind-ZEN-for-Linux-amd-64bit-10.0.0-201911260056.deb"
 	f_action_install "$CA_XOURNAL" xournal
 	f_action_install "$CA_XPAD" xpad
+	f_action_install "$CA_ZEAL" zeal
 	f_action_install "$CA_ZIM" zim	
 	
 	# Lecture Multimedia
@@ -226,12 +228,15 @@ then
 	f_action_install "$CA_KDENLIVE" kdenlive		
 	f_action_install "$CA_KOLOURPAINT" kolourpaint	
 	f_action_install "$CA_KRITA" krita
+	f_action_install "$CA_LEOCAD" leocad
 	f_action_get "$CA_LIGHTWORKS" "https://downloads.lwks.com/Lightworks-2020.1-Beta-118776.deb"
 	f_action_install "$CA_LIBRECAD" librecad
+	f_action_install "$CA_LILYPOND" lilypond
 	f_action_install "$CA_LIVES" lives	
 	f_action_install "$CA_LUMINANCE" luminance-hdr
 	f_action_install "$CA_LMMS" lmms	
 	f_action_install "$CA_MHWAVEEDIT" mhwaveedit
+	f_action_install "$CA_MILKYTRACKER" milkytracker
 	f_action_install "$CA_MINUET" minuet
 	f_action_install "$CA_MIXXX" mixxx
 	f_action_install "$CA_MUSESCORE" musescore3	
@@ -260,6 +265,7 @@ then
 	f_action_install "$CA_VOKOSCREEN" vokoscreen
 	f_action_install "$CA_WINFF" "winff winff-qt"
 	f_action_get "$CA_XNVIEW" "https://download.xnview.com/XnViewMP-linux-x64.deb"
+	f_action_install "$CA_ZYNADDSUBFX" zynaddsubfx
 	
 	# Science/Education
 	f_action_install "$CA_ALGOBOX" algobox
@@ -276,6 +282,8 @@ then
 	f_action_install "$CA_GNOMEMAPS" gnome-maps
 	f_action_get "$CA_GOOGLEEARTH" "https://dl.google.com/dl/earth/client/current/google-earth-pro-stable_current_amd64.deb"
 	f_action_exec "$CA_GOOGLEEARTH" "sudo rm -f /etc/apt/sources.list.d/google-earth-pro*" #dépot supprimé car pose soucis systématiquement
+	f_action_flatpak_install "$CA_JASP" org.jaspstats.JASP
+	f_action_install "$CA_KICAD" "kicad kicad-libraries kicad-templates kicad-packages3d kicad-symbols kicad-doc-fr"
 	f_action_install "$CA_LABPLOT" labplot
 	f_action_install "$CA_MARBLE" "--no-install-recommends marble"
 	f_action_install "$CA_MBLOCK" libgconf-2-4 #dépendance pour Mblock
@@ -291,6 +299,7 @@ then
 	f_action_install "$CA_STELLARIUM" stellarium
 	f_action_install "$CA_TOUTENCLIC" python3-pyqt5
 	f_action_exec "$CA_TOUTENCLIC" "wget http://www.bipede.fr/downloads/logiciels/ToutEnClic.zip ; unzip ToutEnClic.zip ; rm ToutEnClic.zip ; sudo mv ToutEnClic /opt/ ; wget https://gitlab.com/simbd/Fichier_de_config/raw/master/toutenclic.desktop --no-check-certificate ; sudo mv toutenclic.desktop /usr/share/applications/ ; wget http://nux87.free.fr/script-postinstall-ubuntu/theme/toutenclic.png --no-check-certificate ; sudo mv toutenclic.png /usr/share/icons/"
+	f_action_install "$CA_TUXMATH" tuxmath
 	f_action_install "$CA_XCAS" xcas
 	f_action_get "$CA_XEPHEM" "http://e2rd.piekielko.pl/debian/binary-amd64/xephem_3.7.7-4_amd64.deb"
 
@@ -319,6 +328,7 @@ then
 	f_action_install "$CA_WINE" "wine-development wine64-development wine64-development-tools winetricks"
 	
 	# Utilitaires graphiques
+	f_action_install "$CA_ACTIONA" "actiona actionaz"
 	f_action_snap_install "$CA_APPOUTLET" app-outlet
 	f_action_install "$CA_BRASERO" brasero
 	f_action_install "$CA_CHEESE" cheese
@@ -339,7 +349,9 @@ then
 	f_action_install "$CA_MELD" meld
 	f_RepositoryExt_Install "$CA_MULTISYSTEM" "multisystem" "http://liveusb.info/multisystem/depot/multisystem.asc" "http://liveusb.info/multisystem/depot all main" "multisystem"
 	f_action_install "$CA_ARCHIVAGE" "unace rar unrar p7zip-rar p7zip-full sharutils uudeview mpack arj cabextract lzip lunzip"
+	f_action_install "$CA_RECHERCHE" "recoll catfish searchmonkey"
 	f_action_install "$CA_REDSHIFT" redshift-gtk
+	f_action_install "$CA_SPEEDCRUNCH" speedcrunch
 	f_action_exec "$CA_SUBLIM_NAUT" "wget https://raw.githubusercontent.com/Diaoul/nautilus-subliminal/master/install.sh -O - | sudo bash"
 	f_action_install "$CA_SUB_EDIT" subtitleeditor
 	f_action_install "$CA_SYNAPTIC" synaptic
@@ -369,7 +381,9 @@ then
 	f_action_install "$CA_WORDGRINDER" "wordgrinder wordgrinder-x11"
 
 	# Réseaux et sécurité
+	f_action_install "$CA_ADBFASTBOOT" "adb fastboot"
 	f_action_install "$CA_ANSIBLE" ansible
+	f_action_install "$CA_APPARMOR" "apparmor apparmor-profiles apparmor-utils"
 	f_action_snap_install "$CA_BITWARDEN" bitwarden
 	f_action_install "$CA_CISCOVPN" network-manager-openconnect-gnome
 	f_action_get_appimage "$CA_CRYPTER" "https://github.com/HR/Crypter/releases/download/v4.0.0/Crypter-4.0.0.AppImage"
@@ -392,7 +406,7 @@ then
 	f_action_ppa_install "$CA_VERACRYPT" ppa:unit193/encryption veracrypt
 	f_action_install "$CA_VERACRYPT" veracrypt
 	f_action_install "$CA_WAKEONLAN" wakeonlan
-	f_action_install "$CA_WIFITE" "wifite"
+	f_action_install "$CA_WIFITE" "wifite hashcat hcxdumptool macchanger"
 	f_action_install "$CA_WIRESHARK" wireshark
 	
 	# Gaming
@@ -410,9 +424,11 @@ then
 	f_action_snap_install "$CA_LOL" "leagueoflegends --edge --devmode"
 	f_action_ppa_install "$CA_LUTRIS" ppa:lutris-team/lutris lutris
 	f_action_install "$CA_MEGAGLEST" megaglest
+	f_action_snap_install "$CA_MINDUSTRY" mindustry
 	f_action_get "$CA_MINECRAFT" "https://launcher.mojang.com/download/Minecraft.deb"
 	f_action_install "$CA_MINETEST" "minetest minetest-mod-nether"
 	f_action_install "$CA_OPENARENA" openarena
+	f_action_install "$CA_OPENTTD" "openttd openttd-opensfx"
 	f_action_install "$CA_PINGUS" pingus
 	f_action_install "$CA_POKERTH" pokerth
 	f_action_snap_install "$CA_QUAKE" quake-shareware
@@ -440,13 +456,16 @@ then
 	f_action_install "$CA_CODEBLOCKS" "codeblocks codeblocks-contrib"
 	f_action_snap_install "$CA_ECLIPSE" "eclipse --classic"
 	f_action_install "$CA_EMACS" emacs
+	f_action_install "$CA_ERIC" eric
 	f_action_LinInstall "$CA_GDEVELOP" Gdevelop
 	f_action_install "$CA_GEANY" "geany geany-plugins"
+	f_action_install "$CA_IDLE" "idle3 idle3-tools"
 	f_action_snap_install "$CA_INTELLIJIDEA" "intellij-idea-community --classic"
 	f_action_install "$CA_IPYTHON" ipython
 	f_action_exec "$CA_JAVA" "sudo add-apt-repository -y ppa:linuxuprising/java"
 	f_action_exec "$CA_JAVA" "echo oracle-java13-installer shared/accepted-oracle-license-v1-2 select true | sudo /usr/bin/debconf-set-selections"
 	f_action_install "$CA_JAVA" oracle-java13-installer
+	f_action_install "$CA_JUPYTER" "jupyter-notebook jupyter-client jupyter-console"
 	f_action_install "$CA_LATEXFULL" "texlive-full fonts-freefont-ttf texlive-extra-utils texlive-fonts-extra texlive-lang-french texlive-latex-extra libreoffice-texmaths"
 	f_action_install "$CA_LATEXILA" latexila
 	f_action_install "$CA_NEOVIM" neovim
@@ -475,6 +494,7 @@ then
     	f_action_exec "$CA_APPORTOFF" "sudo sed -i 's/^enabled=1$/enabled=0/' /etc/default/apport"
 	f_action_exec "$CA_EXTINCTIONAUTO" "echo '0 4 * * * root /sbin/shutdown -h now' | sudo tee -a /etc/cron.d/extinction-auto"
 	f_action_flatpak_install "$CA_GWE" com.leinardi.gwe
+	f_action_install "$CA_FPRINTD" fprintd
 	f_action_exec "$CA_GS_AUGMENTATIONCAPTURE" "gsettings set org.gnome.settings-daemon.plugins.media-keys max-screencast-length 600"
 	f_action_exec "$CA_GS_MINIMISATIONFENETRE" "gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'"
 	f_action_install "$CA_GRUBCUSTOMIZER" grub-customizer
