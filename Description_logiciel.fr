@@ -302,6 +302,9 @@ CD_YTDLND="Script (à utiliser dans le terminal) de capture de vidéos en ligne 
 
 SCT_OFFICE="______ [[ BUREAUTIQUE ]] ______"
 
+CA_BOOSTNOTE="Boost Note"
+CD_BOOSTNOTE="Editeur de texte fonctionnel et efficace, gère les tags et la coloration syntaxique"
+
 CA_CALLIGRA="Calligra Suite"
 CD_CALLIGRA="suite bureautique de KDE, il s'intègre donc bien avec l'environnement kde/plasma"
 
@@ -988,6 +991,9 @@ CD_IMAGEMAGICK="Programme en cli très puissant de manipulation d'images dans pr
 CA_NIX="Nix package manager"
 CD_NIX="Permet de pouvoir installer des paquets NiX (gestionnaire de paquet alternatif)"
 
+CA_PACKRECUP="Pack d'outils de récupération de données"
+CD_PACKRECUP="Installera 4 outils de récupération de données effacées : Testdisk, PhotoRec, Foremost, Scalpel"
+
 CA_POWERSHELL="PowerShell {SNAP}"
 CD_POWERSHELL="Pour utiliser l'utilitaire PowerShell dans Linux (se lance via la commande : pwsh)"
 
@@ -1002,9 +1008,6 @@ CD_SCREEN="Multiplexeur de terminaux pour en ouvrir plusieurs dans une même con
 
 CA_SMARTMONTOOLS="SmartmonTools (smartctl)"
 CD_SMARTMONTOOLS="Fournit l'état physiques des disques durs et des SSD voir de certaines clés USB."
-
-CA_TESTDISK="TestDisk"
-CD_TESTDISK="Permet de ressusciter les partitions supprimées accidentellement ou les contenus des fichiers"
 
 CA_TLDR="TLDR"
 CD_TLDR="Un MAN simplifié pour aller à l'essentiel au niveau des commandes"
@@ -1058,6 +1061,9 @@ CD_KEEPASSXC="Alternative recommandée à Keepass remplaçant mono par Qt et for
 
 CA_KEEWEB="KeeWeb"
 CD_KEEWEB="Un gestionnaire élégant et efficace pour gérer vos mots de passe"
+
+CA_MALTEGO="Maltego"
+CD_MALTEGO="Application de renseignement qui permet d'extraire/rassembler des informations et les rassembler"
 
 CA_MYSQLWB="MySQL Workbench"
 CD_MYSQLWB="Outil de gestion de server MySQL : génération de modèles (MCD/MPD)."
