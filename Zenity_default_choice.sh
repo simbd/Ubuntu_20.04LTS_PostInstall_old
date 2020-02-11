@@ -342,7 +342,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_TLDR" "$CD_TLDR" \
 	$(chkDef "FALSE") "$CA_WORDGRINDER" "$CD_WORDGRINDER" \
 	FALSE "$SCT_RESEAUSECURITE" "===========================================================" \
-	$(chkDef "FALSE") "$CA_ADPFASTBOOT" "$CD_ADPFASTBOOT" \
+	$(chkDef "FALSE") "$CA_ADBFASTBOOT" "$CD_ADBFASTBOOT" \
 	$(chkDef "FALSE") "$CA_ANSIBLE" "$CD_ANSIBLE" \
 	$(chkDef "FALSE") "$CA_APPARMOR" "$CD_APPARMOR" \
 	$(chkDef "FALSE") "$CA_BITWARDEN" "$CD_BITWARDEN" \
