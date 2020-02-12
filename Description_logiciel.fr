@@ -305,6 +305,9 @@ SCT_OFFICE="______ [[ BUREAUTIQUE ]] ______"
 CA_BOOSTNOTE="Boost Note"
 CD_BOOSTNOTE="Editeur de texte fonctionnel et efficace, gère les tags et la coloration syntaxique"
 
+CA_CALIBRE="Calibre"
+CD_CALIBRE="Logiciel de lecture, de gestion de bibliothèques et de conversion de fichiers de type ebook/livre électronique"
+
 CA_CALLIGRA="Calligra Suite"
 CD_CALLIGRA="suite bureautique de KDE, il s'intègre donc bien avec l'environnement kde/plasma"
 
@@ -319,6 +322,9 @@ CD_FBREADER="Lecteur de livres électroniques e-books supportant les formats (ep
 
 CA_FEEDREADER="FeedReader"
 CD_FEEDREADER="Agrégateur RSS moderne pour consulter vos fils d'informations RSS"
+
+CA_FONTFORGE="FontForge"
+CD_FONTFORGE="Editeur libre de polices de caractères numériques gérant la majorité des formats"
 
 CA_FREEMIND="FreeMind {SNAP}"
 CD_FREEMIND="Logiciel libre pour créer des cartes heuristiques, des diagrammes de connexions sémantiques"
@@ -673,6 +679,9 @@ CD_SOLVESPACE="Programme de CAO 2D et 3D gratuit et open-source"
 
 CA_SOUNDJUICER="Sound-Juicer"
 CD_SOUNDJUICER="Pour extraire les pistes audios d'un cd"
+
+CA_SOUNDKONVERTER="SoundKonverter"
+CD_SOUNDKONVERTER="Convertisseur audio avec recherche, extraction de piste, décodage de fichier audio"
 
 CA_SWEETHOME="Sweethome 3D"
 CD_SWEETHOME="Aménagement d'intérieur pour dessiner les plans d'une maison, placement des meubles..."
@@ -1180,6 +1189,9 @@ CD_REDECLIPSE="Jeu de tir subjectif en mode solo et multijoueur basé sur le mot
 
 CA_RUNESCAPE="RuneScape"
 CD_RUNESCAPE="Un des MMORPG gratuit les plus populaires au monde avec plus de 15 millions de comptes F2P"
+
+CA_SAUERBRATEN="SauerBraten"
+CD_SAUERBRATEN="F.P.S. libre jouable en solo et en réseau. Il s'agit d'une refonte majeure de Cube du même auteur"
 
 CA_STEAM="Steam"
 CD_STEAM="Plateforme de distribution de jeux. Permet d'installer un très gros paquet de jeux"
