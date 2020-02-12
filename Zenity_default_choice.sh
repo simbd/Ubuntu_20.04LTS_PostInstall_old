@@ -294,6 +294,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	FALSE "$SCT_UTILITAIRES_GRAPHIQUE" "===========================================================" \
 	$(chkDef "FALSE") "$CA_ACTIONA" "$CD_ACTIONA" \
     	$(chkDef "FALSE") "$CA_APPOUTLET" "$CD_APPOUTLET" \
+	$(chkDef "FALSE") "$CA_BITCOINCORE" "$CD_BITCOINCORE" \
     	$(chkDef "FALSE") "$CA_BRASERO" "$CD_BRASERO" \
     	$(chkDef "FALSE") "$CA_CHEESE" "$CD_CHEESE" \
     	$(chkDef "FALSE") "$CA_DEJADUP" "$CD_DEJADUP" \
