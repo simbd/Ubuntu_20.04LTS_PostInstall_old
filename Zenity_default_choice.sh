@@ -104,11 +104,13 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
     	$(chkDef "FALSE") "$CA_X11VNC" "$CD_X11VNC" \
 	FALSE "$SCT_OFFICE" "===========================================================" \
 	$(chkDef "FALSE") "$CA_BOOSTNOTE" "$CD_BOOSTNOTE" \
+	$(chkDef "FALSE") "$CA_CALIBRE" "$CD_CALIBRE" \
 	$(chkDef "FALSE") "$CA_CALLIGRA" "$CD_CALLIGRA" \
 	$(chkDef "FALSE") "$CA_DRAWIO" "$CD_DRAWIO" \
 	$(chkDef "FALSE") "$CA_FRDIC" "$CD_FRDIC" \
 	$(chkDef "FALSE") "$CA_FBREADER" "$CD_FBREADER" \
 	$(chkDef "FALSE") "$CA_FEEDREADER" "$CD_FEEDREADER" \
+	$(chkDef "FALSE") "$CA_FONTFORGE" "$CD_FONTFORGE" \
 	$(chkDef "FALSE") "$CA_FREEMIND" "$CD_FREEMIND" \
 	$(chkDef "FALSE") "$CA_FREEOFFICE" "$CD_FREEOFFICE" \
 	$(chkDef "FALSE") "$CA_FREEPLANE" "$CD_FREEPLANE" \
@@ -235,6 +237,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_MUSICBRAINZ" "$CD_MUSICBRAINZ" \
 	$(chkDef "FALSE") "$CA_ROSEGARDEN" "$CD_ROSEGARDEN" \
 	$(chkDef "FALSE") "$CA_SOUNDJUICER" "$CD_SOUNDJUICER" \
+	$(chkDef "FALSE") "$CA_SOUNDKONVERTER" "$CD_SOUNDKONVERTER" \
 	FALSE "$SCT_EDUSCIENCE" "===========================================================" \
 	$(chkDef "FALSE") "$CA_ALGOBOX" "$CD_ALGOBOX" \
 	$(chkDef "FALSE") "$CA_AMC" "$CD_AMC" \
@@ -397,6 +400,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_QUAKE" "$CD_QUAKE" \
 	$(chkDef "FALSE") "$CA_REDECLIPSE" "$CD_REDECLIPSE" \
 	$(chkDef "FALSE") "$CA_RUNESCAPE" "$CD_RUNESCAPE" \
+	$(chkDef "FALSE") "$CA_SAUERBRATEN" "$CD_SAUERBRATEN" \
 	$(chkDef "FALSE") "$CA_STEAM" "$CD_STEAM" \
 	$(chkDef "FALSE") "$CA_SUPERTUX" "$CD_SUPERTUX" \
 	$(chkDef "FALSE") "$CA_SUPERTUXKART" "$CD_SUPERTUXKART" \
