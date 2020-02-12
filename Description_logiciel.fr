@@ -872,6 +872,9 @@ CD_ACTIONA="Logiciel d'automatisation de tâches. Il vous permet de créer et d'
 CA_APPOUTLET="App-Outlet {SNAP}"
 CD_APPOUTLET="Un store d'application universel pour gérer les paquets Snaps, Flatpaks et AppImages"
 
+CA_BITCOINCORE="BitCoin Core"
+CD_BITCOINCORE="Clients pair à pair opensource de la crypto-monnaie Bitcoin."
+
 CA_BRASERO="Brasero"
 CD_BRASERO="Graveur de CD/DVD libre et opensource."
 
