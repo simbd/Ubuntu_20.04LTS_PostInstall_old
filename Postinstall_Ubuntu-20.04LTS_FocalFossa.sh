@@ -335,6 +335,7 @@ then
 	# Utilitaires graphiques
 	f_action_install "$CA_ACTIONA" "actiona actionaz"
 	f_action_snap_install "$CA_APPOUTLET" app-outlet
+	f_action_LinInstall "$CA_BITCOINCORE" BitcoinCore
 	f_action_install "$CA_BRASERO" brasero
 	f_action_install "$CA_CHEESE" cheese
 	f_action_install "$CA_DEJADUP" deja-dup
