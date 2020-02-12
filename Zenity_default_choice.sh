@@ -362,7 +362,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_KEEPASS" "$CD_KEEPASS" \
 	$(chkDef "TRUE") "$CA_KEEPASSXC" "$CD_KEEPASSXC" \
 	$(chkDef "FALSE") "$CA_KEEWEB" "$CD_KEEWEB" \
-	$(chkDef "FALSE") "$CA_MALTEGO "$CD_MALTEGO" \
+	$(chkDef "FALSE") "$CA_MALTEGO" "$CD_MALTEGO" \
 	$(chkDef "FALSE") "$CA_MYSQLWB" "$CD_MYSQLWB" \
 	$(chkDef "FALSE") "$CA_OCSINVENTORY" "$CD_OCSINVENTORY" \
 	$(chkDef "FALSE") "$CA_OPENVAS" "$CD_OPENVAS" \
