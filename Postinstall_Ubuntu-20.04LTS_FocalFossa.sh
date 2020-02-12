@@ -127,11 +127,13 @@ then
 	
 	# Bureautique/Mail
 	f_action_get "$CA_BOOSTNOTE" "https://github.com/BoostIO/boost-releases/releases/download/v0.14.0/boostnote_0.14.0_amd64.deb"
+	f_action_install "$CA_CALIBRE" calibre
 	f_action_install "$CA_CALLIGRA" calligra
 	f_action_snap_install "$CA_DRAWIO" drawio
 	f_action_install "$CA_FRDIC" "myspell-fr-gut wfrench aspell-fr hyphen-fr mythes-fr"
 	f_action_install "$CA_FBREADER" fbreader
 	f_action_install "$CA_FEEDREADER" feedreader
+	f_action_install "$CA_FONTFORGE" "fontforge fontforge-extras"
 	f_action_snap_install "$CA_FREEMIND" freemind
 	f_action_get "$CA_FREEOFFICE" "https://www.softmaker.net/down/softmaker-freeoffice-2018_973-01_amd64.deb"
 	f_action_install "$CA_FREEPLANE" freeplane
@@ -261,6 +263,7 @@ then
 	f_action_install "$CA_SIMPLESCREENRECORDER" simplescreenrecorder 
 	f_action_install "$CA_SOLVESPACE" solvespace
 	f_action_install "$CA_SOUNDJUICER" sound-juicer
+	f_action_install "$CA_SOUNDKONVERTER" soundkonverter
 	f_action_install "$CA_SWEETHOME" sweethome3d
 	f_action_install "$CA_SYNFIG" "synfig synfigstudio"
 	f_action_get_appimage "$CA_UNITY3DEDITOR" "https://public-cdn.cloud.unity3d.com/hub/prod/UnityHub.AppImage"
@@ -445,6 +448,7 @@ then
 	f_action_snap_install "$CA_QUAKE" quake-shareware
 	f_action_install "$CA_REDECLIPSE" redeclipse
 	f_action_install "$CA_RUNESCAPE" runescape
+	f_action_install "$CA_SAUERBRATEN" sauerbraten
 	f_action_install "$CA_STEAM" steam
 	f_action_install "$CA_SUPERTUX" supertux
 	f_action_install "$CA_SUPERTUXKART" supertuxkart	
