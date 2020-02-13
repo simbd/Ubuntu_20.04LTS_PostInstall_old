@@ -292,8 +292,6 @@ then
 	f_action_install "$CA_KICAD" "kicad kicad-libraries kicad-templates kicad-packages3d kicad-symbols kicad-doc-fr"
 	f_action_install "$CA_LABPLOT" labplot
 	f_action_install "$CA_MARBLE" "--no-install-recommends marble"
-	f_action_install "$CA_MBLOCK" libgconf-2-4 #dépendance pour Mblock
-	f_action_get "$CA_MBLOCK" "http://mblock.makeblock.com/mBlock4.0/mBlock_4.0.4_amd64.deb"
 	f_action_install "$CA_OCTAVE" octave
 	f_action_flatpak_install "$CA_OPENBOARD" ch.openboard.OpenBoard
 	f_action_install "$CA_OPTGEO" optgeo
