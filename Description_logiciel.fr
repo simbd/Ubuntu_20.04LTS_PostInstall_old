@@ -760,9 +760,6 @@ CD_LABPLOT="Application pour tracer et analyser de façon interactive des donné
 CA_MARBLE="Marble"
 CD_MARBLE="Globe virtuel opensource développé par KDE dans le cadre du projet KdeEdu"
 
-CA_MBLOCK="MBlock {Ne pas utiliser pr l'instant}"
-CD_MBLOCK="Environnement de programmation basé sur Scratch 2 pour Arduino"
-
 CA_OCTAVE="Octave"
 CD_OCTAVE="Logiciel de calcul numérique (comme Matlab ou Scilab) léger et relativement simple d'emploi"
 
