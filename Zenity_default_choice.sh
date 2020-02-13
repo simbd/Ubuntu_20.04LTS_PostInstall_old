@@ -256,7 +256,6 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_KICAD" "$CD_KICAD" \
 	$(chkDef "FALSE") "$CA_LABPLOT" "$CD_LABPLOT" \
 	$(chkDef "FALSE") "$CA_MARBLE" "$CD_MARBLE" \
-	$(chkDef "FALSE") "$CA_MBLOCK" "$CD_MBLOCK" \
 	$(chkDef "FALSE") "$CA_OCTAVE" "$CD_OCTAVE" \
 	$(chkDef "FALSE") "$CA_OPENBOARD" "$CD_OPENBOARD" \
 	$(chkDef "FALSE") "$CA_OPTGEO" "$CD_OPTGEO" \
