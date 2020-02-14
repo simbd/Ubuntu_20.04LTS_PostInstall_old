@@ -1089,7 +1089,7 @@ CD_PGADMIN="Interface graphique pour administrer des bases de données PostgreSQ
 CA_PUPPET="Puppet Agent"
 CD_PUPPET="Si vos postes Ubuntu en milieu professionnel sont gérés via Puppet pour le déploiement d'applications."
 
-CA_SERVERLAMP="Serveur LAMP (Linux Apache Mysql Php)"
+CA_SERVERLAMP="Serveur LAMP (Apache+Mysql+Php) {Nécessite Intervention!}"
 CD_SERVERLAMP="Ajoute 'Apache' comme serveur web, 'MySQL' pour les bases de données et 'PHP' pour le language web (+ des modules utiles)"
 
 CA_SIRIKALI="Sirikali"
