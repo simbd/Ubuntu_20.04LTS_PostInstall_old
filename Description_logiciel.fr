@@ -1077,7 +1077,7 @@ CD_MALTEGO="Application de renseignement qui permet d'extraire/rassembler des in
 CA_MYSQLWB="MySQL Workbench"
 CD_MYSQLWB="Outil de gestion de server MySQL : génération de modèles (MCD/MPD)."
 
-CA_OCSINVENTORY="OcsInventory Agent"
+CA_OCSINVENTORY="OcsInventory Agent {Nécessite intervention!}"
 CD_OCSINVENTORY="Installe l'agent pour OCS Inventory (pour être référencé dans l'inventaire du parc informatique avec OCS)"
 
 CA_OPENVAS="OpenVAS"
