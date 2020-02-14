@@ -354,7 +354,7 @@ then
 	f_action_install "$CA_HOMEBANK" homebank
 	f_action_install "$CA_GPARTED" gparted
 	f_action_install "$CA_MELD" meld
-	f_action_exec "$CA_MULTISYSTEM" "sudo apt-add-repository 'deb http://liveusb.info/multisystem/depot all main' && wget -q -O - http://liveusb.info/multisystem/depot/multisystem.asc | sudo apt-key add - ; apt update ; sudo apt install -y multisystem"
+	#f_action_LinInstall "$CA_MULTISYSTEM" Multisystem ##<= Désactivé car plante le démarrage actuellement !
 	f_action_LinInstall "$CA_MYTOURBOOK" Mytourbook
 	f_action_install "$CA_ARCHIVAGE" "unace rar unrar p7zip-rar p7zip-full sharutils uudeview mpack arj cabextract lzip lunzip"
 	f_action_install "$CA_RECHERCHE" "recoll catfish searchmonkey"
