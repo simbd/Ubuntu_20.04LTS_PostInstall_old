@@ -171,7 +171,7 @@ CD_GYDL="Permet de télécharger des vidéos Youtube ou juste la piste audio"
 CA_HEXCHAT="Hexchat"
 CD_HEXCHAT="Client IRC, fork de xchat"
 
-CA_HUBIC="Hubic"
+CA_HUBIC="Hubic (cli)"
 CD_HUBIC="Partage de fichiers dans le cloud (version 64 bits)."
 
 CA_JITSI="Jitsi"
@@ -219,7 +219,7 @@ CD_PUTTY="Outil pour se connecter à des PC/Serveurs via SSH, Telnet, Rlogin"
 CA_QBITTORRENT="Qbittorrent"
 CD_QBITTORRENT="Client BitTorrent léger développé en C++ avec Qt"
 
-CA_RDESKTOP="Rdesktop"
+CA_RDESKTOP="Rdesktop (cli)"
 CD_RDESKTOP="Connexion aux bureaux à distance (notamment des postes Windows via RDP)"
 
 CA_REMMINA="Remmina"
@@ -273,7 +273,7 @@ CD_VINAGRE="Client VNC pour GNOME permettant de visionner et interagir avec des 
 CA_VUZE="Vuze {SNAP}"
 CD_VUZE="Plate-forme commerciale d'Azureus avec BitTorrent"
 
-CA_WEECHAT="Weechat"
+CA_WEECHAT="Weechat (cli)"
 CD_WEECHAT="Client IRC léger, rapide et flexible s'utilisant en CLI"
 
 CA_WHALEBIRD="Whalebird 3.0"
@@ -285,7 +285,7 @@ CD_WHATSAPP="Client desktop pour la messagerie WhatsApp"
 CA_WIRE="Wire"
 CD_WIRE="Un autre client de messagerie instantanée chiffrée créé par Wire Swiss"
 
-CA_WORMHOLE="Wormhole"
+CA_WORMHOLE="Wormhole (cli)"
 CD_WORMHOLE="Transfert sécurisé à travers n'importe quel réseau en CLI"
 
 CA_X2GO="X2Go (client)"
@@ -297,8 +297,8 @@ CD_X11VNC="Pour la prise de contrôle à distance avec le protocole VNC (en reve
 CA_XCHAT="Xchat"
 CD_XCHAT="Client IRC graphique libre utilisant GTK"
 
-CA_YTDLND="YouTube Download"
-CD_YTDLND="Script (à utiliser dans le terminal) de capture de vidéos en ligne (YouTube et autres)"
+CA_YTDLND="YouTube Download (cli)"
+CD_YTDLND="Script à utiliser dans le terminal de capture de vidéos en ligne (commande youtube-dl)"
 
 SCT_OFFICE="______ [[ BUREAUTIQUE ]] ______"
 
@@ -381,7 +381,7 @@ CA_PDFSAM="PdfSam Basic"
 CD_PDFSAM="Outil pratique pour scinder, fusionner, faire pivoter/mélanger/extraire des pages de fichier PDF"
 
 CA_PDFSHUFFLER="PdfShuffler"
-CD_PDFSHUFFLER="Petit logiciel pour faire des modifs de PDF : supprimer des pages, rogner, tourner, ré-arranger l'ordre etc..."
+CD_PDFSHUFFLER="Petit logiciel pour faire des modifs de PDF : supprimer des pages, rogner, tourner etc..."
 
 CA_POLICEMST="Police d'écriture Microsoft"
 CD_POLICEMST="Ajoute les polices d'écriture de Microsoft pour ne pas avoir de déformation de document venant de MO"
@@ -390,7 +390,7 @@ CA_PROJECTLIBRE="ProjectLibre"
 CD_PROJECTLIBRE="Alternative à Microsoft Project pour gérer/planifier des projets"
 
 CA_SCENARI="Scenari Suite {Script LinInstall}"
-CD_SCENARI="Edition avancée de chaîne éditoriale (contient scenarichaine v4.2 et Opale v3.7)"
+CD_SCENARI="Edition avancée de chaîne éditoriale (contient scenarichaine v4.2 et Opale v3.8)"
 
 CA_SCRIBUS="Scribus"
 CD_SCRIBUS="Logiciel de PAO, convient plutôt pour la réalisation de plaquettes, livres et magazines"
@@ -524,7 +524,7 @@ CD_BLENDER="Suite libre de modélisation 3D, matériaux et textures, d'éclairag
 CA_CINELERRA="Cinelerra (Cin) [Semble ne pas se lancer!]"
 CD_CINELERRA="Montage non-linéaire sophistiqué, équivalent à Adobe première, Final Cut et Sony Vegas"
 
-CA_CURA="Cura"
+CA_CURA="Cura (Ultimaker)"
 CD_CURA="Logiciel d'impression 3D qui assure l'agencement, le renforcement, le slicing et la conversion en Gcode"
 
 CA_DARKTABLE="Darktable"
@@ -533,7 +533,7 @@ CD_DARKTABLE="Gestionnaire de photos libre sous forme de table lumineuse et cham
 CA_EASYTAG="EasyTag"
 CD_EASYTAG="Logiciel d'édition des tags ou metadata des fichiers audios, aussi appelés tags ID3"
 
-CA_FFMPEG="FFMPEG"
+CA_FFMPEG="FFMPEG (cli)"
 CD_FFMPEG="Outil en cli très puissant pour convertir les fichiers vidéo d'un format à un autre"
 
 CA_FLACON="Flacon {SNAP}"
@@ -599,7 +599,7 @@ CD_LIGHTWORKS="Logiciel de montage vidéo professionnel non-linéaire"
 CA_LIBRECAD="LibreCad"
 CD_LIBRECAD="Anciennement CADubuntu, DAO 2D pour modéliser des dessins techniques"
 
-CA_LILYPOND="LilyPond"
+CA_LILYPOND="LilyPond (cli)"
 CD_LILYPOND="Logiciel de notation musicale avec un langage de description de la musique, qu'il compile en partition"
 
 CA_LIVES="Lives"
@@ -712,11 +712,11 @@ SCT_EDUSCIENCE="______ [[ SCIENCE / EDUCATION ]] ______"
 CA_ALGOBOX="Algobox"
 CD_ALGOBOX="Logiciel libre d'aide à l'élaboration/exécution d'algorithmes en mathématique"
 
-CA_AMC="AMC (Auto-Multiple-Choice QCM)"
+CA_AMC="AMC (QCM Automatique)"
 CD_AMC="Idéal pour les profs : permet de créer des QCM et les corrigent automatiquement"
 
 CA_ASTROEDU="Astro-education pack"
-CD_ASTROEDU="Meta-paquet d'Astronomie pour l'éducation : Kstar, Gpredict, OpenUniverse..."
+CD_ASTROEDU="Installe le meta-paquet 'Astronomie' comprenant Kstar, Gpredict, OpenUniverse..."
 
 CA_AVOGADRO="Avogadro"
 CD_AVOGADRO="Editeur/visualiseur avancé de molécules pour le calcul scientifique en chimie"
@@ -742,7 +742,7 @@ CD_GELEMENTAL="Tableau périodique regroupant de nombreuses informations sur les
 CA_GEOGEBRA="GeoGebra"
 CD_GEOGEBRA="Géométrie dynamique pour manipuler des objets avec un ensemble de fonctions algébriques)"
 
-CA_GNOMEMAPS="Cartes (Gnome Maps)"
+CA_GNOMEMAPS="Gnome Maps (Cartes)"
 CD_GNOMEMAPS="Visionneur de cartes utilisant OpenStreetMap riche en données géographiques"
 
 CA_GOOGLEEARTH="Google Earth Pro"
@@ -825,7 +825,7 @@ CD_DOSBOX="Emulateur DOS permettant de jouer aux vieux jeux MSDOS"
 CA_GENS="Gens/GS"
 CD_GENS="Version modifiée et amélioré de l'émulateur Gens, un classique reconnu pour sa qualité d'émulation"
 
-CA_GNOMEBOXES="Gnome Boxes"
+CA_GNOMEBOXES="Gnome Boxes (Machines)"
 CD_GNOMEBOXES="Outil de virtualisation simple de l'environnement Gnome"
 
 CA_GNS="GNS3 (Graphical Network Simulator) {PPA}"
@@ -855,7 +855,7 @@ CD_PPSSPP="Emulateur libre de PSP (PlayStation Portable)"
 CA_RETROARCH="RetroArch"
 CD_RETROARCH="Implémentation de libretro qui sert de frontal pour les émulateurs et les moteurs de jeu"
 
-CA_VBOXDEPOT="Virtualbox (dépot Ubuntu20.04 : vb6.1)"
+CA_VBOXDEPOT="Virtualbox (dépot Ubuntu20.04 : 6.1)"
 CD_VBOXDEPOT="Célèbre logiciel de virtualisation pour les systèmes Windows/Mac/Linux/Bsd..."
 
 CA_VBOXLAST="Virtualbox (dernière version du dépot d'Oracle)"
@@ -867,7 +867,7 @@ CD_VMWARE="Version gratuite de VmWare Workstation sans les fonctions avancées (
 CA_VMWAREPRO="VMWare Workstation Pro"
 CD_VMWAREPRO="Version complète de VmWare WS (payante). NB : Vs ne pouvez pas cumuler le Player + le Pro en même temps"
 
-CA_WINE="Wine (dernière version)"
+CA_WINE="Wine (cli)"
 CD_WINE="Une sorte d'émulateur pour faire tourner des applis/jeux conçu pour Windows"
 
 SCT_UTILITAIRES_GRAPHIQUE="______ [[ UTILITAIRES GRAPHIQUES DIVERS ]] ______"
@@ -1006,7 +1006,7 @@ CD_PACKRECUP="Installera 4 outils de récupération de données effacées : Test
 CA_POWERSHELL="PowerShell {SNAP}"
 CD_POWERSHELL="Pour utiliser l'utilitaire PowerShell dans Linux (se lance via la commande : pwsh)"
 
-CA_RIPGREP="Ripgrep /rg"
+CA_RIPGREP="Ripgrep (rg)"
 CD_RIPGREP="Un meilleur grep (récursif par défaut)"
 
 CA_RTORRENT="Rtorrent"
@@ -1026,7 +1026,7 @@ CD_WORDGRINDER="Traitement de texte léger en CLI, Formats OpenDocument, HTML im
 
 SCT_RESEAUSECURITE="______ [[ RESEAUX ET SECURITE ]] ______"
 
-CA_ADBFASTBOOT="Adb + FastBoot (flashage SP Android)"
+CA_ADBFASTBOOT="Adb + FastBoot pour flashage Tél (cli)"
 CD_ADBFASTBOOT="Ajoute les outils Adb et FastBoot pour flasher des smartphones Android"
 
 CA_ANSIBLE="Ansible"
@@ -1053,10 +1053,10 @@ CD_CRYPTOMATOR="Programme dédié au stockage chiffré de fichiers sur le cloud"
 CA_ENPASS="Enpass Password Manager"
 CD_ENPASS="Coffre-fort pour mdp, cpt bancaire, identité..., chiffrement AES-256 bits"
 
-CA_FUSIONINVENTORY="FusionInventory Agent"
+CA_FUSIONINVENTORY="FusionInventory Agent (cli)"
 CD_FUSIONINVENTORY="Installe l'agent pour Fusion Inventory (pour être référencé dans l'inventaire du parc informatique dans GLPI par ex)"
 
-CA_GUFW="Gufw"
+CA_GUFW="Gufw (firewall)"
 CD_GUFW="Interface graphique pour le pare-feu Ufw"
 
 CA_HACKINGPACK="Hacking Pack"
@@ -1077,7 +1077,7 @@ CD_MALTEGO="Application de renseignement qui permet d'extraire/rassembler des in
 CA_MYSQLWB="MySQL Workbench"
 CD_MYSQLWB="Outil de gestion de server MySQL : génération de modèles (MCD/MPD)."
 
-CA_OCSINVENTORY="OcsInventory Agent {Nécessite intervention!}"
+CA_OCSINVENTORY="OcsInventory Agent (cli) {Nécessite intervention!}"
 CD_OCSINVENTORY="Installe l'agent pour OCS Inventory (pour être référencé dans l'inventaire du parc informatique avec OCS)"
 
 CA_OPENVAS="OpenVAS"
@@ -1101,10 +1101,10 @@ CD_UPM="Gestionnaire de mots de passe multi-plateforme (écrit en Java)."
 CA_VERACRYPT="VeraCrypt {PPA}"
 CD_VERACRYPT="Utilitaire libre utilisé pour le chiffrement, forké sur l'ancien projet TrueCrypt abandonné"
 
-CA_WAKEONLAN="WakeOnLan"
+CA_WAKEONLAN="WakeOnLan (cli)"
 CD_WAKEONLAN="Permet de réveiller votre PC depuis le réseau local ou à distance"
 
-CA_WIFITE="Wifite {Nécessite intervention!}"
+CA_WIFITE="Wifite (cli) {Nécessite intervention!}"
 CD_WIFITE="Version simplifié de Aircrack-ng pour tester la sécurité de réseau wifi WEP, WPA et WPS"
 
 CA_WIRESHARK="WireShark {Nécessite intervention !}"
@@ -1264,7 +1264,7 @@ CD_IDLE="IDLE est un éditeur de programmes python multiplate-forme"
 CA_INTELLIJIDEA="IntelliJ Idea {SNAP}"
 CD_INTELLIJIDEA="IDE Java commercial de JetBrains, plutôt conçu pour Java"
 
-CA_IPYTHON="iPython"
+CA_IPYTHON="iPython (cli)"
 CD_IPYTHON="Terminal interactif pour Python proposant des fonctionnalités telles l'introspection, syntaxe additionnelle, la complétion..."
 
 CA_JAVA="Java 13 JRE {PPA}"
@@ -1309,7 +1309,7 @@ CD_TEXSTUDIO="Environnement de dev intégré très puissant pour écrire des doc
 CA_TEXWORKS="TexWorks (LaTex)"
 CD_TEXWORKS="Langage de description de document avec un éditeur spécialisé LaTex"
 
-CA_VIM="Vim avec supplément"
+CA_VIM="Vim + Gvim avec des suppléments"
 CD_VIM="Editeur de texte très puissant avec du contenu supplémentaire pour cet éditeur"
 
 CA_VSCODE="Visual Studio Code"
@@ -1324,7 +1324,7 @@ CA_IMPRIMANTE="Ajout du support des imprimantes HP (HPLIP)"
 CD_IMPRIMANTE="Pour les utilisateurs qui ont une imprimante HP"
 
 CA_SECURITECPTE="Augmenter la sécurité de votre compte"
-CD_SECURITECPTE="Si vous êtes plusieurs sur le PC, ceci empèche l'accès à votre home aux autres utilisateurs (défaut=lecture seule)"
+CD_SECURITECPTE="Si vous êtes plusieurs sur le PC, ceci empèche l'accès en lecture à votre home (aucun droit pour 'other')"
 
 CA_BLEACHBIT="BleachBit"
 CD_BLEACHBIT="Outil de nettoyage d'espace disque, de protection de la vie privée et d'optimisation"
