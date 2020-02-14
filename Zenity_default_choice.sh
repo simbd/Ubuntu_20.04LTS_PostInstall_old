@@ -314,7 +314,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
     	$(chkDef "FALSE") "$CA_GSYSMON" "$CD_GSYSMON" \
     	$(chkDef "FALSE") "$CA_HOMEBANK" "$CD_HOMEBANK" \
     	$(chkDef "FALSE") "$CA_MELD" "$CD_MELD" \
-    	#### (chkDef "FALSE") "CA_MULTISYSTEM" "$CD_MULTISYSTEM"
+	##(MultiSystem désactivé car plante le démarrage actuellement)
 	$(chkDef "FALSE") "$CA_MYTOURBOOK" "$CD_MYTOURBOOK" \
     	$(chkDef "TRUE") "$CA_ARCHIVAGE" "$CD_ARCHIVAGE" \
 	$(chkDef "FALSE") "$CA_RECHERCHE" "$CD_RECHERCHE" \
