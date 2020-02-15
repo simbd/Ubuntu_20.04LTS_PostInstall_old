@@ -204,16 +204,13 @@ then
 		
 	# Montage Multimédia
 	# (Section re-divisé en 3 parties cf Zenity_default_choice.sh)
-	f_action_exec "$CA_ARDOUR" "debconf-set-selections <<< 'jackd/tweak_rt_limits false'"
-	f_action_get "$CA_ARDOUR" "http://ftp.fr.debian.org/debian/pool/main/a/ardour/ardour-video-timeline_5.12.0-3_all.deb"
-	f_action_get "$CA_ARDOUR" "http://ftp.fr.debian.org/debian/pool/main/a/ardour/ardour-data_5.12.0-3_all.deb"
-	f_action_get "$CA_ARDOUR" "http://ftp.fr.debian.org/debian/pool/main/a/ardour/ardour_5.12.0-3_amd64.deb"
+	f_action_install "$CA_ARDOUR" ardour
 	f_action_install "$CA_AUDACITY" audacity
 	f_action_flatpak_install "$CA_AVIDEMUX" org.avidemux.Avidemux
 	f_action_install "$CA_BLENDER" blender	
-	f_action_get "$CA_CINELERRA" "https://cinelerra-gg.org/download/pkgs/ub18/cin_5.1.ub18.04-20200131_amd64.deb"
+	#f_action_exec "$CA_CINELERRA" "echo 'deb [trusted=yes] https://cinelerra-gg.org/download/pkgs/ub18 bionic main' | sudo tee -a /etc/apt/sources.list.d/cinelerra.list" ##=> pour cinelerra gg erreur libIlmThread-2_2.so.12
+	f_action_ppa_install "$CA_CINELERRA" ppa:cinelerra-ppa/ppa cinelerra-cv #(version de 2018...)
 	f_action_exec "$CA_UPM" "sudo sed -i -e 's/focal/bionic/g' /etc/apt/sources.list.d/adriansm*list ; sudo apt update ; sudo apt install upm -y" #(ligne temporaire en attendant que le ppa pr 20.04 soit actif)
-	
 	f_action_install "$CA_CURA" cura
 	f_action_install "$CA_DARKTABLE" darktable
 	f_action_get_appimage "$CA_DIGIKAM" "https://download.kde.org/stable/digikam/6.4.0/digikam-6.4.0-x86-64.appimage"
