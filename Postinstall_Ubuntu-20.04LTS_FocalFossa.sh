@@ -119,6 +119,7 @@ then
 	f_action_snap_install "$CA_VUZE" "vuze-vs"
 	f_action_install "$CA_WEECHAT" weechat
 	f_action_get "$CA_WHALEBIRD" "https://github.com/h3poteto/whalebird-desktop/releases/download/3.0.0/Whalebird-3.0.0-linux-x64.deb"
+	f_action_snap_install $CA_WHATSDESK whatsdesk
 	f_RepositoryExt_Install "$CA_WIRE" "wire-desktop" "http://wire-app.wire.com/linux/releases.key" "[arch=amd64] https://wire-app.wire.com/linux/debian stable main" "wire-desktop" ##PB : dépot bien ajouté mais n'installe pas les paquets
 	f_action_install "$CA_WIRE" apt-transport-https #dépendance
 	f_action_install "$CA_WORMHOLE" magic-wormhole
