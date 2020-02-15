@@ -1273,9 +1273,6 @@ CD_JAVA="Version propriétaire de Java d'Oracle (JRE) en version 13 pour vos app
 CA_JAVAOPENJDK="Java OpenJDK 14 (JRE+JDK)"
 CD_JAVAOPENJDK="Implémentation opensource de Java 14, installera le JRE (Execution d'appli Java) et le JDK (Développement)"
 
-CA_JAVAOPENJDK
-
-
 CA_JUPYTER="Jupyter Notebook"
 CD_JUPYTER="Environnement répondant aux exigences et au flux de travail dans la science des données et de la simulation"
 
