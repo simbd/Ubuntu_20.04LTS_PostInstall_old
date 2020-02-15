@@ -387,6 +387,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_FROZENBUBBLE" "$CD_FROZENBUBBLE" \
 	$(chkDef "FALSE") "$CA_GNOMEGAMES" "$CD_GNOMEGAMES" \
 	$(chkDef "FALSE") "$CA_KAPMAN" "$CD_KAPMAN" \
+	$(chkDef "FALSE") "$CA_LOL" "$CD_LOL" \
 	$(chkDef "FALSE") "$CA_LUTRIS" "$CD_LUTRIS" \
 	$(chkDef "FALSE") "$CA_MEGAGLEST" "$CD_MEGAGLEST" \
 	$(chkDef "FALSE") "$CA_MINDUSTRY" "$CD_MINDUSTRY" \
