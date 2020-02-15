@@ -336,14 +336,14 @@ then
 	
 	# Utilitaires graphiques
 	f_action_install "$CA_ACTIONA" "actiona actionaz"
-	f_action_snap_install "$CA_APPOUTLET" app-outlet
+	f_action_exec "$CA_APPOUTLET" "wget https://appoutlet.herokuapp.com/download/deb -O appoutlet.deb ; sudo apt install -y ./appoutlet.deb ; rm appoutlet.deb"
 	f_action_LinInstall "$CA_BITCOINCORE" BitcoinCore
 	f_action_install "$CA_BRASERO" brasero
 	f_action_install "$CA_CHEESE" cheese
 	f_action_install "$CA_DEJADUP" deja-dup
 	f_action_install "$CA_DIODON" diodon
 	f_action_get_appimage "$CA_ELECTRUM" "https://download.electrum.org/3.3.8/electrum-3.3.8-x86_64.AppImage"
-	f_action_exec "$CA_ETCHER" "wget https://github.com/balena-io/etcher/releases/download/v1.5.70/balena-etcher-electron-1.5.70-linux-ia32.zip && unzip balena-etcher* ; rm balena-etcher*.zip ; mkdir ~/AppImage ; mv *etcher*AppImage ~/AppImage/"
+	f_action_get_appimage "$CA_ETCHER" "https://github.com/balena-io/etcher/releases/download/v1.5.76/balenaEtcher-1.5.76-ia32.AppImage"
 	f_action_get "$CA_ETHEREUMWALLET" "https://github.com/ethereum/mist/releases/download/v0.11.1/Ethereum-Wallet-linux64-0-11-1.deb"
 	f_action_install "$CA_GITCOLA" git-cola
 	f_action_install "$CA_GLABELS" glabels
@@ -407,7 +407,7 @@ then
 	f_action_get "$CA_KEEWEB" "https://github.com/keeweb/keeweb/releases/download/v1.12.3/KeeWeb-1.12.3.linux.x64.deb"
 	f_action_install "$CA_MALTEGO" openjdk-14-jre #dépendance java nécessaire pour Maltego
 	f_action_get "$CA_MALTEGO" "https://maltego-downloads.s3.us-east-2.amazonaws.com/linux/Maltego.v4.2.9.12898.deb"
-	f_action_install "$CA_MYSQLWB" mysql-workbench
+	f_action_get "$CA_MYSQLWB" "https://cdn.mysql.com//Downloads/MySQLGUITools/mysql-workbench-community_8.0.19-1ubuntu19.10_amd64.deb"
 	f_action_install "$CA_OCSINVENTORY" ocsinventory-agent
 	f_action_install "$CA_OPENVAS" "openvas openvas-cli openvas-manager openvas-scanner"
 	f_action_install "$CA_PGADMIN" pgadmin3
@@ -505,11 +505,11 @@ then
 	f_action_install "$CA_IMPRIMANTE" "hplip hplip-doc hplip-gui sane sane-utils"
 	f_action_exec "$CA_SECURITECPTE" "sudo chmod -R o=- /home/$USER"
 	f_action_install "$CA_BLEACHBIT" bleachbit
-	f_action_install "$CA_COLORFOLDER" folder-color
 	f_action_exec "$CA_CONKY" "wget https://raw.githubusercontent.com/simbd/ConfigFiles/master/.conkyrc && mv .conkyrc ~/ ; sudo apt install conky -y"
     	f_action_exec "$CA_APPORTOFF" "sudo sed -i 's/^enabled=1$/enabled=0/' /etc/default/apport"
 	f_action_exec "$CA_EXTINCTIONAUTO" "echo '0 4 * * * root /sbin/shutdown -h now' | sudo tee -a /etc/cron.d/extinction-auto"
 	f_action_flatpak_install "$CA_GWE" com.leinardi.gwe
+	f_action_install "$CA_FOLDERCOLOR" folder-color
 	f_action_install "$CA_FPRINTD" fprintd
 	f_action_exec "$CA_GS_AUGMENTATIONCAPTURE" "gsettings set org.gnome.settings-daemon.plugins.media-keys max-screencast-length 600"
 	f_action_exec "$CA_GS_MINIMISATIONFENETRE" "gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'"
