@@ -35,7 +35,7 @@ CD_UPGRADE="Mise à jour de la liste des paquets et des applications déjà inst
 NS_UPGRADE="Mise à jour du système en cours"
 
 CA_PACKUTILE="Pack d'outils/codecs utiles (recommandé)"
-CD_PACKUTILE="Installe des outils utiles : net-tools, xterm, vim, codecs x264/x265, rsync, neofetch, curl, ncdu"
+CD_PACKUTILE="Ajoute des outils utiles: net-tools, build-essential, curl, xterm, vim, codecs x264/x265, rsync, neofetch, ncdu"
 
 CA_GNOMESUPPLEMENT="Gnome Supplément (recommandé si vs utilisez Gnome)"
 CD_GNOMESUPPLEMENT="Ajoute des paquets recommandés pour Gnome : Gnome Tweaks, Gconf-Editor, Gnome-Firmware"
