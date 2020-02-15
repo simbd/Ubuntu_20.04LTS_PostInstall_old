@@ -279,8 +279,8 @@ CD_WEECHAT="Client IRC léger, rapide et flexible s'utilisant en CLI"
 CA_WHALEBIRD="Whalebird 3.0"
 CD_WHALEBIRD="Client pour le réseau social ouvert et décentralisé Mastodon (permet le multi-compte)"
 
-CA_WHATSAPP="WhatsApp Desktop Client {PPA}"
-CD_WHATSAPP="Client desktop pour la messagerie WhatsApp"
+CA_WHATSDESK="WhatsDesk Desktop Client {SNAP}"
+CD_WHATSDESK="Client desktop pour la messagerie WhatsApp"
 
 CA_WIRE="Wire"
 CD_WIRE="Un autre client de messagerie instantanée chiffrée créé par Wire Swiss"
