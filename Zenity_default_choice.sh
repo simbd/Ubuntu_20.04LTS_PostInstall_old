@@ -448,10 +448,10 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_IMPRIMANTE" "$CD_IMPRIMANTE" \
 	$(chkDef "FALSE") "$CA_SECURITECPTE" "$CD_SECURITECPTE" \
 	$(chkDef "FALSE") "$CA_BLEACHBIT" "$CD_BLEACHBIT" \
-	$(chkDef "TRUE") "$CA_COLORFOLDER" "$CD_COLORFOLDER" \
 	$(chkDef "FALSE") "$CA_CONKY" "$CD_CONKY" \
 	$(chkDef "TRUE") "$CA_APPORTOFF" "$CD_APPORTOFF" \
 	$(chkDef "FALSE") "$CA_EXTINCTIONAUTO" "$CD_EXTINCTIONAUTO" \
+	$(chkDef "TRUE") "$CA_FOLDERCOLOR" "$CD_FOLDERCOLOR" \
 	$(chkDef "FALSE") "$CA_FPRINTD" "$CD_FPRINTD" \
 	$(chkDef "FALSE") "$CA_SCANNER" "$CD_SCANNER" \
 	$(chkDef "FALSE") "$CA_GWE" "$CD_GWE" \
