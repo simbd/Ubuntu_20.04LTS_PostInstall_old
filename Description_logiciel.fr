@@ -198,7 +198,7 @@ CD_MUMBLE="Logiciel libre connue chez les gameurs pour les conversations audios 
 CA_NEXTCLOUD="NextCloud Desktop Client"
 CD_NEXTCLOUD="Client de bureau pour vous connecter à un drive NextCloud (framadrive, drive renater etc...)"
 
-CA_NICOTINE="Nicotine+"
+CA_NICOTINE="Nicotine+ [[ HS : Ne fonctionne pas pour l'instant !! ]]"
 CD_NICOTINE="Client P2P pour le réseau mono-source Soulseek"
 
 CA_OPENSSHSERVER="OpenSSH Server"
