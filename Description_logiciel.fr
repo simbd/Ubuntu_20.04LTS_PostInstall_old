@@ -1080,8 +1080,8 @@ CD_MYSQLWB="Outil de gestion de server MySQL : génération de modèles (MCD/MPD
 CA_OCSINVENTORY="OcsInventory Agent (cli) {Nécessite intervention!}"
 CD_OCSINVENTORY="Installe l'agent pour OCS Inventory (pour être référencé dans l'inventaire du parc informatique avec OCS)"
 
-CA_OPENVAS="OpenVAS"
-CD_OPENVAS="fork sous licence GNU GPL du scanner de vulnérabilité Nessus dont le but est de permettre un développement libre"
+CA_OPENVAS="OpenVAS (cli)"
+CD_OPENVAS="fork sous licence du scanner de vulnérabilité Nessus qui permet un développement libre"
 
 CA_PGADMIN="PgAdmin3"
 CD_PGADMIN="Interface graphique pour administrer des bases de données PostgreSQL"
@@ -1335,8 +1335,8 @@ CD_SECURITECPTE="Si vous êtes plusieurs sur le PC, ceci empèche l'accès en le
 CA_BLEACHBIT="BleachBit"
 CD_BLEACHBIT="Outil de nettoyage d'espace disque, de protection de la vie privée et d'optimisation"
 
-CA_COLORFOLDER="ColorFolder"
-CD_COLORFOLDER="Permet de pouvoir choisir différentes couleurs pour vos dossiers, fonctionne sur Nautilus, Nemo, Caja et dérivés de Nautilus"
+CA_COLORFOLDER="FolderColor"
+CD_COLORFOLDER="Permet de changer la couleur des dossiers, fonctionne sur Nautilus/Nemo/Caja + dérivés de Nautilus"
 
 CA_CONKY="Conky + 1 modèle de config"
 CD_CONKY="Permet d'avoir un panneau d'information sur le bureau, il faudra activer vous-même Conky au démarrage"
