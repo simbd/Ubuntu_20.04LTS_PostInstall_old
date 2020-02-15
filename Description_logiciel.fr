@@ -1335,9 +1335,6 @@ CD_SECURITECPTE="Si vous êtes plusieurs sur le PC, ceci empèche l'accès en le
 CA_BLEACHBIT="BleachBit"
 CD_BLEACHBIT="Outil de nettoyage d'espace disque, de protection de la vie privée et d'optimisation"
 
-CA_COLORFOLDER="FolderColor"
-CD_COLORFOLDER="Permet de changer la couleur des dossiers, fonctionne sur Nautilus/Nemo/Caja + dérivés de Nautilus"
-
 CA_CONKY="Conky + 1 modèle de config"
 CD_CONKY="Permet d'avoir un panneau d'information sur le bureau, il faudra activer vous-même Conky au démarrage"
 
@@ -1346,6 +1343,9 @@ CD_APPORTOFF="Permet de désactiver l'affichage de la fenêtre avec un message d
 
 CA_EXTINCTIONAUTO="Extinction automatique à 4H du matin"
 CD_EXTINCTIONAUTO="Si vous avez oublié d'éteindre votre PC le soir, il sera arrété automatiquement à 4H du matin"
+
+CA_FOLDERCOLOR="FolderColor"
+CD_FOLDERCOLOR="Permet de changer la couleur des dossiers, fonctionne sur Nautilus/Nemo/Caja + dérivés de Nautilus"
 
 CA_FPRINTD="Support empreinte digitale (FprintD)"
 CD_FPRINTD="Si vs êtes sur un Pc portable avec la gestion d'empreinte digitale pour l'identification"
