@@ -405,6 +405,7 @@ then
 	f_action_install "$CA_KEEPASS" keepass2
     	f_action_install "$CA_KEEPASSXC" keepassxc
 	f_action_get "$CA_KEEWEB" "https://github.com/keeweb/keeweb/releases/download/v1.12.3/KeeWeb-1.12.3.linux.x64.deb"
+	f_action_install "$CA_MALTEGO" openjdk-14-jre #dépendance java nécessaire pour Maltego
 	f_action_get "$CA_MALTEGO" "https://maltego-downloads.s3.us-east-2.amazonaws.com/linux/Maltego.v4.2.9.12898.deb"
 	f_action_install "$CA_MYSQLWB" mysql-workbench
 	f_action_install "$CA_OCSINVENTORY" ocsinventory-agent
@@ -479,6 +480,7 @@ then
 	f_action_exec "$CA_JAVA" "sudo add-apt-repository -y ppa:linuxuprising/java"
 	f_action_exec "$CA_JAVA" "echo oracle-java13-installer shared/accepted-oracle-license-v1-2 select true | sudo /usr/bin/debconf-set-selections"
 	f_action_install "$CA_JAVA" oracle-java13-installer
+	f_action_install "$CA_JAVAOPENJDK" "openjdk-14-jdk openjdk-14-jre"
 	f_action_install "$CA_JUPYTER" "jupyter-notebook jupyter-client jupyter-console"
 	f_action_install "$CA_LATEXFULL" "texlive-full fonts-freefont-ttf texlive-extra-utils texlive-fonts-extra texlive-lang-french texlive-latex-extra libreoffice-texmaths"
 	f_action_install "$CA_LATEXILA" latexila
