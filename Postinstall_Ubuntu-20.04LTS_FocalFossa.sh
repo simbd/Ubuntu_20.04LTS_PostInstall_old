@@ -41,7 +41,7 @@ then
    	
 	# Navigateurs
     	f_action_snap_install "$CA_BEAKER" beaker-browser
-    	f_RepositoryExt_Install "$CA_BRAVE" "brave-browser" "https://s3-us-west-2.amazonaws.com/brave-apt/keys.asc" "[arch=amd64] https://s3-us-west-2.amazonaws.com/brave-apt bionic main" "brave"
+    	f_RepositoryExt_Install "$CA_BRAVE" "brave-browser-release" "https://brave-browser-apt-release.s3.brave.com/brave-core.asc" "[arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" "brave-browser"
     	f_action_install "$CA_CHROMIUM" "chromium-browser chromium-browser-l10n"
     	f_action_snap_install "$CA_CLIQZ" "cliqz --beta"
     	f_action_install "$CA_DILLO" dillo
