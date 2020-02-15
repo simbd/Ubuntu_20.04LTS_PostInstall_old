@@ -521,7 +521,7 @@ CD_AVIDEMUX="Découpage/Réencodage de vidéo, application des filtres..."
 CA_BLENDER="Blender"
 CD_BLENDER="Suite libre de modélisation 3D, matériaux et textures, d'éclairage, d'animation..."
 
-CA_CINELERRA="Cinelerra (Cin) [Semble ne pas se lancer!]"
+CA_CINELERRA="Cinelerra-CV [2018]"
 CD_CINELERRA="Montage non-linéaire sophistiqué, équivalent à Adobe première, Final Cut et Sony Vegas"
 
 CA_CURA="Cura (Ultimaker)"
