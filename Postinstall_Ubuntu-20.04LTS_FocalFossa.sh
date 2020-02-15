@@ -55,13 +55,15 @@ then
     	f_RepositoryExt_Install "$CA_CHROME" "google-chrome" "https://dl-ssl.google.com/linux/linux_signing_key.pub" "[arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main" "google-chrome-stable"
     	f_action_install "$CA_LYNX" lynx
    	f_action_install "$CA_MIDORI" midori
-    	f_action_get "$CA_MIN" "https://github.com/minbrowser/min/releases/download/v1.11.2/min_1.11.2_amd64.deb"
+    	f_action_get "$CA_MIN" "https://github.com/minbrowser/min/releases/download/v1.12.0/min_1.12.0_amd64.deb"
     	f_action_snap_install "$CA_OPERA" opera
-    	f_action_get "$CA_PALEMOON" "http://downloadcontent.opensuse.org/repositories/home:/stevenpusser/xUbuntu_19.10/amd64/palemoon_28.8.0+repack-1_amd64.deb"
+	f_RepositoryExt_Install "$CA_PALEMOON" "home:stevenpusser" "https://download.opensuse.org/repositories/home:stevenpusser/xUbuntu_19.10/Release.key" "http://download.opensuse.org/repositories/home:/stevenpusser/xUbuntu_19.10/ /" "palemoon"
+    	#f_action_get "$CA_PALEMOON" "http://downloadcontent.opensuse.org/repositories/home:/stevenpusser/xUbuntu_19.10/amd64/palemoon_28.8.0+repack-1_amd64.deb"
     	f_action_get "$CA_SRWAREIRON" "http://www.srware.net/downloads/iron64.deb"
     	f_action_install "$CA_TORBROWSER" torbrowser-launcher  
-    	f_action_get "$CA_VIVALDI" "https://downloads.vivaldi.com/stable/vivaldi-stable_2.9.1705.41-1_amd64.deb"
-
+    	f_action_get "$CA_VIVALDI" "https://downloads.vivaldi.com/stable/vivaldi-stable_2.11.1811.33-1_amd64.deb" #(Dépot vivaldi auto ajouté)
+	f_action_exec "$CA_VIVALDI" "apt update && apt upgrade vivaldi-stable -y" #Pour que  vivaldi soit à jour dès le départ
+	
     	# Internet / Tchat / Messagerie / Téléchargement / Contrôle à distance
     	# (Section re-divisé en 3 parties cf Zenity_default_choice.sh)
     	f_RepositoryExt_Install "$CA_ANYDESK" "anydesk-stable" "https://keys.anydesk.com/repos/DEB-GPG-KEY" "http://deb.anydesk.com/ all main" "anydesk"
@@ -91,7 +93,7 @@ then
 	f_action_get "$CA_MEGASYNC" "https://mega.nz/linux/MEGAsync/xUbuntu_19.10/amd64/nautilus-megasync-xUbuntu_19.10_amd64.deb"
 	f_action_install "$CA_MUMBLE" mumble 
 	f_action_install "$CA_NEXTCLOUD" "nextcloud-desktop nextcloud-desktop-cmd nextcloud-desktop-l10n"
-	f_action_install "$CA_NICOTINE" nicotine
+	#f_action_ppa_install "$CA_NICOTINE" ppa:kip/nicotine+ nicotine ##(HS même avec codename remplacé par Eoan)
 	f_action_install "$CA_OPENSSHSERVER" openssh-server
 	f_action_install "$CA_PIDGIN" "pidgin pidgin-plugin-pack"
 	f_action_install "$CA_POLARI" polari
