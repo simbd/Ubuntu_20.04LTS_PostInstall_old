@@ -101,8 +101,8 @@ CD_LYNX="Ce navigateur s'utilise uniquement en ligne de commande, utile depuis u
 CA_MIDORI="Midori"
 CD_MIDORI="Libre & léger mais un peu obsolète maintenant..."
 
-CA_MIN="Min Browser"
-CD_MIN="Navigateur minimaliste et donc très léger"
+CA_MIN="Min Browser [[ HS : Ne fonctionne pas pour l'instant !! ]]"
+CD_MIN="Navigateur minimaliste et donc très léger [NE PAS UTILISER => HS]"
 
 CA_OPERA="Opera {SNAP}"
 CD_OPERA="Navigateur norvégien, propriétaire, basé sur Chromium"
@@ -199,7 +199,7 @@ CA_NEXTCLOUD="NextCloud Desktop Client"
 CD_NEXTCLOUD="Client de bureau pour vous connecter à un drive NextCloud (framadrive, drive renater etc...)"
 
 CA_NICOTINE="Nicotine+ [[ HS : Ne fonctionne pas pour l'instant !! ]]"
-CD_NICOTINE="Client P2P pour le réseau mono-source Soulseek"
+CD_NICOTINE="Client P2P pour le réseau mono-source Soulseek [ NE PAS UTILISER => HS ! ]"
 
 CA_OPENSSHSERVER="OpenSSH Server"
 CD_OPENSSHSERVER="Votre PC devient accessible à distance via SSH (client SSH déjà inclus de base)"
@@ -629,7 +629,7 @@ CD_MUSESCORE="L'éditeur de partitions de musique le plus utilisé au monde"
 CA_MUSICBRAINZ="MusicBrainz Picard {PPA}"
 CD_MUSICBRAINZ="Logiciel libre multi-plateforme pour tagger les fichiers audio grâce à la base de données MusicBrainz" 
 
-CA_MYPAINT="MyPaint"
+CA_MYPAINT="MyPaint {FLATPAK}"
 CD_MYPAINT="Logiciel de peinture numérique développé en Python"
 
 CA_NATRON="Natron {SNAP}"
@@ -1095,7 +1095,7 @@ CD_SERVERLAMP="Ajoute 'Apache' comme serveur web, 'MySQL' pour les bases de donn
 CA_SIRIKALI="Sirikali"
 CD_SIRIKALI="Interface Qt pour gérer les lecteurs chiffrés ecryptfs, cryfs, encfs, gocryptfs, securefs"
 
-CA_UPM="UPM (Universal Password Manager) {PPA} [[HS!!]]"
+CA_UPM="UPM (Universal Password Manager) {PPA}"
 CD_UPM="Gestionnaire de mots de passe multi-plateforme (écrit en Java)."
 
 CA_VERACRYPT="VeraCrypt {PPA}"
