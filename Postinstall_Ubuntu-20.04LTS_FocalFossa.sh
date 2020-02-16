@@ -246,7 +246,7 @@ then
 	f_action_install "$CA_MIXXX" mixxx
 	f_action_install "$CA_MUSESCORE" musescore3	
 	f_action_ppa_install "$CA_MUSICBRAINZ" ppa:musicbrainz-developers/stable "picard" 
-	f_action_install "$CA_MYPAINT" "mypaint mypaint-data-extras"	 
+	f_action_flatpak_install "$CA_MYPAINT" "org.mypaint.MyPaint"	 
 	f_action_snap_install "$CA_NATRON" natron
 	f_action_install "$CA_OBS" "ffmpeg obs-studio"
 	f_action_install "$CA_OLIVE" olive-editor
