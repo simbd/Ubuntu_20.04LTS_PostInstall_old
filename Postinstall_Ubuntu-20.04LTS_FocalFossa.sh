@@ -29,7 +29,7 @@ if [ $? = 0 ]
 then
     	# Debut
 	f_action_exec "$CA_PARTNER" "sudo sed -i.bak '/^# deb .*partner/ s/^# //' /etc/apt/sources.list"
-	f_action_exec "$CA_UPGRADE" "sudo apt update || read -p 'Attention, la commande de mise à jour (apt update) renvoi une erreur, il est recommandé de stopper le script et de corriger le problème avant de le lancer mais si vous voulez quand même poursuivre, tapez entrée' ; sudo apt full-upgrade -y" "$NS_UPGRADE"
+	f_action_exec "$CA_UPGRADE" "sudo apt update ; sudo apt full-upgrade -y"
 	f_action_install "$CA_PACKUTILE" "net-tools build-essential curl vim neofetch ncdu x264 x265 xterm inxi hdparm cpu-x rsync"
 	f_action_install "$CA_GNOMESUPPLEMENT" "gnome-firmware gnome-tweak-tool gconf-editor"
     
@@ -62,7 +62,7 @@ then
     	f_action_get "$CA_SRWAREIRON" "http://www.srware.net/downloads/iron64.deb"
     	f_action_install "$CA_TORBROWSER" torbrowser-launcher  
     	f_action_get "$CA_VIVALDI" "https://downloads.vivaldi.com/stable/vivaldi-stable_2.11.1811.33-1_amd64.deb" #(Dépot vivaldi auto ajouté)
-	f_action_exec "$CA_VIVALDI" "apt update && apt upgrade vivaldi-stable -y" #Pour que  vivaldi soit à jour dès le départ
+	f_action_exec "$CA_VIVALDI" "sudo apt update && apt upgrade vivaldi-stable -y" #Pour que  vivaldi soit à jour dès le départ
 	
     	# Internet / Tchat / Messagerie / Téléchargement / Contrôle à distance
     	# (Section re-divisé en 3 parties cf Zenity_default_choice.sh)
@@ -301,7 +301,7 @@ then
 	f_action_install "$CA_SCILAB" scilab
 	f_action_exec "$CA_SCRATCH" "wget http://nux87.free.fr/script-postinstall-ubuntu/theme/scratch.png ; wget https://gitlab.com/simbd/Fichier_de_config/raw/master/scratch.desktop ; wget http://www.ac-grenoble.fr/maths/scratch/scratch.zip ; sudo unzip scratch.zip -d /opt/scratch3 ; rm scratch.zip ; sudo mv scratch.png /usr/share/icons/ ; sudo mv scratch.desktop /usr/share/applications/"
 	f_action_install "$CA_SKYCHART" "libgtk2.0-0 libglib2.0-0 libpango1.0-0 libjpeg62 libsqlite3-0" #dépendance pour skychart
-	f_action_exec "$CA_SKYCHART" "echo 'deb [trusted=yes] http://www.ap-i.net/apt stable main' | sudo tee -a /etc/apt/sources.list.d/skychart.list ; apt update ; apt install -y skychart ; sudo rm /etc/apt/sources.list.d/skychart.list"
+	f_action_exec "$CA_SKYCHART" "echo 'deb [trusted=yes] http://www.ap-i.net/apt stable main' | sudo tee -a /etc/apt/sources.list.d/skychart.list ; sudo apt update ; apt install -y skychart ; sudo rm /etc/apt/sources.list.d/skychart.list"
 	f_action_install "$CA_STELLARIUM" stellarium
 	f_action_install "$CA_TOUTENCLIC" python3-pyqt5
 	f_action_exec "$CA_TOUTENCLIC" "wget http://www.bipede.fr/downloads/logiciels/ToutEnClic.zip ; unzip ToutEnClic.zip ; rm ToutEnClic.zip ; sudo mv ToutEnClic /opt/ ; wget https://gitlab.com/simbd/Fichier_de_config/raw/master/toutenclic.desktop --no-check-certificate ; sudo mv toutenclic.desktop /usr/share/applications/ ; wget http://nux87.free.fr/script-postinstall-ubuntu/theme/toutenclic.png --no-check-certificate ; sudo mv toutenclic.png /usr/share/icons/"
