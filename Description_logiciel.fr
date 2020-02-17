@@ -754,6 +754,9 @@ CD_GOOGLEEARTH="Globe terrestre de Google pour explorer la planète"
 CA_JASP="Jasp {FLATPAK}"
 CD_JASP="Programme graphique d'analyse statistique opensource, soutenu par l'Université d'Amsterdam"
 
+CA_JOSM="JOSM (Java OpenStreetMap Editor)"
+CD_JOSM="Logiciel libre permettant de consulter/modifier les données cartographiques de la bdd libre OpenStreetMap"
+
 CA_KICAD="KiCad EDA"
 CD_KICAD="Suite logicielle pour le dessin de schémas électroniques et la conception de circuits imprimés"
 
