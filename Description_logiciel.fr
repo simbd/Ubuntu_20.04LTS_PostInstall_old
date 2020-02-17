@@ -198,8 +198,8 @@ CD_MUMBLE="Logiciel libre connue chez les gameurs pour les conversations audios 
 CA_NEXTCLOUD="NextCloud Desktop Client"
 CD_NEXTCLOUD="Client de bureau pour vous connecter à un drive NextCloud (framadrive, drive renater etc...)"
 
-CA_NICOTINE="Nicotine+ [[ HS : Ne fonctionne pas pour l'instant !! ]]"
-CD_NICOTINE="Client P2P pour le réseau mono-source Soulseek [ NE PAS UTILISER => HS ! ]"
+#CA_NICOTINE="Nicotine+ [[ HS : Ne fonctionne pas pour l'instant !! ]]"
+#CD_NICOTINE="Client P2P pour le réseau mono-source Soulseek [ NE PAS UTILISER => HS ! ]"
 
 CA_OPENSSHSERVER="OpenSSH Server"
 CD_OPENSSHSERVER="Votre PC devient accessible à distance via SSH (client SSH déjà inclus de base)"
@@ -239,6 +239,9 @@ CD_SKYPE="Logiciel propriétaire de téléphonie/vidéophonie de Microsoft"
 
 CA_SLACK="Slack {SNAP}"
 CD_SLACK="Plate-forme de communication collaborative propriétaire avec gestion de projets"
+
+CA_SOULSEEK="SoulSeek Qt {AppImage}"
+CD_SOULSEEK="Client Qt pour le réseau d'échange de fichiers de type peer-to-peer mono-source"
 
 CA_SUBDOWNLOADER="SubDownloader"
 CD_SUBDOWNLOADER="Téléchargement de sous-titres"
