@@ -55,7 +55,7 @@ then
     	f_RepositoryExt_Install "$CA_CHROME" "google-chrome" "https://dl-ssl.google.com/linux/linux_signing_key.pub" "[arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main" "google-chrome-stable"
     	f_action_install "$CA_LYNX" lynx
    	f_action_install "$CA_MIDORI" midori
-    	f_action_get "$CA_MIN" "https://github.com/minbrowser/min/releases/download/v1.12.0/min_1.12.0_amd64.deb"
+    	#f_action_get "$CA_MIN" "https://github.com/minbrowser/min/releases/download/v1.12.0/min_1.12.0_amd64.deb" ## HS
     	f_action_snap_install "$CA_OPERA" opera
 	f_RepositoryExt_Install "$CA_PALEMOON" "home:stevenpusser" "https://download.opensuse.org/repositories/home:stevenpusser/xUbuntu_19.10/Release.key" "http://download.opensuse.org/repositories/home:/stevenpusser/xUbuntu_19.10/ /" "palemoon"
     	#f_action_get "$CA_PALEMOON" "http://downloadcontent.opensuse.org/repositories/home:/stevenpusser/xUbuntu_19.10/amd64/palemoon_28.8.0+repack-1_amd64.deb"
