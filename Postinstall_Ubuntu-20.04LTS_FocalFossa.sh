@@ -301,7 +301,7 @@ then
 	f_action_install "$CA_SCILAB" scilab
 	f_action_exec "$CA_SCRATCH" "wget http://nux87.free.fr/script-postinstall-ubuntu/theme/scratch.png ; wget https://gitlab.com/simbd/Fichier_de_config/raw/master/scratch.desktop ; wget http://www.ac-grenoble.fr/maths/scratch/scratch.zip ; sudo unzip scratch.zip -d /opt/scratch3 ; rm scratch.zip ; sudo mv scratch.png /usr/share/icons/ ; sudo mv scratch.desktop /usr/share/applications/"
 	f_action_install "$CA_SKYCHART" "libgtk2.0-0 libglib2.0-0 libpango1.0-0 libjpeg62 libsqlite3-0" #dépendance pour skychart
-	f_action_exec "$CA_SKYCHART" "echo 'deb [trusted=yes] http://www.ap-i.net/apt stable main' | sudo tee -a /etc/apt/sources.list.d/skychart.list ; sudo apt update ; apt install -y skychart ; sudo rm /etc/apt/sources.list.d/skychart.list"
+	f_action_exec "$CA_SKYCHART" "echo 'deb [trusted=yes] http://www.ap-i.net/apt stable main' | sudo tee -a /etc/apt/sources.list.d/skychart.list ; sudo apt update ; sudo apt install -y skychart ; sudo rm /etc/apt/sources.list.d/skychart.list"
 	f_action_install "$CA_STELLARIUM" stellarium
 	f_action_install "$CA_TOUTENCLIC" python3-pyqt5
 	f_action_exec "$CA_TOUTENCLIC" "wget http://www.bipede.fr/downloads/logiciels/ToutEnClic.zip ; unzip ToutEnClic.zip ; rm ToutEnClic.zip ; sudo mv ToutEnClic /opt/ ; wget https://gitlab.com/simbd/Fichier_de_config/raw/master/toutenclic.desktop --no-check-certificate ; sudo mv toutenclic.desktop /usr/share/applications/ ; wget http://nux87.free.fr/script-postinstall-ubuntu/theme/toutenclic.png --no-check-certificate ; sudo mv toutenclic.png /usr/share/icons/"
