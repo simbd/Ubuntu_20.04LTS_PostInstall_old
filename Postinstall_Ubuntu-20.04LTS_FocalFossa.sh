@@ -93,7 +93,7 @@ then
 	f_action_get "$CA_MEGASYNC" "https://mega.nz/linux/MEGAsync/xUbuntu_19.10/amd64/nautilus-megasync-xUbuntu_19.10_amd64.deb"
 	f_action_install "$CA_MUMBLE" mumble 
 	f_action_install "$CA_NEXTCLOUD" "nextcloud-desktop nextcloud-desktop-cmd nextcloud-desktop-l10n"
-	#f_action_ppa_install "$CA_NICOTINE" ppa:kip/nicotine+ nicotine ##(HS même avec codename remplacé par Eoan)
+	#f_action_ppa_install "$CA_NICOTINE" ppa:kip/nicotine+ nicotine # HS
 	f_action_install "$CA_OPENSSHSERVER" openssh-server
 	f_action_install "$CA_PIDGIN" "pidgin pidgin-plugin-pack"
 	f_action_install "$CA_POLARI" polari
@@ -107,6 +107,7 @@ then
 	f_RepositoryExt_Install "$CA_SIGNAL" "signal-desktop" "https://updates.signal.org/desktop/apt/keys.asc" "[arch=amd64] https://updates.signal.org/desktop/apt xenial main" "signal-desktop"
     	f_action_get "$CA_SKYPE" "https://go.skype.com/skypeforlinux-64.deb" #Maj auto via dépot ajouté
 	f_action_snap_install "$CA_SLACK" "slack --classic"
+	f_action_get_appimage "$CA_SOULSEEK" "http://nux87.free.fr/script-postinstall-ubuntu/appimage/SoulseekQt-2018-1-30-64bit.AppImage"
     	f_action_install "$CA_SUBDOWNLOADER" subdownloader
 	f_action_install "$CA_SYNCTHING" syncthing
 	f_action_snap_install "$CA_TEAMS" teams-for-linux
