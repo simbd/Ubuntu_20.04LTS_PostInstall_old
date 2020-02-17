@@ -80,8 +80,8 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_HUBIC" "$CD_HUBIC" \
 	$(chkDef "FALSE") "$CA_MEGASYNC" "$CD_MEGASYNC" \
 	$(chkDef "FALSE") "$CA_NEXTCLOUD" "$CD_NEXTCLOUD" \
-	$(chkDef "FALSE") "$CA_NICOTINE" "$CD_NICOTINE" \
 	$(chkDef "FALSE") "$CA_QBITTORRENT" "$CD_QBITTORRENT" \
+	$(chkDef "FALSE") "$CA_SOULSEEK" "$CD_SOULSEEK" \
 	$(chkDef "FALSE") "$CA_SUBDOWNLOADER" "$CD_SUBDOWNLOADER" \
 	$(chkDef "FALSE") "$CA_SYNCTHING" "$CD_SYNCTHING" \
 	$(chkDef "TRUE") "$CA_TRANSMISSION" "$CD_TRANSMISSION" \
