@@ -253,6 +253,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_GNOMEMAPS" "$CD_GNOMEMAPS" \
 	$(chkDef "FALSE") "$CA_GOOGLEEARTH" "$CD_GOOGLEEARTH" \
 	$(chkDef "FALSE") "$CA_JASP" "$CD_JASP" \
+	$(chkDef "FALSE") "$CA_JOSM" "$CD_JOSM" \
 	$(chkDef "FALSE") "$CA_KICAD" "$CD_KICAD" \
 	$(chkDef "FALSE") "$CA_LABPLOT" "$CD_LABPLOT" \
 	$(chkDef "FALSE") "$CA_MARBLE" "$CD_MARBLE" \
