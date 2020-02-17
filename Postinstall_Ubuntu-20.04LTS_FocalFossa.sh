@@ -290,6 +290,7 @@ then
 	f_action_get "$CA_GOOGLEEARTH" "https://dl.google.com/dl/earth/client/current/google-earth-pro-stable_current_amd64.deb"
 	f_action_exec "$CA_GOOGLEEARTH" "sudo rm -f /etc/apt/sources.list.d/google-earth-pro*" #dépot supprimé car pose soucis systématiquement
 	f_action_flatpak_install "$CA_JASP" org.jaspstats.JASP
+	f_action_install "$CA_JOSM" josm
 	f_action_install "$CA_KICAD" "kicad kicad-libraries kicad-templates kicad-packages3d kicad-symbols kicad-doc-fr"
 	f_action_install "$CA_LABPLOT" labplot
 	f_action_install "$CA_MARBLE" "--no-install-recommends marble"
