@@ -205,7 +205,7 @@ then
 		
 	# Montage Multimédia
 	# (Section re-divisé en 3 parties cf Zenity_default_choice.sh)
-	#f_action_exec "$CA_ARDOUR" "echo 'ardour jackd2/tweak_rt_limits boolean false' | sudo debconf-set-selections"
+	f_action_exec "$CA_ARDOUR" "echo 'ardour jackd/tweak_rt_limits boolean false' | sudo debconf-set-selections"
 	f_action_install "$CA_ARDOUR" ardour
 	f_action_install "$CA_AUDACITY" audacity
 	f_action_flatpak_install "$CA_AVIDEMUX" org.avidemux.Avidemux
