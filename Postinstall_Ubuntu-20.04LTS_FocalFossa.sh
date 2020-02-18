@@ -62,7 +62,7 @@ then
     	f_action_get "$CA_SRWAREIRON" "http://www.srware.net/downloads/iron64.deb"
     	f_action_install "$CA_TORBROWSER" torbrowser-launcher  
     	f_action_get "$CA_VIVALDI" "https://downloads.vivaldi.com/stable/vivaldi-stable_2.11.1811.33-1_amd64.deb" #(Dépot vivaldi auto ajouté)
-	f_action_exec "$CA_VIVALDI" "sudo apt update && apt upgrade vivaldi-stable -y" #Pour que  vivaldi soit à jour dès le départ
+	f_action_exec "$CA_VIVALDI" "sudo apt update && sudo apt upgrade vivaldi-stable -y" #Pour que  vivaldi soit à jour dès le départ
 	
     	# Internet / Tchat / Messagerie / Téléchargement / Contrôle à distance
     	# (Section re-divisé en 3 parties cf Zenity_default_choice.sh)
