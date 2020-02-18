@@ -1113,7 +1113,7 @@ CD_WAKEONLAN="Permet de réveiller votre PC depuis le réseau local ou à distan
 CA_WIFITE="Wifite (cli) {Nécessite intervention!}"
 CD_WIFITE="Version simplifié de Aircrack-ng pour tester la sécurité de réseau wifi WEP, WPA et WPS"
 
-CA_WIRESHARK="WireShark {Nécessite intervention !}"
+CA_WIRESHARK="WireShark"
 CD_WIRESHARK="Analyseur de paquets utilisé dans le dépannage et l'analyse de réseaux"
 
 SCT_GAMING="______ [[ GAMING ]] ______"
