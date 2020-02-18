@@ -319,7 +319,8 @@ then
 	f_action_install "$CA_DOLPHIN" dolphin-emu
 	f_action_install "$CA_DOSBOX" dosbox
 	f_action_get "$CA_GENS" "https://retrocdn.net/images/e/e9/Gens_2.16.8-r7orig_amd64.deb"
-	f_action_install "$CA_GNOMEBOXES" gnome-boxes	
+	f_action_install "$CA_GNOMEBOXES" gnome-boxes
+	f_action_exec "$CA_GNS" "echo 'ubridge ubridge/install-setuid boolean true' | sudo debconf-set-selections"
 	f_action_ppa_install "$CA_GNS" "ppa:gns3/ppa" gns3-gui
 	f_action_install "$CA_QEMUKVM" "qemu qemu-kvm qemu-system-gui qemu-system-arm qemu-utils virt-manager virt-viewer"
 	f_action_install "$CA_LXC" lxc
@@ -422,6 +423,7 @@ then
 	f_action_install "$CA_VERACRYPT" veracrypt
 	f_action_install "$CA_WAKEONLAN" wakeonlan
 	f_action_install "$CA_WIFITE" "wifite hashcat hcxdumptool macchanger"
+	f_action_exec "$CA_WIRESHARK" "echo 'wireshark-common wireshark-common/install-setuid boolean true' | sudo debconf-set-selections"
 	f_action_install "$CA_WIRESHARK" wireshark
 	
 	# Gaming
