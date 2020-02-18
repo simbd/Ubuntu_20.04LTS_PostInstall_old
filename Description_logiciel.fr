@@ -1369,7 +1369,7 @@ CA_GRUBDEFAULT="Grub : dernier OS lancé = choix par défaut"
 CD_GRUBDEFAULT="En cas de multiboot, sauvegarde le dernier OS lancé pour que ça soit le choix par défaut"
 
 CA_GRUBATTENTE="Grub : réduction de l'attente à 2s"
-CD_GRUBATTENTE="Permet de réduire le temps d'attente par défaut (10s) à 3s (+ supprime les tests de ram)"
+CD_GRUBATTENTE="Permet de réduire le temps d'attente par défaut (10s) à 2s (+ supprime les tests de ram)"
 
 CA_DVDREAD="Lecture DVD commerciaux/Blu-Ray {Nécessite intervention !}"
 CD_DVDREAD="Permet de lire les DVD commerciaux chiffrés avec CSS et les Blu-Ray"
