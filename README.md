@@ -1,21 +1,38 @@
 # README 
 
-##### edit : plus valable, ce readme sera largement modifié plus tard
+## Objectif ##
+
+Ce script sert à installer des logiciels sur une base Ubuntu 20.04LTS avec un très large choix de paquets.
+Il y a plusieurs avantages :
+- Ce large choix de logiciel est accessible directement au sein d'une interface graphique unifié (via Zenity)
+- Il y a une description de chaque logiciel directement dans l'interface ce qui vous permet de voir au premier coup d'oeil ce qui peux vous intéresser ou non.
+- Simple à utiliser : pour installer les logiciels, il suffit juste de cocher les cases correspondantes
+- Intègre différentes méthodes d'installations (installation via apt install, installation le paquet deb récupéré sur le site de l'éditeur, installation via un PPA ou le dépot de l'éditeur, installation via un Snap, installation avec Flatpak et le dépot Flathub, Récupération au format AppImage, Installation via un script etc...
+(A noté que pour ceux qui n'aiment pas les paquets universels, sachez qu'aucun n'est coché par défaut et que quand un logiciel est proposé en paquet universel, c'est explicitement indiqué dans le nom lors du choix).
+
+## Compatibilité ##
+
+Le script est destiné principalement à la version de base d'Ubuntu (Gnome) pour la version 20.04LTS qui sort en Avril.
+Cela ne veux pas dire qu'il ne peux pas être utilisé sur une autre configuration mais qu'il a été testé/validé surtout pour celle-ci.
+
+- Si vous souhaitez utiliser le script sur une variante d'Ubuntu plutôt que la version de base (par exemple Xubuntu, Kubuntu, Ubuntu Mate, Linux Mint, ElementaryOS...), je vous recommande fortement au lancement de bien choisir l'option "Tous les choix décochés" par défaut afin de ne pas avoir des paquets utiles pour Gnome uniquement cochés par défaut (ce qui n'aura aucun intérêt pour vous vu que vous n'utilisez pas Gnome avec votre variante). Si vous utilisez KDE (notamment avec Kubuntu ou KDENeon), attention à bien cocher des logiciels cohérents avec cet environnement.
+
+- Si vous souhaitez utiliser le script pour une ancienne version d'Ubuntu, par exemple la 18.04LTS, cela peux fonctionner mais pas pour tous les logiciels, en effet certains s'installent avec une méthode spécifique pour la 20.04 qui ne marchera pas pour la 18.04. A noté que les Snaps/Flatpak/AppImage ne devraient poser à priori aucun problème quelque soit la version (et même sur les autres distributions).
+
+- Et Debian ? Il y a environ 70% des logiciels proposés dans le script qui fonctionneront sur Debian 10 avec ce script et 30% ou ça ne fonctionnera pas. Je ne recommande pas de l'utiliser sous Debian sauf si vous savez ce que vous faites.
+
+## Récupération / Lancement du script
+
+Il y a plusieurs solutions :
+
+- Télécharger le contenu du script (répertoire Ubuntu_20.04LTS_PostInstall) sur ce github (soit par l'interface web soit via la commande wget), décompresser le contenu et lancer le script "Postinstall" à l'intérieur SANS sudo (les sudo se trouvent à l'intérieur du script).
+en cli cela donne donc :
+wget https://github.com/simbd/Ubuntu_20.04LTS_PostInstall/archive/master.zip  #Téléchargement
+unzip master.zip && cd Ubuntu_20.04LTS_PostInstall-master/   #Décompression puis on se déplace dedans
+./Postinstall_Ubuntu-20.04LTS_FocalFossa.sh  #Pour le lancement
 
 
-## A quoi sert le script ? ##
 
-Ceci est un script pour installer un très gros paquet d'applications (et des optimisations) après une installation d'Ubuntu 18.04 ou une variante.
-Cela peux donc concerner par exemple :
-
-- Ubuntu 20.04 avec Gnome Shell
-- Xubuntu 20.04 avec XFCE
-- Ubuntu Mate 20.04 avec Mate
-- Plus tard Linux Mint 20 avec Cinnamon (pas avant Juin 2020)
-- etc...
-
-Ce script sera maj de temps en temps et systématiquement pour chaque nouvelle LTS (18.04LTS => 20.04LTS etc...). En revanche il ne sera pas modifié/testé pour les versions intérmédiaires avec support à court terme comme la 18.10, 19.04, 19.10.
-(cela ne veux pas dire que ça ne fonctionnera pas mais je n'adapterai pas le script pour les versions intérmédiaires, je vous recommande donc de n'utiliser que les LTS avec ce script. Sachez que  si vous utilisez Mint, vous êtes forcément sur une base LTS).
 
 ## D'ou vient le script
 
