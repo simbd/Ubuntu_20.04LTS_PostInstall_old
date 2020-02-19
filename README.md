@@ -27,10 +27,14 @@ Il y a plusieurs solutions :
 
 - Télécharger le contenu du script (répertoire Ubuntu_20.04LTS_PostInstall) sur ce github (soit par l'interface web soit via la commande wget), décompresser le contenu et lancer le script "Postinstall" à l'intérieur SANS sudo (les sudo se trouvent à l'intérieur du script). En cli cela donne donc :
 
-- wget https://github.com/simbd/Ubuntu_20.04LTS_PostInstall/archive/master.zip  #Téléchargement
-- unzip master.zip && cd Ubuntu_20.04LTS_PostInstall-master/   #Décompression puis on se déplace dedans
-- ./Postinstall_Ubuntu-20.04LTS_FocalFossa.sh  #Pour le lancement
-
+-- wget https://github.com/simbd/Ubuntu_20.04LTS_PostInstall/archive/master.zip  #Téléchargement
+-- unzip master.zip && cd Ubuntu_20.04LTS_PostInstall-master/   #Décompression puis on se déplace dedans
+-- ./Postinstall_Ubuntu-20.04LTS_FocalFossa.sh  #Pour le lancement
+''test
+'''test
+'test
+{code}test{/code}
+[code]test[/code]
 
 
 
