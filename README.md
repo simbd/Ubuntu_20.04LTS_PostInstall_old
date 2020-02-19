@@ -25,17 +25,17 @@ Cela ne veux pas dire qu'il ne peux pas être utilisé sur une autre configurati
 
 Il y a plusieurs solutions :
 
-- Télécharger le contenu du script (répertoire Ubuntu_20.04LTS_PostInstall) sur ce github (soit par l'interface web soit via la commande wget), décompresser le contenu et lancer le script "Postinstall" à l'intérieur SANS sudo (les sudo se trouvent à l'intérieur du script). En cli cela donne donc :
+- Télécharger le contenu du script (répertoire Ubuntu_20.04LTS_PostInstall) sur ce github (soit par l'interface web soit via la commande wget), décompresser le contenu, penser à mettre le droit d'execution sur le script et lancer le "Postinstall" à l'intérieur SANS sudo (les sudo se trouvent à l'intérieur du script). En cli cela donne donc :
 
 > wget https://github.com/simbd/Ubuntu_20.04LTS_PostInstall/archive/master.zip &&
 > unzip master.zip && 
-> cd Ubuntu_20.04LTS_PostInstall-master/ &&
+> cd Ubuntu_20.04LTS_PostInstall-master/ && chmod +x Postinstall*sh &&
 > ./Postinstall_Ubuntu-20.04LTS_FocalFossa.sh
 
 - 2ème solution : faire avec git clone (avec l'avantage de pouvoir faire la maj du script sans le retélécharger manuellement). Il vous faudra en pré-requis avoir installé git (sudo apt install git).
 
 > git clone https://github.com/simbd/Ubuntu_20.04LTS_PostInstall.git && cd Ubuntu_20.04LTS_PostInstall/ &&
-> ./https://github.com/simbd/Ubuntu_20.04LTS_PostInstall.git
+> ./Postinstall_Ubuntu-20.04LTS_FocalFossa.sh
 
 Si vous voulez réutiliser le script plus tard et vérifier si il y a eu une nouvelle maj du script, dans le dossier il suffira de faire :
 > git pull
