@@ -34,7 +34,7 @@ Il y a plusieurs solutions :
 
 - 2ème solution : faire avec git clone (avec l'avantage de pouvoir faire la maj du script sans le retélécharger manuellement). Il vous faudra en pré-requis avoir installé git (sudo apt install git).
 
-> git clone https://github.com/simbd/Ubuntu_20.04LTS_PostInstall.git && cd https://github.com/simbd/Ubuntu_20.04LTS_PostInstall.git
+> git clone https://github.com/simbd/Ubuntu_20.04LTS_PostInstall.git && cd Ubuntu_20.04LTS_PostInstall/ &&
 > ./https://github.com/simbd/Ubuntu_20.04LTS_PostInstall.git
 
 Si vous voulez réutiliser le script plus tard et vérifier si il y a eu une nouvelle maj du script, dans le dossier il suffira de faire :
