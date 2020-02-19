@@ -7,7 +7,7 @@ Il y a plusieurs avantages :
 - Ce large choix de logiciel est accessible directement au sein d'une interface graphique unifié (via Zenity)
 - Il y a une description de chaque logiciel directement dans l'interface ce qui vous permet de voir au premier coup d'oeil ce qui peux vous intéresser ou non.
 - Simple à utiliser : pour installer les logiciels, il suffit juste de cocher les cases correspondantes
-- Intègre différentes méthodes d'installations (installation via apt install, installation le paquet deb récupéré sur le site de l'éditeur, installation via un PPA ou le dépot de l'éditeur, installation via un Snap, installation avec Flatpak et le dépot Flathub, Récupération au format AppImage, Installation via un script etc...
+- Intègre différentes méthodes d'installations (installation via apt install, installation d'un paquet deb récupéré sur le site de l'éditeur, installation via un PPA ou le dépot de l'éditeur, installation via un Snap, installation avec Flatpak et le dépot Flathub, Récupération au format AppImage, Installation via un script etc...
 (A noté que pour ceux qui n'aiment pas les paquets universels, sachez qu'aucun n'est coché par défaut et que quand un logiciel est proposé en paquet universel, c'est explicitement indiqué dans le nom lors du choix).
 
 ## Compatibilité ##
