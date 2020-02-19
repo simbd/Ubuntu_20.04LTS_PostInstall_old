@@ -10,8 +10,7 @@ Il y a plusieurs avantages :
 - Intègre différentes méthodes d'installations (installation via apt install, installation d'un paquet deb récupéré sur le site de l'éditeur, installation via un PPA ou le dépot de l'éditeur, installation via un Snap, installation avec Flatpak et le dépot Flathub, Récupération au format AppImage, Installation via un script etc...
 (A noté que pour ceux qui n'aiment pas les paquets universels, sachez qu'aucun n'est coché par défaut et que quand un logiciel est proposé en paquet universel, c'est explicitement indiqué dans le nom lors du choix).
 
-![alt text](https://interactive-examples.mdn.mozilla.net/media/examples/grapefruit-slice-332-332.jpg)
-
+![alt text](https://nsa40.casimages.com/img/2020/02/19//200219111357203921.png)
 
 ## Compatibilité ##
 
