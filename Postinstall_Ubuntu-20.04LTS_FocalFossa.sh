@@ -465,8 +465,7 @@ then
 	f_action_install "$CA_XQF" xqf
 	
 	# Programmation / Dev  
-	f_action_ppa_install "$CA_ANDROIDSTUDIO" ppa:maarten-fonville/android-studio
-	f_action_exec "$CA_ANDROIDSTUDIO" "sudo sed -i -e 's/focal/eoan/g' /etc/apt/sources.list.d/maarten-fonville*android*list ; sudo apt update ; sudo apt install android-studio -y"
+	f_action_ppa_install "$CA_ANDROIDSTUDIO" ppa:maarten-fonville/android-studio android-studio
 	f_action_install "$CA_ANJUTA" "anjuta anjuta-extras"
 	f_action_install "$CA_ARDUINOIDE" arduino 
 	f_action_snap_install "$CA_ATOM" "atom --classic"
