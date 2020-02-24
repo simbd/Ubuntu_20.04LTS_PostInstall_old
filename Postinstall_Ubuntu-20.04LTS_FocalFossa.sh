@@ -539,7 +539,7 @@ then
 	f_action_install "$CA_ZRAM" zram-config
 	
 	# Pour finir
-	f_action_exec "$CA_AUTOREMOVE" "sudo apt update ; sudo apt full-upgrade -y ; sudo apt autoremove --purge -y && sudo apt clean -y ; clear"
+	f_action_exec "$CA_AUTOREMOVE" "sudo apt update ; sudo apt full-upgrade -y ; sudo apt autoremove --purge -y && sudo apt clean -y ; clear ; sudo snap refresh ; sudo flatpak update -y"
 	f_action_exec "$CA_RES_DEP" "sudo apt install -fy"
     
 	# Notification End 
