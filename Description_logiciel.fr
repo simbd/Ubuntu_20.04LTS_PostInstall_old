@@ -695,7 +695,7 @@ CD_SYNFIG="Logiciel libre d'animation vectorielle 2D pour produire des films d'a
 CA_UNITY3DEDITOR="Unity3D Editor (via l'AppImage 'UnityHub')"
 CD_UNITY3DEDITOR="Editeur pour le moteur de jeu  3D 'Unity' développé par Unity Technologies"
 
-CA_VIDCUTTER="VidCutter {APPIMAGE}"
+CA_VIDCUTTER="VidCutter {FLATPAK}"
 CD_VIDCUTTER="Outil rapide de découpe et d'extraction de vidéos"
 
 CA_VOKOSCREEN="VokoScreen"
