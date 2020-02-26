@@ -61,7 +61,7 @@ then
     	#f_action_get "$CA_PALEMOON" "http://downloadcontent.opensuse.org/repositories/home:/stevenpusser/xUbuntu_19.10/amd64/palemoon_28.8.0+repack-1_amd64.deb"
     	f_action_get "$CA_SRWAREIRON" "http://www.srware.net/downloads/iron64.deb"
     	f_action_install "$CA_TORBROWSER" torbrowser-launcher  
-    	f_action_get "$CA_VIVALDI" "https://downloads.vivaldi.com/stable/vivaldi-stable_2.11.1811.33-1_amd64.deb" #(Dépot vivaldi auto ajouté)
+    	f_action_get "$CA_VIVALDI" "https://downloads.vivaldi.com/stable/vivaldi-stable_2.11.1811.44-1_amd64.deb" #(Dépot vivaldi auto ajouté)
 	f_action_exec "$CA_VIVALDI" "sudo apt update && sudo apt upgrade vivaldi-stable -y" #Pour que  vivaldi soit à jour dès le départ
 	
     	# Internet / Tchat / Messagerie / Téléchargement / Contrôle à distance
@@ -70,7 +70,7 @@ then
     	f_action_install "$CA_CLUSTERSSH" clusterssh
     	f_action_get_appimage "$CA_COZYDRIVE" "https://github.com/cozy-labs/cozy-desktop/releases/download/v3.17.0/Cozy-Drive-3.17.0-x86_64.AppImage"
     	f_action_install "$CA_DELUGE" deluge
-	f_action_get "$CA_DISCORD" "https://dl.discordapp.net/apps/linux/0.0.9/discord-0.0.9.deb"
+	f_action_get "$CA_DISCORD" "https://dl.discordapp.net/apps/linux/0.0.10/discord-0.0.10.deb"
     	f_action_install "$CA_DROPBOX" nautilus-dropbox
 	f_action_get "$CA_DUKTO" "https://download.opensuse.org/repositories/home:/colomboem/xUbuntu_16.04/amd64/dukto_6.0-1_amd64.deb" #{a reverifier}
     	f_action_exec "$CA_DWSERVICE" "wget https://www.dwservice.net/download/dwagent_x86.sh && chmod +x dwagent* && sudo ./dwagent_x86.sh ; rm dwagent*"
@@ -91,7 +91,7 @@ then
 	f_action_snap_install "$CA_MATTERMOST" mattermost-desktop
 	f_action_get "$CA_MEGASYNC" "https://mega.nz/linux/MEGAsync/xUbuntu_19.10/amd64/megasync-xUbuntu_19.10_amd64.deb"
 	f_action_get "$CA_MEGASYNC" "https://mega.nz/linux/MEGAsync/xUbuntu_19.10/amd64/nautilus-megasync-xUbuntu_19.10_amd64.deb"
-	f_action_install "$CA_MUMBLE" mumble 
+	f_action_install "$CA_MUMBLE" mumble
 	f_action_install "$CA_NEXTCLOUD" "nextcloud-desktop nextcloud-desktop-cmd nextcloud-desktop-l10n"
 	#f_action_ppa_install "$CA_NICOTINE" ppa:kip/nicotine+ nicotine # HS
 	f_action_install "$CA_OPENSSHSERVER" openssh-server
@@ -139,7 +139,7 @@ then
 	f_action_install "$CA_FEEDREADER" feedreader
 	f_action_install "$CA_FONTFORGE" "fontforge fontforge-extras"
 	f_action_snap_install "$CA_FREEMIND" freemind
-	f_action_get "$CA_FREEOFFICE" "https://www.softmaker.net/down/softmaker-freeoffice-2018_973-01_amd64.deb"
+	f_action_get "$CA_FREEOFFICE" "https://www.softmaker.net/down/softmaker-office-2018_974-01_amd64.deb"
 	f_action_install "$CA_FREEPLANE" freeplane
 	f_action_install "$CA_GNOMEOFFICE" "abiword gnumeric dia planner glabels glom gnucash"	
 	f_action_install "$CA_GRAMPS" gramps
@@ -165,7 +165,7 @@ then
 	f_action_flatpak_install "$CA_SPICEUP" "com.github.philip_scott.spice-up"
 	f_action_install "$CA_UMBRELLO" "umbrello --no-install-recommends"
 	f_action_get "$CA_WPSOFFICE" "http://fr.archive.ubuntu.com/ubuntu/pool/main/libp/libpng/libpng12-0_1.2.54-1ubuntu1_amd64.deb" 
-	f_action_get "$CA_WPSOFFICE" "http://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/8865/wps-office_11.1.0.8865_amd64.deb"
+	f_action_get "$CA_WPSOFFICE" "http://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/9080/wps-office_11.1.0.9080.XA_amd64.deb"
 	f_action_get "$CA_XMIND" "https://www.xmind.net/xmind/downloads/XMind-ZEN-for-Linux-amd-64bit-10.0.0-201911260056.deb"
 	f_action_install "$CA_XOURNAL" xournal
 	f_action_install "$CA_XPAD" xpad
@@ -187,7 +187,7 @@ then
 	f_action_install "$CA_LOLLYPOP" lollypop
 	f_action_get_appimage "$CA_MEDIAELCH" "https://github.com/Komet/MediaElch/releases/download/v2.6.2/MediaElch_2.6.2_linux.AppImage"
 	f_action_install "$CA_MOLOTOVTV" "libgconf2-4 desktop-file-utils" #pré-requis pour Molotov.tv
-	f_action_get_appimage "$CA_MOLOTOVTV" "http://desktop-auto-upgrade.molotov.tv/linux/4.2.1/molotov.AppImage"
+	f_action_get_appimage "$CA_MOLOTOVTV" "http://desktop-auto-upgrade.molotov.tv/linux/4.2.2/molotov.AppImage"
 	f_action_snap_install "$CA_ODIO" odio
 	f_action_install "$CA_PACKCODEC" "flac opus-tools vorbis-tools lame mkvtoolnix mkvtoolnix-gui oggvideotools"
 	f_action_install "$CA_PAROLE" parole
@@ -236,7 +236,7 @@ then
 	f_action_install "$CA_KOLOURPAINT" kolourpaint	
 	f_action_install "$CA_KRITA" krita
 	f_action_install "$CA_LEOCAD" leocad
-	f_action_get "$CA_LIGHTWORKS" "https://downloads.lwks.com/Lightworks-2020.1-Beta-118776.deb"
+	f_action_get "$CA_LIGHTWORKS" "https://downloads.lwks.com/Lightworks-2020.1-Beta-119866.deb"
 	f_action_install "$CA_LIBRECAD" librecad
 	f_action_install "$CA_LILYPOND" lilypond
 	f_action_install "$CA_LIVES" lives	
@@ -269,7 +269,7 @@ then
 	f_action_install "$CA_SWEETHOME" sweethome3d
 	f_action_install "$CA_SYNFIG" "synfig synfigstudio"
 	f_action_get_appimage "$CA_UNITY3DEDITOR" "https://public-cdn.cloud.unity3d.com/hub/prod/UnityHub.AppImage"
-	f_action_get_appimage "$CA_VIDCUTTER" "https://github.com/ozmartian/vidcutter/releases/download/6.0.0/VidCutter-6.0.0-x64.AppImage"
+	f_action_flatpak_install "$CA_VIDCUTTER" "com.ozmartians.VidCutter"
 	f_action_install "$CA_VOKOSCREEN" vokoscreen
 	f_action_install "$CA_WINFF" "winff winff-qt"
 	f_action_get "$CA_XNVIEW" "https://download.xnview.com/XnViewMP-linux-x64.deb"
