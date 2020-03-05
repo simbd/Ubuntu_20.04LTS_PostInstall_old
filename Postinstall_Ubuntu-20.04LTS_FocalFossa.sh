@@ -30,6 +30,7 @@ then
     	# Debut
 	f_action_exec "$CA_PARTNER" "sudo sed -i.bak '/^# deb .*partner/ s/^# //' /etc/apt/sources.list"
 	f_action_exec "$CA_UPGRADE" "sudo apt update ; sudo apt full-upgrade -y"
+	f_action_install "$CA_FRENCH" "$(check-language-support -l fr)"
 	f_action_install "$CA_PACKUTILE" "net-tools build-essential curl vim neofetch ncdu x264 x265 xterm inxi hdparm cpu-x rsync"
 	f_action_install "$CA_GNOMESUPPLEMENT" "gnome-firmware gnome-tweak-tool gconf-editor"
     
@@ -509,8 +510,10 @@ then
 	f_action_install "$CA_IMPRIMANTE" "hplip hplip-doc hplip-gui sane sane-utils"
 	f_action_exec "$CA_SECURITECPTE" "sudo chmod -R o=- /home/$USER"
 	f_action_install "$CA_BLEACHBIT" bleachbit
+	f_action_exec "$CA_DNSFDN" choice_dnsfdn
 	f_action_exec "$CA_CONKY" "wget https://raw.githubusercontent.com/simbd/ConfigFiles/master/.conkyrc && mv .conkyrc ~/ ; sudo apt install conky -y"
     	f_action_exec "$CA_APPORTOFF" "sudo sed -i 's/^enabled=1$/enabled=0/' /etc/default/apport"
+	f_action_exec "$CA_ATTENTERESEAUOFF" "sudo systemctl disable systemd-networkd-wait-online.service"
 	f_action_exec "$CA_EXTINCTIONAUTO" "echo '0 4 * * * root /sbin/shutdown -h now' | sudo tee -a /etc/cron.d/extinction-auto"
 	f_action_flatpak_install "$CA_GWE" com.leinardi.gwe
 	f_action_install "$CA_FOLDERCOLOR" folder-color
