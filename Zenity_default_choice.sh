@@ -429,6 +429,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_INTELLIJIDEA" "$CD_INTELLIJIDEA" \
 	$(chkDef "FALSE") "$CA_IPYTHON" "$CD_IPYTHON" \
 	$(chkDef "FALSE") "$CA_JAVA" "$CD_JAVA" \
+	$(chkDef "FALSE") "$CA_JAVAOPENJDK8" "$CD_JAVAOPENJDK8" \
 	$(chkDef "FALSE") "$CA_JAVAOPENJDK" "$CD_JAVAOPENJDK" \
 	$(chkDef "FALSE") "$CA_JUPYTER" "$CD_JUPYTER" \
 	$(chkDef "FALSE") "$CA_LATEXFULL" "$CD_LATEXFULL" \
