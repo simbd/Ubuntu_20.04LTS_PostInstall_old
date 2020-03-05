@@ -174,6 +174,29 @@ chkDef() {
 	esac
 }
 
+f_action_LinInstall() {
+	if [[ "$GUI" == *"$1"* ]]
+	then
+		wget https://gitlab.com/simbd/LinInstall_Software/raw/master/LinInstall_"$2" --no-check-certificate
+		chmod +x LinInstall_"$2" ; sudo ./LinInstall_"$2" ; rm LinInstall_"$2"
+	fi
+}
+### Fonctions particulières pour certains choix dans le script
+# Configurer l'usage des DNS de FDN/LDN (partie Optimisation)
+choice_dnsfdn() {
+	profiles=$(sudo -iu "#$PKEXEC_UID" nmcli -t -f UUID c show)
+	for profile in ${profiles[@]}
+	do
+		sudo -iu "#$PKEXEC_UID" nmcli c modify "$profile" \
+		ipv4.dns "80.67.169.12,80.67.169.40,80.67.188.188" \
+		ipv4.ignore-auto-dns "yes" \
+		ipv6.dns "2001:910:800::12,2001:910:800::40,2001:913::8" \
+		ipv6.ignore-auto-dns "yes"
+	done
+}
+
+
+
 # Installation des paquets obligatoires pour le fonctionnement du script si non-installé
 which zenity > /dev/null
 if [ $? = 1 ]
