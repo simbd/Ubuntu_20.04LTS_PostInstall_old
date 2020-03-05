@@ -12,6 +12,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	--column="$MSG_ZEN_CHECK" --column="$MSG_ZEN_ACTION" --column="$MSG_ZEN_DESCRIPTION" \
 	$(chkDef "TRUE") "$CA_PARTNER" "$CD_PARTNER" \
 	$(chkDef "TRUE") "$CA_UPGRADE" "$CD_UPGRADE" \
+	$(chkDef "TRUE") "$CA_FRENCH" "$CD_FRENCH" \
 	$(chkDef "TRUE") "$CA_GNOMESUPPLEMENT" "$CD_GNOMESUPPLEMENT" \
 	$(chkDef "TRUE") "$CA_PACKUTILE" "$CD_PACKUTILE" \
 	FALSE "$SCT_SESSION" "===========================================================" \
@@ -450,7 +451,9 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_SECURITECPTE" "$CD_SECURITECPTE" \
 	$(chkDef "FALSE") "$CA_BLEACHBIT" "$CD_BLEACHBIT" \
 	$(chkDef "FALSE") "$CA_CONKY" "$CD_CONKY" \
+	$(chkDef "FALSE") "$CA_DNSFDN" "$CD_DNSFDN" \
 	$(chkDef "TRUE") "$CA_APPORTOFF" "$CD_APPORTOFF" \
+	$(chkDef "FALSE") "$CA_ATTENTERESEAUOFF" "$CD_ATTENTERESEAUOFF" \
 	$(chkDef "FALSE") "$CA_EXTINCTIONAUTO" "$CD_EXTINCTIONAUTO" \
 	$(chkDef "TRUE") "$CA_FOLDERCOLOR" "$CD_FOLDERCOLOR" \
 	$(chkDef "FALSE") "$CA_FPRINTD" "$CD_FPRINTD" \
