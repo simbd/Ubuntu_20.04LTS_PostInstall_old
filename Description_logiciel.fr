@@ -351,8 +351,8 @@ CD_GRAMPS="Logiciel libre et multiplateforme de gestion/recherche généalogique
 CA_JOPLIN="Joplin {APPIMAGE}"
 CD_JOPLIN="Saisie de notes et listes de choses à faire"
 
-CA_LIBREOFFICEDEPOT="LibreOffice (version des dépots)"
-CD_LIBREOFFICEDEPOT="La meilleur suite bureautique, et en plus elle est libre, multi-plateforme et gratuite."
+CA_LIBREOFFICEDEPOT="LibreOffice 6.4 (version des dépots)"
+CD_LIBREOFFICEDEPOT="La meilleur suite bureautique, et en plus elle est libre, multi-plateforme et gratuite (version 6.4.x)"
 
 CA_LIBREOFFICEFRESH="LibreOffice backporté {PPA}"
 CD_LIBREOFFICEFRESH="Permet d'avoir systématiquement la dernière version stable possible de LibreOffice"
@@ -865,10 +865,10 @@ CD_PPSSPP="Emulateur libre de PSP (PlayStation Portable)"
 CA_RETROARCH="RetroArch"
 CD_RETROARCH="Implémentation de libretro qui sert de frontal pour les émulateurs et les moteurs de jeu"
 
-CA_VBOXDEPOT="Virtualbox (dépot Ubuntu20.04 : 6.1)"
+CA_VBOXDEPOT="Virtualbox 6.1 (version des dépots)"
 CD_VBOXDEPOT="Célèbre logiciel de virtualisation pour les systèmes Windows/Mac/Linux/Bsd..."
 
-CA_VBOXLAST="Virtualbox (dernière version du dépot d'Oracle)"
+CA_VBOXLAST="Virtualbox (dernière version backporté)"
 CD_VBOXLAST="Dernière version stable possible installé depuis le dépot d'Oracle"
 
 CA_VMWARE="VMWare Workstation Player"
@@ -1279,6 +1279,9 @@ CD_IPYTHON="Terminal interactif pour Python proposant des fonctionnalités telle
 
 CA_JAVA="Java 13 JRE {PPA}"
 CD_JAVA="Version propriétaire de Java d'Oracle (JRE) en version 13 pour vos applications Java"
+
+CA_JAVAOPENJDK8="Java OpenJDK 8 (JRE+JDK)"
+CD_JAVAOPENJDK8="Ancienne version d'OpenJDK, peut être utile pour certains vieux softs/vieilles map Minecraft)"
 
 CA_JAVAOPENJDK="Java OpenJDK 14 (JRE+JDK)"
 CD_JAVAOPENJDK="Implémentation opensource de Java 14, installera le JRE (Execution d'appli Java) et le JDK (Développement)"
