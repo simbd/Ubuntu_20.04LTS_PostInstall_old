@@ -5,14 +5,14 @@ PIS_NAME="Ubuntu 20.04LTS"
 
 #Begin values : première boite de dialogue
 BGN_TITLE="Configuration de ${PIS_NAME}"
-BGN_TEXT="Choisissez comment vous voulez que les cases à cocher des logiciels soient cochées"
+BGN_TEXT=""
 BGN_DEF="Par défaut (quelques logiciels utiles cochés)"
 BGN_UNCHECKED="Tous les choix décochés"
 BGN_CHECKED="Tous les choix cochés (FORTEMENT DECONSEILLE !!)"
 
 # General Messages
 MSG_ZEN_TITLE="Script de Post-Installation pour ${PIS_NAME}"
-MSG_ZEN_TEXT="Choisissez les actions à exécuter et les aplications à installer."
+MSG_ZEN_TEXT="Merci de faire un choix pour la pré-sélection des logiciels :"
 MSG_ZEN_CHECK="Cochez"
 MSG_ZEN_ACTION="Actions / Applications"
 MSG_ZEN_DESCRIPTION="Descriptions"
