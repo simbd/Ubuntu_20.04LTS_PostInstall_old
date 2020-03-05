@@ -32,7 +32,11 @@ CD_PARTNER="Activation du dépôt 'partenaire' : nécessaire pour l'installation
 
 CA_UPGRADE="Mise à jour Système (fortement recommandé !)"
 CD_UPGRADE="Mise à jour de la liste des paquets et des applications déjà installées."
-NS_UPGRADE="Mise à jour du système en cours"
+NS_UPGRADE="Mise à jour du système en cours..."
+
+CA_FRENCH="Pack Langue FR"
+CD_FRENCH="Installe les paquets linguistiques français pour vos logiciels installés"
+NS_FRENCH="Installation du pack de langue FR pour vos softs en cours..."
 
 CA_PACKUTILE="Pack d'outils/codecs utiles (recommandé)"
 CD_PACKUTILE="Ajoute des outils utiles: net-tools, build-essential, curl, xterm, vim, codecs x264/x265, rsync, neofetch, ncdu"
@@ -1338,11 +1342,17 @@ CD_SECURITECPTE="Si vous êtes plusieurs sur le PC, ceci empèche l'accès en le
 CA_BLEACHBIT="BleachBit"
 CD_BLEACHBIT="Outil de nettoyage d'espace disque, de protection de la vie privée et d'optimisation"
 
+CA_DNSFDN="Configuration du DNS de FDN/LDN [ Non Testé !]"
+CD_DNSFDN="Configurer l'usage des DNS de FDN/LDN pour lutter contre la censure"
+
 CA_CONKY="Conky + 1 modèle de config"
 CD_CONKY="Permet d'avoir un panneau d'information sur le bureau, il faudra activer vous-même Conky au démarrage"
 
 CA_APPORTOFF="Désactivation message d'erreur"
 CD_APPORTOFF="Permet de désactiver l'affichage de la fenêtre avec un message d'erreur sous Ubuntu"
+
+CA_ATTENTERESEAUOFF="Désactivation du service networkd-wait"
+CD_ATTENTERESEAUOFF="Désactiver l'attente du réseau au démarrage (peux vous faire gagner du temps au boot)"
 
 CA_EXTINCTIONAUTO="Extinction automatique à 4H du matin"
 CD_EXTINCTIONAUTO="Si vous avez oublié d'éteindre votre PC le soir, il sera arrété automatiquement à 4H du matin"
