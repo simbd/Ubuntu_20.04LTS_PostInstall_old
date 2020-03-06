@@ -273,6 +273,7 @@ then
 	f_action_flatpak_install "$CA_VIDCUTTER" "com.ozmartians.VidCutter"
 	f_action_install "$CA_VOKOSCREEN" vokoscreen
 	f_action_install "$CA_WINFF" "winff winff-qt"
+	f_action_install "$CA_XNVIEW" libopenal1  # dépendance nécessaire
 	f_action_get "$CA_XNVIEW" "https://download.xnview.com/XnViewMP-linux-x64.deb"
 	f_action_install "$CA_ZYNADDSUBFX" zynaddsubfx
 	
