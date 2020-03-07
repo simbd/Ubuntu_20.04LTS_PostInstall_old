@@ -12,7 +12,7 @@ Il y a plusieurs avantages :
 
 ![alt text](https://nsa40.casimages.com/img/2020/02/19//200219111357203921.png)
 
-démo en vidéo : [url=ICI]https://www.youtube.com/watch?v=PYei6q2Ar38[/url]
+Démo en vidéo [ICI](https://www.youtube.com/watch?v=PYei6q2Ar38)
 
 ## Compatibilité ##
 
