@@ -1394,7 +1394,7 @@ CA_LIVEWALLPAPER="LiveWallpaper {PPA}"
 CD_LIVEWALLPAPER="Permet de remplacer le fond d'écran statique par un wallpaper animé (5 plugins par défaut)"
 
 CA_PACKEXTENSION="Pack d'extension Gnome supplémentaire"
-CD_PACKEXTENSION="Ajoute des extensions pour Gnome : DashToDock, DashToPanel, Impatience; Météo, MonitorSystem, Caffeine..."
+CD_PACKEXTENSION="Ajoute des extensions pour Gnome : DashToPanel, Impatience; Météo, MonitorSystem, Caffeine..."
 
 CA_PACKICON="Pack d'icones"
 CD_PACKICON="Ajoute des icones pour la customisation : Papirus, Numix, Breeze, GnomeBrave, Elementary, Oxygen"
