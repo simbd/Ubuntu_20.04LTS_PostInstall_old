@@ -247,7 +247,7 @@ CD_SKYPE="Logiciel propriétaire de téléphonie/vidéophonie de Microsoft"
 CA_SLACK="Slack {SNAP}"
 CD_SLACK="Plate-forme de communication collaborative propriétaire avec gestion de projets"
 
-CA_SOULSEEK="SoulSeek Qt {AppImage}"
+CA_SOULSEEK="SoulSeek Qt {APPIMAGE}"
 CD_SOULSEEK="Client Qt pour le réseau d'échange de fichiers de type peer-to-peer mono-source"
 
 CA_SUBDOWNLOADER="SubDownloader"
@@ -583,7 +583,7 @@ CA_IMCOMPRESSOR="ImCompressor {FLATPAK}"
 CD_IMCOMPRESSOR="Compresseur d'images supportant les formats PNG/JPEG. Supporte avec ou sans perte, avec ou non les métadonnées"
 
 CA_INKSCAPE="Inkscape"
-CD_INKSCAPE="Éditeur d'images vectorielles libre et opensource."
+CD_INKSCAPE="Éditeur d'images vectorielles libre et opensource (équivalent à Illustrator)"
 
 # CA_K3D="K-3D"
 # CD_K3D="Animation et modélisation polygonale et modélisation par courbes"
