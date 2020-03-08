@@ -200,7 +200,6 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_SYNFIG" "$CD_SYNFIG" \
 	$(chkDef "FALSE") "$CA_UNITY3DEDITOR" "$CD_UNITY3DEDITOR" \
 	$(chkDef "FALSE") "$CA_XNVIEW" "$CD_XNVIEW" \
-	$(chkDef "FALSE") "$CA_ZYNADDSUBFX" "$CD_ZYNADDSUBFX" \
 	FALSE "$SCT_MONTAGEVIDEO" "===========================================================" \
 	$(chkDef "FALSE") "$CA_AVIDEMUX" "$CD_AVIDEMUX" \
 	$(chkDef "FALSE") "$CA_CINELERRA" "$CD_CINELERRA" \
@@ -240,6 +239,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_ROSEGARDEN" "$CD_ROSEGARDEN" \
 	$(chkDef "FALSE") "$CA_SOUNDJUICER" "$CD_SOUNDJUICER" \
 	$(chkDef "FALSE") "$CA_SOUNDKONVERTER" "$CD_SOUNDKONVERTER" \
+	$(chkDef "FALSE") "$CA_ZYNADDSUBFX" "$CD_ZYNADDSUBFX" \
 	FALSE "$SCT_EDUSCIENCE" "===========================================================" \
 	$(chkDef "FALSE") "$CA_ALGOBOX" "$CD_ALGOBOX" \
 	$(chkDef "FALSE") "$CA_AMC" "$CD_AMC" \
