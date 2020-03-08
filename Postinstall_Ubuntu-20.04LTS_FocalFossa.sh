@@ -32,6 +32,7 @@ then
 	f_action_exec "$CA_UPGRADE" "sudo apt update ; sudo apt full-upgrade -y"
 	f_action_install "$CA_FRENCH" "$(check-language-support -l fr)"
 	f_action_install "$CA_PACKUTILE" "net-tools build-essential curl vim neofetch ncdu ffmpegthumbs ffmpegthumbnailer xterm inxi hdparm cpu-x rsync"
+	f_action_install "$CA_PACKCODEC" "x264 x265 flac opus-tools vorbis-tools lame mkvtoolnix mkvtoolnix-gui oggvideotools"
 	f_action_install "$CA_GNOMESUPPLEMENT" "gnome-firmware gnome-tweak-tool gconf-editor"
     
     	# Sessions
@@ -191,7 +192,6 @@ then
 	f_action_install "$CA_MOLOTOVTV" "libgconf2-4 desktop-file-utils" #pré-requis pour Molotov.tv
 	f_action_get_appimage "$CA_MOLOTOVTV" "http://desktop-auto-upgrade.molotov.tv/linux/4.2.2/molotov.AppImage"
 	f_action_snap_install "$CA_ODIO" odio
-	f_action_install "$CA_PACKCODEC" "x264 x265 flac opus-tools vorbis-tools lame mkvtoolnix mkvtoolnix-gui oggvideotools"
 	f_action_install "$CA_PAROLE" parole
     	f_action_install "$CA_PAVUCONTROL" pavucontrol	
     	f_action_ppa_install "$CA_QARTE" ppa:vincent-vandevyvre/vvv qarte
