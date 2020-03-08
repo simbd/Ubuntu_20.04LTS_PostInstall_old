@@ -15,6 +15,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "TRUE") "$CA_FRENCH" "$CD_FRENCH" \
 	$(chkDef "TRUE") "$CA_GNOMESUPPLEMENT" "$CD_GNOMESUPPLEMENT" \
 	$(chkDef "TRUE") "$CA_PACKUTILE" "$CD_PACKUTILE" \
+	$(chkDef "FALSE") "$CA_PACKCODEC" "$CD_PACKCODEC" \
 	FALSE "$SCT_SESSION" "===========================================================" \
     	$(chkDef "FALSE") "$CA_GNOMEVANILLA" "$CD_GNOMEVANILLA" \
     	$(chkDef "FALSE") "$CA_GNOMECLASSIC" "$CD_GNOMECLASSIC" \
@@ -162,7 +163,6 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_MEDIAELCH" "$CD_MEDIAELCH" \
 	$(chkDef "FALSE") "$CA_MOLOTOVTV" "$CD_MOLOTOVTV" \
 	$(chkDef "FALSE") "$CA_ODIO" "$CD_ODIO" \
-	$(chkDef "TRUE") "$CA_PACKCODEC" "$CD_PACKCODEC" \
 	$(chkDef "FALSE") "$CA_PAROLE" "$CD_PAROLE" \
 	$(chkDef "TRUE") "$CA_PAVUCONTROL" "$CD_PAVUCONTROL" \
 	$(chkDef "FALSE") "$CA_QARTE" "$CD_QARTE" \
