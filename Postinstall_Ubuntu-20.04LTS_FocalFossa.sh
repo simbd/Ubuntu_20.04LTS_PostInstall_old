@@ -31,7 +31,7 @@ then
 	f_action_exec "$CA_PARTNER" "sudo sed -i.bak '/^# deb .*partner/ s/^# //' /etc/apt/sources.list"
 	f_action_exec "$CA_UPGRADE" "sudo apt update ; sudo apt full-upgrade -y"
 	f_action_install "$CA_FRENCH" "$(check-language-support -l fr)"
-	f_action_install "$CA_PACKUTILE" "net-tools build-essential curl vim neofetch ncdu x264 x265 xterm inxi hdparm cpu-x rsync"
+	f_action_install "$CA_PACKUTILE" "net-tools build-essential curl vim neofetch ncdu ffmpegthumbs ffmpegthumbnailer xterm inxi hdparm cpu-x rsync"
 	f_action_install "$CA_GNOMESUPPLEMENT" "gnome-firmware gnome-tweak-tool gconf-editor"
     
     	# Sessions
@@ -134,6 +134,7 @@ then
 	f_action_get "$CA_BOOSTNOTE" "https://github.com/BoostIO/boost-releases/releases/download/v0.14.0/boostnote_0.14.0_amd64.deb"
 	f_action_install "$CA_CALIBRE" calibre
 	f_action_install "$CA_CALLIGRA" calligra
+	f_action_snap_install "$CA_CHERRYTREE" cherrytree
 	f_action_snap_install "$CA_DRAWIO" drawio
 	f_action_install "$CA_FRDIC" "myspell-fr-gut wfrench aspell-fr hyphen-fr mythes-fr"
 	f_action_install "$CA_FBREADER" fbreader
@@ -190,7 +191,7 @@ then
 	f_action_install "$CA_MOLOTOVTV" "libgconf2-4 desktop-file-utils" #pré-requis pour Molotov.tv
 	f_action_get_appimage "$CA_MOLOTOVTV" "http://desktop-auto-upgrade.molotov.tv/linux/4.2.2/molotov.AppImage"
 	f_action_snap_install "$CA_ODIO" odio
-	f_action_install "$CA_PACKCODEC" "flac opus-tools vorbis-tools lame mkvtoolnix mkvtoolnix-gui oggvideotools"
+	f_action_install "$CA_PACKCODEC" "x264 x265 flac opus-tools vorbis-tools lame mkvtoolnix mkvtoolnix-gui oggvideotools"
 	f_action_install "$CA_PAROLE" parole
     	f_action_install "$CA_PAVUCONTROL" pavucontrol	
     	f_action_ppa_install "$CA_QARTE" ppa:vincent-vandevyvre/vvv qarte
@@ -363,7 +364,7 @@ then
 	f_action_install "$CA_MELD" meld
 	#f_action_LinInstall "$CA_MULTISYSTEM" Multisystem ##<= Désactivé car plante le démarrage actuellement !
 	f_action_LinInstall "$CA_MYTOURBOOK" Mytourbook
-	f_action_install "$CA_ARCHIVAGE" "unace rar unrar p7zip-rar p7zip-full sharutils uudeview mpack arj cabextract lzip lunzip"
+	f_action_install "$CA_ARCHIVAGE" "zip unzip unace rar unrar p7zip-rar p7zip-full sharutils uudeview mpack arj cabextract lzip lunzip zstd"
 	f_action_install "$CA_RECHERCHE" "recoll catfish searchmonkey"
 	f_action_install "$CA_REDSHIFT" redshift-gtk
 	f_action_install "$CA_SPEEDCRUNCH" speedcrunch
@@ -526,12 +527,15 @@ then
 	f_action_exec "$CA_GRUBDEFAULT" "sudo sed -ri 's/GRUB_DEFAULT=0/GRUB_DEFAULT="saved"/g' /etc/default/grub ; echo 'GRUB_SAVEDEFAULT="true"' | sudo tee -a /etc/default/grub ; sudo update-grub"
 	f_action_exec "$CA_GRUBATTENTE" "sudo sed -ri 's/GRUB_TIMEOUT=10/GRUB_TIMEOUT=2/g' /etc/default/grub ; sudo mkdir /boot/old ; sudo mv /boot/memtest86* /boot/old/ ; sudo update-grub"
 	f_action_exec "$CA_DVDREAD" "sudo apt install libdvdcss2 libdvd-pkg libbluray2 -y ; sudo dpkg-reconfigure libdvd-pkg"
+	f_action_get "$CA_LIVEWALLPAPER" "http://fr.archive.ubuntu.com/ubuntu/pool/universe/g/glew/libglew2.0_2.0.0-5_amd64.deb" # Dépendance nécessaire pour livewallpaper
+	f_action_ppa_install "$CA_LIVEWALLPAPER" ppa:fyrmir/livewallpaper-daily "livewallpaper livewallpaper-config livewallpaper-indicator"
 	f_action_install "$CA_PACKEXTENSION" "chrome-gnome-shell gnome-shell-extension-caffeine gnome-shell-extension-dashtodock gnome-shell-extension-dash-to-panel gnome-shell-extension-impatience gnome-shell-extension-weather" 
 	f_action_install "$CA_PACKEXTENSION" "gnome-shell-extension-system-monitor gnome-shell-extension-arc-menu gnome-shell-extension-gamemode gnome-shell-extension-gsconnect gnome-shell-extension-xrdesktop"
 	f_action_install "$CA_PACKICON" "papirus-icon-theme numix-icon-theme numix-icon-theme-circle breeze-icon-theme gnome-brave-icon-theme elementary-icon-theme oxygen-icon-theme"
 	f_action_install "$CA_PACKTHEME" "arc-theme numix-blue-gtk-theme numix-gtk-theme materia-gtk-theme yuyo-gtk-theme human-theme"
 	f_action_install "$CA_INTEL" intel-microcode
-	f_action_ppa_install "$CA_NVIDIA_BP" ppa:graphics-drivers/ppa "nvidia-graphics-drivers-440 nvidia-settings vulkan-loader vulkan-tools"
+	f_action_ppa_install "$CA_NVIDIA_BP" ppa:graphics-drivers/ppa "nvidia-graphics-drivers-440 nvidia-settings nvidia-prime"
+	f_action_install "$CA_NVIDIA_BP" "libvdpau vulkan-loader vulkan-tools mesa-utils glmark2" # Autres paquets utiles
 	f_action_get "$CA_PHORONIXTESTSUITE" "http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_9.2.1_all.deb"
 	f_action_exec "$CA_OPTIMIS_SWAP" "echo vm.swappiness=5 | sudo tee /etc/sysctl.d/99-swappiness.conf ; echo vm.vfs_cache_pressure=50 | sudo tee -a /etc/sysctl.d/99-sysctl.conf ; sudo sysctl -p /etc/sysctl.d/99-sysctl.conf"
 	f_action_install "$CA_SCANNER" "sane sane-utils xsane"
