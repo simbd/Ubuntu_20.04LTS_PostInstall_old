@@ -529,7 +529,7 @@ then
 	f_action_exec "$CA_DVDREAD" "sudo apt install libdvdcss2 libdvd-pkg libbluray2 -y ; sudo dpkg-reconfigure libdvd-pkg"
 	f_action_get "$CA_LIVEWALLPAPER" "http://fr.archive.ubuntu.com/ubuntu/pool/universe/g/glew/libglew2.0_2.0.0-5_amd64.deb" # Dépendance nécessaire pour livewallpaper
 	f_action_ppa_install "$CA_LIVEWALLPAPER" ppa:fyrmir/livewallpaper-daily "livewallpaper livewallpaper-config livewallpaper-indicator"
-	f_action_install "$CA_PACKEXTENSION" "chrome-gnome-shell gnome-shell-extension-caffeine gnome-shell-extension-dashtodock gnome-shell-extension-dash-to-panel gnome-shell-extension-impatience gnome-shell-extension-weather" 
+	f_action_install "$CA_PACKEXTENSION" "chrome-gnome-shell gnome-shell-extension-caffeine gnome-shell-extension-dash-to-panel gnome-shell-extension-impatience gnome-shell-extension-weather" #gnome-shell-extension-dashtodock
 	f_action_install "$CA_PACKEXTENSION" "gnome-shell-extension-system-monitor gnome-shell-extension-arc-menu gnome-shell-extension-gamemode gnome-shell-extension-gsconnect gnome-shell-extension-xrdesktop"
 	f_action_install "$CA_PACKICON" "papirus-icon-theme numix-icon-theme numix-icon-theme-circle breeze-icon-theme gnome-brave-icon-theme elementary-icon-theme oxygen-icon-theme"
 	f_action_install "$CA_PACKTHEME" "arc-theme numix-blue-gtk-theme numix-gtk-theme materia-gtk-theme yuyo-gtk-theme human-theme"
