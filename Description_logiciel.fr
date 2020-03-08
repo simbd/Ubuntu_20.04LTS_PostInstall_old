@@ -38,8 +38,11 @@ CA_FRENCH="Pack Langue FR"
 CD_FRENCH="Installe les paquets linguistiques français pour vos logiciels installés"
 NS_FRENCH="Installation du pack de langue FR pour vos softs en cours..."
 
-CA_PACKUTILE="Pack d'outils/codecs utiles (recommandé)"
+CA_PACKUTILE="Pack d'outils utiles (recommandé)"
 CD_PACKUTILE="Ajoute des outils utiles: net-tools, build-essential, curl, xterm, vim, rsync, neofetch, ncdu..."
+
+CA_PACKCODEC="Pack de codecs (encodeur/décodeur Audio/Vidéo)"
+CD_PACKCODEC="Installera : X264/X265, Flac, Opus-tools, Vorbis-tools, Lame, MkvToolNix, Oggvideotools"
 
 CA_GNOMESUPPLEMENT="Gnome Supplément (recommandé si vs utilisez Gnome)"
 CD_GNOMESUPPLEMENT="Ajoute des paquets recommandés pour Gnome : Gnome Tweaks, Gconf-Editor, Gnome-Firmware"
@@ -478,9 +481,6 @@ CD_MOLOTOVTV="Service français de distribution de chaînes de TV"
 
 CA_ODIO="Odio {SNAP}"
 CD_ODIO="Permet d'écouter de nombreuses stations de radio à travers le monde (20 000)"
-
-CA_PACKCODEC="Pack d'encodeur/décodeur Audio/Vidéo"
-CD_PACKCODEC="Installera : X264/X265, Flac, Opus-tools, Vorbis-tools, Lame, MkvToolNix, Oggvideotools"
 
 CA_PAROLE="Parole"
 CD_PAROLE="Lecteur multimédia simple d'utilisation qui permet la lecture de CD/DVD et la lecture de fichier audio/vidéo"
