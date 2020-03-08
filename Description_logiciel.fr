@@ -39,7 +39,7 @@ CD_FRENCH="Installe les paquets linguistiques français pour vos logiciels insta
 NS_FRENCH="Installation du pack de langue FR pour vos softs en cours..."
 
 CA_PACKUTILE="Pack d'outils/codecs utiles (recommandé)"
-CD_PACKUTILE="Ajoute des outils utiles: net-tools, build-essential, curl, xterm, vim, codecs x264/x265, rsync, neofetch, ncdu"
+CD_PACKUTILE="Ajoute des outils utiles: net-tools, build-essential, curl, xterm, vim, rsync, neofetch, ncdu..."
 
 CA_GNOMESUPPLEMENT="Gnome Supplément (recommandé si vs utilisez Gnome)"
 CD_GNOMESUPPLEMENT="Ajoute des paquets recommandés pour Gnome : Gnome Tweaks, Gconf-Editor, Gnome-Firmware"
@@ -318,6 +318,9 @@ CD_CALIBRE="Logiciel de lecture, de gestion de bibliothèques et de conversion d
 CA_CALLIGRA="Calligra Suite"
 CD_CALLIGRA="suite bureautique de KDE, il s'intègre donc bien avec l'environnement kde/plasma"
 
+CA_CHERRYTREE="CherryTree {SNAP}"
+CD_CHERRYTREE="Application de prise de notes hiérarchisées, combinant texte enrichi et marquage automatique de syntaxe"
+
 CA_DRAWIO="Draw.Io {SNAP}"
 CD_DRAWIO="Application de création de diagrammes en version Desktop (existe aussi en version web)"
 
@@ -477,7 +480,7 @@ CA_ODIO="Odio {SNAP}"
 CD_ODIO="Permet d'écouter de nombreuses stations de radio à travers le monde (20 000)"
 
 CA_PACKCODEC="Pack d'encodeur/décodeur Audio/Vidéo"
-CD_PACKCODEC="Installera : Flac, Opus-tools, Vorbis-tools, Lame, MkvToolNix, Oggvideotools"
+CD_PACKCODEC="Installera : X264/X265, Flac, Opus-tools, Vorbis-tools, Lame, MkvToolNix, Oggvideotools"
 
 CA_PAROLE="Parole"
 CD_PAROLE="Lecteur multimédia simple d'utilisation qui permet la lecture de CD/DVD et la lecture de fichier audio/vidéo"
@@ -949,7 +952,7 @@ CA_MYTOURBOOK="MyTourBook"
 CD_MYTOURBOOK="Suivi de parcours pour les randonnées avec différentes stats"
 
 CA_ARCHIVAGE="Pack Archivage"
-CD_ARCHIVAGE="Ajoute le support des archives de différentes extensions (7zip, Rar etc...)"
+CD_ARCHIVAGE="Ajoute le support de différentes types d'archives (7zip, Rar, Zstd etc...)"
 
 CA_RECHERCHE="Pack de 3 outils de recherche avancés"
 CD_RECHERCHE="Ajoute Recoll, CatFish et SearchMonkey qui permettent la recherche avancé dans les contenus des fichiers"
@@ -1386,6 +1389,9 @@ CD_GRUBATTENTE="Permet de réduire le temps d'attente par défaut (10s) à 2s (+
 
 CA_DVDREAD="Lecture DVD commerciaux/Blu-Ray {Nécessite intervention !}"
 CD_DVDREAD="Permet de lire les DVD commerciaux chiffrés avec CSS et les Blu-Ray"
+
+CA_LIVEWALLPAPER="LiveWallpaper {PPA}"
+CD_LIVEWALLPAPER="Permet de remplacer le fond d'écran statique par un wallpaper animé (5 plugins par défaut)"
 
 CA_PACKEXTENSION="Pack d'extension Gnome supplémentaire"
 CD_PACKEXTENSION="Ajoute des extensions pour Gnome : DashToDock, DashToPanel, Impatience; Météo, MonitorSystem, Caffeine..."
