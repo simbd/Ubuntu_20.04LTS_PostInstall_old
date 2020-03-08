@@ -107,6 +107,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_BOOSTNOTE" "$CD_BOOSTNOTE" \
 	$(chkDef "FALSE") "$CA_CALIBRE" "$CD_CALIBRE" \
 	$(chkDef "FALSE") "$CA_CALLIGRA" "$CD_CALLIGRA" \
+	$(chkDef "FALSE") "$CA_CHERRYTREE" "$CD_CHERRYTREE" \
 	$(chkDef "FALSE") "$CA_DRAWIO" "$CD_DRAWIO" \
 	$(chkDef "FALSE") "$CA_FRDIC" "$CD_FRDIC" \
 	$(chkDef "FALSE") "$CA_FBREADER" "$CD_FBREADER" \
@@ -161,7 +162,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_MEDIAELCH" "$CD_MEDIAELCH" \
 	$(chkDef "FALSE") "$CA_MOLOTOVTV" "$CD_MOLOTOVTV" \
 	$(chkDef "FALSE") "$CA_ODIO" "$CD_ODIO" \
-	$(chkDef "FALSE") "$CA_PACKCODEC" "$CD_PACKCODEC" \
+	$(chkDef "TRUE") "$CA_PACKCODEC" "$CD_PACKCODEC" \
 	$(chkDef "FALSE") "$CA_PAROLE" "$CD_PAROLE" \
 	$(chkDef "TRUE") "$CA_PAVUCONTROL" "$CD_PAVUCONTROL" \
 	$(chkDef "FALSE") "$CA_QARTE" "$CD_QARTE" \
@@ -466,6 +467,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_GRUBDEFAULT" "$CD_GRUBDEFAULT" \
 	$(chkDef "FALSE") "$CA_GRUBATTENTE" "$CD_GRUBATTENTE" \
 	$(chkDef "FALSE") "$CA_DVDREAD" "$CD_DVDREAD" \
+	$(chkDef "FALSE") "$CA_LIVEWALLPAPER" "$CD_LIVEWALLPAPER" \
 	$(chkDef "FALSE") "$CA_PACKEXTENSION" "$CD_PACKEXTENSION" \
 	$(chkDef "TRUE") "$CA_PACKICON" "$CD_PACKICON" \
 	$(chkDef "TRUE") "$CA_PACKTHEME" "$CD_PACKTHEME" \
