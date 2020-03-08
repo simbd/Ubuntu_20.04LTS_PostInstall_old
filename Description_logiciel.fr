@@ -1161,7 +1161,7 @@ CD_GNOMEGAMES="Pack d'une dizaine de mini-jeux pour Gnome (Sudoku, Chess etc...)
 CA_KAPMAN="Kapman"
 CD_KAPMAN="Kapman est un clone du jeu bien connu Pac-Man"
 
-CA_LOL="League Of Legend (LoL) {SNAP}"
+CA_LOL="League Of Legend (LoL) {SNAP} [Ne semble plus jouable]"
 CD_LOL="Le célèbre MOBA jouable sous Linux via ce Snap packagé avec Wine"
 
 CA_LUTRIS="Lutris {PPA}"
