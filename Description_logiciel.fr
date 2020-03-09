@@ -888,7 +888,7 @@ SCT_UTILITAIRES_GRAPHIQUE="______ [[ UTILITAIRES GRAPHIQUES DIVERS ]] ______"
 CA_ACTIONA="Actiona"
 CD_ACTIONA="Logiciel d'automatisation de tâches. Il vous permet de créer et d'exécuter des listes d'actions."
 
-CA_APPOUTLET="App-Outlet {SNAP}"
+CA_APPOUTLET="App-Outlet"
 CD_APPOUTLET="Un store d'application universel pour gérer les paquets Snaps, Flatpaks et AppImages"
 
 CA_BITCOINCORE="BitCoin Core"
