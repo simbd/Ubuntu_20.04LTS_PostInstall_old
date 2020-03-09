@@ -382,6 +382,7 @@ then
 	f_action_install "$CA_FD" fd-find	
 	f_action_install "$CA_GIT" git
 	f_action_install "$CA_HTOP" htop
+	f_action_LinInstall "$CA_GEEKBENCH" Geekbench
 	f_action_install "$CA_GLANCES" glances
 	f_action_install "$CA_HG" mercurial
 	f_action_install "$CA_IMAGEMAGICK" imagemagick
