@@ -945,8 +945,8 @@ CD_HOMEBANK="Logiciel de comptabilité personnelle pour gérer les opérations d
 CA_MELD="Meld"
 CD_MELD="Interface graphique pour comparer les différences entre plusieurs fichiers"
 
-#CA_MULTISYSTEM="MultiSystem"   ##<= Désactivé car plante le démarrage actuellement !
-#CD_MULTISYSTEM="Utilitaire permettant de créer une clé usb bootable avec plusieurs OS"
+CA_MULTISYSTEM="MultiSystem"
+CD_MULTISYSTEM="Utilitaire permettant de créer une clé usb bootable avec plusieurs OS"
 
 CA_MYTOURBOOK="MyTourBook"
 CD_MYTOURBOOK="Suivi de parcours pour les randonnées avec différentes stats"
