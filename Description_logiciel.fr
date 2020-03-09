@@ -995,6 +995,9 @@ CD_DDRESCUE="Permet de dupliquer le mieux possible les parties intactes des disq
 CA_FD="Fdfind"
 CD_FD="Un meilleur find : en couleur et avec regexp, par défaut"
 
+CA_GEEKBENCH="GeekBench {Script LinInstall}"
+CD_GEEKBENCH="Benchmark en CLI pour tester les performances CPU mono-core et multi-cores"
+
 CA_GIT="Git"
 CD_GIT="Le plus célèbre des gestionnaire de sources distribués (DVCS)."
 
