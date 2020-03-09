@@ -362,7 +362,7 @@ then
 	f_action_install "$CA_HOMEBANK" homebank
 	f_action_install "$CA_GPARTED" gparted
 	f_action_install "$CA_MELD" meld
-	#f_action_LinInstall "$CA_MULTISYSTEM" Multisystem ##<= Désactivé car plante le démarrage actuellement !
+	f_action_LinInstall "$CA_MULTISYSTEM" Multisystem
 	f_action_LinInstall "$CA_MYTOURBOOK" Mytourbook
 	f_action_install "$CA_ARCHIVAGE" "zip unzip unace rar unrar p7zip-rar p7zip-full sharutils uudeview mpack arj cabextract lzip lunzip zstd"
 	f_action_install "$CA_RECHERCHE" "recoll catfish searchmonkey"
