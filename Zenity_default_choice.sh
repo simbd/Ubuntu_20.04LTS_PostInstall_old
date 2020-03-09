@@ -336,6 +336,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_FD" "$CD_FD" \
 	$(chkDef "TRUE") "$CA_GIT" "$CD_GIT" \
 	$(chkDef "TRUE") "$CA_HTOP" "$CD_HTOP" \
+	$(chkDef "FALSE") "$CA_GEEKBENCH" "$CD_GEEKBENCH" \
 	$(chkDef "FALSE") "$CA_GLANCES" "$CD_GLANCES" \
 	$(chkDef "FALSE") "$CA_HG" "$CD_HG" \
 	$(chkDef "FALSE") "$CA_IMAGEMAGICK" "$CD_IMAGEMAGICK" \
