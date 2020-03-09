@@ -52,7 +52,7 @@ then
    	f_action_ppa_install "$CA_FIREFOXBETA" ppa:mozillateam/firefox-next "firefox firefox-locale-fr"
    	f_action_LinInstall "$CA_FIREFOXDEVELOPER" FirefoxDeveloperEdition
    	f_action_ppa_install "$CA_FIREFOXESR" ppa:mozillateam/ppa "firefox-esr firefox-esr-locale-fr"
-   	f_action_ppa_install "$CA_FIREFOXNIGHTLY" ppa:ubuntu-mozilla-daily/ppa firefox-trunk 	
+   	f_action_ppa_install "$CA_FIREFOXNIGHTLY" ppa:ubuntu-mozilla-daily/ppa "firefox-trunk firefox-trunk-locale-fr"
     	f_action_install "$CA_EPIPHANY" epiphany-browser	
     	f_RepositoryExt_Install "$CA_CHROME" "google-chrome" "https://dl-ssl.google.com/linux/linux_signing_key.pub" "[arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main" "google-chrome-stable"
     	f_action_install "$CA_LYNX" lynx
