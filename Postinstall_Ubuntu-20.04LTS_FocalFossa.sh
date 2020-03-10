@@ -161,7 +161,8 @@ then
     	f_action_install "$CA_PDFMOD" pdfmod
 	f_action_get "$CA_PDFSAM" "https://github.com/torakiki/pdfsam/releases/download/v4.0.5/pdfsam_4.0.5-1_amd64.deb"
     	f_action_install "$CA_PDFSHUFFLER" pdfshuffler
-    	f_action_exec "$CA_POLICEMST" "echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo /usr/bin/debconf-set-selections ; sudo apt install ttf-mscorefonts-installer -y"
+    	#f_action_exec "$CA_POLICEMST" "echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo /usr/bin/debconf-set-selections ; sudo apt install ttf-mscorefonts-installer -y"
+	f_action_get "$CA_POLICEMST" "http://ftp.fr.debian.org/debian/pool/contrib/m/msttcorefonts/ttf-mscorefonts-installer_3.7_all.deb"
 	f_action_snap_install "$CA_PROJECTLIBRE" "projectlibre" 
     	f_action_LinInstall "$CA_SCENARI" Scenari
     	f_action_install "$CA_SCRIBUS" "scribus scribus-template"	
