@@ -13,7 +13,7 @@ Il y a plusieurs avantages :
 ![alt text](https://nsa40.casimages.com/img/2020/02/19//200219111357203921.png)
 
 Démo en vidéo :
-[Peertube](https://video.ploud.fr/videos/watch/fb72b903-b504-4e34-a5e6-590d252ed2db)
+[Peertube](https://video.ploud.fr/videos/watch/fb72b903-b504-4e34-a5e6-590d252ed2db) ou
 [YT](https://www.youtube.com/watch?v=PYei6q2Ar38)
 
 ## Compatibilité ##
