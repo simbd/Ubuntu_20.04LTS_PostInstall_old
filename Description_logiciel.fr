@@ -256,8 +256,8 @@ CD_SUBDOWNLOADER="Téléchargement de sous-titres"
 CA_SYNCTHING="SyncThing"
 CD_SYNCTHING="Application de synchronisation de fichiers pair à pair open source"
 
-CA_TEAMS="Teams for Linux (non-officiel) {SNAP}"
-CD_TEAMS="Client Electron non-officiel pour se connecter à MS Teams"
+CA_TEAMS="Teams for Linux"
+CD_TEAMS="Client pour se connecter à MS Teams (provient du site officiel de Microsoft)"
 
 CA_TEAMSPEAK="TeamSpeak {FLATPAK}"
 CD_TEAMSPEAK="Discussion à plusieurs dans des canaux, équivalent à Mumble mais propriétaire"
