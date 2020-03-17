@@ -112,7 +112,7 @@ then
 	f_action_get_appimage "$CA_SOULSEEK" "http://nux87.free.fr/script-postinstall-ubuntu/appimage/SoulseekQt-2018-1-30-64bit.AppImage"
     	f_action_install "$CA_SUBDOWNLOADER" subdownloader
 	f_action_install "$CA_SYNCTHING" syncthing
-	f_action_snap_install "$CA_TEAMS" teams-for-linux
+	f_action_get "$CA_TEAMS" "https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/teams_1.3.00.958_amd64.deb"
 	f_action_flatpak_install "$CA_TEAMSPEAK" com.teamspeak.TeamSpeak
 	f_action_get "$CA_TEAMVIEWER" "https://download.teamviewer.com/download/linux/teamviewer_amd64.deb"
 	f_action_install "$CA_TELEGRAM" telegram-desktop
