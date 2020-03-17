@@ -23,9 +23,9 @@ Cela ne veux pas dire qu'il ne peux pas être utilisé sur une autre configurati
 
 - Si vous souhaitez utiliser le script sur une variante d'Ubuntu plutôt que la version de base (par exemple Xubuntu, Kubuntu, Ubuntu Mate, Linux Mint, ElementaryOS...), je vous recommande fortement au lancement de bien choisir l'option "Tous les choix décochés" par défaut afin de ne pas avoir des paquets utiles pour Gnome uniquement cochés par défaut (ce qui n'aura aucun intérêt pour vous vu que vous n'utilisez pas Gnome avec votre variante). Si vous utilisez KDE (notamment avec Kubuntu ou KDENeon), attention à bien cocher des logiciels cohérents avec cet environnement.
 
-- Si vous souhaitez utiliser le script pour une ancienne version d'Ubuntu, par exemple la 18.04LTS, cela peux fonctionner mais pas pour tous les logiciels, en effet certains s'installent avec une méthode spécifique pour la 20.04 qui ne marchera pas pour la 18.04. A noté que les Snaps/Flatpak/AppImage ne devraient poser à priori aucun problème quelque soit la version (et même sur les autres distributions).
+- Si vous souhaitez utiliser le script pour une ancienne version d'Ubuntu, par exemple la 18.04LTS, cela fonctionnera mais pas pour tous les logiciels, en effet certains s'installent avec une méthode spécifique pour la 20.04 qui ne marchera pas pour la 18.04. A noté que les Snaps/Flatpak/AppImage ne devraient poser à priori aucun problème quelque soit la version (et même sur les autres distributions).
 
-- Et Debian ? Il y a environ 70% des logiciels proposés dans le script qui fonctionneront sur Debian 10 avec ce script et 30% ou ça ne fonctionnera pas. Je ne recommande pas de l'utiliser sous Debian sauf si vous savez ce que vous faites.
+- Si vous avez besoin d'utiliser le script à distance via SSH, pensez à utiliser la paramètre "-X" afin d'avoir l'export graphique et donc d'avoir l'interface graphique Zenity (ssh -X login@....)
 
 ## Récupération / Lancement du script
 
