@@ -63,14 +63,14 @@ then
     	#f_action_get "$CA_PALEMOON" "http://downloadcontent.opensuse.org/repositories/home:/stevenpusser/xUbuntu_19.10/amd64/palemoon_28.8.0+repack-1_amd64.deb"
     	f_action_get "$CA_SRWAREIRON" "http://www.srware.net/downloads/iron64.deb"
     	f_action_install "$CA_TORBROWSER" torbrowser-launcher  
-    	f_action_get "$CA_VIVALDI" "https://downloads.vivaldi.com/stable/vivaldi-stable_2.11.1811.44-1_amd64.deb" #(Dépot vivaldi auto ajouté)
+    	f_action_get "$CA_VIVALDI" "https://downloads.vivaldi.com/stable/vivaldi-stable_2.11.1811.47-1_amd64.deb" #(Dépot vivaldi auto ajouté)
 	f_action_exec "$CA_VIVALDI" "sudo apt update && sudo apt upgrade vivaldi-stable -y" #Pour que  vivaldi soit à jour dès le départ
 	
     	# Internet / Tchat / Messagerie / Téléchargement / Contrôle à distance
     	# (Section re-divisé en 3 parties cf Zenity_default_choice.sh)
     	f_RepositoryExt_Install "$CA_ANYDESK" "anydesk-stable" "https://keys.anydesk.com/repos/DEB-GPG-KEY" "http://deb.anydesk.com/ all main" "anydesk"
     	f_action_install "$CA_CLUSTERSSH" clusterssh
-    	f_action_get_appimage "$CA_COZYDRIVE" "https://github.com/cozy-labs/cozy-desktop/releases/download/v3.17.0/Cozy-Drive-3.17.0-x86_64.AppImage"
+    	f_action_get_appimage "$CA_COZYDRIVE" "https://github.com/cozy-labs/cozy-desktop/releases/download/v3.19.0/Cozy-Drive-3.19.0-x86_64.AppImage"
     	f_action_install "$CA_DELUGE" deluge
 	f_action_get "$CA_DISCORD" "https://dl.discordapp.net/apps/linux/0.0.10/discord-0.0.10.deb"
     	f_action_install "$CA_DROPBOX" nautilus-dropbox
@@ -80,7 +80,7 @@ then
     	f_action_install "$CA_EMPATHY" empathy    
 	f_action_install "$CA_EVOLUTION" evolution
 	f_action_install "$CA_FILEZILLA" filezilla    
-	f_action_get "$CA_FROSTWIRE" "https://prime.frostwire.com/frostwire/6.8.3/frostwire-6.8.3.amd64.deb"
+	f_action_get "$CA_FROSTWIRE" "https://prime.frostwire.com/frostwire/6.8.4/frostwire-6.8.4.amd64.deb"
    	f_action_install "$CA_GEARY" geary
 	f_action_install "$CA_GFTP" gftp
    	f_action_snap_install "$CA_GYDL" gydl
@@ -121,7 +121,7 @@ then
 	f_action_install "$CA_UGET" uget	
 	f_action_snap_install "$CA_VUZE" "vuze-vs"
 	f_action_install "$CA_WEECHAT" weechat
-	f_action_get "$CA_WHALEBIRD" "https://github.com/h3poteto/whalebird-desktop/releases/download/3.0.0/Whalebird-3.0.0-linux-x64.deb"
+	f_action_get "$CA_WHALEBIRD" "https://github.com/h3poteto/whalebird-desktop/releases/download/3.2.0/Whalebird-3.2.0-linux-x64.deb"
 	f_action_snap_install "$CA_WHATSDESK" whatsdesk
 	f_RepositoryExt_Install "$CA_WIRE" "wire-desktop" "http://wire-app.wire.com/linux/releases.key" "[arch=amd64] https://wire-app.wire.com/linux/debian stable main" "wire-desktop" ##PB : dépot bien ajouté mais n'installe pas les paquets
 	f_action_install "$CA_WIRE" apt-transport-https #dépendance
@@ -132,7 +132,7 @@ then
 	f_action_install "$CA_YTDLND" youtube-dl
 	
 	# Bureautique/Mail
-	f_action_get "$CA_BOOSTNOTE" "https://github.com/BoostIO/boost-releases/releases/download/v0.14.0/boostnote_0.14.0_amd64.deb"
+	f_action_get "$CA_BOOSTNOTE" "https://github.com/BoostIO/boost-releases/releases/download/v0.15.1/boostnote_0.15.1_amd64.deb"
 	f_action_install "$CA_CALIBRE" calibre
 	f_action_install "$CA_CALLIGRA" calligra
 	f_action_snap_install "$CA_CHERRYTREE" cherrytree
@@ -142,16 +142,16 @@ then
 	f_action_install "$CA_FEEDREADER" feedreader
 	f_action_install "$CA_FONTFORGE" "fontforge fontforge-extras"
 	f_action_snap_install "$CA_FREEMIND" freemind
-	f_action_get "$CA_FREEOFFICE" "https://www.softmaker.net/down/softmaker-office-2018_974-01_amd64.deb"
+	f_action_get "$CA_FREEOFFICE" "https://www.softmaker.net/down/softmaker-freeoffice-2018_974-01_amd64.deb"
 	f_action_install "$CA_FREEPLANE" freeplane
 	f_action_install "$CA_GNOMEOFFICE" "abiword gnumeric dia planner glabels glom gnucash"	
 	f_action_install "$CA_GRAMPS" gramps
-	f_action_get_appimage "$CA_JOPLIN" "https://github.com/laurent22/joplin/releases/download/v1.0.175/Joplin-1.0.175-x86_64.AppImage"
+	f_action_get_appimage "$CA_JOPLIN" "https://github.com/laurent22/joplin/releases/download/v1.0.193/Joplin-1.0.193.AppImage"
     	f_action_install "$CA_LIBREOFFICEDEPOT" "libreoffice libreoffice-l10n-fr libreoffice-style-breeze"
 	f_action_ppa_install "$CA_LIBREOFFICEFRESH" ppa:libreoffice/ppa "libreoffice libreoffice-l10n-fr libreoffice-style-breeze"
 	f_action_install "$CA_LIBREOFFICESUP" "libreoffice-style-elementary libreoffice-style-oxygen libreoffice-style-human libreoffice-style-sifr libreoffice-style-tango libreoffice-templates openclipart-libreoffice"
 	f_action_exec "$CA_LIBREOFFICESUP" "wget https://extensions.libreoffice.org/extensions/grammalecte/1-7.0/@@download/file/Grammalecte-fr-v1.7.0.oxt --no-check-certificate ; chmod +x Grammalecte*.oxt ; sudo unopkg add --shared Grammalecte*.oxt ; rm Grammalecte*.oxt"
-	f_action_get "$CA_MASTERPDFEDITOR" "https://code-industry.net/public/master-pdf-editor-5.4.38-qt5.amd64.deb"
+	f_action_get "$CA_MASTERPDFEDITOR" "https://code-industry.net/public/master-pdf-editor-5.4.38-qt5-all.amd64.deb"
 	f_action_install "$CA_MCOMIX" mcomix
 	f_action_snap_install "$CA_OFFICEWEBAPPS" "unofficial-webapp-office"
 	f_action_flatpak_install "$CA_NOTESUP" com.github.philip_scott.notes-up  
@@ -159,7 +159,7 @@ then
     	f_action_LinInstall "$CA_OPENOFFICE" OpenOffice
     	f_action_install "$CA_PANDOC" pandoc
     	f_action_install "$CA_PDFMOD" pdfmod
-	f_action_get "$CA_PDFSAM" "https://github.com/torakiki/pdfsam/releases/download/v4.0.5/pdfsam_4.0.5-1_amd64.deb"
+	f_action_get "$CA_PDFSAM" "https://github.com/torakiki/pdfsam/releases/download/v4.1.1/pdfsam_4.1.1-1_amd64.deb"
     	f_action_install "$CA_PDFSHUFFLER" pdfshuffler
     	#f_action_exec "$CA_POLICEMST" "echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo /usr/bin/debconf-set-selections ; sudo apt install ttf-mscorefonts-installer -y"
 	f_action_get "$CA_POLICEMST" "http://ftp.fr.debian.org/debian/pool/contrib/m/msttcorefonts/ttf-mscorefonts-installer_3.7_all.deb"
@@ -169,12 +169,12 @@ then
 	f_action_flatpak_install "$CA_SPICEUP" "com.github.philip_scott.spice-up"
 	f_action_install "$CA_UMBRELLO" "umbrello --no-install-recommends"
 	f_action_get "$CA_WPSOFFICE" "http://fr.archive.ubuntu.com/ubuntu/pool/main/libp/libpng/libpng12-0_1.2.54-1ubuntu1_amd64.deb" 
-	f_action_get "$CA_WPSOFFICE" "http://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/9080/wps-office_11.1.0.9080.XA_amd64.deb"
+	f_action_get "$CA_WPSOFFICE" "http://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/9126/wps-office_11.1.0.9126.XA_amd64.deb"
 	f_action_get "$CA_XMIND" "https://www.xmind.net/xmind/downloads/XMind-ZEN-for-Linux-amd-64bit-10.0.0-201911260056.deb"
 	f_action_install "$CA_XOURNAL" xournal
 	f_action_install "$CA_XPAD" xpad
 	f_action_install "$CA_ZEAL" zeal
-	f_action_get "$CA_ZETTLR" "https://github.com/Zettlr/Zettlr/releases/download/v1.5.0/Zettlr-1.5.0-amd64.deb"
+	f_action_get "$CA_ZETTLR" "https://github.com/Zettlr/Zettlr/releases/download/v1.6.0/Zettlr-1.6.0-amd64.deb"
 	f_action_install "$CA_ZIM" zim	
 	
 	# Lecture Multimedia
@@ -189,7 +189,7 @@ then
     	f_action_install "$CA_GNOMETWITCH" gnome-twitch
 	f_action_flatpak_install "$CA_GRADIO" de.haeckerfelix.gradio
 	f_action_install "$CA_LOLLYPOP" lollypop
-	f_action_get_appimage "$CA_MEDIAELCH" "https://github.com/Komet/MediaElch/releases/download/v2.6.2/MediaElch_2.6.2_linux.AppImage"
+	f_action_get_appimage "$CA_MEDIAELCH" "https://github.com/Komet/MediaElch/releases/download/v2.6.4/MediaElch_2.6.4_linux.AppImage"
 	f_action_install "$CA_MOLOTOVTV" "libgconf2-4 desktop-file-utils" #pré-requis pour Molotov.tv
 	f_action_get_appimage "$CA_MOLOTOVTV" "http://desktop-auto-upgrade.molotov.tv/linux/4.2.2/molotov.AppImage"
 	f_action_snap_install "$CA_ODIO" odio
@@ -215,7 +215,6 @@ then
 	f_action_install "$CA_BLENDER" blender	
 	#f_action_exec "$CA_CINELERRA" "echo 'deb [trusted=yes] https://cinelerra-gg.org/download/pkgs/ub18 bionic main' | sudo tee -a /etc/apt/sources.list.d/cinelerra.list" ##=> pour cinelerra gg erreur libIlmThread-2_2.so.12
 	f_action_ppa_install "$CA_CINELERRA" ppa:cinelerra-ppa/ppa cinelerra-cv #(version de 2018...)
-	f_action_exec "$CA_UPM" "sudo sed -i -e 's/focal/bionic/g' /etc/apt/sources.list.d/adriansm*list ; sudo apt update ; sudo apt install upm -y" #(ligne temporaire en attendant que le ppa pr 20.04 soit actif)
 	f_action_install "$CA_CURA" cura
 	f_action_install "$CA_DARKTABLE" darktable
 	f_action_get_appimage "$CA_DIGIKAM" "https://download.kde.org/stable/digikam/6.4.0/digikam-6.4.0-x86-64.appimage"
@@ -239,7 +238,7 @@ then
 	f_action_install "$CA_KOLOURPAINT" kolourpaint	
 	f_action_install "$CA_KRITA" krita
 	f_action_install "$CA_LEOCAD" leocad
-	f_action_get "$CA_LIGHTWORKS" "https://downloads.lwks.com/Lightworks-2020.1-Beta-119866.deb"
+	f_action_get "$CA_LIGHTWORKS" "https://downloads.lwks.com/Lightworks-2020.1-Beta-120433.deb"
 	f_action_install "$CA_LIBRECAD" librecad
 	f_action_install "$CA_LILYPOND" lilypond
 	f_action_install "$CA_LIVES" lives	
@@ -326,7 +325,7 @@ then
 	f_action_get "$CA_GENS" "https://retrocdn.net/images/e/e9/Gens_2.16.8-r7orig_amd64.deb"
 	f_action_install "$CA_GNOMEBOXES" gnome-boxes
 	f_action_exec "$CA_GNS" "echo 'ubridge ubridge/install-setuid boolean true' | sudo debconf-set-selections"
-	f_action_ppa_install "$CA_GNS" "ppa:gns3/ppa" gns3-gui
+	f_action_ppa_install "$CA_GNS" "ppa:gns3/ppa" "dynamips ubridge vpcs gns3-gui gns3-server"
 	f_action_install "$CA_QEMUKVM" "qemu qemu-kvm qemu-system-gui qemu-system-arm qemu-utils virt-manager virt-viewer"
 	f_action_install "$CA_LXC" lxc
 	f_action_install "$CA_MEDNAFEN" mednafen
@@ -338,8 +337,8 @@ then
 	f_action_install "$CA_VBOXDEPOT" "virtualbox virtualbox-qt virtualbox-ext-pack"
 	f_RepositoryExt_Install "$CA_VBOXLAST" "virtualbox" "http://download.virtualbox.org/virtualbox/debian/oracle_vbox_2016.asc" "[arch=amd64] http://download.virtualbox.org/virtualbox/debian eoan contrib" "virtualbox-6.1"
     	f_action_exec "$CA_VBOXLAST" "sudo usermod -G vboxusers -a $USER"
-	f_action_exec "$CA_VMWARE" "wget http://download3.vmware.com/software/player/file/VMware-Player-15.5.1-15018445.x86_64.bundle && sudo chmod +x VMware-Player*.bundle ; LC_ALL=C ; sudo ./VMware-Player-15.5.1-15018445.x86_64.bundle --eulas-agreed --console --required ; sudo rm VMware-Player*"
-	f_action_exec "$CA_VMWAREPRO" "wget https://download3.vmware.com/software/wkst/file/VMware-Workstation-Full-15.5.1-15018445.x86_64.bundle && sudo chmod +x VMware-Workstation*.bundle ; LC_ALL=C ; sudo ./VMware-Workstation-Full-15.5.1-15018445.x86_64.bundle --eulas-agreed --console --required ; sudo rm VMware-Workstation*"
+	f_action_exec "$CA_VMWARE" "wget http://download3.vmware.com/software/player/file/VMware-Player-15.5.2-15785246.x86_64.bundle && sudo chmod +x VMware-Player*.bundle ; sudo ./VMware-Player-15.5.2-15785246.x86_64.bundle --eulas-agreed --console --required ; sudo rm VMware-Player*"
+	f_action_exec "$CA_VMWAREPRO" "wget https://download3.vmware.com/software/wkst/file/VMware-Workstation-Full-15.5.2-15785246.x86_64.bundle && sudo chmod +x VMware-Workstation*.bundle ; sudo ./VMware-Workstation-Full-15.5.2-15785246.x86_64.bundle --eulas-agreed --console --required ; sudo rm VMware-Workstation*"
 	f_action_install "$CA_WINE" "wine-development wine64-development wine64-development-tools winetricks"
 	
 	# Utilitaires graphiques
@@ -351,7 +350,7 @@ then
 	f_action_install "$CA_DEJADUP" deja-dup
 	f_action_install "$CA_DIODON" diodon
 	f_action_get_appimage "$CA_ELECTRUM" "https://download.electrum.org/3.3.8/electrum-3.3.8-x86_64.AppImage"
-	f_action_get_appimage "$CA_ETCHER" "https://github.com/balena-io/etcher/releases/download/v1.5.76/balenaEtcher-1.5.76-ia32.AppImage"
+	f_action_get_appimage "$CA_ETCHER" "https://github.com/balena-io/etcher/releases/download/v1.5.79/balenaEtcher-1.5.79-ia32.AppImage"
 	f_action_get "$CA_ETHEREUMWALLET" "https://github.com/ethereum/mist/releases/download/v0.11.1/Ethereum-Wallet-linux64-0-11-1.deb"
 	f_action_install "$CA_GITCOLA" git-cola
 	f_action_install "$CA_GLABELS" glabels
@@ -403,8 +402,8 @@ then
 	f_action_install "$CA_ANSIBLE" ansible
 	f_action_install "$CA_APPARMOR" "apparmor apparmor-profiles apparmor-utils"
 	f_action_snap_install "$CA_BITWARDEN" bitwarden
-	f_action_get "$CA_BUTTERCUP" "https://github.com/buttercup/buttercup-desktop/releases/download/v1.18.2/buttercup-desktop_1.18.2_amd64.deb"
-	f_action_install "$CA_CISCOVPN" network-manager-openconnect-gnome
+	f_action_get "$CA_BUTTERCUP" "https://github.com/buttercup/buttercup-desktop/releases/download/v1.19.0/buttercup-desktop_1.19.0_amd64.deb"
+	f_action_install "$CA_CISCOVPN" "openconnect network-manager-openconnect-gnome"
 	f_action_get_appimage "$CA_CRYPTER" "https://github.com/HR/Crypter/releases/download/v4.0.0/Crypter-4.0.0.AppImage"
 	f_action_get_appimage "$CA_CRYPTOMATOR" "https://dl.bintray.com/cryptomator/cryptomator/1.4.15/cryptomator-1.4.15-x86_64.AppImage"
 	f_RepositoryExt_Install "$CA_ENPASS" "enpass" "https://dl.sinew.in/keys/enpass-linux.key" "http://repo.sinew.in/ stable main" "enpass"
@@ -423,10 +422,8 @@ then
 	f_action_install "$CA_PUPPET" puppet
 	f_action_install "$CA_SERVERLAMP" "apache2 php libapache2-mod-php mysql-server php-mysql php-curl php-gd php-intl php-json php-mbstring php-xml php-zip phpmyadmin"
 	f_action_install "$CA_SIRIKALI" sirikali
-	f_action_ppa_install "$CA_UPM" "ppa:adriansmith/upm"
-	f_action_exec "$CA_UPM" "sudo sed -i -e 's/focal/bionic/g' /etc/apt/sources.list.d/adriansm*list ; sudo apt update ; sudo apt install upm -y" #(ligne temporaire en attendant que le ppa pr 20.04 soit actif)
+	f_action_ppa_install "$CA_UPM" ppa:adriansmith/upm upm
 	f_action_ppa_install "$CA_VERACRYPT" ppa:unit193/encryption veracrypt
-	f_action_install "$CA_VERACRYPT" veracrypt
 	f_action_install "$CA_WAKEONLAN" wakeonlan
 	f_action_install "$CA_WIFITE" "wifite hashcat hcxdumptool macchanger"
 	f_action_exec "$CA_WIRESHARK" "echo 'wireshark-common wireshark-common/install-setuid boolean true' | sudo debconf-set-selections"
@@ -509,7 +506,7 @@ then
 	f_action_install "$CA_VIM" "vim-latexsuite vim-ledger vim-migemo vim-nox vim-pathogen vim-puppet vim-python-jedi vim-rails vim-scripts vim-snipmate vim-snippets vim-syntastic vim-tabular vim-textobj-user vim-tiny vim-tlib vim-vimerl vim-voom"
 	f_RepositoryExt_Install "$CA_VSCODE" "vscode" "https://packages.microsoft.com/keys/microsoft.asc" "[arch=amd64] https://packages.microsoft.com/repos/vscode stable main" "code" ##PB : ne s'installe pas
 	f_action_install "$CA_VSCODE" apt-transport-https #dépendance
-	f_action_get "$CA_VSCODIUM" "https://github.com/VSCodium/vscodium/releases/download/1.41.1/codium_1.41.1-1576787344_amd64.deb"
+	f_action_get "$CA_VSCODIUM" "https://github.com/VSCodium/vscodium/releases/download/1.43.1/codium_1.43.1-1584565098_amd64.deb"
 
 	# Divers, Customisation et Optimisation
 	f_action_install "$CA_IMPRIMANTE" "hplip hplip-doc hplip-gui sane sane-utils"
