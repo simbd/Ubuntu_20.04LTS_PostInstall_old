@@ -45,7 +45,7 @@ then
     	f_action_snap_install "$CA_BEAKER" beaker-browser
     	f_RepositoryExt_Install "$CA_BRAVE" "brave-browser-release" "https://brave-browser-apt-release.s3.brave.com/brave-core.asc" "[arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" "brave-browser"
     	f_action_snap_install "$CA_CHROMIUM" "chromium chromium-ffmpeg"
-	f_action_exec "$CA_CHROMIUMBETA" "wget https://raw.githubusercontent.com/simbd/ConfigFiles/master/chromium-beta.pref && sudo mv chro*.pref /etc/apt/preferences.d/" #(Pour ne pas que le snap prenne le dessus)
+	f_action_exec "$CA_CHROMIUMBETA" "wget https://raw.githubusercontent.com/simbd/ConfigFiles/master/chromium-beta.pref && sudo mv chro*.pref /etc/apt/preferences.d/ && sudo apt update" #(Pour ne pas que le snap prenne le dessus)
 	f_action_ppa_install "$CA_CHROMIUMBETA" ppa:saiarcot895/chromium-beta "chromium-browser"
     	f_action_snap_install "$CA_CLIQZ" "cliqz --beta"
     	f_action_install "$CA_DILLO" dillo
