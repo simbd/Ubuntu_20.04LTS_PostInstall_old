@@ -25,6 +25,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
     	$(chkDef "FALSE") "$CA_BEAKER" "$CD_BEAKER" \
     	$(chkDef "FALSE") "$CA_BRAVE" "$CD_BRAVE" \
     	$(chkDef "FALSE") "$CA_CHROMIUM" "$CD_CHROMIUM" \
+	$(chkDef "FALSE") "$CA_CHROMIUMBETA" "$CD_CHROMIUMBETA" \
     	$(chkDef "FALSE") "$CA_CLIQZ" "$CD_CLIQZ" \
     	$(chkDef "FALSE") "$CA_DILLO" "$CD_DILLO" \
     	$(chkDef "FALSE") "$CA_EOLIE" "$CD_EOLIE" \
