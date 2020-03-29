@@ -72,6 +72,9 @@ CD_BRAVE="Navigateur avec protection pour la vie privée avec blocage des pisteu
 CA_CHROMIUM="Chromium {SNAP}"
 CD_CHROMIUM="La version libre/opensource de Google Chrome sans les fonctions néfastes"
 
+CA_CHROMIUMBETA="Chromium Beta (n+1) {PPA}"
+CD_CHROMIUMBETA="Permet d'avoir la plupart du temps 1 version d'avance et en paquet debian (pas Snap)"
+
 CA_CLIQZ="Cliqz {SNAP}"
 CD_CLIQZ="Fork de Firefox orientés vers la confidentialité des changements avec un moteur de recherche intégré"
 
