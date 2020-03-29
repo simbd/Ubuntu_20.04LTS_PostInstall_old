@@ -69,7 +69,7 @@ CD_BEAKER="Navigateur opensource qui permet de surfer en P2P"
 CA_BRAVE="Brave"
 CD_BRAVE="Navigateur avec protection pour la vie privée avec blocage des pisteurs"
 
-CA_CHROMIUM="Chromium {SNAP}"
+CA_CHROMIUM="Chromium (stable release) {SNAP}"
 CD_CHROMIUM="La version libre/opensource de Google Chrome sans les fonctions néfastes"
 
 CA_CHROMIUMBETA="Chromium Beta (n+1) {PPA}"
