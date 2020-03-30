@@ -472,6 +472,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_DVDREAD" "$CD_DVDREAD" \
 	$(chkDef "FALSE") "$CA_LIVEWALLPAPER" "$CD_LIVEWALLPAPER" \
 	$(chkDef "FALSE") "$CA_PACKEXTENSION" "$CD_PACKEXTENSION" \
+	$(chkDef "FALSE") "$CA_DASHTODOCK" "$CD_DASHTODOCK" \
 	$(chkDef "TRUE") "$CA_PACKICON" "$CD_PACKICON" \
 	$(chkDef "TRUE") "$CA_PACKTHEME" "$CD_PACKTHEME" \
 	$(chkDef "FALSE") "$CA_INTEL" "$CD_INTEL" \
