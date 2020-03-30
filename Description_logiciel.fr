@@ -1402,6 +1402,9 @@ CD_LIVEWALLPAPER="Permet de remplacer le fond d'écran statique par un wallpaper
 CA_PACKEXTENSION="Pack d'extension Gnome supplémentaire"
 CD_PACKEXTENSION="Ajoute des extensions pour Gnome : DashToPanel, Impatience; Météo, MonitorSystem, Caffeine..."
 
+CA_DASHTODOCK="Extension DashToDock (dernière build)
+CD_DASHTODOCK="Installera la toute dernière version de l'extension DashToDock depuis Github"
+
 CA_PACKICON="Pack d'icones"
 CD_PACKICON="Ajoute des icones pour la customisation : Papirus, Numix, Breeze, GnomeBrave, Elementary, Oxygen"
 
