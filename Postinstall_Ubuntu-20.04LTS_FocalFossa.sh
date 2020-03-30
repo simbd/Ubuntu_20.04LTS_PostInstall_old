@@ -532,6 +532,7 @@ then
 	f_action_ppa_install "$CA_LIVEWALLPAPER" ppa:fyrmir/livewallpaper-daily "livewallpaper livewallpaper-config livewallpaper-indicator"
 	f_action_install "$CA_PACKEXTENSION" "chrome-gnome-shell gnome-shell-extension-caffeine gnome-shell-extension-dash-to-panel gnome-shell-extension-impatience gnome-shell-extension-weather" #gnome-shell-extension-dashtodock
 	f_action_install "$CA_PACKEXTENSION" "gnome-shell-extension-system-monitor gnome-shell-extension-arc-menu gnome-shell-extension-gamemode gnome-shell-extension-gsconnect gnome-shell-extension-xrdesktop"
+	f_action_exec "$CA_DASHTODOCK" "wget https://raw.githubusercontent.com/simbd/Scripts_divers/master/DashToDock_Git.sh && chmod +x DashToDock_Git.sh ; ./DashToDock_Git.sh ; rm DashTo*.sh" 
 	f_action_install "$CA_PACKICON" "papirus-icon-theme numix-icon-theme numix-icon-theme-circle breeze-icon-theme gnome-brave-icon-theme elementary-icon-theme oxygen-icon-theme"
 	f_action_install "$CA_PACKTHEME" "arc-theme numix-blue-gtk-theme numix-gtk-theme materia-gtk-theme yuyo-gtk-theme human-theme"
 	f_action_install "$CA_INTEL" intel-microcode
