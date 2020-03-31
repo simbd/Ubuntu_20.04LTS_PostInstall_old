@@ -285,7 +285,7 @@ then
 	f_action_install "$CA_AMC" auto-multiple-choice
 	f_action_install "$CA_ASTROEDU" astro-education
 	f_action_install "$CA_AVOGADRO" avogadro
-	f_action_get_appimage "$CA_CELESTIA" "https://github.com/munix9/Celestia/releases/download/continuous/celestia-qt-continuous-x86_64.AppImage"
+	f_action_get_appimage "$CA_CELESTIA" "https://download.opensuse.org/repositories/home:/munix9:/unstable/AppImage/celestia-latest-x86_64.AppImage"
 	f_action_install "$CA_CONVERTALL" convertall
 	f_action_install "$CA_FRITZING" fritzing
 	f_action_get "$CA_GANTTPROJECT" "https://dl.ganttproject.biz/ganttproject-2.8.10/ganttproject_2.8.10-r2364-1_all.deb"
