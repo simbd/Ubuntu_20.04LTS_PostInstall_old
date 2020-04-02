@@ -77,7 +77,7 @@ then
 	f_action_get "$CA_DISCORD" "https://dl.discordapp.net/apps/linux/0.0.10/discord-0.0.10.deb"
     	f_action_install "$CA_DROPBOX" nautilus-dropbox
 	f_action_get "$CA_DUKTO" "https://download.opensuse.org/repositories/home:/colomboem/xUbuntu_16.04/amd64/dukto_6.0-1_amd64.deb" #{a reverifier}
-    	f_action_exec "$CA_DWSERVICE" "wget https://www.dwservice.net/download/dwagent_x86.sh && chmod +x dwagent* && sudo ./dwagent_x86.sh ; rm dwagent*"
+    	f_action_exec "$CA_DWSERVICE" "wget https://www.dwservice.net/download/dwagent_x86.sh && chmod +x dwagent* ; mv dwagent* ~/"
     	f_action_install "$CA_EISKALTDC" "eiskaltdcpp eiskaltdcpp-gtk3"
     	f_action_install "$CA_EMPATHY" empathy    
 	f_action_install "$CA_EVOLUTION" evolution
