@@ -49,6 +49,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_EVOLUTION" "$CD_EVOLUTION" \
 	$(chkDef "FALSE") "$CA_GEARY" "$CD_GEARY" \
 	$(chkDef "FALSE") "$CA_HEXCHAT" "$CD_HEXCHAT" \
+	$(chkDef "FALSE") "$CA_JIMI" "$CD_JIMI" \
 	$(chkDef "FALSE") "$CA_JITSI" "$CD_JITSI" \
 	$(chkDef "FALSE") "$CA_KVIRC" "$CD_KVIRC" \
 	$(chkDef "FALSE") "$CA_LINPHONE" "$CD_LINPHONE" \
@@ -58,7 +59,6 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "TRUE") "$CA_PIDGIN" "$CD_PIDGIN" \
 	$(chkDef "FALSE") "$CA_POLARI" "$CD_POLARI" \
 	$(chkDef "FALSE") "$CA_PSI" "$CD_PSI" \
-	$(chkDef "FALSE") "$CA_RING" "$CD_RING" \
 	$(chkDef "FALSE") "$CA_RIOT" "$CD_RIOT" \
 	$(chkDef "FALSE") "$CA_SIGNAL" "$CD_SIGNAL" \
 	$(chkDef "FALSE") "$CA_SKYPE" "$CD_SKYPE" \
