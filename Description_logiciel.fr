@@ -184,6 +184,9 @@ CD_HEXCHAT="Client IRC, fork de xchat"
 CA_HUBIC="Hubic (cli)"
 CD_HUBIC="Partage de fichiers dans le cloud (version 64 bits)."
 
+CA_JAMI="Jami (anciennement Ring)"
+CD_JAMI="Logiciel très performant pour la téléphonie IP"
+
 CA_JITSI="Jitsi"
 CD_JITSI="Anciennement 'SIP Communicator' surtout orienté VoIP"
 
@@ -234,9 +237,6 @@ CD_RDESKTOP="Connexion aux bureaux à distance (notamment des postes Windows via
 
 CA_REMMINA="Remmina"
 CD_REMMINA="Visionneur de bureaux distants (pour prise en main à distance avec VNC ou RDP, entre autres)"
-
-CA_RING="Ring (GNU/Jami)"
-CD_RING="Logiciel très performant pour la téléphonie IP"
 
 CA_RIOT="Riot (Matrix) {FLATPAK}"
 CD_RIOT="Outil libre de messagerie instantannée sécurisée supportant le protocole Matrix"
