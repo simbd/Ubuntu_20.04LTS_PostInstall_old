@@ -49,7 +49,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_EVOLUTION" "$CD_EVOLUTION" \
 	$(chkDef "FALSE") "$CA_GEARY" "$CD_GEARY" \
 	$(chkDef "FALSE") "$CA_HEXCHAT" "$CD_HEXCHAT" \
-	$(chkDef "FALSE") "$CA_JIMI" "$CD_JIMI" \
+	$(chkDef "FALSE") "$CA_JAMI" "$CD_JAMI" \
 	$(chkDef "FALSE") "$CA_JITSI" "$CD_JITSI" \
 	$(chkDef "FALSE") "$CA_KVIRC" "$CD_KVIRC" \
 	$(chkDef "FALSE") "$CA_LINPHONE" "$CD_LINPHONE" \
