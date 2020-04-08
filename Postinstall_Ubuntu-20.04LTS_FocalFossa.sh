@@ -132,6 +132,7 @@ then
 	f_action_install "$CA_X11VNC" x11vnc
 	f_action_install "$CA_XCHAT" xchat
 	f_action_install "$CA_YTDLND" youtube-dl
+	f_action_get "$CA_ZOOM" "https://zoom.us/client/latest/zoom_amd64.deb"
 	
 	# Bureautique/Mail
 	f_action_get "$CA_BOOSTNOTE" "https://github.com/BoostIO/boost-releases/releases/download/v0.15.1/boostnote_0.15.1_amd64.deb"
