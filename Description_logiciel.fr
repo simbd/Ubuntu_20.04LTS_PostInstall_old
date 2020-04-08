@@ -314,7 +314,7 @@ CA_YTDLND="YouTube Download (cli)"
 CD_YTDLND="Script à utiliser dans le terminal de capture de vidéos en ligne (commande youtube-dl)"
 
 CA_ZOOM="Zoom"
-CD_ZOOM="Visioconférence multiplateforme (mais propriétaire) suportant de nombreux utilisateurs simmultannés"
+CD_ZOOM="Visioconférence multiplateforme (mais propriétaire) supportant de nombreux utilisateurs simmultannés"
 
 SCT_OFFICE="______ [[ BUREAUTIQUE ]] ______"
 
