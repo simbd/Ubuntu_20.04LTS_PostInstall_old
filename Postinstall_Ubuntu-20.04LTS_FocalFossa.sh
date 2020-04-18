@@ -106,7 +106,7 @@ then
 	f_action_install "$CA_PUTTY" putty
 	f_action_install "$CA_QBITTORRENT" qbittorrent	
 	f_action_install "$CA_RDESKTOP" rdesktop	
-	f_action_install "$CA_REMMINA" remmina
+	f_action_install "$CA_REMMINA" "remmina remmina-plugin-nx remmina-plugin-rdp remmina-plugin-spice remmina-plugin-vnc"
 	f_action_flatpak_install "$CA_RIOT" im.riot.Riot
 	f_RepositoryExt_Install "$CA_SIGNAL" "signal-desktop" "https://updates.signal.org/desktop/apt/keys.asc" "[arch=amd64] https://updates.signal.org/desktop/apt xenial main" "signal-desktop"
     	f_action_get "$CA_SKYPE" "https://go.skype.com/skypeforlinux-64.deb" #Maj auto via dépot ajouté
