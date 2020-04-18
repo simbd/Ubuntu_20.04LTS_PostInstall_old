@@ -1429,8 +1429,8 @@ CD_OPTIMIS_SWAP="Permet de régler le swappiness à 95% (swap utilisé en dernie
 CA_SCANNER="Gestion Scanner (Sane + xSane)"
 CD_SCANNER="Paquets utiles si vous êtes équipé d'un scanner"
 
-CA_SNAPREMPLACEMENT="Remplacement des Snaps par défaut"
-CD_SNAPREMPLACEMENT="Va désinstaller les Snaps pré-installés par défaut (Calculatrice...) et les réinstaller via APT à la place"
+CA_SNAPREMPLACEMENT="'Snap Store' remplacé par 'Gnome Software' (via apt)"
+CD_SNAPREMPLACEMENT="Va désinstaller le snap pré-installé (snap-store) et le remplacer par Gnome Software (via apt install)"
 
 CA_NAUTILUS_EXTRA="Suppléments pour Nautilus"
 CD_NAUTILUS_EXTRA="Ajoute des extensions/commandes supplémentaires pour le gestionnaire de fichier de Gnome 'Nautilus' (Compare, SendTo, Share...)"
@@ -1469,16 +1469,6 @@ Voulez-vous voir les instructions supplémentaires après installation ?"
 MSG_END_TITLE="Opérations Manuelles"
 MSG_END_TEXT="L'installation est maintenant terminée ! !
 
-Voici des informations supplémentaires pour compléter votre installation :
-  * Merci de redémarrer votre PC pour prendre en compte tous les changements (notamment les logiciels installés via Flatpak peuvent nécessiter un reboot pour les raccourcis)
+Merci de redémarrer votre PC pour prendre en compte tous les changements.
 
-   * Quelques extensions de Gnome Shell utiles à installer sur <a href='https://extensions.gnome.org'>le site des extensions de Gnome</a> :
-   - <a href='https://extensions.gnome.org/extension/15/alternatetab/'>AlternateTab</a> : un plus joli Alt+Tab
-   - <a href='https://extensions.gnome.org/extension/6/applications-menu/'>Application Menu</a> : un menu pour les applications
-   - <a href='https://extensions.gnome.org/extension/8/places-status-indicator/'>Places Status Indicator</a> : un menu avec les emplacements définis dans Nautilus.
-   - <a href='https://extensions.gnome.org/extension/21/workspace-indicator/'>Workspace Indicator</a> : un indicateur dans la barre supérieure qui indique le numéro de l'espace de travail (workspace) et qui propose un menu pour en changer.
-   - <a href='https://extensions.gnome.org/extension/841/freon/'>Freon</a> : pour afficher les températures et vitesses de ventilateur. Il faut installer les utilitaires pour lire les températures <tt>sudo apt-get install lm-sensors hddtemp &amp;&amp; sudo sensors-detect</tt>.
-   - un Clipboad Manager : <a href='https://extensions.gnome.org/extension/779/clipboard-indicator/'>Clipboard Indicator</a>.
-   - <a href='https://extensions.gnome.org/extension/104/netspeed/'>NetSpeed</a> : un excellent complément à <i>Systemmonitor</i>.
-   - <a href='https://extensions.gnome.org/extension/885/dynamic-top-bar/'>Dynamic Top Bar</a> pour avoir une <i>top bar</i> à la elementaryOs.
-   - <a href='https://extensions.gnome.org/extension/120/system-monitor/'>SystemMonitor</a> : le plus ancien et le plus intéressant (pour moi) (il fallait <a href='https://github.com/paradoxxxzero/gnome-shell-system-monitor-applet'>l'installer manuellement</a>, mais plus maintenant)."
+N'hésitez pas à contribuer à améliorer le script en faisant des commits directement sur le github.
