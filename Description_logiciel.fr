@@ -367,7 +367,7 @@ CA_LIBREOFFICEDEPOT="LibreOffice 6.4 (version des dépots)"
 CD_LIBREOFFICEDEPOT="La meilleur suite bureautique, et en plus elle est libre, multi-plateforme et gratuite (version 6.4.x)"
 
 CA_LIBREOFFICEFRESH="LibreOffice backporté {PPA}"
-CD_LIBREOFFICEFRESH="Permet d'avoir systématiquement la dernière version stable possible de LibreOffice"
+CD_LIBREOFFICEFRESH="Permet d'avoir systématiquement la dernière version stable possible de LibreOffice (6.4 => 7.0 etc...)"
 
 CA_OFFICEWEBAPPS="MS Office Web Apps {SNAP}"
 CD_OFFICEWEBAPPS="Application non-officiel pour se connecter aux applications bureautique online de Microsoft (Office 365)"
