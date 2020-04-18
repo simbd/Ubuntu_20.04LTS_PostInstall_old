@@ -1471,4 +1471,4 @@ MSG_END_TEXT="L'installation est maintenant terminée ! !
 
 Merci de redémarrer votre PC pour prendre en compte tous les changements.
 
-N'hésitez pas à contribuer à améliorer le script en faisant des commits directement sur le github.
+N'hésitez pas à contribuer à améliorer le script en faisant des commits directement sur le github"
