@@ -56,10 +56,10 @@ CA_GNOMECLASSIC="Gnome classique"
 CD_GNOMECLASSIC="Interface plus basique dans le style de Gnome 2 mais avec les composants de Gnome-Shell, utilise Mutter)"
 
 CA_GNOMEFLASHBACKM="Gnome Flashback / Metacity"
-CD_GNOMEFLASHBACKM="Interface proche de Gnome 2 et légère, utilise Metacity, pas d'effets spéciaux sur les fenêtres)"
+CD_GNOMEFLASHBACKM="Interface proche de Gnome 2 et légère, utilise Metacity (pas d'effets spéciaux sur les fenêtres)"
 
 CA_GNOMEFLASHBACKC="Gnome Flashback / Compiz"
-CD_GNOMEFLASHBACKC="Idem que précédemment mais en utilisant Compiz à la place de Metacity, permet des effets 3D sur les fenêtres"
+CD_GNOMEFLASHBACKC="Idem que précédemment mais en utilisant Compiz à la place de Metacity (permet des effets 3D sur les fenêtres)"
 
 SCT_BROWSER="______ [[ NAVIGATEURS WEB ]] ______"
 
@@ -97,7 +97,7 @@ CA_FIREFOXESR="Firefox ESR {PPA}"
 CD_FIREFOXESR="Version de Firefox orientée entreprise/organisation avec un support étendu"
 
 CA_FIREFOXNIGHTLY="Firefox Nightly {PPA}"
-CD_FIREFOXNIGHTLY="Toute dernière build en developpement, maj très régulières et potentiellement instable"
+CD_FIREFOXNIGHTLY="Toute dernière build en developpement, maj très régulières. Potentiellement instable !"
 
 CA_EPIPHANY="Gnome Web (Epiphany)"
 CD_EPIPHANY="Navigateur de la fondation Gnome s'intégrant bien avec cet environnement"
@@ -124,10 +124,10 @@ CA_SRWAREIRON="SRWare Iron"
 CD_SRWAREIRON="Dérivé de Chromium avec des améliorations sur la confidentialité des données"
 
 CA_TORBROWSER="Tor Browser"
-CD_TORBROWSER="Indispensable pour ceux qui ont besoin de surfer dans l'anonymat, utilise le réseau Tor"
+CD_TORBROWSER="Pour ceux qui veulent surfer dans l'anonymat via le réseau Tor (basé sur Firefox ESR)"
 
 CA_VIVALDI="Vivaldi"
-CD_VIVALDI="Navigateur propriétaire avec une interface sobre"
+CD_VIVALDI="Navigateur web multiplateforme qui vise l'innovation, les technofiles, les utilisateurs intensifs d'internet"
 
 SCT_INTERNET="______ [[ INTERNET / TCHAT / MESSAGERIE ]] ______"
 SCT_DOWNLOAD="______ [[ DOWNLOAD / TORRENT / STOCKAGE EN LIGNE ]] ______"
@@ -314,7 +314,7 @@ CA_YTDLND="YouTube Download (cli)"
 CD_YTDLND="Script à utiliser dans le terminal de capture de vidéos en ligne (commande youtube-dl)"
 
 CA_ZOOM="Zoom"
-CD_ZOOM="Visioconférence multiplateforme (mais propriétaire) supportant de nombreux utilisateurs simmultannés"
+CD_ZOOM="Visioconférence multiplateforme (mais propriétaire) supportant de nombreux utilisateurs simultanés"
 
 SCT_OFFICE="______ [[ BUREAUTIQUE ]] ______"
 
