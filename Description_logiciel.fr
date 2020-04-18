@@ -370,7 +370,7 @@ CA_LIBREOFFICEFRESH="LibreOffice backporté {PPA}"
 CD_LIBREOFFICEFRESH="Permet d'avoir systématiquement la dernière version stable possible de LibreOffice (6.4 => 7.0 etc...)"
 
 CA_OFFICEWEBAPPS="MS Office Web Apps {SNAP}"
-CD_OFFICEWEBAPPS="Application non-officiel pour se connecter aux applications bureautique online de Microsoft (Office 365)"
+CD_OFFICEWEBAPPS="Appli non-officielle pour se connecter aux logiciels bureautiques online de Microsoft (Office 365)"
 
 CA_LIBREOFFICESUP="Supplément pour LibreOffice"
 CD_LIBREOFFICESUP="Supplément : icones, modèles de documents et clipart, extension Grammalecte activé"
@@ -875,7 +875,7 @@ CA_RETROARCH="RetroArch"
 CD_RETROARCH="Implémentation de libretro qui sert de frontal pour les émulateurs et les moteurs de jeu"
 
 CA_VBOXDEPOT="Virtualbox 6.1 (version des dépots)"
-CD_VBOXDEPOT="Célèbre logiciel de virtualisation pour les systèmes Windows/Mac/Linux/Bsd..."
+CD_VBOXDEPOT="Célèbre logiciel de virtualisation pour les systèmes Windows/Mac/Linux/Bsd... (depuis dépot d'Ubuntu)"
 
 CA_VBOXLAST="Virtualbox (dernière version backporté)"
 CD_VBOXLAST="Dernière version stable possible installé depuis le dépot d'Oracle"
