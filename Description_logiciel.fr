@@ -1382,7 +1382,7 @@ CA_GWE="GWE - GreenWithEnvy {FLATPAK}"
 CD_GWE="Utilitaire pour contrôler l'overclocking/ventilateur des cartes graphiques Nvidia"
 
 CA_GS_AUGMENTATIONCAPTURE="Gnome Shell : capture vidéo fixé à 10min"
-CD_GS_AUGMENTATIONCAPTURE="Augmente la durée de capture vidéo (par défaut 30sec) à 600sec (soit 10 min)"
+CD_GS_AUGMENTATIONCAPTURE="Augmente la durée maximum de capture vidéo (par défaut 30sec) à 600sec (soit 10 min)"
 
 CA_GS_MINIMISATIONFENETRE="Gnome Shell (DtD) : minimisation de fenêtre"
 CD_GS_MINIMISATIONFENETRE="Permet de minimiser une fenêtre depuis les icones de DashToDock"
