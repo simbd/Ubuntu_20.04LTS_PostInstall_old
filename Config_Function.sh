@@ -174,13 +174,6 @@ chkDef() {
 	esac
 }
 
-f_action_LinInstall() {
-	if [[ "$GUI" == *"$1"* ]]
-	then
-		wget https://gitlab.com/simbd/LinInstall_Software/raw/master/LinInstall_"$2" --no-check-certificate
-		chmod +x LinInstall_"$2" ; sudo ./LinInstall_"$2" ; rm LinInstall_"$2"
-	fi
-}
 ### Fonctions particulières pour certains choix dans le script
 # Configurer l'usage des DNS de FDN/LDN (partie Optimisation)
 choice_dnsfdn() {
