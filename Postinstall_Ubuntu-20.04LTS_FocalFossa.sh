@@ -267,6 +267,7 @@ then
 	f_action_install "$CA_RAWTHERAPEE" rawtherapee
 	f_action_install "$CA_ROSEGARDEN" rosegarden
 	f_action_snap_install "$CA_SHOTCUT" "shotcut --classic"
+	f_action_ppa_install "$CA_SHUTTER" ppa:linuxuprising/shutter "shutter"
 	f_action_install "$CA_SIMPLESCREENRECORDER" simplescreenrecorder 
 	f_action_install "$CA_SOLVESPACE" solvespace
 	f_action_install "$CA_SOUNDJUICER" sound-juicer
