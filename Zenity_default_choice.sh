@@ -197,6 +197,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_PINTA" "$CD_PINTA" \
 	$(chkDef "FALSE") "$CA_PIXELUVO" "$CD_PIXELUVO" \
 	$(chkDef "FALSE") "$CA_RAWTHERAPEE" "$CD_RAWTHERAPEE" \
+	$(chkDef "FALSE") "$CA_SHUTTER" "$CD_SHUTTER" \
 	$(chkDef "FALSE") "$CA_SOLVESPACE" "$CD_SOLVESPACE" \
 	$(chkDef "FALSE") "$CA_SWEETHOME" "$CD_SWEETHOME" \
 	$(chkDef "FALSE") "$CA_SYNFIG" "$CD_SYNFIG" \
