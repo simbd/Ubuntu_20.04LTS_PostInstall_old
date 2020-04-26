@@ -155,7 +155,7 @@ CA_DUKTO="Dukto"
 CD_DUKTO="Transfert de fichiers en open source, et multi-plateforme dans le réseau local"
 
 CA_DWSERVICE="DWS Remote Control (agent)"
-CD_DWSERVICE="Permet le contrôle de PC à distance depuis un navigateur web. Libre et gratuit (doit être lancé manuellemnent)"
+CD_DWSERVICE="Permet le contrôle de PC à distance depuis un navigateur web. Libre/gratuit (A lancer manuellemnent)"
 
 CA_EISKALTDC="EiskaltDC++"
 CD_EISKALTDC="Pour se connecter au réseau DirectConnect"
@@ -200,7 +200,7 @@ CA_MEGASYNC="MegaSync (version Desktop + Intégration Nautilus)"
 CD_MEGASYNC="Permet de se connecter et de synchroniser avec un compte Mega"
 
 CA_MAILSPRING="Mailspring {SNAP}"
-CD_MAILSPRING="client de messagerie moderne et multi-plateforme"
+CD_MAILSPRING="Client de messagerie moderne et multi-plateforme"
 
 CA_MATTERMOST="MatterMost {SNAP}"
 CD_MATTERMOST="Service de discussion instantanée open source conçu comme un chat interne pour les organisations"
@@ -325,7 +325,7 @@ CA_CALIBRE="Calibre"
 CD_CALIBRE="Logiciel de lecture, de gestion de bibliothèques et de conversion de fichiers de type ebook/livre électronique"
 
 CA_CALLIGRA="Calligra Suite"
-CD_CALLIGRA="suite bureautique de KDE, il s'intègre donc bien avec l'environnement kde/plasma"
+CD_CALLIGRA="Suite bureautique de KDE, il s'intègre donc bien avec l'environnement kde/plasma"
 
 CA_CHERRYTREE="CherryTree {SNAP}"
 CD_CHERRYTREE="Application de prise de notes hiérarchisées, combinant texte enrichi et marquage automatique de syntaxe"
@@ -376,25 +376,25 @@ CA_LIBREOFFICESUP="Supplément pour LibreOffice"
 CD_LIBREOFFICESUP="Supplément : icones, modèles de documents et clipart, extension Grammalecte activé"
 
 CA_MASTERPDFEDITOR="Master PDF Editor"
-CD_MASTERPDFEDITOR="éditeur PDF propriétaire capable de gérer les formulaires CERFA/XFA"
+CD_MASTERPDFEDITOR="Editeur PDF propriétaire capable de gérer les formulaires CERFA/XFA"
 
 CA_MCOMIX="MComix"
 CD_MCOMIX="Visionneuse d'image avancée et gratuite sous licence GPL conçu pour la lecture de bandes dessinées"
 
 CA_NOTESUP="Notes Up {FLATPAK}"
-CD_NOTESUP="éditeur et manager de notes avec markdown, simple mais efficace"
+CD_NOTESUP="Editeur et manager de notes avec markdown, simple mais efficace"
 
 CA_ONLYOFFICE="OnlyOffice {SNAP}"
-CD_ONLYOFFICE="suite bureautique multifonctionnelle intégrée au CRM, avec jeu d'outils de collaboration"
+CD_ONLYOFFICE="Suite bureautique multifonctionnelle intégrée au CRM, avec jeu d'outils de collaboration"
 
 CA_OPENOFFICE="OpenOffice {Script LinInstall}"
-CD_OPENOFFICE="suite bureautique opensource alternative, moins répendu et moins dynamique que LibreOffice"
+CD_OPENOFFICE="Suite bureautique opensource alternative, moins répendu et moins dynamique que LibreOffice"
 
 CA_PANDOC="Pandoc (cli)"
 CD_PANDOC="Outil permettant de convertir des documents dans différents formats (s'utilise en ligne de commande)"
 
 CA_PDFMOD="PdfMod"
-CD_PDFMOD="logiciel permettant diverses modifications sur vos PDF"
+CD_PDFMOD="Logiciel permettant diverses modifications sur vos PDF"
 
 CA_PDFSAM="PdfSam Basic"
 CD_PDFSAM="Outil pratique pour scinder, fusionner, faire pivoter/mélanger/extraire des pages de fichier PDF"
@@ -576,7 +576,7 @@ CD_GIMP="Éditeur d'images bitmap libre et opensource équivalent à Photoshop"
 CA_GNOMESOUNDRECORDER="Gnome Sound Recorder"
 CD_GNOMESOUNDRECORDER="Logiciel basique d'enregistrement de son pour Gnome"
 
-CA_GTHUMB="gThumb"
+CA_GTHUMB="Gthumb"
 CD_GTHUMB="Gestionnaire de photo pour Gnome pour mieux les organiser et les importer depuis un APN"
 
 CA_HANDBRAKE="Handbrake"
@@ -589,7 +589,7 @@ CA_IMCOMPRESSOR="ImCompressor {FLATPAK}"
 CD_IMCOMPRESSOR="Compresseur d'images supportant les formats PNG/JPEG. Supporte avec ou sans perte, avec ou non les métadonnées"
 
 CA_INKSCAPE="Inkscape"
-CD_INKSCAPE="Éditeur d'images vectorielles libre et opensource (équivalent à Illustrator)"
+CD_INKSCAPE="Editeur d'images vectorielles libre et opensource (équivalent à Illustrator)"
 
 # CA_K3D="K-3D"
 # CD_K3D="Animation et modélisation polygonale et modélisation par courbes"
@@ -686,6 +686,9 @@ CD_ROSEGARDEN="Création musicale avec édition des partitions et peut s'interfa
 
 CA_SHOTCUT="Shotcut {SNAP}"
 CD_SHOTCUT="Editeur de vidéos libre, open source, gratuit et multiplateforme"
+
+CA_SHUTTER="Shutter {PPA}"
+CD_SHUTTER="Logiciel de captures d'écran, permet d'appliquer des modifications diverses. Bien intégré à Gnome"
 
 CA_SIMPLESCREENRECORDER="Simple Screen Recorder"
 CD_SIMPLESCREENRECORDER="Autre alternative pour la capture vidéo"
@@ -851,7 +854,7 @@ CA_GNS="GNS3 (Graphical Network Simulator) {PPA}"
 CD_GNS="Logiciel libre permettant l'émulation et la simulation de réseaux informatiques"
 
 CA_QEMUKVM="Qemu/Kvm X86/ARM (avec Virtual-Manager)"
-CD_QEMUKVM="logiciel libre de machine virtuelle, pouvant émuler un processeur et différentes architectures"
+CD_QEMUKVM="Logiciel libre de machine virtuelle, pouvant émuler un processeur et différentes architectures"
 
 CA_LXC="Lxc (LinuX Containers)"
 CD_LXC="Virtualisation d'environnements Linux isolés les uns des autres dans des conteneurs"
@@ -859,7 +862,7 @@ CD_LXC="Virtualisation d'environnements Linux isolés les uns des autres dans de
 CA_MEDNAFEN="MedNafen"
 CD_MEDNAFEN="Emulateur pour diverses consoles de jeu vidéo, distribué sous licence libre. Il utilise OpenGL et SDL"
 
-CA_MGBA="mGBA"
+CA_MGBA="Mgba"
 CD_MGBA="Emulateur libre permettant de jouer aux jeux pour Game Boy Advance"
 
 CA_MUPEN64="Mupen64 Plus"
@@ -973,7 +976,7 @@ CA_SUBLIM_NAUT="Subliminal pour Nautilus"
 CD_SUBLIM_NAUT="Récupération de sous-titre de manière automatique pour Nautilus"
 
 CA_SUB_EDIT="Subtitle Editor"
-CD_SUB_EDIT="Éditeur de fichiers de sous-titre (modification, synchronisation ...)"
+CD_SUB_EDIT="Editeur de fichiers de sous-titre (modification, synchronisation ...)"
 
 CA_SYNAPTIC="Synaptic"
 CD_SYNAPTIC="Gestionnaire graphique pour les paquets debian (ne gère pas les Snaps/Flatpaks)"
@@ -1103,7 +1106,7 @@ CA_OCSINVENTORY="OcsInventory Agent (cli) {Nécessite intervention!}"
 CD_OCSINVENTORY="Installe l'agent pour OCS Inventory (pour être référencé dans l'inventaire du parc informatique avec OCS)"
 
 CA_OPENVAS="OpenVAS (cli)"
-CD_OPENVAS="fork sous licence du scanner de vulnérabilité Nessus qui permet un développement libre"
+CD_OPENVAS="Fork sous licence du scanner de vulnérabilité Nessus qui permet un développement libre"
 
 CA_PGADMIN="PgAdmin3"
 CD_PGADMIN="Interface graphique pour administrer des bases de données PostgreSQL"
@@ -1286,7 +1289,7 @@ CD_IDLE="IDLE est un éditeur de programmes python multiplate-forme"
 CA_INTELLIJIDEA="IntelliJ Idea {SNAP}"
 CD_INTELLIJIDEA="IDE Java commercial de JetBrains, plutôt conçu pour Java"
 
-CA_IPYTHON="iPython (cli)"
+CA_IPYTHON="IPython (cli)"
 CD_IPYTHON="Terminal interactif pour Python proposant des fonctionnalités telles l'introspection, syntaxe additionnelle, la complétion..."
 
 CA_JAVA="Java 13 JRE {PPA}"
@@ -1444,8 +1447,8 @@ CD_TLP="Gestionnaire de batterie pour les PC portables"
 CA_TLP_THINKPAD="TLP spécifique pour modèle Thinkpad {PPA}"
 CD_TLP_THINKPAD="Gestionnaire de batterie avec des paquets spéciaux pour les pc portables Thinkpad"
 
-CA_ZRAM="zRAM"
-CD_ZRAM="Compression de la RAM (pour améliorer les performances)."
+CA_ZRAM="Zram"
+CD_ZRAM="Compression de la RAM (permettrai d'améliorer les performances)"
 
 SCT_END="______ [[ FIN ]] ______"
 
