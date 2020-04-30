@@ -295,7 +295,7 @@ CD_WHALEBIRD="Client pour le réseau social ouvert et décentralisé Mastodon (p
 CA_WHATSDESK="WhatsDesk Desktop Client {SNAP}"
 CD_WHATSDESK="Client desktop pour la messagerie WhatsApp"
 
-CA_WIREDESK="Wire"
+CA_WIREDESK="Wire Desktop"
 CD_WIREDESK="Un autre client de messagerie instantanée chiffrée créé par Wire Swiss"
 
 CA_WORMHOLE="Wormhole (cli)"
@@ -1087,7 +1087,7 @@ CD_GUFW="Interface graphique pour le pare-feu Ufw"
 CA_HACKINGPACK="Hacking Pack"
 CD_HACKINGPACK="Installe différents outils : TcpDump, Nmap, NetDiscover, Aircrack, OphCrack, John The Ripper, Crunch, Hashcat"
 
-CA_KEEPASS2="Keepass"
+CA_KEEPASS2="Keepass 2"
 CD_KEEPASS2="Utilise mono, centralise la gestion de vos mots de passe personnels, protégé par un master password"
 
 CA_KEEPASSXC="KeepassXC"
@@ -1132,7 +1132,7 @@ CD_WAKEONLAN="Permet de réveiller votre PC depuis le réseau local ou à distan
 CA_WIFITE="Wifite (cli) {Nécessite intervention!}"
 CD_WIFITE="Version simplifié de Aircrack-ng pour tester la sécurité de réseau wifi WEP, WPA et WPS"
 
-CA_WIRESHARK="WireShark {Nécessite intervention !}"
+CA_WIRESHARK="WireShark"
 CD_WIRESHARK="Analyseur de paquets utilisé dans le dépannage et l'analyse de réseaux"
 
 SCT_GAMING="______ [[ GAMING ]] ______"
