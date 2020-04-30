@@ -1375,8 +1375,8 @@ CD_ATTENTERESEAUOFF="Désactiver l'attente du réseau au démarrage (peux vous f
 CA_EXTINCTIONAUTO="Extinction automatique à 4H du matin"
 CD_EXTINCTIONAUTO="Si vous avez oublié d'éteindre votre PC le soir, il sera arrété automatiquement à 4H du matin"
 
-CA_FOLDERCOLOR="FolderColor"
-CD_FOLDERCOLOR="Permet de changer la couleur des dossiers, fonctionne sur Nautilus/Nemo/Caja + dérivés de Nautilus"
+CA_FOLDERCOLOR="Yaru Colors Folder {PPA}"
+CD_FOLDERCOLOR="Permet de changer la couleur des dossiers, y compris pour le thème d'icone par défaut Yaru"
 
 CA_FPRINTD="Support empreinte digitale (FprintD)"
 CD_FPRINTD="Si vs êtes sur un Pc portable avec la gestion d'empreinte digitale pour l'identification"
