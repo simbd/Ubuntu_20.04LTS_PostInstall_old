@@ -10,7 +10,7 @@ bleu='\e[1;34m'
 violet='\e[1;35m' 
 vert='\e[1;32m'
 neutre='\e[0;m'
-F
+
 # Vérification que le script n'est pas lancé directement avec sudo (le script contient déjà les sudos pour les actions lorsque c'est nécessaire)
 if [ "$UID" -eq "0" ]
 then
