@@ -731,7 +731,7 @@ SCT_EDUSCIENCE="______ [[ SCIENCE / EDUCATION ]] ______"
 CA_ALGOBOX="Algobox"
 CD_ALGOBOX="Logiciel libre d'aide à l'élaboration/exécution d'algorithmes en mathématique"
 
-CA_AMC="AMC (QCM Automatique)"
+CA_AMC="Auto Multiple Choice (AMC)"
 CD_AMC="Idéal pour les profs : permet de créer des QCM et les corrigent automatiquement"
 
 CA_ASTROEDU="Astro-education pack"
