@@ -1087,8 +1087,8 @@ CD_GUFW="Interface graphique pour le pare-feu Ufw"
 CA_HACKINGPACK="Hacking Pack"
 CD_HACKINGPACK="Installe différents outils : TcpDump, Nmap, NetDiscover, Aircrack, OphCrack, John The Ripper, Crunch, Hashcat"
 
-CA_KEEPASS="Keepass"
-CD_KEEPASS="Utilise mono, centralise la gestion de vos mots de passe personnels, protégé par un master password"
+CA_KEEPASS2="Keepass"
+CD_KEEPASS2="Utilise mono, centralise la gestion de vos mots de passe personnels, protégé par un master password"
 
 CA_KEEPASSXC="KeepassXC"
 CD_KEEPASSXC="Alternative recommandée à Keepass remplaçant mono par Qt et forké de KeepassX"
