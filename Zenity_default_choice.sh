@@ -70,7 +70,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_WEECHAT" "$CD_WEECHAT" \
 	$(chkDef "FALSE") "$CA_WHALEBIRD" "$CD_WHALEBIRD" \
 	$(chkDef "FALSE") "$CA_WHATSDESK" "$CD_WHATSDESK" \
-	$(chkDef "FALSE") "$CA_WIRE" "$CD_WIRE" \
+	$(chkDef "FALSE") "$CA_WIREDESK" "$CD_WIREDESK" \
 	$(chkDef "FALSE") "$CA_XCHAT" "$CD_XCHAT" \
 	$(chkDef "FALSE") "$CA_ZOOM" "$CD_ZOOM" \
 	FALSE "$SCT_DOWNLOAD" "===========================================================" \
