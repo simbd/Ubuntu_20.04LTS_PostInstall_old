@@ -522,7 +522,7 @@ then
 	f_action_exec "$CA_ATTENTERESEAUOFF" "sudo systemctl disable systemd-networkd-wait-online.service"
 	f_action_exec "$CA_EXTINCTIONAUTO" "echo '0 4 * * * root /sbin/shutdown -h now' | sudo tee -a /etc/cron.d/extinction-auto"
 	f_action_flatpak_install "$CA_GWE" com.leinardi.gwe
-	f_action_install "$CA_FOLDERCOLOR" folder-color
+	f_action_ppa_install "$CA_FOLDERCOLOR" ppa:costales/yaru-colors-folder-color "folder-color yaru-colors-folder-color"
 	f_action_install "$CA_FPRINTD" fprintd
 	f_action_exec "$CA_GS_AUGMENTATIONCAPTURE" "gsettings set org.gnome.settings-daemon.plugins.media-keys max-screencast-length 600"
 	f_action_exec "$CA_GS_MINIMISATIONFENETRE" "gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'"
