@@ -10,7 +10,7 @@ bleu='\e[1;34m'
 violet='\e[1;35m' 
 vert='\e[1;32m'
 neutre='\e[0;m'
-
+F
 # Vérification que le script n'est pas lancé directement avec sudo (le script contient déjà les sudos pour les actions lorsque c'est nécessaire)
 if [ "$UID" -eq "0" ]
 then
@@ -414,7 +414,7 @@ then
 	f_action_install "$CA_FUSIONINVENTORY" fusioninventory-agent
 	f_action_install "$CA_GUFW" gufw
 	f_action_install "$CA_HACKINGPACK" "tcpdump nmap netdiscover aircrack-ng ophcrack ophcrack-cli crunch john hashcat"
-	f_action_install "$CA_KEEPASS" keepass2
+	f_action_install "$CA_KEEPASS2" keepass2
     	f_action_install "$CA_KEEPASSXC" keepassxc
 	f_action_get "$CA_KEEWEB" "https://github.com/keeweb/keeweb/releases/download/v1.12.3/KeeWeb-1.12.3.linux.x64.deb"
 	f_action_install "$CA_MALTEGO" openjdk-14-jre #dépendance java nécessaire pour Maltego
