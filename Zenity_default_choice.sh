@@ -365,7 +365,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_FUSIONINVENTORY" "$CD_FUSIONINVENTORY" \
 	$(chkDef "FALSE") "$CA_GUFW" "$CD_GUFW" \
 	$(chkDef "FALSE") "$CA_HACKINGPACK" "$CD_HACKINGPACK" \
-	$(chkDef "FALSE") "$CA_KEEPASS" "$CD_KEEPASS" \
+	$(chkDef "FALSE") "$CA_KEEPASS2" "$CD_KEEPASS2" \
 	$(chkDef "TRUE") "$CA_KEEPASSXC" "$CD_KEEPASSXC" \
 	$(chkDef "FALSE") "$CA_KEEWEB" "$CD_KEEWEB" \
 	$(chkDef "FALSE") "$CA_MALTEGO" "$CD_MALTEGO" \
