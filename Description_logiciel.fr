@@ -295,8 +295,8 @@ CD_WHALEBIRD="Client pour le réseau social ouvert et décentralisé Mastodon (p
 CA_WHATSDESK="WhatsDesk Desktop Client {SNAP}"
 CD_WHATSDESK="Client desktop pour la messagerie WhatsApp"
 
-CA_WIRE="Wire"
-CD_WIRE="Un autre client de messagerie instantanée chiffrée créé par Wire Swiss"
+CA_WIREDESK="Wire"
+CD_WIREDESK="Un autre client de messagerie instantanée chiffrée créé par Wire Swiss"
 
 CA_WORMHOLE="Wormhole (cli)"
 CD_WORMHOLE="Transfert sécurisé à travers n'importe quel réseau en CLI"
