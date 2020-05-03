@@ -856,7 +856,7 @@ CD_GENS="Version modifiée et amélioré de l'émulateur Gens, un classique reco
 CA_GNOMEBOXES="Gnome Boxes (Machines)"
 CD_GNOMEBOXES="Outil de virtualisation simple de l'environnement Gnome"
 
-CA_GNS="GNS3 (Graphical Network Simulator) {PPA}"
+CA_GNS="GNS3 {PPA} {Nécessite intervention!}"
 CD_GNS="Logiciel libre permettant l'émulation et la simulation de réseaux informatiques"
 
 CA_QEMUKVM="Qemu/Kvm X86/ARM (avec Virtual-Manager)"
