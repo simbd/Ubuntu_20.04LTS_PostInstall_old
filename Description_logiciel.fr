@@ -765,7 +765,7 @@ CA_GELEMENTAL="Gelemental"
 CD_GELEMENTAL="Tableau périodique regroupant de nombreuses informations sur les éléments chimiques"
 
 CA_GEOGEBRA="GeoGebra (dernière version)"
-CD_GEOGEBRA="Géométrie dynamique pour manipuler des objets avec un ensemble de fonctions algébriques"
+CD_GEOGEBRA="Géométrie dynamique pour manipuler des objets avec un ensemble de fonctions algébriques (tutos inclus)"
 
 CA_GNOMEMAPS="Gnome Maps (Cartes)"
 CD_GNOMEMAPS="Visionneur de cartes utilisant OpenStreetMap riche en données géographiques"
