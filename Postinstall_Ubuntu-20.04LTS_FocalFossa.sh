@@ -295,7 +295,7 @@ then
 	f_action_get "$CA_GANTTPROJECT" "https://dl.ganttproject.biz/ganttproject-2.8.10/ganttproject_2.8.10-r2364-1_all.deb"
 	f_action_install "$CA_GCOMPRIS" "gcompris gcompris-qt gcompris-qt-data gnucap"
 	f_action_install "$CA_GELEMENTAL" gelemental
-	f_RepositoryExt_Install "$CA_GEOGEBRA" "geogebra-classic" "https://static.geogebra.org/linux/office@geogebra.org.gpg.key" "http://www.geogebra.net/linux/ stable main" "geogebra-classic geogebra-classic-tutorials"
+	f_RepositoryExt_Install "$CA_GEOGEBRA" "geogebra-classic" "https://static.geogebra.org/linux/office@geogebra.org.gpg.key" "http://www.geogebra.net/linux/ stable main" "geogebra-classic"
 	f_action_install "$CA_GNOMEMAPS" gnome-maps
 	f_action_get "$CA_GOOGLEEARTH" "https://dl.google.com/dl/earth/client/current/google-earth-pro-stable_current_amd64.deb"
 	f_action_exec "$CA_GOOGLEEARTH" "sudo rm -f /etc/apt/sources.list.d/google-earth-pro*" #dépot supprimé car pose soucis systématiquement
