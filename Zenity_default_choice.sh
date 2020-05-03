@@ -120,6 +120,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_FREEOFFICE" "$CD_FREEOFFICE" \
 	$(chkDef "FALSE") "$CA_FREEPLANE" "$CD_FREEPLANE" \
 	$(chkDef "FALSE") "$CA_GNOMEOFFICE" "$CD_GNOMEOFFICE" \
+	$(chkDef "FALSE") "$CA_GNOTE" "$CD_GNOTE" \
 	$(chkDef "FALSE") "$CA_GRAMPS" "$CD_GRAMPS" \
 	$(chkDef "FALSE") "$CA_JOPLIN" "$CD_JOPLIN" \
 	$(chkDef "TRUE") "$CA_LIBREOFFICEDEPOT" "$CD_LIBREOFFICEDEPOT" \
@@ -250,6 +251,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_AVOGADRO" "$CD_AVOGADRO" \
 	$(chkDef "FALSE") "$CA_CELESTIA" "$CD_CELESTIA" \
 	$(chkDef "FALSE") "$CA_CONVERTALL" "$CD_CONVERTALL" \
+	$(chkDef "FALSE") "$CA_FILIUS" "$CD_FILIUS" \
 	$(chkDef "FALSE") "$CA_FRITZING" "$CD_FRITZING" \
 	$(chkDef "FALSE") "$CA_GANTTPROJECT" "$CD_GANTTPROJECT" \
 	$(chkDef "FALSE") "$CA_GCOMPRIS" "$CD_GCOMPRIS" \
