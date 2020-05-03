@@ -147,7 +147,8 @@ then
 	f_action_snap_install "$CA_FREEMIND" freemind
 	f_action_get "$CA_FREEOFFICE" "https://www.softmaker.net/down/softmaker-freeoffice-2018_974-01_amd64.deb"
 	f_action_install "$CA_FREEPLANE" freeplane
-	f_action_install "$CA_GNOMEOFFICE" "abiword gnumeric dia planner glabels glom gnucash"	
+	f_action_install "$CA_GNOMEOFFICE" "abiword gnumeric dia planner glabels glom gnucash"
+	f_action_install "$CA_GNOTE" gnote
 	f_action_install "$CA_GRAMPS" gramps
 	f_action_get_appimage "$CA_JOPLIN" "https://github.com/laurent22/joplin/releases/download/v1.0.193/Joplin-1.0.193.AppImage"
     	f_action_install "$CA_LIBREOFFICEDEPOT" "libreoffice libreoffice-l10n-fr libreoffice-style-breeze"
@@ -289,11 +290,12 @@ then
 	f_action_install "$CA_AVOGADRO" avogadro
 	f_action_get_appimage "$CA_CELESTIA" "https://download.opensuse.org/repositories/home:/munix9:/unstable/AppImage/celestia-latest-x86_64.AppImage"
 	f_action_install "$CA_CONVERTALL" convertall
+	f_action_get "$CA_FILIUS" "https://www.lernsoftware-filius.de/downloads/Setup/filius_1.9.0_all.deb"
 	f_action_install "$CA_FRITZING" fritzing
 	f_action_get "$CA_GANTTPROJECT" "https://dl.ganttproject.biz/ganttproject-2.8.10/ganttproject_2.8.10-r2364-1_all.deb"
 	f_action_install "$CA_GCOMPRIS" "gcompris gcompris-qt gcompris-qt-data gnucap"
 	f_action_install "$CA_GELEMENTAL" gelemental
-	f_action_install "$CA_GEOGEBRA" geogebra
+	f_RepositoryExt_Install "$CA_GEOGEBRA" "geogebra" "https://static.geogebra.org/linux/office@geogebra.org.gpg.key" "http://www.geogebra.net/linux/ stable main" "geogebra"
 	f_action_install "$CA_GNOMEMAPS" gnome-maps
 	f_action_get "$CA_GOOGLEEARTH" "https://dl.google.com/dl/earth/client/current/google-earth-pro-stable_current_amd64.deb"
 	f_action_exec "$CA_GOOGLEEARTH" "sudo rm -f /etc/apt/sources.list.d/google-earth-pro*" #dépot supprimé car pose soucis systématiquement
