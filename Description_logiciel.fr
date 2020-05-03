@@ -357,6 +357,9 @@ CD_FREEPLANE="Création de cartes heuristiques (Mind Map) avec des diagrammes re
 CA_GNOMEOFFICE="Gnome Office Pack"
 CD_GNOMEOFFICE="Pack de logiciel bureautique de Gnome : Abiword, Gnumeric, Dia, Planner, Glabels, Glom, Gnucash"
 
+CA_GNOTE="Gnote"
+CD_GNOTE="Logiciel de notes écrit en C++ pour avoir accès rapidement/simplement à un ensemble de notes"
+
 CA_GRAMPS="Gramps"
 CD_GRAMPS="Logiciel libre et multiplateforme de gestion/recherche généalogique"
 
@@ -409,7 +412,7 @@ CA_PROJECTLIBRE="ProjectLibre"
 CD_PROJECTLIBRE="Alternative à Microsoft Project pour gérer/planifier des projets"
 
 CA_SCENARI="Scenari Suite {Script LinInstall}"
-CD_SCENARI="Edition avancée de chaîne éditoriale (contient scenarichaine v4.2 et Opale v3.8)"
+CD_SCENARI="Edition avancée de chaîne éditoriale (Scenarichaine v4.2)"
 
 CA_SCRIBUS="Scribus"
 CD_SCRIBUS="Logiciel de PAO, convient plutôt pour la réalisation de plaquettes, livres et magazines"
@@ -746,6 +749,9 @@ CD_CELESTIA="Simulation spatiale en temps réel qui permet d’explorer l'univer
 CA_CONVERTALL="ConvertAll"
 CD_CONVERTALL="L'utilitaire ultime pour convertir des unités de mesure avec un très grand choix"
 
+CA_FILIUS="Filius"
+CD_FILIUS="Simulation de réseaux informatiques pour créer sont propre réseau, le configurer et simuler/visualiser les échanges"
+
 CA_FRITZING="Fritzing"
 CD_FRITZING="Logiciel libre de conception de circuit imprimé"
 
@@ -758,8 +764,8 @@ CD_GCOMPRIS="Suite de logiciels ludo-éducatifs adapté pour les enfants de 2 à
 CA_GELEMENTAL="Gelemental"
 CD_GELEMENTAL="Tableau périodique regroupant de nombreuses informations sur les éléments chimiques"
 
-CA_GEOGEBRA="GeoGebra"
-CD_GEOGEBRA="Géométrie dynamique pour manipuler des objets avec un ensemble de fonctions algébriques)"
+CA_GEOGEBRA="GeoGebra (dernière version)"
+CD_GEOGEBRA="Géométrie dynamique pour manipuler des objets avec un ensemble de fonctions algébriques"
 
 CA_GNOMEMAPS="Gnome Maps (Cartes)"
 CD_GNOMEMAPS="Visionneur de cartes utilisant OpenStreetMap riche en données géographiques"
