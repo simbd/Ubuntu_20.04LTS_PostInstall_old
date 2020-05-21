@@ -21,6 +21,8 @@ Démo en vidéo :
 Le script est destiné principalement à la version de base d'Ubuntu (Gnome) pour la version 20.04LTS sortie en Avril.
 Cela ne veux pas dire qu'il ne peut pas être utilisé sur une autre configuration mais qu'il a été testé/validé surtout pour celle-ci.
 
+- Ce script est fait pour "Bash" (shell par défaut sous Ubuntu) mais pas pour les autres Shell donc si vous l'avez modifié manuellement sur votre Ubuntu pour mettre, par exemple, "Zsh" à la place, le script ne fonctionnera pas correctement (certaines fonctions non-compatibles).
+
 - Si vous souhaitez utiliser le script sur une variante d'Ubuntu plutôt que la version de base (par exemple Xubuntu, Kubuntu, Ubuntu Mate, Linux Mint, ElementaryOS...), je vous recommande fortement au lancement de bien choisir l'option "Tous les choix décochés" par défaut afin de ne pas avoir des paquets utiles pour Gnome uniquement cochés par défaut (ce qui n'aura aucun intérêt pour vous vu que vous n'utilisez pas Gnome avec votre variante). Si vous utilisez KDE (notamment avec Kubuntu ou KDENeon), attention à bien cocher des logiciels cohérents avec cet environnement.
 
 - Si vous souhaitez utiliser le script pour une ancienne version d'Ubuntu, par exemple la 18.04LTS, cela fonctionnera mais pas pour tous les logiciels, en effet certains s'installent avec une méthode spécifique pour la 20.04 qui ne marchera pas pour la 18.04. A noté que les Snaps/Flatpak/AppImage ne devraient poser à priori aucun problème quelle que soit la version (et même sur les autres distributions).
