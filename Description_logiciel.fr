@@ -476,8 +476,8 @@ CD_GNOMEMUSIC="Utilitaire 'Musique' de la fondation Gnome pour la gestion audio,
 CA_GNOMETWITCH="Gnome Twitch"
 CD_GNOMETWITCH="Pour visionner les flux vidéo du site Twitch depuis votre bureau sans utiliser de navigateur"
 
-CA_GRADIO="Gradio {FLATPAK}"
-CD_GRADIO="Application Gnome pour écouter la radio, plus de 1 000 références rien qu'en France"
+CA_SHORTWAVE="Shortwave {FLATPAK}"
+CD_SHORTWAVE="Shortwave (anciennement Gradio) est une appli pour écouter la radio avec + de 1 000 références en France"
 
 CA_LOLLYPOP="Lollypop"
 CD_LOLLYPOP="Lecteur de musique adapté à Gnome avec des fonctions très avancées"
