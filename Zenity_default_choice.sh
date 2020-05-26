@@ -160,7 +160,6 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "TRUE") "$CA_GNOMEMPV" "$CD_GNOMEMPV" \
 	$(chkDef "FALSE") "$CA_GNOMEMUSIC" "$CD_GNOMEMUSIC" \
 	$(chkDef "FALSE") "$CA_GNOMETWITCH" "$CD_GNOMETWITCH" \
-	$(chkDef "FALSE") "$CA_GRADIO" "$CD_GRADIO" \
 	$(chkDef "TRUE") "$CA_GTHUMB" "$CD_GTHUMB" \
 	$(chkDef "FALSE") "$CA_LOLLYPOP" "$CD_LOLLYPOP" \
 	$(chkDef "FALSE") "$CA_MEDIAELCH" "$CD_MEDIAELCH" \
@@ -172,6 +171,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_QMMP" "$CD_QMMP" \
 	$(chkDef "FALSE") "$CA_QUODLIBET" "$CD_QUODLIBET" \
 	$(chkDef "FALSE") "$CA_RHYTHMBOX" "$CD_RHYTHMBOX" \
+	$(chkDef "FALSE") "$CA_SHORTWAVE" "$CD_SHORTWAVE" \
 	$(chkDef "TRUE") "$CA_SHOTWELL" "$CD_SHOTWELL" \
 	$(chkDef "FALSE") "$CA_SMPLAYER" "$CD_SMPLAYER" \
 	$(chkDef "FALSE") "$CA_SPOTIFY" "$CD_SPOTIFY" \
