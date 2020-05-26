@@ -191,7 +191,6 @@ then
     	f_action_install "$CA_GNOMEMPV" celluloid
     	f_action_install "$CA_GNOMEMUSIC" gnome-music
     	f_action_install "$CA_GNOMETWITCH" gnome-twitch
-	f_action_flatpak_install "$CA_GRADIO" de.haeckerfelix.gradio
 	f_action_install "$CA_LOLLYPOP" lollypop
 	f_action_get_appimage "$CA_MEDIAELCH" "https://github.com/Komet/MediaElch/releases/download/v2.6.4/MediaElch_2.6.4_linux.AppImage"
 	f_action_install "$CA_MOLOTOVTV" "libgconf2-4 desktop-file-utils" #pré-requis pour Molotov.tv
@@ -202,7 +201,8 @@ then
     	f_action_ppa_install "$CA_QARTE" ppa:vincent-vandevyvre/vvv qarte
     	f_action_install "$CA_QMMP" qmmp	
     	f_action_install "$CA_QUODLIBET" quodlibet	
-    	f_action_install "$CA_RHYTHMBOX" rhythmbox		
+    	f_action_install "$CA_RHYTHMBOX" rhythmbox
+	f_action_flatpak_install "$CA_SHORTWAVE" de.haeckerfelix.Shortwave
     	f_action_install "$CA_SHOTWELL" shotwell	
     	f_action_install "$CA_SMPLAYER" "smplayer smplayer-l10n smplayer-themes"	    
     	f_RepositoryExt_Install "$CA_SPOTIFY" "spotify" "https://download.spotify.com/debian/pubkey.gpg" "http://repository.spotify.com stable non-free" "spotify-client-gnome-support"
