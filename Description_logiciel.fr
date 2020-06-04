@@ -612,7 +612,7 @@ CD_KRITA="Outil d'édition et retouche d'images, orienté plutôt vers le dessin
 CA_LEOCAD="LeoCad" 
 CD_LEOCAD="Logiciel de CAO qui vous permet de conceptualiser en 3D des constructions en LEGO"
 
-CA_LIGHTWORKS="LightWorks 2020 (béta)" 
+CA_LIGHTWORKS="LightWorks 2020" 
 CD_LIGHTWORKS="Logiciel de montage vidéo professionnel non-linéaire"
 
 CA_LIBRECAD="LibreCad"
@@ -705,7 +705,7 @@ CD_SOUNDJUICER="Pour extraire les pistes audios d'un cd"
 CA_SOUNDKONVERTER="SoundKonverter"
 CD_SOUNDKONVERTER="Convertisseur audio avec recherche, extraction de piste, décodage de fichier audio"
 
-CA_SWEETHOME="Sweethome 3D"
+CA_SWEETHOME="Sweethome 3D (complet)"
 CD_SWEETHOME="Aménagement d'intérieur pour dessiner les plans d'une maison, placement des meubles..."
 
 CA_SYNFIG="Synfig Studio"
