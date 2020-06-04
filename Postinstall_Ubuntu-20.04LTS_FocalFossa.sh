@@ -341,7 +341,7 @@ then
 	f_action_flatpak_install "$CA_PPSSPP" "org.ppsspp.PPSSPP"
 	f_action_install "$CA_RETROARCH" retroarch
 	f_action_install "$CA_VBOXDEPOT" "virtualbox virtualbox-qt virtualbox-ext-pack"
-	f_RepositoryExt_Install "$CA_VBOXLAST" "virtualbox" "http://download.virtualbox.org/virtualbox/debian/oracle_vbox_2016.asc" "[arch=amd64] http://download.virtualbox.org/virtualbox/debian eoan contrib" "virtualbox-6.1"
+	f_RepositoryExt_Install "$CA_VBOXLAST" "virtualbox" "http://download.virtualbox.org/virtualbox/debian/oracle_vbox_2016.asc" "[arch=amd64] http://download.virtualbox.org/virtualbox/debian focal contrib" "virtualbox-6.1"
     	f_action_exec "$CA_VBOXLAST" "sudo usermod -G vboxusers -a $USER"
 	f_action_exec "$CA_VMWARE" "wget http://download3.vmware.com/software/player/file/VMware-Player-15.5.2-15785246.x86_64.bundle && sudo chmod +x VMware-Player*.bundle ; sudo ./VMware-Player-15.5.2-15785246.x86_64.bundle --eulas-agreed --console --required ; sudo rm VMware-Player*"
 	f_action_exec "$CA_VMWAREPRO" "wget https://download3.vmware.com/software/wkst/file/VMware-Workstation-Full-15.5.2-15785246.x86_64.bundle && sudo chmod +x VMware-Workstation*.bundle ; sudo ./VMware-Workstation-Full-15.5.2-15785246.x86_64.bundle --eulas-agreed --console --required ; sudo rm VMware-Workstation*"
