@@ -65,14 +65,14 @@ then
     	#f_action_get "$CA_PALEMOON" "http://downloadcontent.opensuse.org/repositories/home:/stevenpusser/xUbuntu_19.10/amd64/palemoon_28.8.0+repack-1_amd64.deb"
     	f_action_get "$CA_SRWAREIRON" "http://www.srware.net/downloads/iron64.deb"
     	f_action_install "$CA_TORBROWSER" torbrowser-launcher  
-    	f_action_get "$CA_VIVALDI" "https://downloads.vivaldi.com/stable/vivaldi-stable_3.0.1874.23-1_amd64.deb" #(Dépot vivaldi auto ajouté)
+    	f_action_get "$CA_VIVALDI" "https://downloads.vivaldi.com/stable/vivaldi-stable_3.0.1874.38-1_amd64.deb" #(Dépot vivaldi auto ajouté)
 	f_action_exec "$CA_VIVALDI" "sudo apt update && sudo apt upgrade vivaldi-stable -y" #Pour que  vivaldi soit à jour dès le départ
 	
     	# Internet / Tchat / Messagerie / Téléchargement / Contrôle à distance
     	# (Section re-divisé en 3 parties cf Zenity_default_choice.sh)
     	f_RepositoryExt_Install "$CA_ANYDESK" "anydesk-stable" "https://keys.anydesk.com/repos/DEB-GPG-KEY" "http://deb.anydesk.com/ all main" "anydesk"
     	f_action_install "$CA_CLUSTERSSH" clusterssh
-    	f_action_get_appimage "$CA_COZYDRIVE" "https://github.com/cozy-labs/cozy-desktop/releases/download/v3.19.0/Cozy-Drive-3.19.0-x86_64.AppImage"
+    	f_action_get_appimage "$CA_COZYDRIVE" "https://github.com/cozy-labs/cozy-desktop/releases/download/v3.20.0/Cozy-Drive-3.20.0-x86_64.AppImage"
     	f_action_install "$CA_DELUGE" deluge
 	f_action_get "$CA_DISCORD" "https://dl.discordapp.net/apps/linux/0.0.10/discord-0.0.10.deb"
     	f_action_install "$CA_DROPBOX" nautilus-dropbox
@@ -94,8 +94,8 @@ then
 	f_action_install "$CA_LINPHONE" linphone 
 	f_action_snap_install "$CA_MAILSPRING" mailspring
 	f_action_snap_install "$CA_MATTERMOST" mattermost-desktop
-	f_action_get "$CA_MEGASYNC" "https://mega.nz/linux/MEGAsync/xUbuntu_19.10/amd64/megasync-xUbuntu_19.10_amd64.deb"
-	f_action_get "$CA_MEGASYNC" "https://mega.nz/linux/MEGAsync/xUbuntu_19.10/amd64/nautilus-megasync-xUbuntu_19.10_amd64.deb"
+	f_action_get "$CA_MEGASYNC" "https://mega.nz/linux/MEGAsync/xUbuntu_20.04/amd64/megasync-xUbuntu_20.04_amd64.deb"
+	f_action_get "$CA_MEGASYNC" "https://mega.nz/linux/MEGAsync/xUbuntu_20.04/amd64/nautilus-megasync-xUbuntu_20.04_amd64.deb"
 	f_action_install "$CA_MUMBLE" mumble
 	f_action_install "$CA_NEXTCLOUD" "nextcloud-desktop nextcloud-desktop-cmd nextcloud-desktop-l10n"
 	#f_action_ppa_install "$CA_NICOTINE" ppa:kip/nicotine+ nicotine # HS
@@ -114,7 +114,7 @@ then
 	f_action_get_appimage "$CA_SOULSEEK" "http://nux87.free.fr/script-postinstall-ubuntu/appimage/SoulseekQt-2018-1-30-64bit.AppImage"
     	f_action_install "$CA_SUBDOWNLOADER" subdownloader
 	f_action_install "$CA_SYNCTHING" syncthing
-	f_action_get "$CA_TEAMS" "https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/teams_1.3.00.958_amd64.deb"
+	f_action_get "$CA_TEAMS" "https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/teams_1.3.00.5153_amd64.deb"
 	f_action_flatpak_install "$CA_TEAMSPEAK" com.teamspeak.TeamSpeak
 	f_action_get "$CA_TEAMVIEWER" "https://download.teamviewer.com/download/linux/teamviewer_amd64.deb"
 	f_action_install "$CA_TELEGRAM" telegram-desktop
@@ -123,7 +123,7 @@ then
 	f_action_install "$CA_UGET" uget	
 	f_action_snap_install "$CA_VUZE" "vuze-vs"
 	f_action_install "$CA_WEECHAT" weechat
-	f_action_get "$CA_WHALEBIRD" "https://github.com/h3poteto/whalebird-desktop/releases/download/3.2.0/Whalebird-3.2.0-linux-x64.deb"
+	f_action_get "$CA_WHALEBIRD" "https://github.com/h3poteto/whalebird-desktop/releases/download/4.1.2/Whalebird-4.1.2-linux-x64.deb"
 	f_action_snap_install "$CA_WHATSDESK" whatsdesk
 	f_RepositoryExt_Install "$CA_WIREDESK" "wire-desktop" "http://wire-app.wire.com/linux/releases.key" "[arch=amd64] https://wire-app.wire.com/linux/debian stable main" "wire-desktop" ##PB : dépot bien ajouté mais n'installe pas les paquets
 	f_action_install "$CA_WIREDESK" apt-transport-https #dépendance
@@ -135,7 +135,7 @@ then
 	f_action_get "$CA_ZOOM" "https://zoom.us/client/latest/zoom_amd64.deb"
 	
 	# Bureautique/Mail
-	f_action_get "$CA_BOOSTNOTE" "https://github.com/BoostIO/boost-releases/releases/download/v0.15.1/boostnote_0.15.1_amd64.deb"
+	f_action_get "$CA_BOOSTNOTE" "https://github.com/BoostIO/boost-releases/releases/download/v0.15.3/boostnote_0.15.3_amd64.deb"
 	f_action_install "$CA_CALIBRE" calibre
 	f_action_install "$CA_CALLIGRA" calligra
 	f_action_snap_install "$CA_CHERRYTREE" cherrytree
@@ -173,8 +173,8 @@ then
 	f_action_flatpak_install "$CA_SPICEUP" "com.github.philip_scott.spice-up"
 	f_action_install "$CA_UMBRELLO" "umbrello --no-install-recommends"
 	f_action_get "$CA_WPSOFFICE" "http://fr.archive.ubuntu.com/ubuntu/pool/main/libp/libpng/libpng12-0_1.2.54-1ubuntu1_amd64.deb" 
-	f_action_get "$CA_WPSOFFICE" "http://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/9126/wps-office_11.1.0.9126.XA_amd64.deb"
-	f_action_get "$CA_XMIND" "https://www.xmind.net/xmind/downloads/XMind-ZEN-for-Linux-amd-64bit-10.0.0-201911260056.deb"
+	f_action_get "$CA_WPSOFFICE" "http://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/9505/wps-office_11.1.0.9505.XA_amd64.deb"
+	f_action_get "$CA_XMIND" "https://dl3.xmind.net/XMind-2020-for-Linux-amd-64bit-10.1.2-202004142327.deb"
 	f_action_install "$CA_XOURNAL" xournal
 	f_action_install "$CA_XPAD" xpad
 	f_action_install "$CA_ZEAL" zeal
@@ -242,7 +242,7 @@ then
 	f_action_install "$CA_KOLOURPAINT" kolourpaint	
 	f_action_install "$CA_KRITA" "krita krita-l10n"
 	f_action_install "$CA_LEOCAD" leocad
-	f_action_get "$CA_LIGHTWORKS" "https://downloads.lwks.com/Lightworks-2020.1-Beta-120433.deb"
+	f_action_get "$CA_LIGHTWORKS" "https://cdn.lwks.com/releases/lightworks-2020.1-r122068-amd64.deb"
 	f_action_install "$CA_LIBRECAD" librecad
 	f_action_install "$CA_LILYPOND" lilypond
 	f_action_install "$CA_LIVES" lives	
@@ -273,7 +273,7 @@ then
 	f_action_install "$CA_SOLVESPACE" solvespace
 	f_action_install "$CA_SOUNDJUICER" sound-juicer
 	f_action_install "$CA_SOUNDKONVERTER" soundkonverter
-	f_action_install "$CA_SWEETHOME" sweethome3d
+	f_action_install "$CA_SWEETHOME" "sweethome3d sweethome3d-furniture sweethome3d-furniture-nonfree sweethome3d-textures-editor sweethome3d-furniture-editor" 
 	f_action_install "$CA_SYNFIG" "synfig synfigstudio"
 	f_action_get_appimage "$CA_UNITY3DEDITOR" "https://public-cdn.cloud.unity3d.com/hub/prod/UnityHub.AppImage"
 	f_action_flatpak_install "$CA_VIDCUTTER" "com.ozmartians.VidCutter"
@@ -501,7 +501,7 @@ then
 	f_action_install "$CA_NOTEPADQQ" notepadqq
 	f_action_snap_install "$CA_PYCHARM" "pycharm-community --classic"
 	f_action_install "$CA_RSTUDIO" "r-base r-base-dev" #paquet R de base
-	f_action_get "$CA_RSTUDIO" "https://download1.rstudio.org/desktop/bionic/amd64/rstudio-1.2.5033-amd64.deb" #Pour l'appli graphique Rstudio
+	f_action_get "$CA_RSTUDIO" "https://download1.rstudio.org/desktop/bionic/amd64/rstudio-1.3.959-amd64.deb" #Pour l'appli graphique Rstudio
 	f_action_install "$CA_SCITE" scite
 	f_action_install "$CA_SPYDER" spyder3	
 	f_action_snap_install "$CA_SUBLIMETEXT" "sublime-text --classic"
