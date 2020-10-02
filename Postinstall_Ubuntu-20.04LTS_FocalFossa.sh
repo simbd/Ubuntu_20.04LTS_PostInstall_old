@@ -287,7 +287,7 @@ then
 	f_action_install "$CA_AMC" auto-multiple-choice
 	f_action_install "$CA_ASTROEDU" astro-education
 	f_action_install "$CA_AVOGADRO" avogadro
-	f_action_get_appimage "$CA_CELESTIA" "https://download.opensuse.org/repositories/home:/munix9:/unstable/AppImage/celestia-latest-x86_64.AppImage"
+	f_action_LinInstall "$CA_CELESTIA" Celestia ##(AppImage récupéré par le script)
 	f_action_install "$CA_CONVERTALL" convertall
 	f_action_get "$CA_FILIUS" "https://www.lernsoftware-filius.de/downloads/Setup/filius_1.9.0_all.deb"
 	f_action_install "$CA_FRITZING" fritzing
