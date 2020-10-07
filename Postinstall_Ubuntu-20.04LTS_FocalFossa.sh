@@ -514,6 +514,7 @@ then
 	f_action_get "$CA_VSCODIUM" "https://github.com/VSCodium/vscodium/releases/download/1.43.1/codium_1.43.1-1584565098_amd64.deb"
 
 	# Divers, Customisation et Optimisation
+	f_action_install "$CA_SAMBA-NFS" "samba-common nfs-common"
 	f_action_install "$CA_IMPRIMANTE" "hplip hplip-doc hplip-gui sane sane-utils"
 	f_action_exec "$CA_SECURITECPTE" "sudo chmod -R o=- /home/$USER"
 	f_action_install "$CA_BLEACHBIT" bleachbit
