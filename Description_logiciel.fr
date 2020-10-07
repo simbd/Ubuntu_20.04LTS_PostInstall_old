@@ -883,11 +883,11 @@ CD_PPSSPP="Emulateur libre de PSP (PlayStation Portable)"
 CA_RETROARCH="RetroArch"
 CD_RETROARCH="Implémentation de libretro qui sert de frontal pour les émulateurs et les moteurs de jeu"
 
-CA_VBOXDEPOT="Virtualbox 6.1 (version des dépots)"
+CA_VBOXDEPOT="Virtualbox 6.1 (version des dépots d'Ubuntu)"
 CD_VBOXDEPOT="Célèbre logiciel de virtualisation pour les systèmes Windows/Mac/Linux/Bsd... (depuis dépot d'Ubuntu)"
 
-CA_VBOXLAST="Virtualbox (dernière version backporté)"
-CD_VBOXLAST="Dernière version stable possible installé depuis le dépot d'Oracle"
+CA_VBOXLAST="Virtualbox (dépot d'oracle)"
+CD_VBOXLAST="Permet d'avoir la dernière version stable possible via le dépot d'Oracle"
 
 CA_VMWARE="VMWare Workstation Player"
 CD_VMWARE="Version gratuite de VmWare Workstation sans les fonctions avancées (pas de snapshot possible etc...)"
@@ -1298,8 +1298,8 @@ CD_INTELLIJIDEA="IDE Java commercial de JetBrains, plutôt conçu pour Java"
 CA_IPYTHON="IPython (cli)"
 CD_IPYTHON="Terminal interactif pour Python proposant des fonctionnalités telles l'introspection, syntaxe additionnelle, la complétion..."
 
-CA_JAVA="Java 13 JRE {PPA}"
-CD_JAVA="Version propriétaire de Java d'Oracle (JRE) en version 13 pour vos applications Java"
+CA_JAVA="Java 15 JRE {PPA}"
+CD_JAVA="Version propriétaire de Java d'Oracle (JRE) en version 15 pour vos applications Java"
 
 CA_JAVAOPENJDK8="Java OpenJDK 8 (JRE+JDK)"
 CD_JAVAOPENJDK8="Ancienne version d'OpenJDK, peut être utile pour certains vieux softs/vieilles map Minecraft)"
