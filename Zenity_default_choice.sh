@@ -456,6 +456,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_VSCODE" "$CD_VSCODE" \
 	$(chkDef "FALSE") "$CA_VSCODIUM" "$CD_VSCODIUM" \
 	FALSE "$SCT_OPTIMISATION" "===========================================================" \
+	$(chkDef "FALSE") "$CA_SAMBA-NFS" "$CD_SAMBA-NFS" \
 	$(chkDef "FALSE") "$CA_IMPRIMANTE" "$CD_IMPRIMANTE" \
 	$(chkDef "FALSE") "$CA_SECURITECPTE" "$CD_SECURITECPTE" \
 	$(chkDef "FALSE") "$CA_BLEACHBIT" "$CD_BLEACHBIT" \
