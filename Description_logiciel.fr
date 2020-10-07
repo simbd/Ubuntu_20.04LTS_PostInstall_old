@@ -1357,8 +1357,8 @@ CD_VSCODIUM="Fork de VisualStudio mais sans les merdouilles propriétaires de MS
 
 SCT_OPTIMISATION="______ [[ OPTIMISATION / TWEAK / DRIVER / CUSTOMISATION ]] ______"
 
-CA_SAMBA-NFS="Accéder aux ressources Samba et NFS"
-CD_SAMBA-NFS="Ajoute les paquets cifs-utils et nfs-common pour connecter une ressource samba ou un montage nfs dans fstab"
+CA_SAMBANFS="Accéder aux ressources Samba et NFS"
+CD_SAMBANFS="Ajoute les paquets cifs-utils et nfs-common pour connecter une ressource samba ou un montage nfs dans fstab"
 
 CA_IMPRIMANTE="Ajout du support des imprimantes HP (HPLIP)"
 CD_IMPRIMANTE="Pour les utilisateurs qui ont une imprimante HP"
