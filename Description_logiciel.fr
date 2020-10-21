@@ -108,6 +108,9 @@ CD_CHROME="Le navigateur (propriétaire) de Google basé sur Chromium"
 CA_LYNX="Lynx"
 CD_LYNX="Ce navigateur s'utilise uniquement en ligne de commande, utile depuis une console SSH"
 
+CA_EDGE="Microsoft Edge (Dev)"
+CD_EDGE="La version linux du navigateur de Microsoft installé par défaut sous Win10"
+
 CA_MIDORI="Midori"
 CD_MIDORI="Libre & léger mais un peu obsolète maintenant..."
 
