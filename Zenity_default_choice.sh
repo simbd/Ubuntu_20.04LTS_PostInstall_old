@@ -46,6 +46,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
     	$(chkDef "FALSE") "$CA_VIVALDI" "$CD_VIVALDI" \
 	FALSE "$SCT_INTERNET" "===========================================================" \
 	$(chkDef "FALSE") "$CA_DISCORD" "$CD_DISCORD" \
+	$(chkDef "FALSE") "$CA_RIOT" "$CD_RIOT" \
 	$(chkDef "FALSE") "$CA_EMPATHY" "$CD_EMPATHY" \
 	$(chkDef "FALSE") "$CA_EVOLUTION" "$CD_EVOLUTION" \
 	$(chkDef "FALSE") "$CA_GEARY" "$CD_GEARY" \
@@ -60,7 +61,6 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "TRUE") "$CA_PIDGIN" "$CD_PIDGIN" \
 	$(chkDef "FALSE") "$CA_POLARI" "$CD_POLARI" \
 	$(chkDef "FALSE") "$CA_PSI" "$CD_PSI" \
-	$(chkDef "FALSE") "$CA_RIOT" "$CD_RIOT" \
 	$(chkDef "FALSE") "$CA_SIGNAL" "$CD_SIGNAL" \
 	$(chkDef "FALSE") "$CA_SKYPE" "$CD_SKYPE" \
 	$(chkDef "FALSE") "$CA_SLACK" "$CD_SLACK" \
@@ -85,6 +85,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_HUBIC" "$CD_HUBIC" \
 	$(chkDef "FALSE") "$CA_MEGASYNC" "$CD_MEGASYNC" \
 	$(chkDef "FALSE") "$CA_NEXTCLOUD" "$CD_NEXTCLOUD" \
+	$(chkDef "FALSE") "$CA_NICOTINE" "$CD_NICOTINE" \
 	$(chkDef "FALSE") "$CA_QBITTORRENT" "$CD_QBITTORRENT" \
 	$(chkDef "FALSE") "$CA_SOULSEEK" "$CD_SOULSEEK" \
 	$(chkDef "FALSE") "$CA_SUBDOWNLOADER" "$CD_SUBDOWNLOADER" \

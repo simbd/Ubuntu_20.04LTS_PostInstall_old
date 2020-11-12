@@ -1,5 +1,5 @@
 #!/bin/bash
-#v1.0.7
+#v1.0.8
 
 # Script de post-installation pour "Ubuntu 20.04LTS Focal Fossa"
 
@@ -31,7 +31,7 @@ then
 	f_action_exec "$CA_PARTNER" "sudo sed -i.bak '/^# deb .*partner/ s/^# //' /etc/apt/sources.list"
 	f_action_exec "$CA_UPGRADE" "sudo apt update ; sudo apt full-upgrade -y"
 	f_action_install "$CA_FRENCH" "$(check-language-support -l fr)"
-	f_action_install "$CA_PACKUTILE" "net-tools build-essential gettext curl vim neofetch ncdu ffmpegthumbs ffmpegthumbnailer xterm inxi hdparm cpu-x rsync"
+	f_action_install "$CA_PACKUTILE" "net-tools build-essential gettext curl vim neofetch ncdu ffmpegthumbs ffmpegthumbnailer xterm inxi hdparm cpu-x rsync ppa-purge"
 	f_action_install "$CA_PACKCODEC" "x264 x265 flac opus-tools vorbis-tools lame mkvtoolnix mkvtoolnix-gui oggvideotools"
 	f_action_install "$CA_GNOMESUPPLEMENT" "chrome-gnome-shell gnome-firmware gnome-tweak-tool gconf-editor gnome-shell-extension-prefs"
     
@@ -58,15 +58,13 @@ then
     	f_action_install "$CA_EPIPHANY" epiphany-browser	
     	f_RepositoryExt_Install "$CA_CHROME" "google-chrome" "https://dl-ssl.google.com/linux/linux_signing_key.pub" "[arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main" "google-chrome-stable"
     	f_action_install "$CA_LYNX" lynx
-	f_action_get "$CA_EDGE" "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-dev/microsoft-edge-dev_88.0.673.0-1_amd64.deb"
+	f_action_get "$CA_EDGE" "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-dev/microsoft-edge-dev_88.0.692.0-1_amd64.deb"
 	f_action_install "$CA_MIDORI" midori
-    	#f_action_get "$CA_MIN" "https://github.com/minbrowser/min/releases/download/v1.12.0/min_1.12.0_amd64.deb" ## HS
     	f_action_snap_install "$CA_OPERA" opera
 	f_RepositoryExt_Install "$CA_PALEMOON" "home:stevenpusser" "https://download.opensuse.org/repositories/home:stevenpusser/xUbuntu_19.10/Release.key" "http://download.opensuse.org/repositories/home:/stevenpusser/xUbuntu_19.10/ /" "palemoon"
-    	#f_action_get "$CA_PALEMOON" "http://downloadcontent.opensuse.org/repositories/home:/stevenpusser/xUbuntu_19.10/amd64/palemoon_28.8.0+repack-1_amd64.deb"
     	f_action_get "$CA_SRWAREIRON" "http://www.srware.net/downloads/iron64.deb"
     	f_action_install "$CA_TORBROWSER" torbrowser-launcher  
-    	f_action_get "$CA_VIVALDI" "https://downloads.vivaldi.com/stable/vivaldi-stable_3.0.1874.38-1_amd64.deb" #(Dépot vivaldi auto ajouté)
+    	f_action_get "$CA_VIVALDI" "https://downloads.vivaldi.com/stable/vivaldi-stable_3.4.2066.99-1_amd64.deb" #(Dépot vivaldi auto ajouté)
 	f_action_exec "$CA_VIVALDI" "sudo apt update && sudo apt upgrade vivaldi-stable -y" #Pour que  vivaldi soit à jour dès le départ
 	
     	# Internet / Tchat / Messagerie / Téléchargement / Contrôle à distance
@@ -75,7 +73,7 @@ then
     	f_action_install "$CA_CLUSTERSSH" clusterssh
     	f_action_get_appimage "$CA_COZYDRIVE" "https://github.com/cozy-labs/cozy-desktop/releases/download/v3.20.0/Cozy-Drive-3.20.0-x86_64.AppImage"
     	f_action_install "$CA_DELUGE" deluge
-	f_action_get "$CA_DISCORD" "https://dl.discordapp.net/apps/linux/0.0.10/discord-0.0.10.deb"
+	f_action_get "$CA_DISCORD" "https://dl.discordapp.net/apps/linux/0.0.12/discord-0.0.12.deb"
     	f_action_install "$CA_DROPBOX" nautilus-dropbox
 	f_action_get "$CA_DUKTO" "https://download.opensuse.org/repositories/home:/colomboem/xUbuntu_16.04/amd64/dukto_6.0-1_amd64.deb" #{a reverifier}
     	f_action_exec "$CA_DWSERVICE" "wget https://www.dwservice.net/download/dwagent_x86.sh && chmod +x dwagent* ; mv dwagent* ~/"
@@ -99,7 +97,7 @@ then
 	f_action_get "$CA_MEGASYNC" "https://mega.nz/linux/MEGAsync/xUbuntu_20.04/amd64/nautilus-megasync-xUbuntu_20.04_amd64.deb"
 	f_action_install "$CA_MUMBLE" mumble
 	f_action_install "$CA_NEXTCLOUD" "nextcloud-desktop nextcloud-desktop-cmd nextcloud-desktop-l10n"
-	#f_action_ppa_install "$CA_NICOTINE" ppa:kip/nicotine+ nicotine # HS
+	f_action_ppa_install "$CA_NICOTINE" ppa:nicotine-team/stable nicotine
 	f_action_install "$CA_OPENSSHSERVER" openssh-server
 	f_action_install "$CA_PIDGIN" "pidgin pidgin-plugin-pack"
 	f_action_install "$CA_POLARI" polari
@@ -108,14 +106,14 @@ then
 	f_action_install "$CA_QBITTORRENT" qbittorrent	
 	f_action_install "$CA_RDESKTOP" rdesktop	
 	f_action_install "$CA_REMMINA" "remmina remmina-plugin-nx remmina-plugin-rdp remmina-plugin-spice remmina-plugin-vnc"
-	f_action_flatpak_install "$CA_RIOT" im.riot.Riot
+	f_action_flatpak_install "$CA_RIOT" im.riot.Riot #alias Element-Desktop
 	f_RepositoryExt_Install "$CA_SIGNAL" "signal-desktop" "https://updates.signal.org/desktop/apt/keys.asc" "[arch=amd64] https://updates.signal.org/desktop/apt xenial main" "signal-desktop"
     	f_action_get "$CA_SKYPE" "https://go.skype.com/skypeforlinux-64.deb" #Maj auto via dépot ajouté
 	f_action_snap_install "$CA_SLACK" "slack --classic"
 	f_action_get_appimage "$CA_SOULSEEK" "http://nux87.free.fr/script-postinstall-ubuntu/appimage/SoulseekQt-2018-1-30-64bit.AppImage"
     	f_action_install "$CA_SUBDOWNLOADER" subdownloader
 	f_action_install "$CA_SYNCTHING" syncthing
-	f_action_get "$CA_TEAMS" "https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/teams_1.3.00.5153_amd64.deb"
+	f_action_get "$CA_TEAMS" "https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/teams_1.3.00.25560_amd64.deb"
 	f_action_flatpak_install "$CA_TEAMSPEAK" com.teamspeak.TeamSpeak
 	f_action_get "$CA_TEAMVIEWER" "https://download.teamviewer.com/download/linux/teamviewer_amd64.deb"
 	f_action_install "$CA_TELEGRAM" telegram-desktop
@@ -124,7 +122,7 @@ then
 	f_action_install "$CA_UGET" uget	
 	f_action_snap_install "$CA_VUZE" "vuze-vs"
 	f_action_install "$CA_WEECHAT" weechat
-	f_action_get "$CA_WHALEBIRD" "https://github.com/h3poteto/whalebird-desktop/releases/download/4.1.2/Whalebird-4.1.2-linux-x64.deb"
+	f_action_get "$CA_WHALEBIRD" "https://github.com/h3poteto/whalebird-desktop/releases/download/4.3.0/Whalebird-4.3.0-linux-x64.deb"
 	f_action_snap_install "$CA_WHATSDESK" whatsdesk
 	f_RepositoryExt_Install "$CA_WIREDESK" "wire-desktop" "http://wire-app.wire.com/linux/releases.key" "[arch=amd64] https://wire-app.wire.com/linux/debian stable main" "wire-desktop" ##PB : dépot bien ajouté mais n'installe pas les paquets
 	f_action_install "$CA_WIREDESK" apt-transport-https #dépendance
@@ -146,7 +144,7 @@ then
 	f_action_install "$CA_FEEDREADER" feedreader
 	f_action_install "$CA_FONTFORGE" "fontforge fontforge-extras"
 	f_action_snap_install "$CA_FREEMIND" freemind
-	f_action_get "$CA_FREEOFFICE" "https://www.softmaker.net/down/softmaker-freeoffice-2018_974-01_amd64.deb"
+	f_action_get "$CA_FREEOFFICE" "https://www.softmaker.net/down/softmaker-freeoffice-2018_980-01_amd64.deb"
 	f_action_install "$CA_FREEPLANE" freeplane
 	f_action_install "$CA_GNOMEOFFICE" "abiword gnumeric dia planner glabels glom gnucash"
 	f_action_install "$CA_GNOTE" gnote
@@ -156,7 +154,7 @@ then
 	f_action_ppa_install "$CA_LIBREOFFICEFRESH" ppa:libreoffice/ppa "libreoffice libreoffice-l10n-fr libreoffice-style-breeze"
 	f_action_install "$CA_LIBREOFFICESUP" "libreoffice-style-elementary libreoffice-style-oxygen libreoffice-style-human libreoffice-style-sifr libreoffice-style-tango libreoffice-templates openclipart-libreoffice"
 	f_action_exec "$CA_LIBREOFFICESUP" "wget https://extensions.libreoffice.org/extensions/grammalecte/1-7.0/@@download/file/Grammalecte-fr-v1.7.0.oxt --no-check-certificate ; chmod +x Grammalecte*.oxt ; sudo unopkg add --shared Grammalecte*.oxt ; rm Grammalecte*.oxt"
-	f_action_get "$CA_MASTERPDFEDITOR" "https://code-industry.net/public/master-pdf-editor-5.4.38-qt5-all.amd64.deb"
+	f_action_get "$CA_MASTERPDFEDITOR" "https://code-industry.net/public/master-pdf-editor-5.6.49-qt5.x86_64.deb"
 	f_action_install "$CA_MCOMIX" mcomix
 	f_action_snap_install "$CA_OFFICEWEBAPPS" "unofficial-webapp-office"
 	f_action_flatpak_install "$CA_NOTESUP" com.github.philip_scott.notes-up  
@@ -343,8 +341,8 @@ then
 	f_action_install "$CA_VBOXDEPOT" "virtualbox virtualbox-qt virtualbox-ext-pack"
 	f_RepositoryExt_Install "$CA_VBOXLAST" "virtualbox" "http://download.virtualbox.org/virtualbox/debian/oracle_vbox_2016.asc" "[arch=amd64] http://download.virtualbox.org/virtualbox/debian focal contrib" "virtualbox-6.1"
     	f_action_exec "$CA_VBOXLAST" "sudo usermod -G vboxusers -a $USER"
-	f_action_exec "$CA_VMWARE" "wget http://download3.vmware.com/software/player/file/VMware-Player-15.5.2-15785246.x86_64.bundle && sudo chmod +x VMware-Player*.bundle ; sudo ./VMware-Player-15.5.2-15785246.x86_64.bundle --eulas-agreed --console --required ; sudo rm VMware-Player*"
-	f_action_exec "$CA_VMWAREPRO" "wget https://download3.vmware.com/software/wkst/file/VMware-Workstation-Full-15.5.2-15785246.x86_64.bundle && sudo chmod +x VMware-Workstation*.bundle ; sudo ./VMware-Workstation-Full-15.5.2-15785246.x86_64.bundle --eulas-agreed --console --required ; sudo rm VMware-Workstation*"
+	f_action_exec "$CA_VMWARE" "wget https://download3.vmware.com/software/player/file/VMware-Player-16.0.0-16894299.x86_64.bundle && sudo chmod +x VMware-Player*.bundle ; sudo ./VMware-Player-16.0.0-16894299.x86_64.bundle --eulas-agreed --console --required ; sudo rm VMware-Player*"
+	f_action_exec "$CA_VMWAREPRO" "wget https://download3.vmware.com/software/wkst/file/VMware-Workstation-Full-16.0.0-16894299.x86_64.bundle && sudo chmod +x VMware-Workstation*.bundle ; sudo ./VMware-Workstation-Full-16.0.0-16894299.x86_64.bundle --eulas-agreed --console --required ; sudo rm VMware-Workstation*"
 	f_action_install "$CA_WINE" "wine-development wine64-development wine64-development-tools winetricks"
 	
 	# Utilitaires graphiques
@@ -501,7 +499,7 @@ then
 	f_action_install "$CA_NOTEPADQQ" notepadqq
 	f_action_snap_install "$CA_PYCHARM" "pycharm-community --classic"
 	f_action_install "$CA_RSTUDIO" "r-base r-base-dev" #paquet R de base
-	f_action_get "$CA_RSTUDIO" "https://download1.rstudio.org/desktop/bionic/amd64/rstudio-1.3.959-amd64.deb" #Pour l'appli graphique Rstudio
+	f_action_get "$CA_RSTUDIO" "https://download1.rstudio.org/desktop/bionic/amd64/rstudio-1.3.1093-amd64.deb" #Pour l'appli graphique Rstudio
 	f_action_install "$CA_SCITE" scite
 	f_action_install "$CA_SPYDER" spyder3	
 	f_action_snap_install "$CA_SUBLIMETEXT" "sublime-text --classic"

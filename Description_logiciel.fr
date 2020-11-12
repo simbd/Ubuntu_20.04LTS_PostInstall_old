@@ -214,8 +214,8 @@ CD_MUMBLE="Logiciel libre connue chez les gameurs pour les conversations audios 
 CA_NEXTCLOUD="NextCloud Desktop Client"
 CD_NEXTCLOUD="Client de bureau pour vous connecter à un drive NextCloud (framadrive, drive renater etc...)"
 
-#CA_NICOTINE="Nicotine+ [[ HS : Ne fonctionne pas pour l'instant !! ]]"
-#CD_NICOTINE="Client P2P pour le réseau mono-source Soulseek [ NE PAS UTILISER => HS ! ]"
+CA_NICOTINE="Nicotine+ {PPA}"
+CD_NICOTINE="Client P2P pour le réseau mono-source Soulseek"
 
 CA_OPENSSHSERVER="OpenSSH Server"
 CD_OPENSSHSERVER="Votre PC devient accessible à distance via SSH (client SSH déjà inclus de base)"
@@ -241,8 +241,8 @@ CD_RDESKTOP="Connexion aux bureaux à distance (notamment des postes Windows via
 CA_REMMINA="Remmina"
 CD_REMMINA="Visionneur de bureaux distants (pour prise en main à distance avec VNC ou RDP, entre autres)"
 
-CA_RIOT="Riot (Matrix) {FLATPAK}"
-CD_RIOT="Outil libre de messagerie instantannée sécurisée supportant le protocole Matrix"
+CA_RIOT="Element Desktop (Riot) {FLATPAK}"
+CD_RIOT="Outil libre de messagerie instantannée sécurisée utilisant le protocole Matrix"
 
 CA_SIGNAL="Signal"
 CD_SIGNAL="Messagerie instantanée chiffrée recommandée par Edward Snowden"
