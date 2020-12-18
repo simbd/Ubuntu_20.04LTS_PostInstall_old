@@ -390,7 +390,7 @@ CD_MCOMIX="Visionneuse d'image avancée et gratuite sous licence GPL conçu pour
 CA_NOTESUP="Notes Up {FLATPAK}"
 CD_NOTESUP="Editeur et manager de notes avec markdown, simple mais efficace"
 
-CA_ONLYOFFICE="OnlyOffice {SNAP}"
+CA_ONLYOFFICE="OnlyOffice {FLATPAK}"
 CD_ONLYOFFICE="Suite bureautique multifonctionnelle intégrée au CRM, avec jeu d'outils de collaboration"
 
 CA_OPENOFFICE="OpenOffice {Script LinInstall}"
@@ -464,14 +464,14 @@ CD_DEEZLOADER="Vous permet de récupérer/télécharger la musique de votre comp
 CA_DIGIKAM="DigiKam {APPIMAGE}"
 CD_DIGIKAM="Gestion de vos photos. Il peut importer des images depuis des médias et organiser les photos par dossiers"
 
-CA_FLASH="FlashPlayer"
-CD_FLASH="Lecture sur le web d'animations/vidéos qui utiliseraient encore l'ancienne technologie 'Flash' sans support d'HTML5"
+CA_FLASH="FlashPlayer (bientot abandonné !!)"
+CD_FLASH="Lecture sur le web de vieilles animations/vidéos qui utiliseraient encore l'ancienne techno obsolète 'Flash' sans support d'HTML5"
 
 CA_FONDO="Fondo {FLATPAK}"
 CD_FONDO="Petit utilitaire pour trouver des jolies wallpapers facilement"
 
-CA_GNOMEMPV="Gnome MPV (Celluloid)"
-CD_GNOMEMPV="Interface graphique GTK+ au lecteur mpv, léger, capable de lire de nombreux formats"
+CA_CELLULOID="Celluloid (Gnome MPV)"
+CD_CELLULOID="Interface graphique GTK+ au lecteur vidéo mpv, léger, capable de lire de nombreux formats"
 
 CA_GNOMEMUSIC="Gnome Music"
 CD_GNOMEMUSIC="Utilitaire 'Musique' de la fondation Gnome pour la gestion audio, assez basique"
@@ -891,6 +891,9 @@ CD_VBOXDEPOT="Célèbre logiciel de virtualisation pour les systèmes Windows/Ma
 
 CA_VBOXLAST="Virtualbox (dépot d'oracle)"
 CD_VBOXLAST="Permet d'avoir la dernière version stable possible via le dépot d'Oracle"
+
+CA_VMWAREHORIZON="VMWare Horizon Client (View)"
+CD_VMWAREHORIZON="Permet la connexion à un serveur VMWare Horizon pour utiliser un OS ou une application virtuelle déporté"
 
 CA_VMWARE="VMWare Workstation Player"
 CD_VMWARE="Version gratuite de VmWare Workstation sans les fonctions avancées (pas de snapshot possible etc...)"

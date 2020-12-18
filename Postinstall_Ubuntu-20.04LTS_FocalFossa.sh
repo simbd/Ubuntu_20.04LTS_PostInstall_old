@@ -1,5 +1,5 @@
 #!/bin/bash
-#v1.0.8
+#v1.1
 
 # Script de post-installation pour "Ubuntu 20.04LTS Focal Fossa"
 
@@ -58,13 +58,13 @@ then
     	f_action_install "$CA_EPIPHANY" epiphany-browser	
     	f_RepositoryExt_Install "$CA_CHROME" "google-chrome" "https://dl-ssl.google.com/linux/linux_signing_key.pub" "[arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main" "google-chrome-stable"
     	f_action_install "$CA_LYNX" lynx
-	f_action_get "$CA_EDGE" "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-dev/microsoft-edge-dev_88.0.692.0-1_amd64.deb"
+	f_action_get "$CA_EDGE" "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-dev/microsoft-edge-dev_89.0.731.0-1_amd64.deb"
 	f_action_install "$CA_MIDORI" midori
     	f_action_snap_install "$CA_OPERA" opera
 	f_RepositoryExt_Install "$CA_PALEMOON" "home:stevenpusser" "https://download.opensuse.org/repositories/home:stevenpusser/xUbuntu_19.10/Release.key" "http://download.opensuse.org/repositories/home:/stevenpusser/xUbuntu_19.10/ /" "palemoon"
     	f_action_get "$CA_SRWAREIRON" "http://www.srware.net/downloads/iron64.deb"
     	f_action_install "$CA_TORBROWSER" torbrowser-launcher  
-    	f_action_get "$CA_VIVALDI" "https://downloads.vivaldi.com/stable/vivaldi-stable_3.4.2066.99-1_amd64.deb" #(Dépot vivaldi auto ajouté)
+    	f_action_get "$CA_VIVALDI" "https://downloads.vivaldi.com/stable/vivaldi-stable_3.5.2115.81-1_amd64.deb" #(Dépot vivaldi auto-ajouté donc soft toujours à jour)
 	f_action_exec "$CA_VIVALDI" "sudo apt update && sudo apt upgrade vivaldi-stable -y" #Pour que  vivaldi soit à jour dès le départ
 	
     	# Internet / Tchat / Messagerie / Téléchargement / Contrôle à distance
@@ -73,7 +73,7 @@ then
     	f_action_install "$CA_CLUSTERSSH" clusterssh
     	f_action_get_appimage "$CA_COZYDRIVE" "https://github.com/cozy-labs/cozy-desktop/releases/download/v3.20.0/Cozy-Drive-3.20.0-x86_64.AppImage"
     	f_action_install "$CA_DELUGE" deluge
-	f_action_get "$CA_DISCORD" "https://dl.discordapp.net/apps/linux/0.0.12/discord-0.0.12.deb"
+	f_action_get "$CA_DISCORD" "https://dl.discordapp.net/apps/linux/0.0.13/discord-0.0.13.deb"
     	f_action_install "$CA_DROPBOX" nautilus-dropbox
 	f_action_get "$CA_DUKTO" "https://download.opensuse.org/repositories/home:/colomboem/xUbuntu_16.04/amd64/dukto_6.0-1_amd64.deb" #{a reverifier}
     	f_action_exec "$CA_DWSERVICE" "wget https://www.dwservice.net/download/dwagent_x86.sh && chmod +x dwagent* ; mv dwagent* ~/"
@@ -113,7 +113,7 @@ then
 	f_action_get_appimage "$CA_SOULSEEK" "http://nux87.free.fr/script-postinstall-ubuntu/appimage/SoulseekQt-2018-1-30-64bit.AppImage"
     	f_action_install "$CA_SUBDOWNLOADER" subdownloader
 	f_action_install "$CA_SYNCTHING" syncthing
-	f_action_get "$CA_TEAMS" "https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/teams_1.3.00.25560_amd64.deb"
+	f_action_get "$CA_TEAMS" "https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/teams_1.3.00.30857_amd64.deb"
 	f_action_flatpak_install "$CA_TEAMSPEAK" com.teamspeak.TeamSpeak
 	f_action_get "$CA_TEAMVIEWER" "https://download.teamviewer.com/download/linux/teamviewer_amd64.deb"
 	f_action_install "$CA_TELEGRAM" telegram-desktop
@@ -122,7 +122,7 @@ then
 	f_action_install "$CA_UGET" uget	
 	f_action_snap_install "$CA_VUZE" "vuze-vs"
 	f_action_install "$CA_WEECHAT" weechat
-	f_action_get "$CA_WHALEBIRD" "https://github.com/h3poteto/whalebird-desktop/releases/download/4.3.0/Whalebird-4.3.0-linux-x64.deb"
+	f_action_get "$CA_WHALEBIRD" "https://github.com/h3poteto/whalebird-desktop/releases/download/4.3.1/Whalebird-4.3.1-linux-x64.deb"
 	f_action_snap_install "$CA_WHATSDESK" whatsdesk
 	f_RepositoryExt_Install "$CA_WIREDESK" "wire-desktop" "http://wire-app.wire.com/linux/releases.key" "[arch=amd64] https://wire-app.wire.com/linux/debian stable main" "wire-desktop" ##PB : dépot bien ajouté mais n'installe pas les paquets
 	f_action_install "$CA_WIREDESK" apt-transport-https #dépendance
@@ -153,31 +153,31 @@ then
     	f_action_install "$CA_LIBREOFFICEDEPOT" "libreoffice libreoffice-l10n-fr libreoffice-style-breeze"
 	f_action_ppa_install "$CA_LIBREOFFICEFRESH" ppa:libreoffice/ppa "libreoffice libreoffice-l10n-fr libreoffice-style-breeze"
 	f_action_install "$CA_LIBREOFFICESUP" "libreoffice-style-elementary libreoffice-style-oxygen libreoffice-style-human libreoffice-style-sifr libreoffice-style-tango libreoffice-templates openclipart-libreoffice"
-	f_action_exec "$CA_LIBREOFFICESUP" "wget https://extensions.libreoffice.org/extensions/grammalecte/1-7.0/@@download/file/Grammalecte-fr-v1.7.0.oxt --no-check-certificate ; chmod +x Grammalecte*.oxt ; sudo unopkg add --shared Grammalecte*.oxt ; rm Grammalecte*.oxt"
+	f_action_exec "$CA_LIBREOFFICESUP" "wget https://grammalecte.net/grammalecte/oxt/Grammalecte-fr-v2.0.0.oxt --no-check-certificate ; chmod +x Grammalecte*.oxt ; sudo unopkg add --shared Grammalecte*.oxt ; rm Grammalecte*.oxt"
 	f_action_get "$CA_MASTERPDFEDITOR" "https://code-industry.net/public/master-pdf-editor-5.6.49-qt5.x86_64.deb"
 	f_action_install "$CA_MCOMIX" mcomix
 	f_action_snap_install "$CA_OFFICEWEBAPPS" "unofficial-webapp-office"
 	f_action_flatpak_install "$CA_NOTESUP" com.github.philip_scott.notes-up  
-	f_action_snap_install "$CA_ONLYOFFICE" onlyoffice-desktopeditors
+	f_action_flatpak_install "$CA_ONLYOFFICE" org.onlyoffice.desktopeditors
     	f_action_LinInstall "$CA_OPENOFFICE" OpenOffice
     	f_action_install "$CA_PANDOC" pandoc
     	f_action_install "$CA_PDFMOD" pdfmod
-	f_action_get "$CA_PDFSAM" "https://github.com/torakiki/pdfsam/releases/download/v4.1.1/pdfsam_4.1.1-1_amd64.deb"
+	f_action_get "$CA_PDFSAM" "https://github.com/torakiki/pdfsam/releases/download/v4.2.1/pdfsam_4.2.1-1_amd64.deb"
     	f_action_install "$CA_PDFSHUFFLER" pdfshuffler
     	#f_action_exec "$CA_POLICEMST" "echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo /usr/bin/debconf-set-selections ; sudo apt install ttf-mscorefonts-installer -y"
-	f_action_get "$CA_POLICEMST" "http://ftp.fr.debian.org/debian/pool/contrib/m/msttcorefonts/ttf-mscorefonts-installer_3.7_all.deb"
+	f_action_get "$CA_POLICEMST" "http://ftp.fr.debian.org/debian/pool/contrib/m/msttcorefonts/ttf-mscorefonts-installer_3.8_all.deb"
 	f_action_snap_install "$CA_PROJECTLIBRE" "projectlibre" 
     	f_action_LinInstall "$CA_SCENARI" Scenari
     	f_action_install "$CA_SCRIBUS" "scribus scribus-template"	
 	f_action_flatpak_install "$CA_SPICEUP" "com.github.philip_scott.spice-up"
 	f_action_install "$CA_UMBRELLO" "umbrello --no-install-recommends"
 	f_action_get "$CA_WPSOFFICE" "http://fr.archive.ubuntu.com/ubuntu/pool/main/libp/libpng/libpng12-0_1.2.54-1ubuntu1_amd64.deb" 
-	f_action_get "$CA_WPSOFFICE" "http://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/9505/wps-office_11.1.0.9505.XA_amd64.deb"
-	f_action_get "$CA_XMIND" "https://dl3.xmind.net/XMind-2020-for-Linux-amd-64bit-10.1.2-202004142327.deb"
+	f_action_get "$CA_WPSOFFICE" "https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/9719/wps-office_11.1.0.9719.XA_amd64.deb"
+	f_action_get "$CA_XMIND" "https://dl3.xmind.net/XMind-2020-for-Linux-amd-64bit-10.2.1-202008051959.deb"
 	f_action_install "$CA_XOURNAL" xournal
 	f_action_install "$CA_XPAD" xpad
 	f_action_install "$CA_ZEAL" zeal
-	f_action_get "$CA_ZETTLR" "https://github.com/Zettlr/Zettlr/releases/download/v1.6.0/Zettlr-1.6.0-amd64.deb"
+	f_action_get "$CA_ZETTLR" "https://github.com/Zettlr/Zettlr/releases/download/v1.8.3/Zettlr-1.8.3-amd64.deb"
 	f_action_install "$CA_ZIM" zim	
 	
 	# Lecture Multimedia
@@ -187,7 +187,7 @@ then
 	f_action_get_appimage "$CA_DEEZLOADER" "https://srv-file5.gofile.io/download/r4sZke/Deezloader_Remix_4.3.0-x86_64.AppImage"
 	f_action_install "$CA_FLASH" "adobe-flashplugin pepperflashplugin-nonfree"
 	f_action_flatpak_install "$CA_FONDO" com.github.calo001.fondo
-    	f_action_install "$CA_GNOMEMPV" celluloid
+    	f_action_install "$CA_CELLULOID" celluloid
     	f_action_install "$CA_GNOMEMUSIC" gnome-music
     	f_action_install "$CA_GNOMETWITCH" gnome-twitch
 	f_action_install "$CA_LOLLYPOP" lollypop
@@ -240,7 +240,7 @@ then
 	f_action_install "$CA_KOLOURPAINT" kolourpaint	
 	f_action_install "$CA_KRITA" "krita krita-l10n"
 	f_action_install "$CA_LEOCAD" leocad
-	f_action_get "$CA_LIGHTWORKS" "https://cdn.lwks.com/releases/lightworks-2020.1-r122068-amd64.deb"
+	f_action_get "$CA_LIGHTWORKS" "https://cdn.lwks.com/releases/2020.1.1/lightworks_2020.1.1_r124942.deb"
 	f_action_install "$CA_LIBRECAD" librecad
 	f_action_install "$CA_LILYPOND" lilypond
 	f_action_install "$CA_LIVES" lives	
@@ -340,7 +340,8 @@ then
 	f_action_install "$CA_RETROARCH" retroarch
 	f_action_install "$CA_VBOXDEPOT" "virtualbox virtualbox-qt virtualbox-ext-pack"
 	f_RepositoryExt_Install "$CA_VBOXLAST" "virtualbox" "http://download.virtualbox.org/virtualbox/debian/oracle_vbox_2016.asc" "[arch=amd64] http://download.virtualbox.org/virtualbox/debian focal contrib" "virtualbox-6.1"
-    	f_action_exec "$CA_VBOXLAST" "sudo usermod -G vboxusers -a $USER"
+    f_action_exec "$CA_VBOXLAST" "sudo usermod -G vboxusers -a $USER"
+	f_action_exec "CA_VMWAREHORIZON" "wget https://download3.vmware.com/software/view/viewclients/CART21FQ2/VMware-Horizon-Client-2006-8.0.0-16522670.x64.bundle && chmod +x VMware*Horizon* && sudo env TERM=dumb VMWARE_EULAS_AGREED=yes && sh ./VMware-Horizon-Client-x.x.x-yyyyyyy.arch.bundle --console --set-setting vmware-horizon-virtual-printing tpEnable yes"
 	f_action_exec "$CA_VMWARE" "wget https://download3.vmware.com/software/player/file/VMware-Player-16.0.0-16894299.x86_64.bundle && sudo chmod +x VMware-Player*.bundle ; sudo ./VMware-Player-16.0.0-16894299.x86_64.bundle --eulas-agreed --console --required ; sudo rm VMware-Player*"
 	f_action_exec "$CA_VMWAREPRO" "wget https://download3.vmware.com/software/wkst/file/VMware-Workstation-Full-16.0.0-16894299.x86_64.bundle && sudo chmod +x VMware-Workstation*.bundle ; sudo ./VMware-Workstation-Full-16.0.0-16894299.x86_64.bundle --eulas-agreed --console --required ; sudo rm VMware-Workstation*"
 	f_action_install "$CA_WINE" "wine-development wine64-development wine64-development-tools winetricks"
@@ -353,7 +354,7 @@ then
 	f_action_install "$CA_CHEESE" cheese
 	f_action_install "$CA_DEJADUP" deja-dup
 	f_action_install "$CA_DIODON" diodon
-	f_action_get_appimage "$CA_ELECTRUM" "https://download.electrum.org/3.3.8/electrum-3.3.8-x86_64.AppImage"
+	f_action_get_appimage "$CA_ELECTRUM" "https://download.electrum.org/4.0.8/electrum-4.0.8-x86_64.AppImage"
 	f_action_get_appimage "$CA_ETCHER" "https://github.com/balena-io/etcher/releases/download/v1.5.79/balenaEtcher-1.5.79-ia32.AppImage"
 	f_action_get "$CA_ETHEREUMWALLET" "https://github.com/ethereum/mist/releases/download/v0.11.1/Ethereum-Wallet-linux64-0-11-1.deb"
 	f_action_install "$CA_GITCOLA" git-cola
@@ -510,7 +511,7 @@ then
 	f_action_install "$CA_VIM" "vim-latexsuite vim-ledger vim-migemo vim-nox vim-pathogen vim-puppet vim-python-jedi vim-rails vim-scripts vim-snipmate vim-snippets vim-syntastic vim-tabular vim-textobj-user vim-tiny vim-tlib vim-vimerl vim-voom"
 	f_RepositoryExt_Install "$CA_VSCODE" "vscode" "https://packages.microsoft.com/keys/microsoft.asc" "[arch=amd64] https://packages.microsoft.com/repos/vscode stable main" "code" ##PB : ne s'installe pas
 	f_action_install "$CA_VSCODE" apt-transport-https #dépendance
-	f_action_get "$CA_VSCODIUM" "https://github.com/VSCodium/vscodium/releases/download/1.43.1/codium_1.43.1-1584565098_amd64.deb"
+	f_action_get "$CA_VSCODIUM" "https://github.com/VSCodium/vscodium/releases/download/1.52.1/codium_1.52.1-1608165473_amd64.deb"
 
 	# Divers, Customisation et Optimisation
 	f_action_install "$CA_SAMBANFS" "samba-common nfs-common"
@@ -541,7 +542,7 @@ then
 	f_action_install "$CA_INTEL" intel-microcode
 	f_action_ppa_install "$CA_NVIDIA_BP" ppa:graphics-drivers/ppa "nvidia-graphics-drivers-440 nvidia-settings nvidia-prime"
 	f_action_install "$CA_NVIDIA_BP" "libvdpau vulkan-loader vulkan-tools mesa-utils glmark2" # Autres paquets utiles
-	f_action_get "$CA_PHORONIXTESTSUITE" "http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_9.2.1_all.deb"
+	f_action_get "$CA_PHORONIXTESTSUITE" "http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_10.0.1_all.deb"
 	f_action_exec "$CA_OPTIMIS_SWAP" "echo vm.swappiness=5 | sudo tee /etc/sysctl.d/99-swappiness.conf ; echo vm.vfs_cache_pressure=50 | sudo tee -a /etc/sysctl.d/99-sysctl.conf ; sudo sysctl -p /etc/sysctl.d/99-sysctl.conf"
 	f_action_install "$CA_SCANNER" "sane sane-utils xsane"
 	f_action_exec "$CA_SNAPREMPLACEMENT" "sudo snap remove snap-store"

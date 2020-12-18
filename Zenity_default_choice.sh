@@ -154,12 +154,12 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	FALSE "$SCT_LECTUREMULTIMEDIA" "===========================================================" \
 	$(chkDef "FALSE") "$CA_AUDACIOUS" "$CD_AUDACIOUS" \
 	$(chkDef "FALSE") "$CA_CANTATA" "$CD_CANTATA" \
+	$(chkDef "TRUE") "$CA_CELLULOID" "$CD_CELLULOID" \
 	$(chkDef "FALSE") "$CA_CLEMENTINE" "$CD_CLEMENTINE" \
 	$(chkDef "FALSE") "$CA_DEEZLOADER" "$CD_DEEZLOADER" \
 	$(chkDef "FALSE") "$CA_DIGIKAM" "$CD_DIGIKAM" \
 	$(chkDef "FALSE") "$CA_FLASH" "$CD_FLASH" \
 	$(chkDef "FALSE") "$CA_FONDO" "$CD_FONDO" \
-	$(chkDef "TRUE") "$CA_GNOMEMPV" "$CD_GNOMEMPV" \
 	$(chkDef "FALSE") "$CA_GNOMEMUSIC" "$CD_GNOMEMUSIC" \
 	$(chkDef "FALSE") "$CA_GNOMETWITCH" "$CD_GNOMETWITCH" \
 	$(chkDef "TRUE") "$CA_GTHUMB" "$CD_GTHUMB" \
@@ -300,6 +300,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_RETROARCH" "$CD_RETROARCH" \
 	$(chkDef "FALSE") "$CA_VBOXDEPOT" "$CD_VBOXDEPOT" \
     	$(chkDef "FALSE") "$CA_VBOXLAST" "$CD_VBOXLAST" \
+    	$(chkDef "FALSE") "$CA_VMWAREHORIZON" "$CD_VMWAREHORIZON" \
     	$(chkDef "FALSE") "$CA_VMWARE" "$CD_VMWARE" \
     	$(chkDef "FALSE") "$CA_VMWAREPRO" "$CD_VMWAREPRO" \
     	$(chkDef "FALSE") "$CA_WINE" "$CD_WINE" \
