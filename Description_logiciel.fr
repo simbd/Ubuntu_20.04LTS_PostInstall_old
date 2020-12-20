@@ -892,7 +892,7 @@ CD_VBOXDEPOT="Célèbre logiciel de virtualisation pour les systèmes Windows/Ma
 CA_VBOXLAST="Virtualbox (dépot d'oracle)"
 CD_VBOXLAST="Permet d'avoir la dernière version stable possible via le dépot d'Oracle"
 
-CA_VMWAREHORIZON="VMWare Horizon Client (View)"
+CA_VMWAREHORIZON="VMWare Horizon Client {Nécessite intervention!}"
 CD_VMWAREHORIZON="Permet la connexion à un serveur VMWare Horizon pour utiliser un OS ou une application virtuelle déporté"
 
 CA_VMWARE="VMWare Workstation Player"
