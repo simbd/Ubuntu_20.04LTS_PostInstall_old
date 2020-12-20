@@ -39,7 +39,7 @@ CD_FRENCH="Installe les paquets linguistiques français pour vos logiciels insta
 NS_FRENCH="Installation du pack de langue FR pour vos softs en cours..."
 
 CA_PACKUTILE="Pack d'outils utiles (recommandé)"
-CD_PACKUTILE="Ajoute des outils utiles: net-tools, build-essential, curl, xterm, vim, rsync, neofetch, ncdu..."
+CD_PACKUTILE="Ajoute des outils utiles: net-tools, build-essential, curl, xterm, vim, speedtest(cli), rsync, neofetch, ncdu..."
 
 CA_PACKCODEC="Pack de codecs (encodeur/décodeur Audio/Vidéo)"
 CD_PACKCODEC="Installera : X264/X265, Flac, Opus-tools, Vorbis-tools, Lame, MkvToolNix, Oggvideotools"
