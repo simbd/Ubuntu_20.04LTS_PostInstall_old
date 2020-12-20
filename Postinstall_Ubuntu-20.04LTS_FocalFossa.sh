@@ -341,9 +341,9 @@ then
 	f_action_install "$CA_VBOXDEPOT" "virtualbox virtualbox-qt virtualbox-ext-pack"
 	f_RepositoryExt_Install "$CA_VBOXLAST" "virtualbox" "http://download.virtualbox.org/virtualbox/debian/oracle_vbox_2016.asc" "[arch=amd64] http://download.virtualbox.org/virtualbox/debian focal contrib" "virtualbox-6.1"
     f_action_exec "$CA_VBOXLAST" "sudo usermod -G vboxusers -a $USER"
-	f_action_exec "CA_VMWAREHORIZON" "wget https://download3.vmware.com/software/view/viewclients/CART21FQ2/VMware-Horizon-Client-2006-8.0.0-16522670.x64.bundle && chmod +x VMware*Horizon* && sudo sh ./VMware-Horizon-Client*.bundle --console ; rm VMware*bundle"
-	f_action_exec "$CA_VMWARE" "sudo apt install gcc -y ; wget https://download3.vmware.com/software/player/file/VMware-Player-16.0.0-16894299.x86_64.bundle && sudo chmod +x VMware-Player*.bundle ; sudo ./VMware-Player-16.0.0-16894299.x86_64.bundle --eulas-agreed --console --required ; sudo rm VMware-Player*"
-	f_action_exec "$CA_VMWAREPRO" "sudo apt install gcc -y ; wget https://download3.vmware.com/software/wkst/file/VMware-Workstation-Full-16.0.0-16894299.x86_64.bundle && sudo chmod +x VMware-Workstation*.bundle ; sudo ./VMware-Workstation-Full-16.0.0-16894299.x86_64.bundle --eulas-agreed --console --required ; sudo rm VMware-Workstation*"
+	f_action_exec "CA_VMWAREHORIZON" "wget https://download3.vmware.com/software/view/viewclients/CART21FQ2/VMware-Horizon-Client-2006-8.0.0-16522670.x64.bundle && chmod +x VMware*Horizon* && sudo ./VMware-Horizon-Client*.bundle --console ; rm VMware*bundle"
+	f_action_exec "$CA_VMWARE" "sudo apt install gcc -y ; wget https://download3.vmware.com/software/player/file/VMware-Player-16.1.0-17198959.x86_64.bundle && sudo chmod +x VMware-Player*.bundle ; sudo ./VMware-Player-16.1.0-17198959.x86_64.bundle --eulas-agreed --console --required ; sudo rm VMware-Player*"
+	f_action_exec "$CA_VMWAREPRO" "sudo apt install gcc -y ; wget https://download3.vmware.com/software/wkst/file/VMware-Workstation-Full-16.1.0-17198959.x86_64.bundle && sudo chmod +x VMware-Workstation*.bundle ; sudo ./VMware-Workstation-Full-16.1.0-17198959.x86_64.bundle --eulas-agreed --console --required ; sudo rm VMware-Workstation*"
 	f_action_install "$CA_WINE" "wine-development wine64-development wine64-development-tools winetricks"
 	
 	# Utilitaires graphiques
