@@ -228,7 +228,8 @@ then
 	f_action_install "$CA_FREECAD" freecad
 	f_action_install "$CA_GIADA" giada
 	f_action_install "$CA_GIMP" "gimp gimp-help-fr gimp-data-extras"
-	f_action_flatpak_install "$CA_GIMPDEV" "--user https://flathub.org/beta-repo/appstream/org.gimp.GIMP.flatpakref"
+	f_action_flatpak_install "$CA_GIMPDEV" "" #champ vide volontaire pr install de flatpak si ce n'est pas le cas
+	f_action_exec "$CA_GIMPDEV" "flatpak install --user https://flathub.org/beta-repo/appstream/org.gimp.GIMP.flatpakref -y"
 	f_action_install "$CA_GNOMESOUNDRECORDER" gnome-sound-recorder
 	f_action_install "$CA_GTHUMB" gthumb
 	f_action_install "$CA_HANDBRAKE" handbrake
