@@ -186,6 +186,7 @@ GUI=$(zenity --list --checklist --height 850 --width 1400 \
 	$(chkDef "FALSE") "$CA_FLAMESHOT" "$CD_FLAMESHOT" \
 	$(chkDef "FALSE") "$CA_FREECAD" "$CD_FREECAD" \
 	$(chkDef "TRUE") "$CA_GIMP" "$CD_GIMP" \
+	$(chkDef "FALSE") "$CA_GIMPDEV" "$CD_GIMPDEV" \
 	$(chkDef "FALSE") "$CA_IMCOMPRESSOR" "$CD_IMCOMPRESSOR" \
 	$(chkDef "TRUE") "$CA_INKSCAPE" "$CD_INKSCAPE" \
 	$(chkDef "FALSE") "$CA_KOLOURPAINT" "$CD_KOLOURPAINT" \

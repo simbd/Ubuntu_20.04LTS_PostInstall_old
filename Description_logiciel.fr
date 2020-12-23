@@ -576,8 +576,11 @@ CD_GEARY="Logiciel de messagerie, alternative à Thunderbird et bien intégré �
 CA_GIADA="Giada"
 CD_GIADA="Utilitaire de MAO permettant de créer/enregistrer des boucles, gérant jusqu'à 32 échantillons simultanés"
 
-CA_GIMP="Gimp"
+CA_GIMP="Gimp (version 2.10)"
 CD_GIMP="Éditeur d'images bitmap libre et opensource équivalent à Photoshop"
+
+CA_GIMPDEV="Gimp Devel {FLATPAK}"
+CD_GIMPDEV="Permet d'avoir la toute dernière version possible de Gimp via le dépot béta de Flathub (attention : version de développement !)"
 
 CA_GNOMESOUNDRECORDER="Gnome Sound Recorder"
 CD_GNOMESOUNDRECORDER="Logiciel basique d'enregistrement de son pour Gnome"
