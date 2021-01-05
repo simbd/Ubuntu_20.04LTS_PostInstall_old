@@ -975,8 +975,8 @@ CD_MULTISYSTEM="Utilitaire permettant de créer une clé usb bootable avec plusi
 CA_MYTOURBOOK="MyTourBook"
 CD_MYTOURBOOK="Suivi de parcours pour les randonnées avec différentes stats"
 
-CA_ARCHIVAGE="Pack Archivage"
-CD_ARCHIVAGE="Ajoute le support de différentes types d'archives (7zip, Rar, Zstd etc...)"
+CA_ARCHIVAGE="Pack Archivage (+gestion multi-core)"
+CD_ARCHIVAGE="Ajoute le support de différentes types d'archives (7zip, Rar, Zstd...) + support multi-core (pigz+lbzip2)"
 
 CA_RECHERCHE="Pack de 3 outils de recherche avancés"
 CD_RECHERCHE="Ajoute Recoll, CatFish et SearchMonkey qui permettent la recherche avancé dans les contenus des fichiers"
