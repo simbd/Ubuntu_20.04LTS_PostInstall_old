@@ -31,7 +31,7 @@ then
 	f_action_exec "$CA_PARTNER" "sudo sed -i.bak '/^# deb .*partner/ s/^# //' /etc/apt/sources.list"
 	f_action_exec "$CA_UPGRADE" "sudo apt update ; sudo apt full-upgrade -y"
 	f_action_install "$CA_FRENCH" "$(check-language-support -l fr)"
-	f_action_install "$CA_PACKUTILE" "net-tools build-essential gettext curl vim neofetch ncdu ffmpegthumbs ffmpegthumbnailer xterm inxi hdparm cpu-x rsync ppa-purge speedtest-cli"
+	f_action_install "$CA_PACKUTILE" "pigz net-tools build-essential gettext curl vim neofetch ncdu ffmpegthumbs ffmpegthumbnailer xterm inxi hdparm cpu-x rsync ppa-purge speedtest-cli"
 	f_action_install "$CA_PACKCODEC" "x264 x265 flac opus-tools vorbis-tools lame mkvtoolnix mkvtoolnix-gui oggvideotools"
 	f_action_install "$CA_GNOMESUPPLEMENT" "chrome-gnome-shell gnome-firmware gnome-tweak-tool gconf-editor gnome-shell-extension-prefs"
     
