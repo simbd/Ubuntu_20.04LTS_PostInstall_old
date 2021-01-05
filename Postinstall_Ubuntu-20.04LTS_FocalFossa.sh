@@ -31,7 +31,7 @@ then
 	f_action_exec "$CA_PARTNER" "sudo sed -i.bak '/^# deb .*partner/ s/^# //' /etc/apt/sources.list"
 	f_action_exec "$CA_UPGRADE" "sudo apt update ; sudo apt full-upgrade -y"
 	f_action_install "$CA_FRENCH" "$(check-language-support -l fr)"
-	f_action_install "$CA_PACKUTILE" "pigz net-tools build-essential gettext curl vim neofetch ncdu ffmpegthumbs ffmpegthumbnailer xterm inxi hdparm cpu-x rsync ppa-purge speedtest-cli"
+	f_action_install "$CA_PACKUTILE" "net-tools build-essential gettext curl vim neofetch ncdu ffmpegthumbs ffmpegthumbnailer xterm inxi hdparm cpu-x rsync ppa-purge speedtest-cli"
 	f_action_install "$CA_PACKCODEC" "x264 x265 flac opus-tools vorbis-tools lame mkvtoolnix mkvtoolnix-gui oggvideotools"
 	f_action_install "$CA_GNOMESUPPLEMENT" "chrome-gnome-shell gnome-firmware gnome-tweak-tool gconf-editor gnome-shell-extension-prefs"
     
@@ -371,7 +371,7 @@ then
 	f_action_install "$CA_MELD" meld
 	f_action_LinInstall "$CA_MULTISYSTEM" Multisystem
 	f_action_LinInstall "$CA_MYTOURBOOK" Mytourbook
-	f_action_install "$CA_ARCHIVAGE" "zip unzip unace rar unrar p7zip-rar p7zip-full sharutils uudeview mpack arj cabextract lzip lunzip zstd"
+	f_action_install "$CA_ARCHIVAGE" "zip unzip unace rar unrar p7zip-rar p7zip-full sharutils uudeview mpack arj cabextract lzip lunzip zstd lbzip2 pigz"
 	f_action_install "$CA_RECHERCHE" "recoll catfish searchmonkey"
 	f_action_install "$CA_REDSHIFT" redshift-gtk
 	f_action_install "$CA_SPEEDCRUNCH" speedcrunch
