@@ -44,7 +44,7 @@ then
 	# Navigateurs
     	f_action_snap_install "$CA_BEAKER" beaker-browser
     	f_RepositoryExt_Install "$CA_BRAVE" "brave-browser-release" "https://brave-browser-apt-release.s3.brave.com/brave-core.asc" "[arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" "brave-browser"
-    	f_action_snap_install "$CA_CHROMIUM" "chromium chromium-ffmpeg"
+    	f_action_flatpak_install "$CA_CHROMIUM" org.chromium.Chromium
 	f_action_exec "$CA_CHROMIUMBETA" "wget https://raw.githubusercontent.com/simbd/ConfigFiles/master/chromium-beta.pref && sudo mv chro*.pref /etc/apt/preferences.d/ && sudo apt update" #(Pour ne pas que le snap prenne le dessus)
 	f_action_ppa_install "$CA_CHROMIUMBETA" ppa:saiarcot895/chromium-beta "chromium-browser"
     	f_action_snap_install "$CA_CLIQZ" "cliqz --beta"
@@ -58,13 +58,13 @@ then
     	f_action_install "$CA_EPIPHANY" epiphany-browser	
     	f_RepositoryExt_Install "$CA_CHROME" "google-chrome" "https://dl-ssl.google.com/linux/linux_signing_key.pub" "[arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main" "google-chrome-stable"
     	f_action_install "$CA_LYNX" lynx
-	f_action_get "$CA_EDGE" "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-dev/microsoft-edge-dev_89.0.731.0-1_amd64.deb"
+	f_action_get "$CA_EDGE" "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-dev/microsoft-edge-dev_93.0.916.1-1_amd64.deb"
 	f_action_install "$CA_MIDORI" midori
     	f_action_snap_install "$CA_OPERA" opera
 	f_RepositoryExt_Install "$CA_PALEMOON" "home:stevenpusser" "https://download.opensuse.org/repositories/home:stevenpusser/xUbuntu_19.10/Release.key" "http://download.opensuse.org/repositories/home:/stevenpusser/xUbuntu_19.10/ /" "palemoon"
     	f_action_get "$CA_SRWAREIRON" "http://www.srware.net/downloads/iron64.deb"
     	f_action_install "$CA_TORBROWSER" torbrowser-launcher  
-    	f_action_get "$CA_VIVALDI" "https://downloads.vivaldi.com/stable/vivaldi-stable_3.5.2115.81-1_amd64.deb" #(Dépot vivaldi auto-ajouté donc soft toujours à jour)
+    	f_action_get "$CA_VIVALDI" "https://downloads.vivaldi.com/stable/vivaldi-stable_4.0.2312.33-1_amd64.deb" #(Dépot vivaldi auto-ajouté donc soft toujours à jour)
 	f_action_exec "$CA_VIVALDI" "sudo apt update && sudo apt upgrade vivaldi-stable -y" #Pour que  vivaldi soit à jour dès le départ
 	
     	# Internet / Tchat / Messagerie / Téléchargement / Contrôle à distance
@@ -73,7 +73,7 @@ then
     	f_action_install "$CA_CLUSTERSSH" clusterssh
     	f_action_get_appimage "$CA_COZYDRIVE" "https://github.com/cozy-labs/cozy-desktop/releases/download/v3.20.0/Cozy-Drive-3.20.0-x86_64.AppImage"
     	f_action_install "$CA_DELUGE" deluge
-	f_action_get "$CA_DISCORD" "https://dl.discordapp.net/apps/linux/0.0.13/discord-0.0.13.deb"
+	f_action_get "$CA_DISCORD" "https://dl.discordapp.net/apps/linux/0.0.15/discord-0.0.15.deb"
     	f_action_install "$CA_DROPBOX" nautilus-dropbox
 	f_action_get "$CA_DUKTO" "https://download.opensuse.org/repositories/home:/colomboem/xUbuntu_16.04/amd64/dukto_6.0-1_amd64.deb" #{a reverifier}
     	f_action_exec "$CA_DWSERVICE" "wget https://www.dwservice.net/download/dwagent_x86.sh && chmod +x dwagent* ; mv dwagent* ~/"
@@ -113,7 +113,7 @@ then
 	f_action_get_appimage "$CA_SOULSEEK" "http://nux87.free.fr/script-postinstall-ubuntu/appimage/SoulseekQt-2018-1-30-64bit.AppImage"
     	f_action_install "$CA_SUBDOWNLOADER" subdownloader
 	f_action_install "$CA_SYNCTHING" syncthing
-	f_action_get "$CA_TEAMS" "https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/teams_1.3.00.30857_amd64.deb"
+	f_action_get "$CA_TEAMS" "https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/teams_1.4.00.13653_amd64.deb"
 	f_action_flatpak_install "$CA_TEAMSPEAK" com.teamspeak.TeamSpeak
 	f_action_get "$CA_TEAMVIEWER" "https://download.teamviewer.com/download/linux/teamviewer_amd64.deb"
 	f_action_install "$CA_TELEGRAM" telegram-desktop
@@ -122,7 +122,7 @@ then
 	f_action_install "$CA_UGET" uget	
 	f_action_snap_install "$CA_VUZE" "vuze-vs"
 	f_action_install "$CA_WEECHAT" weechat
-	f_action_get "$CA_WHALEBIRD" "https://github.com/h3poteto/whalebird-desktop/releases/download/4.3.1/Whalebird-4.3.1-linux-x64.deb"
+	f_action_get "$CA_WHALEBIRD" "https://github.com/h3poteto/whalebird-desktop/releases/download/4.4.1/Whalebird-4.4.1-linux-x64.deb"
 	f_action_snap_install "$CA_WHATSDESK" whatsdesk
 	f_RepositoryExt_Install "$CA_WIREDESK" "wire-desktop" "http://wire-app.wire.com/linux/releases.key" "[arch=amd64] https://wire-app.wire.com/linux/debian stable main" "wire-desktop" ##PB : dépot bien ajouté mais n'installe pas les paquets
 	f_action_install "$CA_WIREDESK" apt-transport-https #dépendance
@@ -149,12 +149,12 @@ then
 	f_action_install "$CA_GNOMEOFFICE" "abiword gnumeric dia planner glabels glom gnucash"
 	f_action_install "$CA_GNOTE" gnote
 	f_action_install "$CA_GRAMPS" gramps
-	f_action_get_appimage "$CA_JOPLIN" "https://github.com/laurent22/joplin/releases/download/v1.0.193/Joplin-1.0.193.AppImage"
+	f_action_get_appimage "$CA_JOPLIN" "https://github.com/laurent22/joplin/releases/download/v2.0.11/Joplin-2.0.11.AppImage"
     	f_action_install "$CA_LIBREOFFICEDEPOT" "libreoffice libreoffice-l10n-fr libreoffice-style-breeze"
 	f_action_ppa_install "$CA_LIBREOFFICEFRESH" ppa:libreoffice/ppa "libreoffice libreoffice-l10n-fr libreoffice-style-breeze"
 	f_action_install "$CA_LIBREOFFICESUP" "libreoffice-style-elementary libreoffice-style-oxygen libreoffice-style-human libreoffice-style-sifr libreoffice-style-tango libreoffice-templates openclipart-libreoffice"
-	f_action_exec "$CA_LIBREOFFICESUP" "wget https://grammalecte.net/grammalecte/oxt/Grammalecte-fr-v2.0.0.oxt --no-check-certificate ; chmod +x Grammalecte*.oxt ; sudo unopkg add --shared Grammalecte*.oxt ; rm Grammalecte*.oxt"
-	f_action_get "$CA_MASTERPDFEDITOR" "https://code-industry.net/public/master-pdf-editor-5.6.49-qt5.x86_64.deb"
+	f_action_exec "$CA_LIBREOFFICESUP" "wget https://grammalecte.net/grammalecte/oxt/Grammalecte-fr-v2.1.2.oxt --no-check-certificate ; chmod +x Grammalecte*.oxt ; sudo unopkg add --shared Grammalecte*.oxt ; rm Grammalecte*.oxt"
+	f_action_get "$CA_MASTERPDFEDITOR" "https://code-industry.net/public/master-pdf-editor-5.7.60-qt5.x86_64.deb"
 	f_action_install "$CA_MCOMIX" mcomix
 	f_action_snap_install "$CA_OFFICEWEBAPPS" "unofficial-webapp-office"
 	f_action_flatpak_install "$CA_NOTESUP" com.github.philip_scott.notes-up  
@@ -173,11 +173,11 @@ then
 	f_action_install "$CA_UMBRELLO" "umbrello --no-install-recommends"
 	f_action_get "$CA_WPSOFFICE" "http://fr.archive.ubuntu.com/ubuntu/pool/main/libp/libpng/libpng12-0_1.2.54-1ubuntu1_amd64.deb" 
 	f_action_get "$CA_WPSOFFICE" "https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/9719/wps-office_11.1.0.9719.XA_amd64.deb"
-	f_action_get "$CA_XMIND" "https://dl3.xmind.net/XMind-2020-for-Linux-amd-64bit-10.2.1-202008051959.deb"
+	f_action_get "$CA_XMIND" "https://dl3.xmind.net/XMind-2020-for-Linux-amd-64bit-10.3.1-202101132117.deb"
 	f_action_install "$CA_XOURNAL" xournal
 	f_action_install "$CA_XPAD" xpad
 	f_action_install "$CA_ZEAL" zeal
-	f_action_get "$CA_ZETTLR" "https://github.com/Zettlr/Zettlr/releases/download/v1.8.3/Zettlr-1.8.3-amd64.deb"
+	f_action_get "$CA_ZETTLR" "https://github.com/Zettlr/Zettlr/releases/download/v1.8.9/Zettlr-1.8.9-amd64.deb"
 	f_action_install "$CA_ZIM" zim	
 	
 	# Lecture Multimedia
@@ -242,7 +242,7 @@ then
 	f_action_install "$CA_KOLOURPAINT" kolourpaint	
 	f_action_install "$CA_KRITA" "krita krita-l10n"
 	f_action_install "$CA_LEOCAD" leocad
-	f_action_get "$CA_LIGHTWORKS" "https://cdn.lwks.com/releases/2020.1.1/lightworks_2020.1.1_r124942.deb"
+	f_action_get "$CA_LIGHTWORKS" "https://cdn.lwks.com/releases/2021.2.1/lightworks_2021.2_r128456.deb"
 	f_action_install "$CA_LIBRECAD" librecad
 	f_action_install "$CA_LILYPOND" lilypond
 	f_action_install "$CA_LIVES" lives	
@@ -292,7 +292,7 @@ then
 	f_action_install "$CA_CONVERTALL" convertall
 	f_action_get "$CA_FILIUS" "https://www.lernsoftware-filius.de/downloads/Setup/filius_1.9.0_all.deb"
 	f_action_install "$CA_FRITZING" fritzing
-	f_action_get "$CA_GANTTPROJECT" "https://dl.ganttproject.biz/ganttproject-2.8.10/ganttproject_2.8.10-r2364-1_all.deb"
+	f_action_get "$CA_GANTTPROJECT" "https://dl.ganttproject.biz/ganttproject-3.1.3102/ganttproject_3.1.3102-1_all.deb"
 	f_action_install "$CA_GCOMPRIS" "gcompris gcompris-qt gcompris-qt-data gnucap"
 	f_action_install "$CA_GELEMENTAL" gelemental
 	f_RepositoryExt_Install "$CA_GEOGEBRA" "geogebra" "https://static.geogebra.org/linux/office@geogebra.org.gpg.key" "http://www.geogebra.net/linux/ stable main" "geogebra-classic"
@@ -356,7 +356,7 @@ then
 	f_action_install "$CA_CHEESE" cheese
 	f_action_install "$CA_DEJADUP" deja-dup
 	f_action_install "$CA_DIODON" diodon
-	f_action_get_appimage "$CA_ELECTRUM" "https://download.electrum.org/4.0.8/electrum-4.0.8-x86_64.AppImage"
+	f_action_get_appimage "$CA_ELECTRUM" "https://download.electrum.org/4.1.4/electrum-4.1.4-x86_64.AppImage"
 	f_action_get_appimage "$CA_ETCHER" "https://github.com/balena-io/etcher/releases/download/v1.5.79/balenaEtcher-1.5.79-ia32.AppImage"
 	f_action_get "$CA_ETHEREUMWALLET" "https://github.com/ethereum/mist/releases/download/v0.11.1/Ethereum-Wallet-linux64-0-11-1.deb"
 	f_action_install "$CA_GITCOLA" git-cola
@@ -491,18 +491,18 @@ then
 	f_action_snap_install "$CA_INTELLIJIDEA" "intellij-idea-community --classic"
 	f_action_install "$CA_IPYTHON" ipython
 	f_action_exec "$CA_JAVA" "sudo add-apt-repository -y ppa:linuxuprising/java"
-	f_action_exec "$CA_JAVA" "echo oracle-java13-installer shared/accepted-oracle-license-v1-2 select true | sudo /usr/bin/debconf-set-selections"
-	f_action_install "$CA_JAVA" oracle-java15-installer
+	f_action_exec "$CA_JAVA" "echo oracle-java16-installer shared/accepted-oracle-license-v1-2 select true | sudo /usr/bin/debconf-set-selections"
+	f_action_install "$CA_JAVA" oracle-java16-installer
 	f_action_install "$CA_JAVAOPENJDK8" "openjdk-8-jdk openjdk-8-jre"
-	f_action_install "$CA_JAVAOPENJDK" "openjdk-14-jdk openjdk-14-jre"
+	f_action_install "$CA_JAVAOPENJDK" "openjdk-16-jdk openjdk-16-jre"
 	f_action_install "$CA_JUPYTER" "jupyter-notebook jupyter-client jupyter-console"
 	f_action_install "$CA_LATEXFULL" "texlive-full fonts-freefont-ttf texlive-extra-utils texlive-fonts-extra texlive-lang-french texlive-latex-extra libreoffice-texmaths"
 	f_action_install "$CA_LATEXILA" latexila
 	f_action_install "$CA_NEOVIM" neovim
 	f_action_install "$CA_NOTEPADQQ" notepadqq
-	f_action_snap_install "$CA_PYCHARM" "pycharm-community --classic"
+	f_action_flatpak_install "$CA_PYCHARM" com.jetbrains.PyCharm-Community
 	f_action_install "$CA_RSTUDIO" "r-base r-base-dev" #paquet R de base
-	f_action_get "$CA_RSTUDIO" "https://download1.rstudio.org/desktop/bionic/amd64/rstudio-1.3.1093-amd64.deb" #Pour l'appli graphique Rstudio
+	f_action_get "$CA_RSTUDIO" "https://download1.rstudio.org/desktop/bionic/amd64/rstudio-1.4.1717-amd64.deb" #Pour l'appli graphique Rstudio
 	f_action_install "$CA_SCITE" scite
 	f_action_install "$CA_SPYDER" spyder3	
 	f_action_snap_install "$CA_SUBLIMETEXT" "sublime-text --classic"
