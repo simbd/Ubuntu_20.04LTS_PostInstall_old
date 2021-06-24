@@ -69,11 +69,11 @@ CD_BEAKER="Navigateur opensource qui permet de surfer en P2P"
 CA_BRAVE="Brave"
 CD_BRAVE="Navigateur avec protection pour la vie privée avec blocage des pisteurs"
 
-CA_CHROMIUM="Chromium (stable release) {SNAP}"
-CD_CHROMIUM="La version libre/opensource de Google Chrome sans les fonctions néfastes"
+CA_CHROMIUM="Chromium (stable release) {FLATPAK}"
+CD_CHROMIUM="La version libre/opensource de Google Chrome"
 
 CA_CHROMIUMBETA="Chromium Beta (n+1) {PPA}"
-CD_CHROMIUMBETA="Permet d'avoir la plupart du temps 1 version d'avance et en paquet debian (pas Snap)"
+CD_CHROMIUMBETA="Permet d'avoir la plupart du temps 1 version d'avance (et en paquet deb)"
 
 CA_CLIQZ="Cliqz {SNAP}"
 CD_CLIQZ="Fork de Firefox orientés vers la confidentialité des changements avec un moteur de recherche intégré"
@@ -618,7 +618,7 @@ CD_KRITA="Outil d'édition et retouche d'images, orienté plutôt vers le dessin
 CA_LEOCAD="LeoCad" 
 CD_LEOCAD="Logiciel de CAO qui vous permet de conceptualiser en 3D des constructions en LEGO"
 
-CA_LIGHTWORKS="LightWorks 2020" 
+CA_LIGHTWORKS="LightWorks 2021" 
 CD_LIGHTWORKS="Logiciel de montage vidéo professionnel non-linéaire"
 
 CA_LIBRECAD="LibreCad"
@@ -1307,14 +1307,14 @@ CD_INTELLIJIDEA="IDE Java commercial de JetBrains, plutôt conçu pour Java"
 CA_IPYTHON="IPython (cli)"
 CD_IPYTHON="Terminal interactif pour Python proposant des fonctionnalités telles l'introspection, syntaxe additionnelle, la complétion..."
 
-CA_JAVA="Java 15 JRE {PPA}"
-CD_JAVA="Version propriétaire de Java d'Oracle (JRE) en version 15 pour vos applications Java"
+CA_JAVA="Java 16 JRE {PPA}"
+CD_JAVA="Version propriétaire de Java d'Oracle (JRE) en version 16 pour vos applications Java"
 
 CA_JAVAOPENJDK8="Java OpenJDK 8 (JRE+JDK)"
 CD_JAVAOPENJDK8="Ancienne version d'OpenJDK, peut être utile pour certains vieux softs/vieilles map Minecraft)"
 
-CA_JAVAOPENJDK="Java OpenJDK 14 (JRE+JDK)"
-CD_JAVAOPENJDK="Implémentation opensource de Java 14, installera le JRE (Execution d'appli Java) et le JDK (Développement)"
+CA_JAVAOPENJDK="Java OpenJDK 16 (JRE+JDK)"
+CD_JAVAOPENJDK="Implémentation opensource de Java 16, installera le JRE (Execution d'appli Java) et le JDK (Développement)"
 
 CA_JUPYTER="Jupyter Notebook"
 CD_JUPYTER="Environnement répondant aux exigences et au flux de travail dans la science des données et de la simulation"
