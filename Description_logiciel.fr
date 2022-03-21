@@ -1114,14 +1114,11 @@ CD_KEEWEB="Un gestionnaire élégant et efficace pour gérer vos mots de passe"
 CA_MALTEGO="Maltego"
 CD_MALTEGO="Application de renseignement qui permet d'extraire/rassembler des informations et les rassembler"
 
-CA_MYSQLWB="MySQL Workbench"
+CA_MYSQLWB="MySQL Workbench {SNAP}"
 CD_MYSQLWB="Outil de gestion de server MySQL : génération de modèles (MCD/MPD)."
 
 CA_OCSINVENTORY="OcsInventory Agent (cli) {Nécessite intervention!}"
 CD_OCSINVENTORY="Installe l'agent pour OCS Inventory (pour être référencé dans l'inventaire du parc informatique avec OCS)"
-
-CA_OPENVAS="OpenVAS (cli)"
-CD_OPENVAS="Fork sous licence du scanner de vulnérabilité Nessus qui permet un développement libre"
 
 CA_PGADMIN="PgAdmin3"
 CD_PGADMIN="Interface graphique pour administrer des bases de données PostgreSQL"
